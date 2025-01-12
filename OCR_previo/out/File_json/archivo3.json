@@ -1,0 +1,37 @@
+{
+    "informacion_personal": {
+        "Residencia": "Guanajuato y Ciudad de México",
+        "Ocupacion": "Directora de planeación CONALEP",
+        "Seguridad_social": "ISSSTE"
+    },
+    "diagnostico": {
+        "Diagnostico": "CDI de mama derecha EC IA triple negativo"
+    },
+    "antecedentes_familiares": {
+        "AHF": "Tía materna falleció por cáncer de"
+    },
+    "historial_medico": {
+        "Cirugias": "Esplenectomía abierta (1976) / Tiroidectomía"
+    },
+    "comorbilidades": [
+        "mama / Prima materna con cáncer de mama",
+        "(desconoce edad al diagnóstico)",
+        "Tabaco: negado",
+        "Alcohol: ocasional",
+        "Drogas: negado",
+        "Menarca 15 años / FUM 21 años",
+        "GO POCO AO",
+        "TRH: durante 30 años",
+        "Estado hormonal: postmenopáusica",
+        "(1988) / Pancreatectomia distal + Resección de",
+        "implante gástrico + biopsia en cuña de segmento |l",
+        "hepático + colecistectomía y maniobra de Kocher",
+        "extendida (2016) / CC + GC (2017)",
+        "Comorbilidades:",
+        "1. Linfoma de Hodgkin (1975): 3 ciclos QT (ciclofosfamida, vincristina y otro fármaco) + RT por encima del",
+        "diafragma (IMSS)",
+        "2. Cáncer papilar de tiroides (1988): Tiroidectomía + lodo 131 T4/T3",
+        "3. Cistoadenoma seroso microquístico de páncreas (2016)",
+        "4. CDI de mama izquierda EC IA (T1c, NO, MO), RH+, HER2 -: CC + GC + RT + 1A x 5 años (2016)"
+    ]
+}
