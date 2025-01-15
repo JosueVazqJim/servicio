@@ -4,11 +4,12 @@ import cv2
 import numpy as np
 
 # configuramos la ruta de Tesseract
-##tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Leeo la imagen con opencv
-image = cv2.imread('/home/josuevj/Documents/uni/servicio/sources/images/prueba.jpg')
+image = cv2.imread('D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\images\prueba.jpg')
 
+# Recortar la región de interés
 x, y, w, h = 10, 120, 1230, 750  # coordenadas y dimensiones del recorte
 #recorte = image[y:y+h, x:x+w]  # guardo la imagen recortada
 recorte = image
@@ -30,7 +31,7 @@ cv2.imwrite('bordes_detectados.png', edges)
 contornos, jerarquia = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
 # crear archivo txt
-my_file = open('''/home/josuevj/Documents/uni/servicio/sources/OCR_previo/out/OCR_Borders/TextoExtraido2.txt''', 'w')
+my_file = open('D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_previo\out\OCR_Borders\TextoExtraido2.txt', 'w', encoding='utf-8')
 
 # buscar contornos
 for contorno in contornos:
