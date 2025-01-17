@@ -9,6 +9,9 @@ Diagnóstico: CDI de mama derecha EC lA triple negativo
 AHF oncológicos: Tía materna falleció por cáncer de
 mama / Prima materna con cáncer de mama
 (desconoce edad al diagnóstico)
+APF oncológicos: Tía materna falleció por cáncer de
+mama / Prima materna con cáncer de mama
+(desconoce edad al diagnóstico)
 
 Tabaco: negado
 Alcohol: ocasional
