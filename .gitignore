@@ -1,0 +1,8 @@
+# Exclude video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Exclude the frame_extraction directory
+frame_extraction/
