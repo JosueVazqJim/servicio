@@ -11,42 +11,35 @@ my_file = open('D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\
 
 # Leer la imagen con OpenCV
 image = cv2.imread('D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\prueba.jpg')
-
-## Recortar el título
 titulo = image[130: 200, 0: 1330]
-cv2.imwrite(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\titulo.png', titulo)
 
 # Recortar la región de interés
 x, y, w, h = 10, 120, 1230, 750  # Coordenadas y dimensiones del recorte
 recorte = image[y:y+h, x:x+w]  # Guardar la imagen recortada
-cv2.imwrite(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\recorteimagen.png', recorte)
 
 # Escalar la imagen recortada
 escala = 1.1  # Escalar al 110% de tamaño
 width = int(recorte.shape[1] * escala)
 height = int(recorte.shape[0] * escala)
 recorte = cv2.resize(recorte, (width, height), interpolation=cv2.INTER_CUBIC)
-cv2.imwrite('D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\escalarimagen.png', recorte)
 
 # Escalar el titulo recortado
-escala = 1.1  # Escalar al 110% de tamaño
+escala = 1  # Escalar al 110% de tamaño
 width = int(titulo.shape[1] * escala)
 height = int(titulo.shape[0] * escala)
 titulo = cv2.resize(titulo, (width, height), interpolation=cv2.INTER_CUBIC)
-cv2.imwrite(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\tituloescalado.png', titulo)
+
+# Conversión a escala de grises
+gray = cv2.cvtColor(recorte, cv2.COLOR_BGR2GRAY)
 
 # Solo para el ID (Título)
 gris = cv2.cvtColor(titulo, cv2.COLOR_BGR2GRAY)
 threshold_img = cv2.threshold(gris, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU) [1]
-cv2.imwrite(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\threshold_img.png', threshold_img)
 gris = cv2.GaussianBlur(gris, (5, 5), 0)
 titulo_extraido = tess.image_to_string(threshold_img, lang="spa")
 
 # Escribir el texto extraído en el archivo txt
 my_file.write(titulo_extraido + '\n')
-
-# Conversión a escala de grises
-gray = cv2.cvtColor(recorte, cv2.COLOR_BGR2GRAY)
 
 # Reducción de ruido
 gray = cv2.GaussianBlur(gray, (5, 5), 0)
@@ -75,7 +68,7 @@ for contorno in contornos:
 
         # Aumentar el contraste de la imagen
         enhancer = ImageEnhance.Contrast(imagen_pil)
-        imagen_pil = enhancer.enhance(1)  # Incrementar el contraste
+        imagen_pil = enhancer.enhance(2.2)  # Incrementar el contraste
 
         # Aumentar la nitidez de la imagen
         imagen_pil = imagen_pil.filter(ImageFilter.SHARPEN)
@@ -83,7 +76,8 @@ for contorno in contornos:
         # Aplicar OCR a la imagen
         texto_extraido = tess.image_to_string(imagen_pil, lang='spa')
 
-        # Escribir el texto extraído en el archivo txt
+        # Posprocesamiento para corregir errores comunes
+        texto_extraido = texto_extraido.replace("lodo", "Iodo").replace(" ll", " II").replace(" lA", " IA")
         my_file.write(texto_extraido + '\n')
 
 # Cerrar el archivo
