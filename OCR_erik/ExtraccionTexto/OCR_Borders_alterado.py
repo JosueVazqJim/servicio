@@ -10,7 +10,7 @@ tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 my_file = open('D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionTexto\TextoExtraido2.txt', 'w', encoding='utf-8')
 
 # Leer la imagen con OpenCV
-image = cv2.imread(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionImagenes\cuadros\Zoom Reunion 2023-08-29 07-46-55\frame0.jpg')
+image = cv2.imread(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionImagenes\cuadros\Zoom Reunion 2023-08-29 07-46-55\frame3.jpg')
 titulo = image[180: 237, 0: 1330]
 cv2.imwrite(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionTexto\tituloimagen.png', titulo)
 
