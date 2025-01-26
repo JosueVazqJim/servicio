@@ -4,34 +4,31 @@ import cv2
 import numpy as np
 
 # Configuramos la ruta de Tesseract
-#tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Crear archivo txt
-my_file = open('/home/josuevj/Documents/uni/servicio/sources/OCR_erik/TextoExtraido3.txt', 'w', encoding='utf-8')
+my_file = open('D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionTexto\TextoExtraido2.txt', 'w', encoding='utf-8')
 
 # Leer la imagen con OpenCV
-image = cv2.imread('/home/josuevj/Documents/uni/servicio/sources/OCR_erik/pruebaNueva.jpg')
-titulo = image[0: 55, 0: 1330]
+image = cv2.imread('D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionTexto\pruebaOriginal.jpg')
+titulo = image[130: 200, 0: 1330]
 
 # Recortar la región de interés
 x, y, w, h = 10, 120, 1230, 750  # Coordenadas y dimensiones del recorte quitando lo de zoom
-recorte = image 
+recorte = image[y:y + h, x:x + w]
+cv2.imwrite(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionTexto\recorteimagen.png', recorte)
 
 # Escalar la imagen recortada
-escala = 1.5  # Escalar al 110% de tamaño
+escala = 1.1  # Escalar al 110% de tamaño
 width = int(recorte.shape[1] * escala)
 height = int(recorte.shape[0] * escala)
 recorte = cv2.resize(recorte, (width, height), interpolation=cv2.INTER_CUBIC)
-cv2.imwrite('/home/josuevj/Documents/uni/servicio/sources/OCR_erik/recorteimagen.jpg', recorte)
 
 # Escalar el titulo recortado
 escala = 1  # Escalar al 110% de tamaño
 width = int(titulo.shape[1] * escala)
 height = int(titulo.shape[0] * escala)
 titulo = cv2.resize(titulo, (width, height), interpolation=cv2.INTER_CUBIC)
-
-##guardamos el titulo
-cv2.imwrite('/home/josuevj/Documents/uni/servicio/sources/OCR_erik/titulo2.jpg', titulo)
 
 # Conversión a escala de grises
 gray = cv2.cvtColor(recorte, cv2.COLOR_BGR2GRAY)
@@ -51,7 +48,6 @@ gray = cv2.GaussianBlur(gray, (5, 5), 0)
 
 # Detectar bordes
 edges = cv2.Canny(gray, 50, 150)
-cv2.imwrite('/home/josuevj/Documents/uni/servicio/sources/OCR_erik/bordes.jpg', edges)
 
 # Encontrar contornos en la imagen
 contornos, jerarquia = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)

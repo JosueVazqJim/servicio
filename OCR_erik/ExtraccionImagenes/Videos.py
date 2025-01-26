@@ -2,17 +2,27 @@ import cv2
 import os
 import numpy as np
 import pytesseract
+import unicodedata
 
 # Configurar Tesseract (asegúrate de que esté instalado y en el PATH del sistema)
-#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+# Función para normalizar nombres de carpetas eliminando caracteres especiales
+def normalize_folder_name(name):
+    return ''.join(
+        c for c in unicodedata.normalize('NFD', name) if unicodedata.category(c) != 'Mn'
+    )
 
 # Cargar el video
-video_name = "/home/josuevj/Documents/uni/servicio/sources/OCR_erik/ExtraccionImagenes/Zoom Reunión 2023-08-29 07-46-55.mp4"
+video_name = "D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionImagenes\Zoom Reunión 2023-08-29 07-46-55.mp4"
 cam = cv2.VideoCapture(video_name)
 
 # Crear carpeta de destino para las imágenes extraídas
-output_folder = '/home/josuevj/Documents/uni/servicio/sources/OCR_erik/ExtraccionImagenes/frame_extraction'
-video_folder = os.path.join(output_folder, os.path.splitext(os.path.basename(video_name))[0])
+output_folder = r"D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionImagenes\cuadros"
+video_base_name = os.path.splitext(os.path.basename(video_name))[0]
+normalized_folder_name = normalize_folder_name(video_base_name)  # Normalizar el nombre del video
+video_folder = os.path.join(output_folder, normalized_folder_name)
+
 if not os.path.exists(video_folder):
     os.makedirs(video_folder)
 
@@ -36,7 +46,7 @@ while True:
 
     if currentframe == 0:
         # Guardar siempre el primer frame
-        name = f'{video_folder}/frame{currentframe}.jpg'
+        name = os.path.join(video_folder, f'frame{currentframe}.jpg')
         print(f'Creating... {name}')
         cv2.imwrite(name, frame)
         currentframe += 1
@@ -64,7 +74,7 @@ while True:
             text = pytesseract.image_to_string(gray_frame)
             if len(text.strip()) > text_threshold:  # Comprobar si hay suficiente texto
                 # Guardar frame si cumple con los criterios
-                name = f'{video_folder}/frame{currentframe}.jpg'
+                name = os.path.join(video_folder, f'frame{currentframe}.jpg')
                 print(f'Creating... {name}')
                 cv2.imwrite(name, frame)
                 currentframe += 1
@@ -77,4 +87,4 @@ while True:
 
 # Liberar recursos
 cam.release()
-cv2.destroyAllWindows()
+# cv2.destroyAllWindows()
