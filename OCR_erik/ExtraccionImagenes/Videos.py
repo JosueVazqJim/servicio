@@ -33,7 +33,7 @@ last_saved_frame = None
 threshold = 5  # Umbral para detectar cambios significativos de iluminación
 white_threshold = 200  # Umbral para determinar predominancia de blanco
 similarity_threshold = 10  # Umbral para considerar frames como similares
-text_threshold = 200  # Cantidad mínima de caracteres detectados para guardar el frame
+text_threshold = 300  # Cantidad mínima de caracteres detectados para guardar el frame
 
 while True:
     ret, frame = cam.read()
