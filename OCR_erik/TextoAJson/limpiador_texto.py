@@ -17,7 +17,7 @@ class LimpiezaTexto:
 
         with open(self.nombreArchivo, 'r', encoding='utf-8') as file:
             # Elimina líneas vacías y convierte el texto a minúsculas
-            self.informacion = [linea.strip().lower() for linea in file if linea.strip()]
+            self.informacion = [linea.strip() for linea in file if linea.strip()]
             
             # Elimina caracteres especiales al inicio de la línea
             self.informacion = [re.sub(r'^[\s]*[^a-zA-Z0-9]+', '', linea) for linea in self.informacion]
@@ -31,18 +31,18 @@ class LimpiezaTexto:
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "cirugías", "originaria y residente", "seguridad social", "ocupación", 
-            "ahf", "g0 p0 c0 a0", "cáncer de", "resumen del"
+            "ahf", "g0 p0 c0 a0", "cáncer de", "resumen del", "extensión del tumor", "biología tumoral"
         ]
 
-        # Patrón regex para detectar fechas en formato DD.MM.AA
-        patron_fecha = re.compile(r'^\d{2}\.\d{2}\.\d{2}')
-        
+        # Patrón regex para detectar fechas en formato DD.MM.AA o tambien MM.AAAA
+        patron_fecha = r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}' 
+
         clave_actual = None  # Almacena la clave en procesamiento
         valor_actual = []  # Acumula el valor correspondiente a la clave actual
 
         for linea in self.informacion:
             # Determina si la línea es una clave basándose en la lista de claves o si es una fecha
-            es_clave = any(linea.startswith(clave) for clave in claves) or re.match(patron_fecha, linea)
+            es_clave = any(linea.lower().startswith(clave) for clave in claves) or re.match(patron_fecha, linea)
 
             if es_clave:
                 # Si hay una clave en proceso, guarda la clave anterior con su valor acumulado
@@ -73,3 +73,4 @@ class LimpiezaTexto:
     def imprimir_datos(self):
         """Imprime el contenido del texto procesado línea por línea."""
         print('\n'.join(self.texto_procesado))
+
