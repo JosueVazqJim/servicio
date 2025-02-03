@@ -17,7 +17,7 @@ class LimpiezaTexto:
 
         with open(self.nombreArchivo, 'r', encoding='utf-8') as file:
             # Elimina líneas vacías y convierte el texto a minúsculas
-            self.informacion = [linea.strip() for linea in file if linea.strip()]
+            self.informacion = [linea.strip().lower() for linea in file if linea.strip()]
             
             # Elimina caracteres especiales al inicio de la línea
             self.informacion = [re.sub(r'^[\s]*[^a-zA-Z0-9]+', '', linea) for linea in self.informacion]
