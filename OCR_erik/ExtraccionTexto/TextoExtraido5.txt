@@ -43,8 +43,8 @@ comedo y cribiforme, grado 3, necrosis presente, ILV (-), IPN (-), carcinoma inv
 RP 95%, HER2 negativo, Ki67 5%
 
 Extensión del tumor:
-Mama izquierda EC JA (pT1c, pN1a, MO)
-Mama derecha EC 1lA (pT2, NO, MO)
+Mama izquierda EC IIA (pT1c, pN1a, MO)
+Mama derecha EC IIA (pT2, NO, MO)
 
 Biología tumoral: Mama izquierda: G3, RE 90%, RP 90%, HER2
 negativo, Ki67 30%
