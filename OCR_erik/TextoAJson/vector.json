@@ -67,8 +67,8 @@
     "estadia_tumoral": {
         "ultrasonido": "05.07.23 usg tiroides: ganglios cervicales centrales y laterales de caracteristicas normales, incluyendo el nivel iv izquierdo.",
         "mastografía": "17.04.23 mmg/usg: birads 5. mama derecha en región retroareolar con nódulo irregular espiculado de mayor densidad que condiciona retracción del pezón. en mama izquierda en cuadrante supero-externo tercio medio se identifica nódulo ovoideo, no circunscrito espiculado de mayor densidad que mide 2.1 cm y condiciona distorsión de la arquitectura y retracción cutánea. región axilar izquierda con engrosamiento focal de un ganglio que subjere infiltración.",
-        "centros_tumorales": "biología tumoral: mama izquierda: g3, re 90%, rp 90%, her2 negativo, ki67 30% mama derecha: g2, re 95%, rp 95%, her2 negativo, ki67 5%",
-        "nódulos": "14.08.23 oinco: ecog 3. mama derecha con cicatriz por cc mama sin lesiones palpables, sin adenopatías palpables. mama izquierda con cicatriz de cc de mama + drenaje abocado a región axilar, sin adenopatías palpables. sin datos de infección.",
+        "centros_tumorales": null,
+        "nódulos": "05.07.23 usg tiroides: ganglios cervicales centrales y laterales de caracteristicas normales, incluyendo el nivel iv izquierdo.",
         "metástasis": "08.06.23 biopsia por trucut de ganglio. rhp (q23-3699): carcinoma metastático ck7+, ck20, gata 3+, re+, rp+, her 2-, ema+, consistente con sitio primario de mama"
     },
     "inmunohistoquímica_tumoral": {

@@ -20,7 +20,7 @@ class LimpiezaTexto:
             self.informacion = [linea.strip().lower() for linea in file if linea.strip()]
             
             # Elimina caracteres especiales al inicio de la línea
-            self.informacion = [re.sub(r'^[\s]*[^a-zA-Z0-9]+', '', linea) for linea in self.informacion]
+            self.informacion = [linea if re.match(r'^\*{17,}$', linea) else re.sub(r'^[\s]*[^a-zA-Z0-9]+', '', linea) for linea in self.informacion]
 
     def _preprocesar_texto(self):
         """Procesa el texto, segmentándolo en claves y valores según palabras clave conocidas."""
@@ -31,18 +31,22 @@ class LimpiezaTexto:
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "cirugías", "originaria y residente", "seguridad social", "ocupación", 
-            "ahf", "g0 p0 c0 a0", "cáncer de", "resumen del", "extensión del tumor", "biología tumoral"
+            "ahf", "g0 p0 c0 a0", "cáncer de", "resumen del", "extensión del tumor", 
+            "biología tumoral", "*******************"
         ]
 
         # Patrón regex para detectar fechas en formato DD.MM.AA o tambien MM.AAAA
         patron_fecha = r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}' 
+
+            # Patrón regex para detectar el formato "* / * / * / *"
+        patron_identificacion = r'^[a-zA-Z]+\s*/\s*\d+\s*/\s*\d+\s*años\s*/\s*dr\.\s*[a-zA-Z]+'
 
         clave_actual = None  # Almacena la clave en procesamiento
         valor_actual = []  # Acumula el valor correspondiente a la clave actual
 
         for linea in self.informacion:
             # Determina si la línea es una clave basándose en la lista de claves o si es una fecha
-            es_clave = any(linea.lower().startswith(clave) for clave in claves) or re.match(patron_fecha, linea)
+            es_clave = any(linea.lower().startswith(clave) for clave in claves) or re.match(patron_fecha, linea) or re.match(patron_identificacion, linea)
 
             if es_clave:
                 # Si hay una clave en proceso, guarda la clave anterior con su valor acumulado
@@ -67,10 +71,8 @@ class LimpiezaTexto:
         self.texto_procesado = [re.sub(r'[:\s]+$', '', linea) for linea in self.texto_procesado]
 
     def obtener_texto_procesado(self):
-        """Devuelve el texto procesado como una lista de líneas."""
         return self.texto_procesado
 
     def imprimir_datos(self):
-        """Imprime el contenido del texto procesado línea por línea."""
         print('\n'.join(self.texto_procesado))
 
