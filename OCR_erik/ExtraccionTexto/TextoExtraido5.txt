@@ -1,6 +1,16 @@
 MLAA / 314262 / 86 años / Dr. Soto
 
-+ Comorbilidades: Hipertensión arterial sistémica (1995).
++ Comorbilidades:
+
+1. Linfoma de Hodakin (1975): 3 ciclos QT (ciclofosfamida, vincristina y otro fármaco) + RT por encima del
+diafragma (IMSS)
+
+2. Cáncer papilar de tiroides (1988): Tiroidectomía + Iodo 131 T4/T3a
+
+3. Cistoadenoma seroso microquístico de páncreas (2016)
+
+4. CDI de mama izquierda EC IA (T1c, NO, MO), RH+, HER2 -: CC + GC + RT + IA x 5 años (2016)
+
 
 
 » FUM: 47 años
@@ -29,7 +39,34 @@ Ocupación: Hogar
 
 
 Cáncer de mama bilateral. MI CDI pT1c, pN1a, MO / MD CLI pT2, cNO MO RH+ IHER2-
+
 RESUMEN DEL PADECIMIENTO ONCOLÓGICO
+03.2023 Auto Palpación de tumoración en mama izquierda.
+
+05.04.23 MMG FINNSZ nódulo irregular en radio de las 3 de mama izquierda BIRADS 4A.
+
+17.04.23 MMG/USG: BIRADS 5. Mama derecha en región retroareolar con nódulo irregular espiculado de mayor densidad que
+condiciona retracción del pezón. En mama izquierda en cuadrante supero-externo tercio medio se identifica nódulo ovoideo, no
+circunscrito espiculado de mayor densidad que mide 2.1 cm y condiciona distorsión de la arquitectura y retracción cutánea. Región
+axilar izquierda con engrosamiento focal de un ganglio que subjere infiltración.
+
+18.04.23 Biopsia TRUCUT. RHP (Q-23-2516): Mama izquierda CDI SPE grado 3 (3+3+2 = 8), ILV+, microcalcificaciones +, RE 90%,
+RP 90%, HER2 0+, KI67 30%. Mama derecha CLI grado 2, ILV-, RE 95%, RP 95% HER2 0+, Ki67 5%.
+
+31.05.23 UFCAMA: En ultrasonido se reporta un ganglio sospechoso por lo que comentaré con el equipo de Radiología para realizar
+BAAF en caso de resultar positivo se solicitarán estudios de extensión. Se presentará en UFCM al contar con resultado de BAAF.
+
+05.06.23 BAAF de ganglio axilar izquierdo. RHP (B-A23-129): Muestra inadecuada.
+
+08.06.23 biopsia por TRUCUT de ganglio. RHP (Q23-3699): Carcinoma metastático CK7+, CK20, GATA 3+, RE+, RP+, HER 2-,
+EMA+, consistente con sitio primario de mama
+
+28.06.23 PET CT: Lesiones mamarias bilaterales hipermetabólicas, en relación con actividad neoplásica primaria conocida. Ganglio
+cervical en nivel IV izquierdo, con eje corto de 8 mm e incremento difuso del metabolismo, inespecífico. Adenopatias axilares
+izquierdas con incremento en metabolismo, compatibles con depósitos secundarios. Ganglios mediastinales con incremento difuso
+del metabolismo, probablemente reactivos, requiere seguimiento.
+
+05.07.23 USG tiroides: Ganglios cervicales centrales y laterales de caracteristicas normales, incluyendo el nivel IV izquierdo.
 
 04.08.23 PO Cirugía conservadora de mama bilateral + disección axilar izquierda
 
@@ -41,6 +78,13 @@ Ki67 30%
 — Mama derecha: Carcinoma lobulillar infiltrante, grado 2 (Le2+1 ), tamaño del tumor 2.5 x 2.2 x 2.5 cm, CDIS presente, patrón
 comedo y cribiforme, grado 3, necrosis presente, ILV (-), IPN (-), carcinoma invade dermis sin ulceración de piel. pT2 IHQ: RE 95%,
 RP 95%, HER2 negativo, Ki67 5%
+
+14.08.23 OINCO: ECOG 3.
+
+Mama derecha con cicatriz por CC mama sin lesiones palpables,
+sin adenopatías palpables. Mama izquierda con cicatriz de CC
+de mama + drenaje abocado a región axilar, sin adenopatías
+palpables. Sin datos de infección.
 
 Extensión del tumor:
 Mama izquierda EC IIA (pT1c, pN1a, MO)

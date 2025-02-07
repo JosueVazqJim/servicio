@@ -121,7 +121,7 @@ tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 my_file = open('D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionTexto\TextoExtraido10.txt', 'w', encoding='utf-8')
 
 # Leer la imagen con OpenCV
-image = cv2.imread(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionImagenes\cuadros\Zoom Reunion 2023-08-29 07-46-55\frame15.jpg')
+image = cv2.imread(r'D:\DOCUMENTOS\VirtualEnvPy\dataScience\source\Servicio\OCR_erik\ExtraccionImagenes\cuadros\Zoom Reunion 2023-08-29 07-46-55\frame3.jpg')
 
 # Recortar la región de interés
 x, y, w, h = 0, 180, 1230, 645  # Coordenadas y dimensiones del recorte
