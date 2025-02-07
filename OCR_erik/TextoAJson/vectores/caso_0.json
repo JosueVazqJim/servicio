@@ -1,0 +1,102 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 86
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": [
+                {
+                    "tipo": "exposición al humo de leña por 40 años por 2 horas.",
+                    "tiempo": {
+                        "años": 40,
+                        "horas": 2
+                    }
+                }
+            ]
+        },
+        "alcohol": null,
+        "drogas": null,
+        "comorbilidades": {
+            "1975": [
+                {
+                    "nombre": "linfoma de hodakin",
+                    "descripción": "3 ciclos qt (ciclofosfamida, vincristina y otro fármaco) + rt por encima del diafragma (imss)"
+                }
+            ],
+            "1988": [
+                {
+                    "nombre": "cáncer papilar de tiroides",
+                    "descripción": "tiroidectomía + iodo 131 t4/t3a"
+                }
+            ],
+            "2016": [
+                {
+                    "nombre": "cistoadenoma seroso microquístico de páncreas",
+                    "descripción": null
+                },
+                {
+                    "nombre": "cdi de mama izquierda ec ia (t1c, no, mo), rh+, her2 -: cc + gc + rt + ia x 5 años",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 47
+            },
+            "menarca": {
+                "años": 14
+            },
+            "embarazos": 2,
+            "partos": 2,
+            "trh": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": "desconoce."
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadia_tumoral": {
+        "ultrasonido": "05.07.23 usg tiroides: ganglios cervicales centrales y laterales de caracteristicas normales, incluyendo el nivel iv izquierdo.",
+        "mastografía": "17.04.23 mmg/usg: birads 5. mama derecha en región retroareolar con nódulo irregular espiculado de mayor densidad que condiciona retracción del pezón. en mama izquierda en cuadrante supero-externo tercio medio se identifica nódulo ovoideo, no circunscrito espiculado de mayor densidad que mide 2.1 cm y condiciona distorsión de la arquitectura y retracción cutánea. región axilar izquierda con engrosamiento focal de un ganglio que subjere infiltración.",
+        "centros_tumorales": null,
+        "nódulos": "05.07.23 usg tiroides: ganglios cervicales centrales y laterales de caracteristicas normales, incluyendo el nivel iv izquierdo.",
+        "metástasis": "08.06.23 biopsia por trucut de ganglio. rhp (q23-3699): carcinoma metastático ck7+, ck20, gata 3+, re+, rp+, her 2-, ema+, consistente con sitio primario de mama"
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "90%",
+            "rp": "90%",
+            "her2": "negativo",
+            "ki67": "30%",
+            "gh": "g3",
+            "o": "cdi pt1c, pn1a, mo"
+        },
+        "mama_derecha": {
+            "re": "95%",
+            "rp": "95%",
+            "her2": "negativo",
+            "ki67": "5%",
+            "gh": "g2",
+            "o": "cli pt2, cno mo rh+ iher2-"
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi pt1c, pn1a, mo",
+            "descripcion": "ec iia (pt1c, pn1a, mo)"
+        },
+        "mama_derecha": {
+            "clasificación": "cli pt2, cno mo rh+ iher2-",
+            "descripcion": "ec iia (pt2, no, mo)"
+        }
+    }
+}

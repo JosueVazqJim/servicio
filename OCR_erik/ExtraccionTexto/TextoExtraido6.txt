@@ -198,3 +198,5 @@ Mama derecha: G2, RE 95%, RP 95%, HER2
 negativo, Ki67 5%
 
 Estado hormonal: postmenopáusica
+
+****************************************
