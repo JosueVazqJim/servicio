@@ -30,7 +30,7 @@ Seguridad social: 1 (IMSS)
 Ocupación: Hogar
 
 
-diagnóstico: cdi de mama derecha ec ia triple negativo
+Cáncer de mama bilateral. MI CDI pT1c, pN1a, MO / MD CLI pT2, cNO MO RH+ IHER2-
 
 Extensión del tumor:
 Mama derecha EC IIA (pT2, NO, MO)
