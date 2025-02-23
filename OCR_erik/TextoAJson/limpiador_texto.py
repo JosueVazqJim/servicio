@@ -14,7 +14,7 @@ class LimpiezaTexto:
         self.informacion = []  # Almacena el contenido del archivo después de la limpieza inicial
         self.texto_procesado = []  # Contendrá el texto final procesado
 
-    def _cargar_datos(self):
+    def __cargar_datos(self):
         """
         Carga el archivo de texto, eliminando líneas vacías y convirtiendo a minúsculas.
         No elimina separadores que consisten en 4 o más asteriscos, pero sí elimina
@@ -36,7 +36,7 @@ class LimpiezaTexto:
                 for linea in self.informacion
             ]
 
-    def _restaurar_instancia(self):
+    def __restaurar_instancia(self):
         """
         Restaura la instancia a su estado original.
         """
@@ -44,7 +44,7 @@ class LimpiezaTexto:
         self.informacion = []
         self.texto_procesado = []
 
-    def _preprocesar_texto(self):
+    def __preprocesar_texto(self):
         """
         Procesa el texto, segmentándolo en claves y valores según palabras clave conocidas.
         """
@@ -114,7 +114,7 @@ class LimpiezaTexto:
         for linea in self.texto_procesado:
             print(linea)
     
-    def _setNombreArchivo(self, nombreArchivo):
+    def __setNombreArchivo(self, nombreArchivo):
         self.nombreArchivo = nombreArchivo
 
     def limpiar_archivo(self, ruta_archivo):
@@ -128,8 +128,8 @@ class LimpiezaTexto:
         if not os.path.exists(ruta_archivo):
             raise FileNotFoundError(f"El archivo {ruta_archivo} no existe.")
 
-        self._restaurar_instancia()
-        self._setNombreArchivo(ruta_archivo)
-        self._cargar_datos()
-        self._preprocesar_texto()
+        self.__restaurar_instancia()
+        self.__setNombreArchivo(ruta_archivo)
+        self.__cargar_datos()
+        self.__preprocesar_texto()
         return self.obtener_texto_procesado()

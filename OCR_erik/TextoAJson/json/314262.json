@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 65
+            "años": 86
         },
         "sexo": "femenino",
         "peso": null,
@@ -22,26 +22,10 @@
         "alcohol": null,
         "drogas": null,
         "comorbilidades": {
-            "1975": [
+            "1995": [
                 {
-                    "nombre": "linfosssma de hodakin",
-                    "descripción": "3 ciclos qt (ciclofosfamida, vincristina y otro fármaco) + rt por encima del diafragma (imss)"
-                }
-            ],
-            "1988": [
-                {
-                    "nombre": "cáncesssr papilar de tiroides",
-                    "descripción": "tiroidectomía + iodo 131 t4/t3a"
-                }
-            ],
-            "2016": [
-                {
-                    "nombre": "cistoadenoma seroso microquístico de páncreas",
-                    "descripción": null
-                },
-                {
-                    "nombre": "cdi de mama izquierda ec ia (t1c, no, mo), rh+, her2 -: cc + gc + rt + ia x 5 años",
-                    "descripción": null
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": ". mlaa / 314262 / 86 años / dr. soto"
                 }
             ]
         },
@@ -70,14 +54,14 @@
             "mastografía": null,
             "centros_tumorales": "pt1c",
             "nódulos": "pn1a",
-            "metástasis": "mo"
+            "metástasis": "m0"
         },
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
             "centros_tumorales": "pt2",
-            "nódulos": "no",
-            "metástasis": "mo"
+            "nódulos": "n0",
+            "metástasis": "m0"
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -98,12 +82,12 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "cdi pt1c, pn1a, mo",
-            "descripcion": "ec iia (pt1c, pn1a, mo)"
+            "clasificación": "cdi pt1c, pn1a, m0",
+            "descripcion": "ec iia (pt1c, pn1a, m0)"
         },
         "mama_derecha": {
-            "clasificación": "cli pt2, cno mo rh+ iher2-",
-            "descripcion": "ec iia (pt2, no, mo)"
+            "clasificación": "cli pt2, cn0 m0 rh+",
+            "descripcion": "ec iia (pt2, n0, m0)"
         }
     }
 }

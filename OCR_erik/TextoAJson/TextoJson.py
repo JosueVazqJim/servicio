@@ -1,7 +1,7 @@
 import json
 import re
 import os
-from .limpiador_texto import LimpiezaTexto
+from limpiador_texto import LimpiezaTexto
 
 class TextoJson:
     """
@@ -10,23 +10,25 @@ class TextoJson:
     Esta clase toma un archivo de texto con información médica, la procesa y la estructura
     en un formato JSON que incluye secciones como antecedentes personales, antecedentes familiares,
     estadia tumoral, inmunohistoquímica tumoral, y tipo de cáncer.
+    Basta con usar el metodo convertir_txt_json para convertir un archivo de texto a un archivo JSON.
+    Se le pasa la ruta del archivo de texto y la ruta de destino donde se guardará el archivo JSON.
 
     Attributes:
         limpiador (LimpiezaTexto): Instancia de la clase LimpiezaTexto para procesar el texto.
         informacion (list): Lista de líneas de texto procesadas.
-        casos (list): Lista de listas de líneas de texto, donde cada lista representa un caso médico.
         data (dict): Diccionario que almacena la información estructurada en formato JSON.
+        rutaTxt (str): Ruta del archivo de texto de entrada.
+        rutaDestino (str): Ruta de la carpeta donde se guardarán los archivos JSON.
     """
 
     def __init__(self):
         """
         Inicializa la clase TextoJson.
         """
-        self.nombreArchivo = None
+        self.rutaTxt = None
+        self.rutaDestino = None
         self.limpiador = LimpiezaTexto()
         self.informacion = []
-        self.casos = []
-        self.caso = []
         self.data = {
             "antecedentes_personales": {},
             "antecedentes_familiares": {},
@@ -35,69 +37,59 @@ class TextoJson:
             "tipo": {},
         }
 
-    def setNombreArchivo(self, nombreArchivo):
-        self.nombreArchivo = nombreArchivo
+    def setrutaTxt(self, rutaTxt):
+        self.rutaTxt = rutaTxt
+
+    def setrutaDestino(self, rutaDestino):
+        self.rutaDestino = rutaDestino
 
     def __limpiar_texto(self):
         """
         Limpia el texto de entrada utilizando la instancia de LimpiezaTexto.
         """
-        self.informacion = self.limpiador.limpiar_archivo(self.nombreArchivo)
+        self.informacion = self.limpiador.limpiar_archivo(self.rutaTxt)
 
-    def __separar_casos(self):
+    def __extraer_nombre_txt(self):
         """
-        Separa los casos de un archivo de texto en una lista de listas.
-        Se considera que cada caso medico es separado por una línea de asteriscos.
-        Se almacena en el atributo "casos".
+        Extrae el nombre del archivo de texto de la ruta de archivo.
+        devuelve el nombre del archivo de texto
         """
-        caso = []
-        for linea in self.informacion:
-            if "****************************************" not in linea:
-                caso.append(linea)
-            else:
-                self.casos.append(caso)
-                caso = []
-        if caso:  # Si no se encontró la línea de asteriscos, agregar el caso restante
-            self.casos.append(caso)
+        return os.path.basename(self.rutaTxt)
 
-        # imprimir informacion
-        # self.imprimir_info
-
-    def convertir_txt_json(self, ruta_destino):
+    def convertir_txt_json(self, ruta_txt, ruta_destino):
         """
         Convierte un archivo de texto a un archivo JSON sin importar la cantidad de casos que contenga el txt.
         Crea tantos JSON como casos haya en el archivo de texto.
-        Reutiliza el atributo "caso" para cada caso.
         Crea la carpeta de destino si no existe.
 
         Args:
+            ruta_txt (str): Ruta del archivo de texto que se convertirá a JSON.
             ruta_destino (str): Ruta de la carpeta donde se guardarán los archivos
         """
-        #crea la carpeta de destino si no existe
+        self.setrutaTxt(ruta_txt)
+        self.setrutaDestino(ruta_destino)
+        nombreJSON = self.__extraer_nombre_txt().replace(".txt", ".json")
+
         os.makedirs(ruta_destino, exist_ok=True)
 
         self.__limpiar_texto()
-        self.__separar_casos()
 
-        for n, caso in enumerate(self.casos):
-            self.caso = caso
-            self.__extraer_datos_antecedentes_personales()
-            self.__extraer_datos_antecedentes_familiares()
-            self.__extraer_datos_inmunohistoquuímica_tumoral()
-            self.__extraer_datos_clasificacion()
-            self.__extraer_datos_estadia_tumoral()
-            self.__crear_json(ruta_destino)
-            self.__limpiar_data()
+        self.__extraer_datos_antecedentes_personales()
+        self.__extraer_datos_antecedentes_familiares()
+        self.__extraer_datos_inmunohistoquuímica_tumoral()
+        self.__extraer_datos_clasificacion()
+        self.__extraer_datos_estadia_tumoral()
+        self.__crear_json(ruta_destino + "\\" + nombreJSON)
+        self.__limpiar_data()
         self.__limpiar_instancia()
 
     def __limpiar_instancia(self):
         """
         Limpia el atributo "data" para evitar que se mezclen los datos de diferentes casos.
         """
-        self.nombreArchivo = None
+        self.rutaTxt = None
+        self.rutaDestino = None
         self.informacion = []
-        self.casos = []
-        self.caso = []
         self.data = {
             "antecedentes_personales": {},
             "antecedentes_familiares": {},
@@ -129,7 +121,7 @@ class TextoJson:
         """
         Imprime el atributo "data" en formato JSON.
         """
-        print(json.dumps(self.caso, indent=4, ensure_ascii=False))
+        print(json.dumps(self.informacion, indent=4, ensure_ascii=False))
 
     def __crear_json(self, destino):
         """
@@ -138,6 +130,7 @@ class TextoJson:
         Args:
             destino (str): Ruta del archivo JSON que se creará.
         """
+
         with open(destino, 'w', encoding="utf-8") as file:
             json.dump(self.data, file, indent=4, ensure_ascii=False)
 
@@ -214,7 +207,7 @@ class TextoJson:
         edad_regex = re.compile(
             r'\b(?:edad:?\s*(\d+)(?:\s*años)?)|(?:\b(\d+)\s*años(?:\s*de\s*edad)?)|^(\w+)\s*/\s*(.+?)\s*/\s*(\d+\s*años)\s*/\s*(.*)$|(?:\b(\d+)\s*años(?:\s*de\s*edad)?)|^(\w+)\s*/\s*(.+?)\s*/\s*(\d+\s*años(?:\s*y\s*\d+\s*meses)?)\s*/\s*(.*)$',re.IGNORECASE
         )
-        for linea in self.caso:
+        for linea in self.informacion:
             # Buscar una edad en el formato específico
             match = edad_regex.match(linea)
             if match:
@@ -408,7 +401,7 @@ class TextoJson:
             "descendencia": None,
         }
 
-        for linea in self.caso:
+        for linea in self.informacion:
             linea = linea.strip().lower()
 
             # Verificar si está negado
@@ -474,7 +467,7 @@ class TextoJson:
             }
         }
 
-        for linea in self.caso:
+        for linea in self.informacion:
             linea = linea.strip()
 
             # Extraer biología tumoral
@@ -506,7 +499,7 @@ class TextoJson:
             "mama_derecha": {"clasificación": None, "descripcion": None},
         }
 
-        for linea in self.caso:
+        for linea in self.informacion:
             linea = linea.strip()
 
             # Buscar clasificación del cáncer
@@ -574,7 +567,7 @@ class TextoJson:
             }
         }
 
-        for linea in self.caso:
+        for linea in self.informacion:
             linea = linea.strip()
 
             # Extraer datos de la extensión del tumor
