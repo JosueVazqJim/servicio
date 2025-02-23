@@ -22,26 +22,10 @@
         "alcohol": null,
         "drogas": null,
         "comorbilidades": {
-            "1975": [
+            "1995": [
                 {
-                    "nombre": "linfoma de hodakin",
-                    "descripción": "3 ciclos qt (ciclofosfamida, vincristina y otro fármaco) + rt por encima del diafragma (imss)"
-                }
-            ],
-            "1988": [
-                {
-                    "nombre": "cáncer papilar de tiroides",
-                    "descripción": "tiroidectomía + iodo 131 t4/t3a"
-                }
-            ],
-            "2016": [
-                {
-                    "nombre": "cistoadenoma seroso microquístico de páncreas",
-                    "descripción": null
-                },
-                {
-                    "nombre": "cdi de mama izquierda ec ia (t1c, no, mo), rh+, her2 -: cc + gc + rt + ia x 5 años",
-                    "descripción": null
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": ". mlaa / 314262 / 86 años / dr. soto"
                 }
             ]
         },
@@ -102,7 +86,7 @@
             "descripcion": "ec iia (pt1c, pn1a, mo)"
         },
         "mama_derecha": {
-            "clasificación": "cli pt2, cno mo rh+ iher2-",
+            "clasificación": "cli pt2, cno mo rh+",
             "descripcion": "ec iia (pt2, no, mo)"
         }
     }

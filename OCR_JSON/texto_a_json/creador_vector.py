@@ -517,20 +517,14 @@ class TextoJson:
                 # Verificar si hay una barra "/" que indica ambas mamas
                 if "/" in linea:
                     partes = linea.split("/")
-                    if len(partes) == 2:
-                        parte_izq = partes[0].strip()
-                        parte_der = partes[1].strip()
+                    for parte in partes:
+                        parte = parte.strip()
 
                         # Extraer correctamente cada mama
-                        if re.search(r"\bmi\b|\bmama izquierda\b", parte_izq):
-                            clasificacion["mama_izquierda"]["clasificación"] = re.sub(r"^(mi|mama izquierda)\s*", "", parte_izq.replace("diagnóstico: ", ""), flags=re.IGNORECASE).strip()
-                        if re.search(r"\bmd\b|\bmama derecha\b", parte_izq):
-                            clasificacion["mama_derecha"]["clasificación"] = re.sub(r"^(md|mama derecha)\s*", "", parte_izq.replace("diagnóstico: ", ""), flags=re.IGNORECASE).strip()
-
-                        if re.search(r"\bmi\b|\bmama izquierda\b", parte_der):
-                            clasificacion["mama_izquierda"]["clasificación"] = re.sub(r"^(mi|mama izquierda)\s*", "", parte_der.replace("diagnóstico: ", ""), flags=re.IGNORECASE).strip()
-                        if re.search(r"\bmd\b|\bmama derecha\b", parte_der):
-                            clasificacion["mama_derecha"]["clasificación"] = re.sub(r"^(md|mama derecha)\s*", "", parte_der.replace("diagnóstico: ", ""), flags=re.IGNORECASE).strip()
+                        if re.search(r"\bmi\b|\bmama izquierda\b", parte, re.IGNORECASE):
+                            clasificacion["mama_izquierda"]["clasificación"] = re.sub(r"^(mi|mama izquierda)\s*", "", parte.replace("diagnóstico: ", ""), flags=re.IGNORECASE).strip()
+                        if re.search(r"\bmd\b|\bmama derecha\b", parte, re.IGNORECASE):
+                            clasificacion["mama_derecha"]["clasificación"] = re.sub(r"^(md|mama derecha)\s*", "", parte.replace("diagnóstico: ", ""), flags=re.IGNORECASE).strip()
 
                 else:
                     # Buscar clasificación individual con más flexibilidad
