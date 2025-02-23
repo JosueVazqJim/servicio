@@ -65,11 +65,20 @@
         "descendencia": "negado"
     },
     "estadia_tumoral": {
-        "ultrasonido": "05.07.23 usg tiroides: ganglios cervicales centrales y laterales de caracteristicas normales, incluyendo el nivel iv izquierdo.",
-        "mastografía": "17.04.23 mmg/usg: birads 5. mama derecha en región retroareolar con nódulo irregular espiculado de mayor densidad que condiciona retracción del pezón. en mama izquierda en cuadrante supero-externo tercio medio se identifica nódulo ovoideo, no circunscrito espiculado de mayor densidad que mide 2.1 cm y condiciona distorsión de la arquitectura y retracción cutánea. región axilar izquierda con engrosamiento focal de un ganglio que subjere infiltración.",
-        "centros_tumorales": null,
-        "nódulos": "05.07.23 usg tiroides: ganglios cervicales centrales y laterales de caracteristicas normales, incluyendo el nivel iv izquierdo.",
-        "metástasis": "08.06.23 biopsia por trucut de ganglio. rhp (q23-3699): carcinoma metastático ck7+, ck20, gata 3+, re+, rp+, her 2-, ema+, consistente con sitio primario de mama"
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt1c",
+            "nódulos": "pn1a",
+            "metástasis": "mo"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt2",
+            "nódulos": "no",
+            "metástasis": "mo"
+        }
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
@@ -77,16 +86,14 @@
             "rp": "90%",
             "her2": "negativo",
             "ki67": "30%",
-            "gh": "g3",
-            "o": "cdi pt1c, pn1a, mo"
+            "gh": "g3"
         },
         "mama_derecha": {
             "re": "95%",
             "rp": "95%",
             "her2": "negativo",
             "ki67": "5%",
-            "gh": "g2",
-            "o": "cli pt2, cno mo rh+ iher2-"
+            "gh": "g2"
         }
     },
     "tipo": {
