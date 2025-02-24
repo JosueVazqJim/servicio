@@ -60,21 +60,20 @@ class OCRProcessor:
             # Extraer texto del video y guardar en archivos .txt
             self.tratadorOCR.set_rutas(ruta_video, carpeta_video_destino)
             ruta_txt = self.tratadorOCR.procesar_video()
+            print(f"Texto extraído del video {archivo_video} y guardado en {ruta_txt}.")
 
             # Obtener la lista de archivos .txt generados
             archivos_txt = [f for f in os.listdir(ruta_txt) if f.endswith('.txt')]
+            print(f"Archivos .txt generados: {archivos_txt}")
 
             # Crear una carpeta para los archivos .json del video
             ruta_json_video = os.path.join(carpeta_video_destino, 'vectores')
             os.makedirs(ruta_json_video, exist_ok=True)
 
             # # Convertir cada archivo .txt a JSON
-            # for archivo_txt in archivos_txt:
-            #     clave = os.path.splitext(archivo_txt)[0]
-            #     ruta_txt = os.path.join(ruta_txt, archivo_txt) # Ruta del archivo .txt
-            #     ruta_json = os.path.join(ruta_json_video, f"{clave}.json") # Ruta del archivo .json
+            for archivo_txt in archivos_txt:
+                txt = os.path.join(ruta_txt, archivo_txt) # Ruta del archivo .txt
+                print(f"Archivo .txt: {txt}")
 
-            #     if not os.path.exists(ruta_json):  # Evitar reprocesamiento
-            #         self.convertidor.setNombreArchivo(ruta_txt)  # Cargar el archivo .txt
-            #         self.convertidor.convertir_txt_json(ruta_json)  # Convertir a JSON y guardar
-            #         print(f"Archivo {ruta_json} creado.")
+                self.convertidor.convertir_txt_json(txt, ruta_json_video)  # Convertir a JSON y guardar
+                print(f"Archivo json creado.")
