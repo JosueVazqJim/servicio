@@ -55,6 +55,7 @@
             "embarazos": 2,
             "partos": 2,
             "trh": null,
+            "aco": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": "desconoce."
         }
@@ -99,11 +100,11 @@
     "tipo": {
         "mama_izquierda": {
             "clasificación": "cdi pt1c, pn1a, mo",
-            "descripcion": "ec iia (pt1c, pn1a, mo)"
+            "descripcion": "ec iia"
         },
         "mama_derecha": {
             "clasificación": "cli pt2, cno mo rh+ iher2-",
-            "descripcion": "ec iia (pt2, no, mo)"
+            "descripcion": "ec iia"
         }
     }
 }

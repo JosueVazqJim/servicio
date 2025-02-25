@@ -1,0 +1,60 @@
+CPC / 313810 / 77 años / Dr. Soto
+
+Comorbilidades:
+
+1. Dislipidemia mixta (01.2023)
+
+Menarca 9 años / FUM 60 años
+ACO Y TRH: negados
+
+Cirugías: negadas.
+
+
+Tabaco: negado
+Alcohol: negado
+Drogas: negado
+
+AHF oncológicos: negados
+
+Estado hormonal: postmenopáusica
+
+
+Originaria y residente: Estado de México
+Seguridad social: negada (INSABI)
+Ocupación: Hogar
+
+
+Diagnóstico: Carcinoma ductal infiltrante de mama izquierda EC IIA RH+, HER2+
+
+08.2022 autopalpación de tumoración en mama izquierda
+15.12.22 MMG/USG (reporte verbal): lesión sospechosa en mama izquierda.
+16.01.23 Biopsia por trucut de mama izquierda RHP: carcinoma ductal infiltrante, sin patrón específico,
+moderadamente diferenciado (Grado 2 SBR, suma 3+2+2). CDIS de alto grado (G3), con patrón de comedonecrosis en 
+5%, RE 100%, RH 90%, Her2 2+, Ki67 40%, FISH Her2 amplificado (InmunoQ)
+
+INCMNSZ
+Revisión de laminillas (Q-23-2046): CDI G2 (3+2+2), ILV -, IPN -, CDIS presente de alto grado. IHQ RE 95%, RP 90% 
+HER 2 2+ (Indeterminado), Ki67 50%, FISH HER2 amplificado.
+29.03.23 MMG/US BIRADS 6. En la mama izquierda en el cuadrante superior externo se observa nódulo espiculado,
+con microcalcificaciones pleomórficas, que a la administración del medio de contraste muestra realce nodular 
+heterogéneo que mide 33 mm.
+
+
+Extensión del tumor:
+CDI de mama izquierda EC IIA 
+ct2 -3.5 cm 
+cN0
+
+Biología tumoral:
+sugiere Luminal B
+RE 95%, RP 90%, HER2 2+, Ki67 50%
+FISH HER2 amplificado
+
+Estado hormonal: postmenopáusica
+
+ECOG0
+Suemoto: 27%
+CARG poli DS: 44% / DR:% 30%
+CARG mono DS: 30% / 19%
+
+Plan: Neoadyuvancia con QT + doble bloqueo anti-HER2
