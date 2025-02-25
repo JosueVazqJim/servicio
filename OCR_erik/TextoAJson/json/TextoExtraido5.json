@@ -90,11 +90,11 @@
             "gh": "g3"
         },
         "mama_derecha": {
-            "re": "95%",
-            "rp": "95%",
-            "her2": "negativo",
-            "ki67": "5%",
-            "gh": "g2"
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
         }
     },
     "tipo": {

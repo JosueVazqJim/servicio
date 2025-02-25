@@ -59,10 +59,10 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": null,
-            "rp": null,
-            "her2": null,
-            "ki67": null,
+            "re": "95%",
+            "rp": "90%",
+            "her2": "positivo",
+            "ki67": "50%",
             "gh": null
         },
         "mama_derecha": {
