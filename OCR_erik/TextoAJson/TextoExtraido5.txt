@@ -87,8 +87,8 @@ de mama + drenaje abocado a región axilar, sin adenopatías
 palpables. Sin datos de infección.
 
 Extensión del tumor:
-Mama izquierda EC IIA (pT1c, pN1a, MO)
-Mama derecha EC IIA (pT2, NO, MO)
+Mama izquierda EC IIA (pT1c, pN1a, M0)
+Mama derecha EC IIA (pT2, N0, M0)
 
 Biología tumoral: Mama izquierda: G3, RE 90%, RP 90%, HER2
 negativo, Ki67 30%

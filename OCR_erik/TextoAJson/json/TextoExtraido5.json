@@ -69,16 +69,16 @@
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "pt1c",
-            "nódulos": "pn1a",
-            "metástasis": "mo"
+            "centros_tumorales": "pt1",
+            "nódulos": "pn1",
+            "metástasis": "m0"
         },
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
             "centros_tumorales": "pt2",
-            "nódulos": "no",
-            "metástasis": "mo"
+            "nódulos": "n0",
+            "metástasis": "m0"
         }
     },
     "inmunohistoquímica_tumoral": {
