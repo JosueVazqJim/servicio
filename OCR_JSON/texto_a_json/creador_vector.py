@@ -81,7 +81,7 @@ class TextoJson:
         self.__extraer_datos_inmunohistoquuímica_tumoral()
         self.__extraer_datos_clasificacion()
         self.__extraer_datos_estadia_tumoral()
-        self.__crear_json(ruta_destino + "\\" + nombreJSON)
+        self.__crear_json(os.path.join(ruta_destino, nombreJSON))
         self.__limpiar_data()
         self.__limpiar_instancia()
 

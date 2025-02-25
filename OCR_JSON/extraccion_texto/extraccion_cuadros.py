@@ -21,7 +21,10 @@ class ExtraccionCuadros:
         """
         try:
             # Suponiendo que Tesseract está instalado en la ruta por defecto en Windows
-            pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+            # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+            # si es en linux
+            pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
         except Exception as e:
             print(f"Error al configurar Tesseract: {e}")
 

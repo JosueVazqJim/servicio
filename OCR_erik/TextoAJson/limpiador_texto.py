@@ -56,7 +56,7 @@ class LimpiezaTexto:
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "cirugías", "originaria y residente", "seguridad social", "ocupación", 
             "ahf", "g0 p0 c0 a0", "cáncer de", "resumen del", "extensión del tumor", "biología tumoral",
-            "****************************************"
+            "aoc", "aco", "****************************************"
         ]
     
         # Patrón regex para detectar fechas en formato DD.MM.AA o tambien MM.AAAA

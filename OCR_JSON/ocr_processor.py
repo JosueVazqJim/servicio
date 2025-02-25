@@ -73,7 +73,6 @@ class OCRProcessor:
             # # Convertir cada archivo .txt a JSON
             for archivo_txt in archivos_txt:
                 txt = os.path.join(ruta_txt, archivo_txt) # Ruta del archivo .txt
-                print(f"Archivo .txt: {txt}")
 
                 self.convertidor.convertir_txt_json(txt, ruta_json_video)  # Convertir a JSON y guardar
                 print(f"Archivo json creado.")
