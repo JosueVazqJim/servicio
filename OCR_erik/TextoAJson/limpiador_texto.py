@@ -26,9 +26,9 @@ class LimpiezaTexto:
                 # Elimina líneas vacías y convierte el texto a minúsculas
                 self.informacion = [linea.strip().lower() for linea in file if linea.strip()]
                 
-                # Elimina caracteres especiales al inicio de la línea, excepto separadores con 4 o más asteriscos
+                # Elimina caracteres especiales al inicio de la línea, excepto separadores con 4 o más asteriscos y guiones
                 self.informacion = [
-                    re.sub(r'^[\s]*[^a-zA-Z0-9*]+|^(?:\*{1,3}(?=\s|$))', '', linea)
+                    re.sub(r'^[\s]*[^a-zA-Z0-9*-]+|^(?:\*{1,3}(?=\s|$))', '', linea)
                     for linea in self.informacion
                 ]
         except PermissionError:
@@ -61,6 +61,8 @@ class LimpiezaTexto:
         ]
         patron_gn_pn_cn_an = r'\bg\d+\s*p\d+\s*c\d+\s*a\d+\b'
         patron_fecha = r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}' 
+        patron_lista_numerada = r'^\d+\.\s'  # Patrón para detectar líneas numeradas (ej: "1. cáncer de mama")
+        patron_vineta = r'^-\s'  # Patrón para detectar líneas con viñetas (ej: "- Tia materna con cáncer de páncreas")
 
         clave_actual = None  # Almacena la clave en procesamiento
         valor_actual = []  # Acumula el valor correspondiente a la clave actual
@@ -69,8 +71,10 @@ class LimpiezaTexto:
             try:
                 # Determina si la línea es una clave basándose en la lista de claves o si es una fecha
                 es_clave = any(clave in linea for clave in claves) or re.match(patron_fecha, linea) or re.match(patron_gn_pn_cn_an, linea)
+                es_lista_numerada = re.match(patron_lista_numerada, linea)  # Detecta si es una línea numerada
+                es_vineta = re.match(patron_vineta, linea)  # Detecta si es una línea con viñeta
         
-                if es_clave:
+                if es_clave and not es_lista_numerada and not es_vineta:
                     # Si hay una clave en proceso, guarda la clave anterior con su valor acumulado
                     if clave_actual:
                         self.texto_procesado.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
