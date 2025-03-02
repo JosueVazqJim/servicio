@@ -64,11 +64,11 @@ class LimpiezaTexto:
 
         clave_actual = None  # Almacena la clave en procesamiento
         valor_actual = []  # Acumula el valor correspondiente a la clave actual
-    
+
         for linea in self.informacion:
             try:
                 # Determina si la línea es una clave basándose en la lista de claves o si es una fecha
-                es_clave = any(linea.lower().startswith(clave) for clave in claves) or re.match(patron_fecha, linea) or re.match(patron_gn_pn_cn_an, linea)
+                es_clave = any(clave in linea.lower() for clave in claves) or re.match(patron_fecha, linea) or re.match(patron_gn_pn_cn_an, linea)
         
                 if es_clave:
                     # Si hay una clave en proceso, guarda la clave anterior con su valor acumulado
@@ -77,19 +77,23 @@ class LimpiezaTexto:
                         clave_actual = None
                         valor_actual = []
         
-                    clave_actual, valor = re.split(r':\s*', linea, maxsplit=1) if ':' in linea else (linea, "")
-                    valor_actual = [valor] if valor else []  # Inicializa el valor actual
+                    # Si la línea contiene una clave, se trata como una línea individual
+                    clave_actual = linea
+                    valor_actual = []  # Reinicia el valor actual
                 elif clave_actual:
+                    # Si estamos procesando una clave, acumulamos el valor
                     valor_actual.append(linea)
                 else:
+                    # Si no hay clave en proceso, se añade la línea tal cual
                     self.texto_procesado.append(linea)
             
             except Exception as e:
                 raise ValueError(f"Error procesando la línea: {linea}. Error: {str(e)}")
-    
+
+        # Asegurarse de que la última clave se guarde
         if clave_actual:
             self.texto_procesado.append(f"{clave_actual}: {' '.join(valor_actual).strip()}")
-    
+
         # Elimina ':' innecesarios al final de cada línea
         self.texto_procesado = [re.sub(r'[:\s]+$', '', linea) for linea in self.texto_procesado]
 
