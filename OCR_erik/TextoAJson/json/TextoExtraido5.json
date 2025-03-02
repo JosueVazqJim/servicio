@@ -11,7 +11,7 @@
             "fuma": "negado",
             "observaciones": [
                 {
-                    "tipo": "exposición al humo de leña por 40 años por 2 horas.",
+                    "notas": "exposición al humo de leña por 40 años por 2 horas.",
                     "tiempo": {
                         "años": 40,
                         "horas": 2
@@ -50,12 +50,14 @@
                 "años": 47
             },
             "menarca": {
-                "años": 14
+                "años": 14,
+                "contexto": "a los 14 años"
             },
             "embarazos": 2,
             "partos": 2,
             "trh": null,
-            "aco": null,
+            "aco": "1. linfoma de hodakin (1975)",
+            "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": "desconoce."
         }
@@ -90,11 +92,11 @@
             "gh": "g3"
         },
         "mama_derecha": {
-            "re": null,
-            "rp": null,
-            "her2": null,
-            "ki67": null,
-            "gh": null
+            "re": "95%",
+            "rp": "95%",
+            "her2": "negativo",
+            "ki67": "5%",
+            "gh": "g2"
         }
     },
     "tipo": {

@@ -28,18 +28,26 @@
             "menarca": {
                 "años": 9
             },
-            "embarazos": null,
-            "partos": null,
+            "embarazos": 2,
+            "partos": 2,
             "trh": "negados",
-            "aco": "negados",
+            "aco": "negado",
+            "mpf": {
+                "años": 7,
+                "contexto": "diu con levonogestrel por 7 años"
+            },
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": "negado",
-        "lateralidad": "negado",
-        "descendencia": "negado"
+        "ascendencia": [
+            "abuela materna cáncer de páncreas (86 años)"
+        ],
+        "lateralidad": [
+            "2 tías maternas cáncer de páncreas (68 y 74 años)"
+        ],
+        "descendencia": null
     },
     "estadia_tumoral": {
         "mama_izquierda": {
@@ -61,7 +69,7 @@
         "mama_izquierda": {
             "re": "95%",
             "rp": "90%",
-            "her2": "positivo",
+            "her2": "2",
             "ki67": "50%",
             "gh": null
         },
