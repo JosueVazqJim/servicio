@@ -68,12 +68,12 @@ class LimpiezaTexto:
         for linea in self.informacion:
             try:
                 # Determina si la línea es una clave basándose en la lista de claves o si es una fecha
-                es_clave = any(clave in linea.lower() for clave in claves) or re.match(patron_fecha, linea) or re.match(patron_gn_pn_cn_an, linea)
+                es_clave = any(clave in linea for clave in claves) or re.match(patron_fecha, linea) or re.match(patron_gn_pn_cn_an, linea)
         
                 if es_clave:
                     # Si hay una clave en proceso, guarda la clave anterior con su valor acumulado
                     if clave_actual:
-                        self.texto_procesado.append(f"{clave_actual}: {' '.join(valor_actual).strip()}")
+                        self.texto_procesado.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
                         clave_actual = None
                         valor_actual = []
         
