@@ -55,9 +55,10 @@ class LimpiezaTexto:
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "cirugías", "originaria y residente", "seguridad social", "ocupación", 
-            "ahf", "g0 p0 c0 a0", "cáncer de", "resumen del", "extensión del tumor", "biología tumoral",
-            "aoc", "aco", "****************************************"
+            "ahf", "cáncer de", "resumen del", "extensión del tumor", "biología tumoral",
+            "aco", "mpf"
         ]
+        patron_gn_pn_cn_an = r'\bg\d+\s*p\d+\s*c\d+\s*a\d+\b'
     
         # Patrón regex para detectar fechas en formato DD.MM.AA o tambien MM.AAAA
         patron_fecha = r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}' 
@@ -67,7 +68,7 @@ class LimpiezaTexto:
     
         for linea in self.informacion:
             # Determina si la línea es una clave basándose en la lista de claves o si es una fecha
-            es_clave = any(linea.lower().startswith(clave) for clave in claves) or re.match(patron_fecha, linea)
+            es_clave = any(linea.lower().startswith(clave) for clave in claves) or re.match(patron_fecha, linea) or re.match(patron_gn_pn_cn_an, linea)
     
             if es_clave:
                 # Si hay una clave en proceso, guarda la clave anterior con su valor acumulado
@@ -75,11 +76,6 @@ class LimpiezaTexto:
                     self.texto_procesado.append(f"{clave_actual}: {' '.join(valor_actual).strip()}")
                     clave_actual = None
                     valor_actual = []
-    
-                # Si la línea es una clave de asteriscos, agregarla directamente y continuar
-                if "****************************************" in linea:
-                    self.texto_procesado.append(linea)
-                    continue
     
                 # Divide la línea en clave y valor si tiene ':'; si no, la línea completa es la clave
                 clave_actual, valor = re.split(r':\s*', linea, maxsplit=1) if ':' in linea else (linea, "")
