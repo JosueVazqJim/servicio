@@ -45,12 +45,12 @@
                 "años": 50
             },
             "menarca": {
-                "años": 50
+                "años": 13
             },
             "embarazos": null,
             "partos": null,
             "trh": "negados",
-            "aco": "negados",
+            "aco": "trh negados",
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null
@@ -58,12 +58,12 @@
     },
     "antecedentes_familiares": {
         "ascendencia": [
+            "hija falleció cáncer de mamá a los 29 años",
             "papá con cáncer de próstata a los 75 años"
         ],
         "lateralidad": null,
         "descendencia": [
-            "hija con cáncer de cabeza y cuello diagnosticado a los 60 años",
-            "hija falleció cáncer de mamá a los 29 años"
+            "hija con cáncer de cabeza y cuello diagnosticado a los 60 años"
         ]
     },
     "estadía_tumoral": {
@@ -100,7 +100,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "cdi de ec ia (t1cno0) re 95%, rp1%, her2 — (1+)",
+            "clasificación": "cdi de mama izquierda ec ia (t1cno0) re 95%, rp1%, her2 — (1+)",
             "descripcion": "ec ia ct1c-—18 mm cn0"
         },
         "mama_derecha": {

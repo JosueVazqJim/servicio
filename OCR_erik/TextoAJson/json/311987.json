@@ -16,10 +16,6 @@
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": ":",
-                    "descripción": null
-                },
-                {
                     "nombre": "artritis reumatoide",
                     "descripción": null
                 },
@@ -38,12 +34,14 @@
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": "- g1pocoa1",
-            "menarca": "- g1pocoa1",
+            "fum": "06.2022",
+            "menarca": {
+                "años": 11
+            },
             "embarazos": null,
             "partos": null,
             "trh": null,
-            "aco": "itb grave mama derecha + colección paracostal derecha",
+            "aco": "negado",
             "mpf": null,
             "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null
@@ -62,8 +60,8 @@
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
+            "centros_tumorales": "pt2n0o",
+            "nódulos": "cn0",
             "metástasis": null
         },
         "mama_derecha": {

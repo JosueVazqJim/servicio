@@ -14,12 +14,6 @@
         "alcohol": "ocasional",
         "drogas": "negado",
         "comorbilidades": {
-            "sin_fecha": [
-                {
-                    "nombre": ":",
-                    "descripción": null
-                }
-            ],
             "2022": [
                 {
                     "nombre": "dislipidemia mixta",
@@ -32,19 +26,26 @@
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": "- g2p2 co ao",
-            "menarca": "- g2p2 co ao",
+            "fum": "2018",
+            "menarca": {
+                "años": 13
+            },
             "embarazos": null,
             "partos": null,
             "trh": "no",
-            "aco": "negado",
-            "mpf": "no",
+            "aco": null,
+            "mpf": {
+                "años": 7,
+                "contexto": "diu con levonogestrel por 7 años"
+            },
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": null,
+        "ascendencia": [
+            "padre con diagnóstico de cáncer de próstata a los 55 años"
+        ],
         "lateralidad": null,
         "descendencia": null
     },
@@ -82,7 +83,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "- padre con diagnóstico de cáncer de próstata a los: 55 años",
+            "clasificación": "cdis de bajo grado de mama izquierda",
             "descripcion": null
         },
         "mama_derecha": {

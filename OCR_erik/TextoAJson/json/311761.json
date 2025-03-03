@@ -15,14 +15,16 @@
         "drogas": "negado",
         "comorbilidades": "negadas",
         "antecedentes_ginecológicos": {
-            "fum": "- g2p0 c2 ao",
-            "menarca": "- g2p0 c2 ao",
+            "fum": "08.2022",
+            "menarca": {
+                "años": 15
+            },
             "embarazos": null,
             "partos": null,
             "trh": null,
-            "aco": "metabolismo focal con suv máximo 5.1. tejido mamario izquierdo con incremento del volumen y la densidad con engrosamiento cutáneo e hipermetabolismo heterogéneo con zona focal de mayor captación y suv máximo de 5.9. ganglios mediastinales hiliares bilaterales menores de 10 mm que se asocian a metabolismo difuso, de aspecto inflamatorio.",
+            "aco": "negado. paridad satisfecha",
             "mpf": null,
-            "estado_hormonal": "premenopáusica",
+            "estado_hormonal": "premenopáusica 8583888 distantmetastatc (res survival (35) 3 e timo after nock recurrenco (month) vi a da o s3é overall surival (4) osy8352 e e",
             "métodos_anticonceptivos": null
         }
     },
@@ -31,7 +33,7 @@
             "abuelo paterno con antecedente de linfoma diagnosticado a los 85 años"
         ],
         "lateralidad": [
-            "prima nirterna con cáncer de mama: diagnosticado a los 38 años"
+            "prima nirterna con cáncer de mama diagnosticado a los 38 años"
         ],
         "descendencia": null
     },
@@ -41,7 +43,7 @@
             "mastografía": null,
             "centros_tumorales": "ct4b",
             "nódulos": "cn2a",
-            "metástasis": null
+            "metástasis": "m1"
         },
         "mama_derecha": {
             "ultrasonido": null,
@@ -69,8 +71,8 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "cli de mama izquierda, ec iv (ct4b cn2a(f) m1) (enfermedad ganglionar cervical),: luminal b, her2 negativo o",
-            "descripcion": "ec iv ct4b - infiltración a piel cn2a h"
+            "clasificación": "cli de mama izquierda, ec iv (ct4b cn2a(f) m1) (enfermedad ganglionar cervical), luminal b, her2 negativo o",
+            "descripcion": "ec iv ct4b - infiltración a piel cn2a h m1 — enfermedad ganglionar cervical"
         },
         "mama_derecha": {
             "clasificación": null,

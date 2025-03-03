@@ -26,12 +26,12 @@
                 "años": 60
             },
             "menarca": {
-                "años": 60
+                "años": 9
             },
-            "embarazos": null,
+            "embarazos": "2",
             "partos": null,
             "trh": "negados",
-            "aco": "negados",
+            "aco": "trh: negados",
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null

@@ -52,14 +52,14 @@
             "re": null,
             "rp": null,
             "her2": null,
-            "ki67": "60%",
+            "ki67": null,
             "gh": null
         },
         "mama_derecha": {
             "re": "0%",
             "rp": "1%",
             "her2": "-",
-            "ki67": null,
+            "ki67": "60%",
             "gh": null
         }
     },

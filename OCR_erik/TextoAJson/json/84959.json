@@ -39,17 +39,18 @@
         },
         "antecedentes_ginecológicos": {
             "fum": {
-                "años": 21,
-                "contexto": "21 años - gopo co ao"
+                "años": 21
             },
             "menarca": {
-                "años": 21,
-                "contexto": "21 años - gopo co ao"
+                "años": 15
             },
             "embarazos": null,
             "partos": null,
-            "trh": "durante 30 años",
-            "aco": "os in tia n0 samples os in t1b n0 samples 08 in tic n0 samples 1.00",
+            "trh": {
+                "años": 30,
+                "contexto": "durante 30 años"
+            },
+            "aco": null,
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null
@@ -59,7 +60,7 @@
         "ascendencia": null,
         "lateralidad": [
             "tía materna falleció por cáncer de mama",
-            "prima materna con cáncer de mama"
+            "prima materna con cáncer de mama desconoce edad al diagnóstico)"
         ],
         "descendencia": null
     },
