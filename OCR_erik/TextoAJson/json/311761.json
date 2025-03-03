@@ -1,0 +1,80 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 41
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": "negadas",
+        "antecedentes_ginecológicos": {
+            "fum": "- g2p0 c2 ao",
+            "menarca": "- g2p0 c2 ao",
+            "embarazos": null,
+            "partos": null,
+            "trh": null,
+            "aco": "metabolismo focal con suv máximo 5.1. tejido mamario izquierdo con incremento del volumen y la densidad con engrosamiento cutáneo e hipermetabolismo heterogéneo con zona focal de mayor captación y suv máximo de 5.9. ganglios mediastinales hiliares bilaterales menores de 10 mm que se asocian a metabolismo difuso, de aspecto inflamatorio.",
+            "mpf": null,
+            "estado_hormonal": "premenopáusica",
+            "métodos_anticonceptivos": null
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuelo paterno con antecedente de linfoma diagnosticado a los 85 años"
+        ],
+        "lateralidad": [
+            "prima nirterna con cáncer de mama: diagnosticado a los 38 años"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct4b",
+            "nódulos": "cn2a",
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "70%",
+            "rp": "0%",
+            "her2": "-",
+            "ki67": "nr",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cli de mama izquierda, ec iv (ct4b cn2a(f) m1) (enfermedad ganglionar cervical),: luminal b, her2 negativo o",
+            "descripcion": "ec iv ct4b - infiltración a piel cn2a h"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

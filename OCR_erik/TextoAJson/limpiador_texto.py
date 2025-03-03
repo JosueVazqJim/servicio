@@ -56,10 +56,10 @@ class LimpiezaTexto:
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "cirugías", "originaria y residente", "seguridad social", "ocupación", 
-            "ahf", "cáncer de", "resumen del", "extensión del tumor", "biología tumoral",
+            "ahf", "resumen del", "extensión del tumor", "biología tumoral",
             "aco", "mpf", "eco"
         ]
-        patron_gn_pn_cn_an = r'\bg\d+\s*p\d+\s*c\d+\s*a\d+\b'
+        patron_gn_pn_cn_an = r'[-\s]*\bg\d+\s*p\d+\s*c\d+\s*a\d+\b'
         patron_fecha = r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}' 
         patron_lista_numerada = r'^\d+\.\s'  # Patrón para detectar líneas numeradas (ej: "1. cáncer de mama")
         patron_vineta = r'^-\s'  # Patrón para detectar líneas con viñetas (ej: "- Tia materna con cáncer de páncreas")
@@ -71,16 +71,21 @@ class LimpiezaTexto:
             try:
                 # Determina si la línea es una clave basándose en la lista de claves o si es una fecha
                 es_clave = any(clave in linea for clave in claves) or re.match(patron_fecha, linea) or re.match(patron_gn_pn_cn_an, linea)
+
                 es_lista_numerada = re.match(patron_lista_numerada, linea)  # Detecta si es una línea numerada
                 es_vineta = re.match(patron_vineta, linea)  # Detecta si es una línea con viñeta
-        
-                if es_clave and not es_lista_numerada and not es_vineta:
+
+                # Verificar si la línea con viñeta contiene palabras clave
+                if es_vineta and any(clave in linea for clave in claves):
+                    es_clave = True  # Tratar como una línea independiente
+
+                if es_clave and not es_lista_numerada:
                     # Si hay una clave en proceso, guarda la clave anterior con su valor acumulado
                     if clave_actual:
                         self.texto_procesado.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
                         clave_actual = None
                         valor_actual = []
-        
+            
                     # Si la línea contiene una clave, se trata como una línea individual
                     clave_actual = linea
                     valor_actual = []  # Reinicia el valor actual
@@ -96,11 +101,10 @@ class LimpiezaTexto:
 
         # Asegurarse de que la última clave se guarde
         if clave_actual:
-            self.texto_procesado.append(f"{clave_actual}: {' '.join(valor_actual).strip()}")
+            self.texto_procesado.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
 
         # Elimina ':' innecesarios al final de cada línea
         self.texto_procesado = [re.sub(r'[:\s]+$', '', linea) for linea in self.texto_procesado]
-
     
     def obtener_texto_procesado(self):
         """

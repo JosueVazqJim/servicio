@@ -1,0 +1,103 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 50
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": ":",
+                    "descripción": null
+                },
+                {
+                    "nombre": "artritis reumatoide",
+                    "descripción": null
+                },
+                {
+                    "nombre": "tumor renal izquierdo de 2 cm",
+                    "descripción": null
+                },
+                {
+                    "nombre": "adenocarcinoma de colon izquierdo localizado, pendiente etapificación",
+                    "descripción": null
+                },
+                {
+                    "nombre": "tumor uterino dc ccen",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "- g1pocoa1",
+            "menarca": "- g1pocoa1",
+            "embarazos": null,
+            "partos": null,
+            "trh": null,
+            "aco": "itb grave mama derecha + colección paracostal derecha",
+            "mpf": null,
+            "estado_hormonal": "premenopáusica",
+            "métodos_anticonceptivos": null
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuela materna cáncer de páncreas (86 años)"
+        ],
+        "lateralidad": [
+            "2tías maternas cáncer de páncreas (68 y 74 años)"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": "ec iib ct3-—7 cm cn0 sin rpc -— ypt2n0o"
+        },
+        "mama_derecha": {
+            "clasificación": "cdi ec iib luminal b her2 positivo",
+            "descripcion": null
+        }
+    }
+}
