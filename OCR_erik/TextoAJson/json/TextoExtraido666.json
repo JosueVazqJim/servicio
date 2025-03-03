@@ -28,8 +28,8 @@
             "menarca": {
                 "años": 9
             },
-            "embarazos": 2,
-            "partos": 2,
+            "embarazos": null,
+            "partos": null,
             "trh": "negados",
             "aco": "negado",
             "mpf": {
@@ -41,13 +41,9 @@
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": [
-            "abuela materna cáncer de páncreas (86 años)"
-        ],
-        "lateralidad": [
-            "2 tías maternas cáncer de páncreas (68 y 74 años)"
-        ],
-        "descendencia": null
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
     },
     "estadia_tumoral": {
         "mama_izquierda": {
