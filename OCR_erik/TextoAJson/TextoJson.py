@@ -168,11 +168,15 @@ class TextoJson:
         ]
 
         isEdad = False
+        isEstadoHormonal = False
 
         # Agregar una regex para detectar edades en el formato "XX años"
         edad_regex = re.compile(
             r'\b(?:edad:?\s*(\d+)(?:\s*años)?)|(?:\b(\d+)\s*años(?:\s*de\s*edad)?)|^(\w+)\s*/\s*(.+?)\s*/\s*(\d+\s*años)\s*/\s*(.*)$|(?:\b(\d+)\s*años(?:\s*de\s*edad)?)|^(\w+)\s*/\s*(.+?)\s*/\s*(\d+\s*años(?:\s*y\s*\d+\s*meses)?)\s*/\s*(.*)$',re.IGNORECASE
         )
+
+        g_p_c_a_regex = re.compile(r'\b([g]\d+)\s([p]\d+)\s([c]\d+)\s([a]\d+)\b', re.IGNORECASE)
+
         for linea in self.informacion:
             # Buscar una edad en el formato específico
             match = edad_regex.match(linea)
@@ -197,6 +201,13 @@ class TextoJson:
                         antecedentes_personales_secciones["edad"] = {"años": None}
 
                 isEdad = True
+
+            matchGPCA = g_p_c_a_regex.match(linea)
+            if matchGPCA:
+                antecedentes_personales_secciones["antecedentes_ginecológicos"]['g'] = int(matchGPCA[1][1:])  # Quitar el 'g' y tomar el número
+                antecedentes_personales_secciones["antecedentes_ginecológicos"]['p'] = int(matchGPCA[2][1:])  # Quitar el 'p' y tomar el número
+                antecedentes_personales_secciones["antecedentes_ginecológicos"]['c'] = int(matchGPCA[3][1:])  # Quitar el 'c' y tomar el número
+                antecedentes_personales_secciones["antecedentes_ginecológicos"]['a'] = int(matchGPCA[4][1:])  # Quitar el 'a' y tomar el número
 
             for keyword in antecedentes_personales_keywords:
                 if keyword in linea:
@@ -238,17 +249,18 @@ class TextoJson:
                                         antecedentes_personales_secciones["índice_tabáquico"]["observaciones"] = None
                                 break
 
+
                     elif keyword in ["fum", "menarca", "trh", "aco", "mpf", "estado hormonal", "métodos anticonceptivos", "embarazos", "partos"]:
                         # Patrón para identificar claves ginecológicas en la línea
                         pattern = re.compile(r'\b(fum|menarca|trh|mpf|aco|estado hormonal|métodos anticonceptivos|embarazos|partos)\b', re.IGNORECASE)
                         pattern_especial = re.match(r"menarca a los (\d+) años\. (\d+) embarazos?, (\d+) partos?", linea, re.IGNORECASE)
 
                         if pattern_especial:
-                            print("patron especial")
                             edad_menarca, num_embarazos, num_partos = map(int, pattern_especial.groups())
                             antecedentes_personales_secciones["antecedentes_ginecológicos"]["menarca"] = {"años": edad_menarca}
                             antecedentes_personales_secciones["antecedentes_ginecológicos"]["embarazos"] = num_embarazos
                             antecedentes_personales_secciones["antecedentes_ginecológicos"]["partos"] = num_partos
+                            
                         else:
                             # Eliminar guiones y limpiar la línea
                             linea_limpia = re.sub(r'^-\s*', '', linea.strip())
@@ -292,10 +304,30 @@ class TextoJson:
                                             valores[keyword.strip().replace(" ", "_")] = valor_comun
                                 
                                 antecedentes_personales_secciones["antecedentes_ginecológicos"].update(valores)
+                            
+                            elif 'estado hormonal' in matches:
+                                if isEstadoHormonal == False:
+                                    isEstadoHormonal = True
+                                    valor = None
+                                    if ":" in linea_limpia:
+                                        valor = linea_limpia.split(":")[1].strip()
+                                    else:
+                                        valor = linea_limpia.split(matches[0])[1].strip()
+                                    
+                                    unidades = self.__extract_units(valor)
+                                    if unidades:
+                                        valor_dict = {unidad: cantidad for cantidad, unidad in unidades}
+                                        if len(valor.split()) > 2:
+                                            valor_dict["contexto"] = valor
+                                        antecedentes_personales_secciones["antecedentes_ginecológicos"][matches[0].strip().replace(" ", "_")] = valor_dict
+                                    else:
+                                        antecedentes_personales_secciones["antecedentes_ginecológicos"][matches[0].strip().replace(" ", "_")] = valor
+                                
                             else:
                                 if matches:
                                     keyword = matches[0]
                                     valor = None
+                                    
                                     if ":" in linea_limpia:
                                         valor = linea_limpia.split(":")[1].strip()
                                     else:
@@ -309,6 +341,8 @@ class TextoJson:
                                         antecedentes_personales_secciones["antecedentes_ginecológicos"][keyword.strip().replace(" ", "_")] = valor_dict
                                     else:
                                         antecedentes_personales_secciones["antecedentes_ginecológicos"][keyword.strip().replace(" ", "_")] = valor
+
+                                    
 
                     # elif keyword in ["fum", "menarca", "trh", "aco", "mpf", "estado hormonal", "métodos anticonceptivos", "embarazos", "partos"]:
                     #     # Patrón para identificar claves ginecológicas en la línea

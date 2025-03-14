@@ -42,7 +42,11 @@
             "aco": "negado",
             "mpf": null,
             "estado_hormonal": "premenopáusica",
-            "métodos_anticonceptivos": null
+            "métodos_anticonceptivos": null,
+            "g": 4,
+            "p": 4,
+            "c": 0,
+            "a": 0
         }
     },
     "antecedentes_familiares": {

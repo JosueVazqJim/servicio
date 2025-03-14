@@ -24,8 +24,12 @@
             "trh": null,
             "aco": "negado. paridad satisfecha",
             "mpf": null,
-            "estado_hormonal": "premenopáusica 8583888 distantmetastatc (res survival (35) 3 e timo after nock recurrenco (month) vi a da o s3é overall surival (4) osy8352 e e",
-            "métodos_anticonceptivos": null
+            "estado_hormonal": "premenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 2,
+            "p": 0,
+            "c": 2,
+            "a": 0
         }
     },
     "antecedentes_familiares": {
