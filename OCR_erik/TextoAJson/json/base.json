@@ -1,0 +1,90 @@
+{
+    "antecedentes_personales": {
+        "edad": {},
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "suspendido",
+            "observaciones": []
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [],
+            "una fecha": ""
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {},
+            "menarca": {},
+            "embarazos": null,
+            "partos": null,
+            "trh": "negados",
+            "aco": "trh negados",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 6,
+            "p": 5,
+            "c": 0,
+            "a": 1
+        }
+    24
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [],
+        "lateralidad": null,
+        "descendencia": []
+    3
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct1c",
+            "nódulos": "cn0",
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    10
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "95%",
+            "rp": "1%",
+            "her2": "1+ (-)",
+            "ki67": "10%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    10
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi de mama izquierda ec ia (t1cno0) re 95%, rp1%, her2 — (1+)",
+            "descripcion": "ec ia ct1c-—18 mm cn0"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+    4
+}
+
+51 etiquetas
+
+5 grupos
