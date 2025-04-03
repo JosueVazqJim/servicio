@@ -124,7 +124,7 @@ class LimpiezaTexto:
         claves_palabras = ["menarca", "embarazos", "partos", "fum", "trh", "aco", "mpf"]
 
         # Patrones adicionales a conservar
-        patron_gn_pn_cn_an = r'[-\s]*\bg\d+\s*p\d+\s*c\d+\s*a\d+\b'
+        patron_gn_pn_cn_an = re.compile(r'[-\s]*\bg\d+\s*p\d+\s*a\d+\s*c\d+\b.*|g\d+p\d+c\d+a\d+', re.IGNORECASE)
         patron_lista_numerada = r'^\d+\.\s'  # Patrón para detectar líneas numeradas (ej: "1. cáncer de mama")
         patron_vineta = r'^-\s'  # Patrón para detectar líneas con viñetas (ej: "- Tia materna con cáncer de páncreas")
         patron_linea_tipo = r'^[^/]+ / \d+ / \d+ años / .+$'  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
@@ -178,7 +178,7 @@ class LimpiezaTexto:
         claves_palabras = {"menarca", "embarazos", "partos", "fum", "trh", "aco", "mpf", "métodos" }
 
         # Patrones que se consideran claves
-        patron_gn_pn_cn_an = re.compile(r'[-\s]*\bg\d+\\s*p\d+\s*c\d+\s*a\d+\b')
+        patron_gn_pn_cn_an = re.compile(r'[-\s]*\bg\d+\s*p\d+\s*a\d+\s*c\d+\b.*|g\d+p\d+c\d+a\d+', re.IGNORECASE)
         patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
         patron_linea_tipo = re.compile(r'^[^/]+ / \d+ / \d+ años / .+$')  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
 
@@ -238,6 +238,27 @@ class LimpiezaTexto:
 
         self.texto_procesado = lineas_procesadas
     
+    def __tratar_casos_especiales(self):
+        """
+        Trata casos especiales en el texto procesado, como el patrón de biología tumoral
+        y líneas específicas que requieren un formato particular.
+        """
+        for i, linea in enumerate(self.texto_procesado):
+            # Caso especial para "biología tumoral"
+            if "biología tumoral" in linea:
+                if 'final' in linea:
+                    self.texto_procesado[i] = f"biología tumoral{linea.split('final', 1)[1].strip()}"
+            
+            # Caso especial para líneas que comienzan con "e — cmbm"
+            if linea.lower().startswith("e — cmbm"):
+                self.texto_procesado[i] = linea.split("—", 1)[1].strip()
+
+            # Caso especial para líneas que contienen el patrón "g0 p0 a0 c0"
+            match = re.search(r'\bg(\d+)\s*p(\d+)\s*a(\d+)\s*c(\d+)\b', linea)
+            if match:
+                self.texto_procesado[i] = f"g{match.group(1)} p{match.group(2)} a{match.group(3)} c{match.group(4)}"
+                
+    
     def obtener_texto_procesado(self):
         """
         Devuelve el texto procesado como una lista de líneas.
@@ -274,4 +295,5 @@ class LimpiezaTexto:
         # self.__preprocesar_texto()
         self.__unir_lineas_relevantes()
         self.__filtrar_lineas_relevantes()
+        self.__tratar_casos_especiales()
         return self.obtener_texto_procesado()

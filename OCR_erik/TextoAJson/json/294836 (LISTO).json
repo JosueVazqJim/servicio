@@ -1,0 +1,99 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 52
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "hipotiroidismo primario",
+                    "descripción": null
+                }
+            ],
+            "2011": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ],
+            "2018": [
+                {
+                    "nombre": "carcinoma papilar de tiroides t1a(s)nomo, ec i, macis 4.02, ames bajo riesgo",
+                    "descripción": ". o 4234-9-0:"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "09.2022",
+            "menarca": "12",
+            "embarazos": null,
+            "partos": null,
+            "trh": null,
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "premenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 4,
+            "p": 4,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdis de alto grado",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 50
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "ocasional",
+        "drogas": "negado",
+        "comorbilidades": "negadas",
+        "antecedentes_ginecológicos": {
+            "fum": "2016 quirúrgica (histerectomía 2016) g5p2c2a1",
+            "menarca": null,
+            "embarazos": null,
+            "partos": null,
+            "trh": null,
+            "aco": {
+                "años": 29,
+                "contexto": "6 años (23-29 años)."
+            },
+            "mpf": null,
+            "estado_hormonal": "premenopáusica.",
+            "métodos_anticonceptivos": null
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": [
+            "prima hermana de rama materna con cáncer de mama a los 48 años"
+        ],
+        "descendencia": null
+    },
+    "estadia_tumoral": {},
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    }
+}

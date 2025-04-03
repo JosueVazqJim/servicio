@@ -1,0 +1,96 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 86
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": [
+                {
+                    "notas": "exposición al humo de leña por 40 años por 2 horas.",
+                    "tiempo": {
+                        "años": 40,
+                        "horas": 2
+                    }
+                }
+            ]
+        },
+        "alcohol": null,
+        "drogas": null,
+        "comorbilidades": {
+            "1995": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 47
+            },
+            "menarca": {
+                "años": 14
+            },
+            "embarazos": 2,
+            "partos": 2,
+            "trh": null,
+            "aco": null,
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": "desconoce."
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadia_tumoral": {},
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "90%",
+            "rp": "90%",
+            "her2": "negativo",
+            "ki67": "30%",
+            "gh": "g3"
+        },
+        "mama_derecha": {
+            "re": "95%",
+            "rp": "95%",
+            "her2": "negativo",
+            "ki67": "5%",
+            "gh": "g2"
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": "ec iia"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": "ec iia"
+        }
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt1c",
+            "nódulos": "pn1a",
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt2",
+            "nódulos": "n0",
+            "metástasis": "m0"
+        }
+    }
+}
