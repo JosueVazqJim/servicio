@@ -51,9 +51,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "pt1cn1a",
-            "nódulos": "n1",
-            "metástasis": "m0"
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -65,10 +65,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": "80%",
-            "rp": "0%",
-            "her2": "1+",
-            "ki67": "10%",
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
             "gh": null
         }
     },
@@ -78,7 +78,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cdi de tipo mixto con componente mucinoso (30 %) grado 2 (3+2+1), tamaño del tumor: 1.8 cm (medido en laminilla), focalidad del tumor: no se puede determinar. carcinoma ductal in situ: presente, patrón arquitectural cribiforme y solido, grado nuclear: 2 (intermedio), necrosis: ausente, microcalcificaciones: presente. ipn e ilv: ausente. microcalcificaciones: presentes, márgenes: todos negativos a células neoplásicas. ganglios linfáticos: 8 ganglio linfáticos evaluados en total, 2 ganglios positivos a células neoplásicas, depósito de mayor, tamaño: 1.7 cm sin ruptura capsular ypt1cn1a, hallazgos adicionales: adenosis esclerosante. re 80%, rp 70%, her2 1+, ki 67 10%",
+            "clasificación": null,
             "descripcion": null
         }
     }

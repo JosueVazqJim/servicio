@@ -240,24 +240,35 @@ class LimpiezaTexto:
     
     def __tratar_casos_especiales(self):
         """
-        Trata casos especiales en el texto procesado, como el patrón de biología tumoral
-        y líneas específicas que requieren un formato particular.
+        Trata casos especiales en el texto procesado, incluyendo el patrón GPAC 
+        en el orden específico: g → p → c → a.
         """
         for i, linea in enumerate(self.texto_procesado):
-            # Caso especial para "biología tumoral"
-            if "biología tumoral" in linea:
-                if 'final' in linea:
-                    self.texto_procesado[i] = f"biología tumoral{linea.split('final', 1)[1].strip()}"
+            # Caso 1: Biología tumoral
+            if "biología tumoral" in linea and 'final' in linea:
+                self.texto_procesado[i] = f"biología tumoral{linea.split('final', 1)[1].strip()}"
             
-            # Caso especial para líneas que comienzan con "e — cmbm"
-            if linea.lower().startswith("e — cmbm"):
+            # Caso 2: Líneas que comienzan con "e — cmbm"
+            elif linea.lower().startswith("e — cmbm"):
                 self.texto_procesado[i] = linea.split("—", 1)[1].strip()
 
-            # Caso especial para líneas que contienen el patrón "g0 p0 a0 c0"
-            match = re.search(r'\bg(\d+)\s*p(\d+)\s*a(\d+)\s*c(\d+)\b', linea)
-            if match:
-                self.texto_procesado[i] = f"g{match.group(1)} p{match.group(2)} a{match.group(3)} c{match.group(4)}"
-                
+            # Caso 3: Patrón GPAC (g, p, c, a) en cualquier orden
+            else:
+                def ordenar_gpac(linea):
+                    # Extrae componentes en cualquier orden
+                    g = re.search(r'g(\d+)', linea)
+                    p = re.search(r'p(\d+)', linea)
+                    c = re.search(r'c(\d+)', linea)
+                    a = re.search(r'a(\d+)', linea)
+                    
+                    # Reconstruye en el orden g → p → c → a
+                    if all([g, p, c, a]):
+                        return f"g{g.group(1)} p{p.group(1)} c{c.group(1)} a{a.group(1)}"
+                    return linea  # Si no hay 4 componentes, devuelve original
+
+                linea_ordenada = ordenar_gpac(linea)
+                if linea_ordenada != linea:
+                    self.texto_procesado[i] = linea_ordenada
     
     def obtener_texto_procesado(self):
         """
