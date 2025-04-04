@@ -45,67 +45,6 @@ class LimpiezaTexto:
         self.informacion = []
         self.texto_procesado = []
 
-    def __preprocesar_texto(self):
-        """
-        Procesa el texto, segmentándolo en claves y valores según palabras clave conocidas.
-        """
-        # Lista de claves que indican el inicio de una nueva sección en el texto
-        claves = [
-            "diagnóstico", "edad", "sexo", "peso", "talla", "preferencia", 
-            "índice tabáquico", "tabaquismo", "tabaco", "alcohol", "drogas", 
-            "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
-            "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
-            "cirugías", "originaria y residente", "seguridad social", "ocupación", 
-            "ahf", "resumen del", "extensión del tumor", "biología tumoral",
-            "aco", "mpf"
-        ]
-        patron_gn_pn_cn_an = r'[-\s]*\bg\d+\s*p\d+\s*c\d+\s*a\d+\b'
-        patron_fecha = r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}' 
-        patron_lista_numerada = r'^\d+\.\s'  # Patrón para detectar líneas numeradas (ej: "1. cáncer de mama")
-        patron_vineta = r'^-\s'  # Patrón para detectar líneas con viñetas (ej: "- Tia materna con cáncer de páncreas")
-
-        clave_actual = None  # Almacena la clave en procesamiento
-        valor_actual = []  # Acumula el valor correspondiente a la clave actual
-
-        for linea in self.informacion:
-            try:
-                # Determina si la línea es una clave basándose en la lista de claves o si es una fecha
-                es_clave = any(clave in linea for clave in claves) or re.match(patron_fecha, linea) or re.match(patron_gn_pn_cn_an, linea)
-
-                es_lista_numerada = re.match(patron_lista_numerada, linea)  # Detecta si es una línea numerada
-                es_vineta = re.match(patron_vineta, linea)  # Detecta si es una línea con viñeta
-
-                # Verificar si la línea con viñeta contiene palabras clave
-                if es_vineta and any(clave in linea for clave in claves):
-                    es_clave = True  # Tratar como una línea independiente
-
-                if es_clave and not es_lista_numerada:
-                    # Si hay una clave en proceso, guarda la clave anterior con su valor acumulado
-                    if clave_actual:
-                        self.texto_procesado.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
-                        clave_actual = None
-                        valor_actual = []
-            
-                    # Si la línea contiene una clave, se trata como una línea individual
-                    clave_actual = linea
-                    valor_actual = []  # Reinicia el valor actual
-                elif clave_actual:
-                    # Si estamos procesando una clave, acumulamos el valor
-                    valor_actual.append(linea)
-                else:
-                    # Si no hay clave en proceso, se añade la línea tal cual
-                    self.texto_procesado.append(linea)
-            
-            except Exception as e:
-                raise ValueError(f"Error procesando la línea: {linea}. Error: {str(e)}")
-
-        # Asegurarse de que la última clave se guarde
-        if clave_actual:
-            self.texto_procesado.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
-
-        # Elimina ':' innecesarios al final de cada línea
-        self.texto_procesado = [re.sub(r'[:\s]+$', '', linea) for linea in self.texto_procesado]
-    
     def __filtrar_lineas_relevantes(self):
         """
         Filtra las líneas que contienen las claves o patrones relevantes.
@@ -171,7 +110,7 @@ class LimpiezaTexto:
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "cirugías", "originaria y residente", "seguridad social", "ocupación", 
             "ahf", "resumen del", "extensión del tumor", "biología tumoral",
-            "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral"
+            "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral", 'plan'
         ]
 
         # Claves que deben tratarse como líneas individuales
@@ -236,40 +175,85 @@ class LimpiezaTexto:
         if clave_actual:
             lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
 
+    
         self.texto_procesado = lineas_procesadas
     
     def __tratar_casos_especiales(self):
         """
-        Trata casos especiales en el texto procesado, incluyendo el patrón GPAC 
-        en el orden específico: g → p → c → a.
+        Trata casos especiales en el texto procesado, incluyendo:
+        - Patrón GPAC (g → p → c → a)
+        - Líneas con múltiples datos separados por /, y, o . seguido de espacio
+        - Otros casos especiales predefinidos
         """
-        for i, linea in enumerate(self.texto_procesado):
+        nuevo_texto = []
+        
+        for linea in self.texto_procesado:
             # Caso 1: Biología tumoral
-            if "biología tumoral" in linea and 'final' in linea:
-                self.texto_procesado[i] = f"biología tumoral{linea.split('final', 1)[1].strip()}"
+            if "biología tumoral" in linea and ('final' in linea or 'post tratamiento' in linea):
+                nuevo_texto.append(f"biología tumoral{linea.split('final', 1)[1].strip() if 'final' in linea else linea.split('post tratamiento', 1)[1].strip()}")
+                continue
             
             # Caso 2: Líneas que comienzan con "e — cmbm"
             elif linea.lower().startswith("e — cmbm"):
-                self.texto_procesado[i] = linea.split("—", 1)[1].strip()
-
-            # Caso 3: Patrón GPAC (g, p, c, a) en cualquier orden
+                nuevo_texto.append(linea.split("—", 1)[1].strip())
+                continue
+            
+            # Caso 3: Separar líneas con múltiples patrones
+            patrones = [
+                # Patrón para aco: XXX. mpf: YYY
+                (r'(\b\w+:\s*[^.]*)\s*\.\s*(\b\w+:\s*.*)', 
+                lambda m: [m.group(1).strip(), m.group(2).strip()]),
+                
+                # Patrón para menarca XX años / fum XX años
+                (r'(menarca\s+\d+\s*años)\s*/\s*(fum\s+\d+\s*años)', 
+                lambda m: [m.group(1), m.group(2)]),
+                
+                # Patrón para menarca XX / fum XX.XX
+                (r'(menarca\s+\d+)\s*/\s*(fum\s+[\d.]+)', 
+                lambda m: [m.group(1), m.group(2)]),
+                
+                # Patrón para aco y trh negados (variantes)
+                (r'(aco)\s*[:y]?\s*(trh)\s*[:]?\s*(negados?)', 
+                lambda m: [f"{m.group(1)}: {m.group(3)}", f"{m.group(2)}: {m.group(3)}"]),
+                
+                (r'(aco)\s+y\s+(trh)\s+(negados?)', 
+                lambda m: [f"{m.group(1)} {m.group(3)}", f"{m.group(2)} {m.group(3)}"]),
+                
+                # Patrón general para XX: AAA / YY: BBB
+                (r'(\w+)\s*[:]\s*([^/]+)\s*[/]\s*(\w+)\s*[:]\s*([^/]+)', 
+                lambda m: [f"{m.group(1)}: {m.group(2)}", f"{m.group(3)}: {m.group(4)}"])
+            ]
+            
+            dividido = False
+            for patron, handler in patrones:
+                match = re.search(patron, linea, re.IGNORECASE)
+                if match:
+                    nuevo_texto.extend(handler(match))
+                    dividido = True
+                    break
+            
+            if dividido:
+                continue
+            
+            # Caso 4: Patrón GPAC (g, p, c, a) en cualquier orden
+            def ordenar_gpac(linea):
+                g = re.search(r'g(\d+)', linea)
+                p = re.search(r'p(\d+)', linea)
+                c = re.search(r'c(\d+)', linea)
+                a = re.search(r'a(\d+)', linea)
+                
+                if all([g, p, c, a]):
+                    return f"g{g.group(1)} p{p.group(1)} c{c.group(1)} a{a.group(1)}"
+                return linea
+            
+            linea_ordenada = ordenar_gpac(linea)
+            if linea_ordenada != linea:
+                nuevo_texto.append(linea_ordenada)
             else:
-                def ordenar_gpac(linea):
-                    # Extrae componentes en cualquier orden
-                    g = re.search(r'g(\d+)', linea)
-                    p = re.search(r'p(\d+)', linea)
-                    c = re.search(r'c(\d+)', linea)
-                    a = re.search(r'a(\d+)', linea)
-                    
-                    # Reconstruye en el orden g → p → c → a
-                    if all([g, p, c, a]):
-                        return f"g{g.group(1)} p{p.group(1)} c{c.group(1)} a{a.group(1)}"
-                    return linea  # Si no hay 4 componentes, devuelve original
-
-                linea_ordenada = ordenar_gpac(linea)
-                if linea_ordenada != linea:
-                    self.texto_procesado[i] = linea_ordenada
-    
+                nuevo_texto.append(linea)
+        
+        self.texto_procesado = nuevo_texto
+        
     def obtener_texto_procesado(self):
         """
         Devuelve el texto procesado como una lista de líneas.

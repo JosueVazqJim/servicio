@@ -35,8 +35,7 @@
         },
         "antecedentes_ginecológicos": {
             "fum": {
-                "años": 29,
-                "contexto": "29 años (quirúrgica)"
+                "años": 29
             },
             "menarca": {
                 "años": 13
@@ -44,7 +43,7 @@
             "embarazos": null,
             "partos": null,
             "trh": "negados",
-            "aco": "trh: negados",
+            "aco": "negados",
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null
