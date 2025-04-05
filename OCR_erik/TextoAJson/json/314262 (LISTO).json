@@ -42,7 +42,11 @@
             "aco": null,
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
-            "métodos_anticonceptivos": "desconoce."
+            "métodos_anticonceptivos": "desconoce.",
+            "g": null,
+            "p": null,
+            "c": null,
+            "a": null
         }
     },
     "antecedentes_familiares": {
