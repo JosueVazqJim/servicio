@@ -183,6 +183,8 @@ class LimpiezaTexto:
         Trata casos especiales en el texto procesado, incluyendo:
         - Patrón GPAC (g → p → c → a)
         - Líneas con múltiples datos separados por /, y, o . seguido de espacio
+        - Un solo apartado de biología tumoral
+        - Líneas que comienzan con "e — cmbm"
         - Otros casos especiales predefinidos
         """
         nuevo_texto = []
@@ -200,10 +202,9 @@ class LimpiezaTexto:
             
             # Caso 3: Separar líneas con múltiples patrones
             patrones = [
-                # Patrón para aco: XXX. mpf: YYY
-                (r'(\b\w+:\s*[^.]*)\s*\.\s*(\b\w+:\s*.*)', 
+                # Patrón para aco: negado. mpf: otb (2005)
+                (r'(aco:\s*negado)\.\s*(mpf:\s*otb\s*\(\d{4}\))', 
                 lambda m: [m.group(1).strip(), m.group(2).strip()]),
-                
                 # Patrón para menarca XX años / fum XX años
                 (r'(menarca\s+\d+\s*años)\s*/\s*(fum\s+\d+\s*años)', 
                 lambda m: [m.group(1), m.group(2)]),
@@ -267,7 +268,7 @@ class LimpiezaTexto:
         """
         Imprime el contenido del texto procesado línea por línea.
         """
-        for linea in self.informacion:
+        for linea in self.texto_procesado:
             print(linea)
     
     def __setNombreArchivo(self, nombreArchivo):
@@ -291,4 +292,5 @@ class LimpiezaTexto:
         self.__unir_lineas_relevantes()
         self.__filtrar_lineas_relevantes()
         self.__tratar_casos_especiales()
+        print('_________________________')
         return self.obtener_texto_procesado()

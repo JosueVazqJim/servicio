@@ -1,6 +1,8 @@
 {
     "antecedentes_personales": {
-        "edad": "t4d, cn3, m1 (enfermedad ganglionar no regional)",
+        "edad": {
+            "años": 56
+        },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
