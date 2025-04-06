@@ -43,9 +43,9 @@
     "estadía_tumoral": {
         "ultrasonido": null,
         "mastografía": null,
-        "centros_tumorales": "pt1b",
-        "nódulos": "cn3",
-        "metástasis": "m0"
+        "centros_tumorales": "ct4d",
+        "nódulos": "cn3c",
+        "metástasis": "m1"
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {

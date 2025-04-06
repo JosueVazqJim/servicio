@@ -45,6 +45,90 @@ class LimpiezaTexto:
         self.informacion = []
         self.texto_procesado = []
 
+    def __unir_lineas_relevantes(self):
+        """
+        Une las líneas relevantes cuando sea necesario y deja otras líneas individuales.
+        """
+
+        claves_inicio = [
+            "diagnóstico", "edad", "sexo", "peso", "talla", "preferencia", 
+            "índice tabáquico", "tabaquismo", "tabaco", "alcohol", "drogas", 
+            "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
+            "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
+            "cirugías", "originaria y residente", 'originar', "seguridad social", "ocupación", 
+            "ahf", "resumen del", "extensión del tumor", "biología tumoral",
+            "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral", 'plan',
+            "cdi "
+        ]
+
+        # Claves que deben tratarse como líneas individuales
+        claves_palabras = {"menarca", "embarazos", "partos", "fum", "trh", "aco", "mpf", "métodos" }
+
+        # Patrones que se consideran claves
+        patron_gn_pn_cn_an = re.compile(r'[-\s]*\bg\d+\s*p\d+\s*a\d+\s*c\d+\b.*|g\d+p\d+c\d+a\d+', re.IGNORECASE)
+        patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
+        patron_linea_tipo = re.compile(r'^[^/]+ / \d+ / \d+ años / .+$')  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
+
+        lineas_procesadas = []
+        clave_actual = None
+        valor_actual = []
+        en_biologia_o_extension = False  # Bandera para identificar si estamos en "Biología tumoral" o "Extensión del tumor"
+
+        for linea in self.informacion:
+            linea = linea.strip()
+
+            # Verificar si la línea es una clave de inicio
+            es_clave_inicio = any(linea.startswith(clave) for clave in claves_inicio)
+            es_clave_palabra = any(palabra in linea.split() for palabra in claves_palabras)
+            es_patron = patron_gn_pn_cn_an.match(linea) or patron_fecha.match(linea) or patron_linea_tipo.match(linea)
+
+            # Detectar inicio de "Extensión del tumor" o "Biología tumoral"
+            if linea.startswith("extensión del tumor") or linea.startswith("biología tumoral"):
+                if clave_actual:
+                    lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
+                clave_actual = linea
+                valor_actual = []
+                en_biologia_o_extension = True
+                continue
+
+            # Si estamos en "Biología tumoral" o "Extensión del tumor", seguir concatenando hasta que aparezca otra clave de inicio
+            if en_biologia_o_extension:
+                if any(linea.startswith(clave) for clave in claves_inicio if clave not in ["mama derecha", "mama izquierda", 'cdi ']):  # Si encontramos otra clave de inicio, cerramos el bloque
+                    lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
+                    clave_actual = linea
+                    valor_actual = []
+                    en_biologia_o_extension = False
+                    continue
+                else:
+                    valor_actual.append(linea)
+                    continue
+
+            if es_clave_inicio or es_patron:
+                if clave_actual:
+                    lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
+                clave_actual = linea
+                valor_actual = []
+            elif es_clave_palabra:
+                if clave_actual:
+                    lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
+                    clave_actual = None
+                    valor_actual = []
+                lineas_procesadas.append(linea)
+            elif clave_actual:
+                valor_actual.append(linea)
+            else:
+                lineas_procesadas.append(linea)
+
+        # Guardar la última clave y su valor si existe
+        if clave_actual:
+            lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
+
+    
+        self.texto_procesado = lineas_procesadas
+        self.imprimir_datos()  # Imprime el texto procesado para depuración
+    
+    
+    
     def __filtrar_lineas_relevantes(self):
         """
         Filtra las líneas que contienen las claves o patrones relevantes.
@@ -56,7 +140,7 @@ class LimpiezaTexto:
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "ahf", "extensión del tumor", "biología tumoral",
-            "aco", "mpf", "cáncer de mama bilateral"
+            "aco", "mpf", "cáncer de mama bilateral", 'cdi '
         ]
 
         # Claves que pueden aparecer en cualquier parte de la línea como palabras individuales
@@ -98,86 +182,6 @@ class LimpiezaTexto:
         
         self.texto_procesado = lineas_filtradas
 
-    def __unir_lineas_relevantes(self):
-        """
-        Une las líneas relevantes cuando sea necesario y deja otras líneas individuales.
-        """
-
-        claves_inicio = [
-            "diagnóstico", "edad", "sexo", "peso", "talla", "preferencia", 
-            "índice tabáquico", "tabaquismo", "tabaco", "alcohol", "drogas", 
-            "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
-            "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
-            "cirugías", "originaria y residente", "seguridad social", "ocupación", 
-            "ahf", "resumen del", "extensión del tumor", "biología tumoral",
-            "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral", 'plan'
-        ]
-
-        # Claves que deben tratarse como líneas individuales
-        claves_palabras = {"menarca", "embarazos", "partos", "fum", "trh", "aco", "mpf", "métodos" }
-
-        # Patrones que se consideran claves
-        patron_gn_pn_cn_an = re.compile(r'[-\s]*\bg\d+\s*p\d+\s*a\d+\s*c\d+\b.*|g\d+p\d+c\d+a\d+', re.IGNORECASE)
-        patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
-        patron_linea_tipo = re.compile(r'^[^/]+ / \d+ / \d+ años / .+$')  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
-
-        lineas_procesadas = []
-        clave_actual = None
-        valor_actual = []
-        en_biologia_o_extension = False  # Bandera para identificar si estamos en "Biología tumoral" o "Extensión del tumor"
-
-        for linea in self.informacion:
-            linea = linea.strip()
-
-            # Verificar si la línea es una clave de inicio
-            es_clave_inicio = any(linea.startswith(clave) for clave in claves_inicio)
-            es_clave_palabra = any(palabra in linea.split() for palabra in claves_palabras)
-            es_patron = patron_gn_pn_cn_an.match(linea) or patron_fecha.match(linea) or patron_linea_tipo.match(linea)
-
-            # Detectar inicio de "Extensión del tumor" o "Biología tumoral"
-            if linea.startswith("extensión del tumor") or linea.startswith("biología tumoral"):
-                if clave_actual:
-                    lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
-                clave_actual = linea
-                valor_actual = []
-                en_biologia_o_extension = True
-                continue
-
-            # Si estamos en "Biología tumoral" o "Extensión del tumor", seguir concatenando hasta que aparezca otra clave de inicio
-            if en_biologia_o_extension:
-                if any(linea.startswith(clave) for clave in claves_inicio if clave not in ["mama derecha", "mama izquierda"]):  # Si encontramos otra clave de inicio, cerramos el bloque
-                    lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
-                    clave_actual = linea
-                    valor_actual = []
-                    en_biologia_o_extension = False
-                    continue
-                else:
-                    valor_actual.append(linea)
-                    continue
-
-            if es_clave_inicio or es_patron:
-                if clave_actual:
-                    lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
-                clave_actual = linea
-                valor_actual = []
-            elif es_clave_palabra:
-                if clave_actual:
-                    lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
-                    clave_actual = None
-                    valor_actual = []
-                lineas_procesadas.append(linea)
-            elif clave_actual:
-                valor_actual.append(linea)
-            else:
-                lineas_procesadas.append(linea)
-
-        # Guardar la última clave y su valor si existe
-        if clave_actual:
-            lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
-
-    
-        self.texto_procesado = lineas_procesadas
-    
     def __tratar_casos_especiales(self):
         """
         Trata casos especiales en el texto procesado, incluyendo:
@@ -185,6 +189,7 @@ class LimpiezaTexto:
         - Líneas con múltiples datos separados por /, y, o . seguido de espacio
         - Un solo apartado de biología tumoral
         - Líneas que comienzan con "e — cmbm"
+        - Asignar la clave diagnóstico a la línea que contiene no lo contiene
         - Otros casos especiales predefinidos
         """
         nuevo_texto = []
@@ -196,7 +201,7 @@ class LimpiezaTexto:
                 continue
             
             # Caso 2: Líneas que comienzan con "e — cmbm"
-            elif linea.lower().startswith("e — cmbm"):
+            elif linea.startswith("e — cmbm"):
                 nuevo_texto.append(linea.split("—", 1)[1].strip())
                 continue
             
@@ -252,6 +257,13 @@ class LimpiezaTexto:
                 nuevo_texto.append(linea_ordenada)
             else:
                 nuevo_texto.append(linea)
+
+        # Caso 5: asignar la clave "diagnóstico" a todas las líneas que empiezan con "cdi "
+        for linea_cdi in [l for l in self.texto_procesado if l.startswith("cdi ")]:
+            if not any("diagnóstico" in l for l in nuevo_texto):
+                nuevo_texto.append("diagnóstico: " + linea_cdi)
+            else:
+                nuevo_texto.append(linea_cdi)
         
         self.texto_procesado = nuevo_texto
         
@@ -288,7 +300,7 @@ class LimpiezaTexto:
         self.__restaurar_instancia()
         self.__setNombreArchivo(ruta_archivo)
         self.__cargar_datos()
-        # self.__preprocesar_texto()
+
         self.__unir_lineas_relevantes()
         self.__filtrar_lineas_relevantes()
         self.__tratar_casos_especiales()

@@ -51,17 +51,26 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
-            "metástasis": null
+            "centros_tumorales": "ct1c",
+            "nódulos": "n1",
+            "metástasis": "m0"
         }
     },
     "inmunohistoquímica_tumoral": {
-        "re": "80%",
-        "rp": "0%",
-        "her2": "1+",
-        "ki67": "10%",
-        "gh": null
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "80%",
+            "rp": "0%",
+            "her2": "1+",
+            "ki67": "10%",
+            "gh": null
+        }
     },
     "tipo": {
         "mama_izquierda": {
@@ -69,7 +78,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": null,
+            "clasificación": "cdi , multifocal, ec iia (ct1c, c(f)n1, m0) luminal b her 2 negativo",
             "descripcion": null
         }
     }
