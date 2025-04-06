@@ -58,7 +58,7 @@ class LimpiezaTexto:
             "cirugías", "originaria y residente", 'originar', "seguridad social", "ocupación", 
             "ahf", "resumen del", "extensión del tumor", "biología tumoral",
             "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral", 'plan',
-            "cdi "
+            "cdi ", 'carcinoma'
         ]
 
         # Claves que deben tratarse como líneas individuales
@@ -93,7 +93,7 @@ class LimpiezaTexto:
 
             # Si estamos en "Biología tumoral" o "Extensión del tumor", seguir concatenando hasta que aparezca otra clave de inicio
             if en_biologia_o_extension:
-                if any(linea.startswith(clave) for clave in claves_inicio if clave not in ["mama derecha", "mama izquierda", 'cdi ']):  # Si encontramos otra clave de inicio, cerramos el bloque
+                if any(linea.startswith(clave) for clave in claves_inicio if clave not in ["mama derecha", "mama izquierda", 'cdi ', 'carcinoma']):  # Si encontramos otra clave de inicio, cerramos el bloque
                     lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
                     clave_actual = linea
                     valor_actual = []
@@ -140,7 +140,7 @@ class LimpiezaTexto:
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "ahf", "extensión del tumor", "biología tumoral",
-            "aco", "mpf", "cáncer de mama bilateral", 'cdi '
+            "aco", "mpf", "cáncer de mama bilateral", 'cdi ', 'carcinoma'
         ]
 
         # Claves que pueden aparecer en cualquier parte de la línea como palabras individuales
@@ -259,11 +259,11 @@ class LimpiezaTexto:
                 nuevo_texto.append(linea)
 
         # Caso 5: asignar la clave "diagnóstico" a todas las líneas que empiezan con "cdi "
-        for linea_cdi in [l for l in self.texto_procesado if l.startswith("cdi ")]:
+        for linea_posible_diagnostico in [l for l in self.texto_procesado if l.startswith(("cdi ", "carcinoma"))]:
             if not any("diagnóstico" in l for l in nuevo_texto):
-                nuevo_texto.append("diagnóstico: " + linea_cdi)
+                nuevo_texto.append("diagnóstico: " + linea_posible_diagnostico)
             else:
-                nuevo_texto.append(linea_cdi)
+                nuevo_texto.append(linea_posible_diagnostico)
         
         self.texto_procesado = nuevo_texto
         
