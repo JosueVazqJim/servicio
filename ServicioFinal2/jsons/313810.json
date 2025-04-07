@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 51
+            "años": 77
         },
         "sexo": "femenino",
         "peso": null,
@@ -14,31 +14,19 @@
         "alcohol": "negado",
         "drogas": "negado",
         "comorbilidades": {
-            "1992": [
+            "01.2023": [
                 {
-                    "nombre": "miomatosis uterina",
-                    "descripción": null
-                }
-            ],
-            "2020": [
-                {
-                    "nombre": "diabetes tipo 2",
-                    "descripción": null
-                }
-            ],
-            "2023": [
-                {
-                    "nombre": "hipertensión arterial",
+                    "nombre": "dislipidemia mixta",
                     "descripción": null
                 }
             ]
         },
         "antecedentes_ginecológicos": {
             "fum": {
-                "años": 29
+                "años": 60
             },
             "menarca": {
-                "años": 13
+                "años": 9
             },
             "embarazos": null,
             "partos": null,
@@ -47,59 +35,57 @@
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 4,
-            "p": 4,
+            "g": 0,
+            "p": 0,
             "c": 0,
             "a": 0
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": null,
-        "lateralidad": [
-            "1 hermano con cáncer de próstata (67 años)"
-        ],
-        "descendencia": null
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
     },
     "estadía_tumoral": {
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
+            "centros_tumorales": "ct2",
+            "nódulos": "cn0",
             "metástasis": null
         },
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct3",
-            "nódulos": "n1",
-            "metástasis": "m0"
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
         }
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
+            "re": "95%",
+            "rp": "90%",
+            "her2": "2+",
+            "ki67": "50%",
+            "gh": null
+        },
+        "mama_derecha": {
             "re": null,
             "rp": null,
             "her2": null,
             "ki67": null,
             "gh": null
-        },
-        "mama_derecha": {
-            "re": "90%",
-            "rp": "70%",
-            "her2": "negativo",
-            "ki67": "10%",
-            "gh": null
         }
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": null,
-            "descripcion": null
+            "clasificación": "carcinoma ductal infiltrante de mama izquierda ec iia rh+, her2 + q",
+            "descripcion": "ec iia ct2- 3.5 cm cn0"
         },
         "mama_derecha": {
-            "clasificación": "cáncer de mama t3 n1 m0 eciib triple negativo",
-            "descripcion": "ec iia ct3 - 5.3 cm cn1"
+            "clasificación": null,
+            "descripcion": null
         }
     }
 }

@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 51
+            "años": 52
         },
         "sexo": "femenino",
         "peso": null,
@@ -14,38 +14,34 @@
         "alcohol": "negado",
         "drogas": "negado",
         "comorbilidades": {
-            "1992": [
+            "sin_fecha": [
                 {
-                    "nombre": "miomatosis uterina",
+                    "nombre": "hipotiroidismo primario",
                     "descripción": null
                 }
             ],
-            "2020": [
+            "2011": [
                 {
-                    "nombre": "diabetes tipo 2",
+                    "nombre": "hipertensión arterial sistémica",
                     "descripción": null
                 }
             ],
-            "2023": [
+            "2018": [
                 {
-                    "nombre": "hipertensión arterial",
-                    "descripción": null
+                    "nombre": "carcinoma papilar de tiroides t1a(s)nomo, ec i, macis 4.02, ames bajo riesgo",
+                    "descripción": ". o 4234-9-0:"
                 }
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": {
-                "años": 29
-            },
-            "menarca": {
-                "años": 13
-            },
+            "fum": "09.2022",
+            "menarca": "12",
             "embarazos": null,
             "partos": null,
-            "trh": "negados",
-            "aco": "negados",
+            "trh": null,
+            "aco": "negado",
             "mpf": null,
-            "estado_hormonal": "postmenopáusica",
+            "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
             "g": 4,
             "p": 4,
@@ -54,11 +50,9 @@
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": null,
-        "lateralidad": [
-            "1 hermano con cáncer de próstata (67 años)"
-        ],
-        "descendencia": null
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
     },
     "estadía_tumoral": {
         "mama_izquierda": {
@@ -71,9 +65,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct3",
-            "nódulos": "n1",
-            "metástasis": "m0"
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -85,21 +79,21 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": "90%",
-            "rp": "70%",
-            "her2": "negativo",
-            "ki67": "10%",
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
             "gh": null
         }
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": null,
+            "clasificación": "cdis de alto grado",
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cáncer de mama t3 n1 m0 eciib triple negativo",
-            "descripcion": "ec iia ct3 - 5.3 cm cn1"
+            "clasificación": null,
+            "descripcion": null
         }
     }
 }

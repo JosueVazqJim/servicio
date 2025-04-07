@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 48
+            "años": 56
         },
         "sexo": "femenino",
         "peso": null,
@@ -15,20 +15,21 @@
         "drogas": "negado",
         "comorbilidades": "negadas",
         "antecedentes_ginecológicos": {
-            "fum": "10.09.22",
+            "fum": null,
             "menarca": {
-                "años": 11
+                "años": 12,
+                "contexto": "menarca 12 años"
             },
             "embarazos": null,
             "partos": null,
             "trh": null,
             "aco": "negado",
-            "mpf": "otb (2005)",
-            "estado_hormonal": "premenopáusica. paridad satistecha",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica.",
             "métodos_anticonceptivos": null,
-            "g": 4,
-            "p": 3,
-            "c": 1,
+            "g": 1,
+            "p": 0,
+            "c": 0,
             "a": 0
         }
     },
@@ -38,20 +39,11 @@
         "descendencia": "negado"
     },
     "estadía_tumoral": {
-        "mama_izquierda": {
-            "ultrasonido": null,
-            "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
-            "metástasis": null
-        },
-        "mama_derecha": {
-            "ultrasonido": null,
-            "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
-            "metástasis": null
-        }
+        "ultrasonido": null,
+        "mastografía": null,
+        "centros_tumorales": "pt1b",
+        "nódulos": "pn0",
+        "metástasis": "m0"
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
@@ -62,10 +54,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": "80%",
-            "rp": "0%",
-            "her2": "1+",
-            "ki67": "10%",
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
             "gh": null
         }
     },
@@ -75,8 +67,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cdi de ec iiic luminal b her2 +++",
-            "descripcion": "ec iiic sin respuesta completa al tratamiento ypticnia"
+            "clasificación": null,
+            "descripcion": null
         }
     }
 }

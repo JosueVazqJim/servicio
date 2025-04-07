@@ -70,7 +70,13 @@
         "gh": null
     },
     "tipo": {
-        "clasificación": "carcinoma ductal invasivo ec ia pt1b, pn0, m0, her2-, rh+",
-        "descripcion": null
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
     }
 }

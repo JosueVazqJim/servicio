@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 51
+            "años": 50
         },
         "sexo": "femenino",
         "peso": null,
@@ -14,49 +14,49 @@
         "alcohol": "negado",
         "drogas": "negado",
         "comorbilidades": {
-            "1992": [
+            "sin_fecha": [
                 {
-                    "nombre": "miomatosis uterina",
+                    "nombre": "artritis reumatoide",
                     "descripción": null
-                }
-            ],
-            "2020": [
+                },
                 {
-                    "nombre": "diabetes tipo 2",
+                    "nombre": "tumor renal izquierdo de 2 cm",
                     "descripción": null
-                }
-            ],
-            "2023": [
+                },
                 {
-                    "nombre": "hipertensión arterial",
+                    "nombre": "adenocarcinoma de colon izquierdo localizado, pendiente etapificación",
+                    "descripción": null
+                },
+                {
+                    "nombre": "tumor uterino dc ccen",
                     "descripción": null
                 }
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": {
-                "años": 29
-            },
+            "fum": "06.2022",
             "menarca": {
-                "años": 13
+                "años": 11
             },
             "embarazos": null,
             "partos": null,
-            "trh": "negados",
-            "aco": "negados",
+            "trh": null,
+            "aco": "negado",
             "mpf": null,
-            "estado_hormonal": "postmenopáusica",
+            "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 4,
-            "p": 4,
+            "g": 1,
+            "p": 0,
             "c": 0,
-            "a": 0
+            "a": 1
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": null,
+        "ascendencia": [
+            "abuela materna cáncer de páncreas (86 años)"
+        ],
         "lateralidad": [
-            "1 hermano con cáncer de próstata (67 años)"
+            "2tías maternas cáncer de páncreas (68 y 74 años)"
         ],
         "descendencia": null
     },
@@ -64,42 +64,42 @@
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
+            "centros_tumorales": "pt2n0o",
+            "nódulos": "cn0",
             "metástasis": null
         },
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct3",
-            "nódulos": "n1",
-            "metástasis": "m0"
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
         }
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
             "re": null,
             "rp": null,
-            "her2": null,
+            "her2": "positivo",
             "ki67": null,
             "gh": null
         },
         "mama_derecha": {
-            "re": "90%",
-            "rp": "70%",
-            "her2": "negativo",
-            "ki67": "10%",
+            "re": null,
+            "rp": null,
+            "her2": "positivo",
+            "ki67": null,
             "gh": null
         }
     },
     "tipo": {
         "mama_izquierda": {
             "clasificación": null,
-            "descripcion": null
+            "descripcion": "ec iib ct3-—7 cm cn0 sin rpc -— ypt2n0o"
         },
         "mama_derecha": {
-            "clasificación": "cáncer de mama t3 n1 m0 eciib triple negativo",
-            "descripcion": "ec iia ct3 - 5.3 cm cn1"
+            "clasificación": "cdi ec iib luminal b her2 positivo",
+            "descripcion": null
         }
     }
 }

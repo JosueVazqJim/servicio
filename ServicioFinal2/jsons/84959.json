@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 51
+            "años": 67
         },
         "sexo": "femenino",
         "peso": null,
@@ -11,44 +11,51 @@
             "fuma": "negado",
             "observaciones": null
         },
-        "alcohol": "negado",
+        "alcohol": "ocasional",
         "drogas": "negado",
         "comorbilidades": {
-            "1992": [
+            "1975": [
                 {
-                    "nombre": "miomatosis uterina",
-                    "descripción": null
+                    "nombre": "linfoma de hodgkin",
+                    "descripción": "3 ciclos qt (ciclofosfamida, vincristina y otro fármaco) + rt por encima del diafragma (imss)"
                 }
             ],
-            "2020": [
+            "1988": [
                 {
-                    "nombre": "diabetes tipo 2",
-                    "descripción": null
+                    "nombre": "cáncer papilar de tiroides",
+                    "descripción": "tiroidectomía + iodo 131 t4/t3"
                 }
             ],
-            "2023": [
+            "2016": [
                 {
-                    "nombre": "hipertensión arterial",
+                    "nombre": "cistoadenoma seroso microquístico de páncreas",
+                    "descripción": null
+                },
+                {
+                    "nombre": "cdi de mama izquierda ec ia (t1c, n0, m0), rh+, her2 -: cc + gc + rt + ia x 5 años",
                     "descripción": null
                 }
             ]
         },
         "antecedentes_ginecológicos": {
             "fum": {
-                "años": 29
+                "años": 21
             },
             "menarca": {
-                "años": 13
+                "años": 15
             },
             "embarazos": null,
             "partos": null,
-            "trh": "negados",
-            "aco": "negados",
+            "trh": {
+                "años": 30,
+                "contexto": "durante 30 años"
+            },
+            "aco": null,
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 4,
-            "p": 4,
+            "g": 0,
+            "p": 0,
             "c": 0,
             "a": 0
         }
@@ -56,7 +63,8 @@
     "antecedentes_familiares": {
         "ascendencia": null,
         "lateralidad": [
-            "1 hermano con cáncer de próstata (67 años)"
+            "tía materna falleció por cáncer de mama",
+            "prima materna con cáncer de mama desconoce edad al diagnóstico)"
         ],
         "descendencia": null
     },
@@ -71,9 +79,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct3",
-            "nódulos": "n1",
-            "metástasis": "m0"
+            "centros_tumorales": "ct1a",
+            "nódulos": "cn0",
+            "metástasis": null
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -85,9 +93,9 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": "90%",
-            "rp": "70%",
-            "her2": "negativo",
+            "re": "0%",
+            "rp": "0%",
+            "her2": "-",
             "ki67": "10%",
             "gh": null
         }
@@ -98,8 +106,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cáncer de mama t3 n1 m0 eciib triple negativo",
-            "descripcion": "ec iia ct3 - 5.3 cm cn1"
+            "clasificación": "cdi de ec ia triple negativo",
+            "descripcion": "ec ia ct1a-—0.5 cm cn0"
         }
     }
 }

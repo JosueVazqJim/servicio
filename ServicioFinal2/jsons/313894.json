@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 51
+            "años": 54
         },
         "sexo": "femenino",
         "peso": null,
@@ -11,53 +11,46 @@
             "fuma": "negado",
             "observaciones": null
         },
-        "alcohol": "negado",
+        "alcohol": "ocasional",
         "drogas": "negado",
         "comorbilidades": {
-            "1992": [
+            "2022": [
                 {
-                    "nombre": "miomatosis uterina",
+                    "nombre": "dislipidemia mixta",
                     "descripción": null
-                }
-            ],
-            "2020": [
+                },
                 {
-                    "nombre": "diabetes tipo 2",
-                    "descripción": null
-                }
-            ],
-            "2023": [
-                {
-                    "nombre": "hipertensión arterial",
+                    "nombre": "prediabetes",
                     "descripción": null
                 }
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": {
-                "años": 29
-            },
+            "fum": "2018",
             "menarca": {
                 "años": 13
             },
             "embarazos": null,
             "partos": null,
-            "trh": "negados",
-            "aco": "negados",
-            "mpf": null,
+            "trh": "no",
+            "aco": null,
+            "mpf": {
+                "años": 7,
+                "contexto": "diu con levonogestrel por 7 años"
+            },
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 4,
-            "p": 4,
+            "g": 2,
+            "p": 2,
             "c": 0,
             "a": 0
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": null,
-        "lateralidad": [
-            "1 hermano con cáncer de próstata (67 años)"
+        "ascendencia": [
+            "padre con diagnóstico de cáncer de próstata a los 55 años"
         ],
+        "lateralidad": null,
         "descendencia": null
     },
     "estadía_tumoral": {
@@ -71,35 +64,35 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct3",
-            "nódulos": "n1",
-            "metástasis": "m0"
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
         }
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": null,
-            "rp": null,
+            "re": "90%",
+            "rp": "70%",
             "her2": null,
             "ki67": null,
             "gh": null
         },
         "mama_derecha": {
-            "re": "90%",
-            "rp": "70%",
-            "her2": "negativo",
-            "ki67": "10%",
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
             "gh": null
         }
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": null,
+            "clasificación": "cdis de bajo grado de mama izquierda",
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cáncer de mama t3 n1 m0 eciib triple negativo",
-            "descripcion": "ec iia ct3 - 5.3 cm cn1"
+            "clasificación": null,
+            "descripcion": null
         }
     }
 }

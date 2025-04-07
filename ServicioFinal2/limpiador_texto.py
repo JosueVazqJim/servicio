@@ -190,7 +190,7 @@ class LimpiezaTexto:
         - Otros casos especiales predefinidos
         """
         nuevo_texto = []
-        self.imprimir_datos()
+        
         for linea in self.texto_procesado:
             # Caso 1: Biología tumoral
             if "biología tumoral" in linea and ('final' in linea or 'post tratamiento' in linea):
