@@ -117,10 +117,10 @@ class TextoJson:
         for match in matches:
             if match[0] and match[1]:  # Caso: "1 año" o "1.5 años"
                 value = float(match[0]) if '.' in match[0] else int(match[0])  # Parseo de dígitos
-                units.append((value, match[1]))
+                units.append((value, match[1].lower()))
             elif match[2] and match[3]:  # Caso: "año 1" o "años 1.5"
                 value = float(match[3]) if '.' in match[3] else int(match[3])  # Parseo de dígitos
-                units.append((value, match[2]))
+                units.append((value, match[2].lower()))
 
         return units
 
@@ -422,7 +422,7 @@ class TextoJson:
         }
 
         for linea in self.informacion:
-            linea = linea.strip()
+            linea = linea.strip().lower()
 
             # Verificar si está negado
             if "ahf" in linea and "negado" in linea:
@@ -497,31 +497,33 @@ class TextoJson:
         encontrado_en_biologia = False
 
         # Primera pasada: buscar solo en biología tumoral
-        for linea in self.informacion:            
+        for linea in self.informacion:
+            linea_lower = linea.lower()
+            
             # Verificar si estamos en biología tumoral
-            if "biología tumoral" in linea:
+            if "biología tumoral" in linea_lower:
                 encontrado_en_biologia = True
                 
                 # Extraer datos para cada marcador
                 for marcador, patron in patrones.items():
                     match = patron.search(linea)
                     if match:
-                        valor = match.group(1).strip() if marcador in ["her2", "re", "rp"] else match.group(1).strip()
+                        valor = match.group(1).strip().lower() if marcador in ["her2", "re", "rp"] else match.group(1).strip()
                         
                         # Asignar el valor según la mama detectada
                         if self.mama == "bilateral":
                             # Procesamiento especial para casos bilaterales
                             secciones = re.split(r"mama (izquierda|derecha)", linea, flags=re.IGNORECASE)
                             for i, seccion in enumerate(secciones):
-                                if seccion == "izquierda":
+                                if seccion.lower() == "izquierda":
                                     match_izq = patron.search(secciones[i+1])
                                     if match_izq:
-                                        val = match_izq.group(1).strip() if marcador in ["her2", "re", "rp"] else match_izq.group(1).strip()
+                                        val = match_izq.group(1).strip().lower() if marcador in ["her2", "re", "rp"] else match_izq.group(1).strip()
                                         inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = val
-                                elif seccion == "derecha":
+                                elif seccion.lower() == "derecha":
                                     match_der = patron.search(secciones[i+1])
                                     if match_der:
-                                        val = match_der.group(1).strip() if marcador in ["her2", "re", "rp"] else match_der.group(1).strip()
+                                        val = match_der.group(1).strip().lower() if marcador in ["her2", "re", "rp"] else match_der.group(1).strip()
                                         inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = val
                         elif self.mama == "mama_izquierda":
                             inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = valor
@@ -539,14 +541,15 @@ class TextoJson:
             for val in dic.values()
         ):
             for linea in self.informacion:
+                linea_lower = linea.lower()
                 
                 # Verificar si estamos en diagnóstico
-                if "diagnóstico" in linea:
+                if "diagnóstico" in linea_lower:
                     # Extraer datos para cada marcador
                     for marcador, patron in patrones.items():
                         match = patron.search(linea)
                         if match:
-                            valor = match.group(1).strip() if marcador in ["her2", "re", "rp", "ki67", "g"] else match.group(1).strip()
+                            valor = match.group(1).strip().lower() if marcador in ["her2", "re", "rp", "ki67", "g"] else match.group(1).strip()
                             
                             # Solo asignar si no tenemos ya un valor (de biología tumoral)
                             if self.mama == "bilateral":
@@ -655,7 +658,7 @@ class TextoJson:
                         except IndexError:
                             print("Error al procesar datos de mama bilateral. Se identificaron la mencion de mama izquierda y derecha, pero no se encontraron datos específicos.")
                             # Extraer datos en base a "mama izquierda" o "mama derecha" si el try falla
-                            if "mama izquierda" in linea:
+                            if "mama izquierda" in linea.lower():
                                 campos_izquierda = re.findall(patron, linea, re.IGNORECASE)
                                 for campo in campos_izquierda:
                                     if campo.startswith("pt") or campo.startswith("ct"):
@@ -665,7 +668,7 @@ class TextoJson:
                                     elif campo.startswith("m"):
                                         estadia_tumoral_secciones["mama_izquierda"]["metástasis"] = campo
 
-                            if "mama derecha" in linea:
+                            if "mama derecha" in linea.lower():
                                 campos_derecha = re.findall(patron, linea, re.IGNORECASE)
                                 for campo in campos_derecha:
                                     if campo.startswith("pt") or campo.startswith("ct"):
@@ -720,11 +723,6 @@ class TextoJson:
             "mama_derecha": {"clasificación": None, "descripcion": None},
         }
 
-        clasificacion_no_mama = {
-            "clasificación": None,
-            "descripcion": None
-        }
-
         for linea in self.informacion:
             linea = linea.strip()
 
@@ -760,8 +758,6 @@ class TextoJson:
                             clasificacion["mama_izquierda"]["clasificación"] = linea.replace("diagnóstico: ", "").strip()
                         elif self.mama == "mama_derecha":
                             clasificacion["mama_derecha"]["clasificación"] = linea.replace("diagnóstico: ", "").strip()
-                        elif self.mama is None:
-                            clasificacion_no_mama["clasificación"] = linea.replace("diagnóstico: ", "").strip()
 
             if "extensión del tumor" in linea:
                 # Buscar mama izquierda
@@ -773,18 +769,56 @@ class TextoJson:
                     clasificacion["mama_izquierda"]["descripcion"] = f"{match_izq.group(1).strip()}"
                 if match_der:
                     clasificacion["mama_derecha"]["descripcion"] = f"{match_der.group(1).strip()}"
-                if self.mama is None and not match_izq and not match_der:
-                    clasificacion_no_mama["descripcion"] = linea.replace("extensión del tumor: ", "").strip()
 
-        if self.mama is None:
-            if any(value is not None for value in clasificacion_no_mama.values()):
-                self.data["tipo"] = clasificacion_no_mama
-            else:
-                self.data["tipo"] = clasificacion
-        else:
-            self.data["tipo"] = clasificacion
+        self.data["tipo"] = clasificacion
         # self.imprimir_data()
 
+    def __verificar_valores_nulos(self, ruta_log, nombre_caso):
+        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        """
+        Verifica los valores nulos en el diccionario self.data y guarda los resultados en un archivo de texto.
+
+        Args:
+            ruta_log (str): Ruta del archivo de texto donde se guardarán los valores nulos.
+        """
+        # Verifica si self.data tiene datos
+        print("Datos de self.data:", self.data)
+
+        valores_nulos = {}
+
+        # Función recursiva para recorrer los diccionarios anidados
+        def verificar_subniveles(d, clave_principal=None):
+            for clave, valor in d.items():
+                if isinstance(valor, dict):
+                    # Si el valor es un diccionario, llamamos a la función recursiva
+                    verificar_subniveles(valor, clave)
+                elif valor is None or (isinstance(valor, (dict, list)) and not valor):  # Verificar valores nulos
+                    # Si encontramos un valor nulo o vacío, lo registramos
+                    if clave_principal not in valores_nulos:
+                        valores_nulos[clave_principal] = {}
+                    valores_nulos[clave_principal][clave] = valor
+
+        # Llamar a la función recursiva
+        verificar_subniveles(self.data)
+
+        if valores_nulos:
+            # Asegúrate de que la ruta log es válida
+            ruta_log = ruta_log + '/log.txt'
+            print(f"Ruta del archivo de log: {ruta_log}")  # Verifica que la ruta es la correcta
+
+            try:
+                with open(ruta_log, "a") as log_file:
+                    log_file.write(f"Nombre del caso: {nombre_caso}\n")
+                    log_file.write("Valores nulos encontrados:\n")
+                    for clave_principal, subdiccionario in valores_nulos.items():
+                        log_file.write(f"  - {clave_principal}:\n")
+                        for subclave, valor in subdiccionario.items():
+                            log_file.write(f"    - {subclave}: {valor}\n")
+                    log_file.write("\n")
+            except Exception as e:
+                print(f"Error al escribir en el archivo de log: {e}")
+
+    
     def convertir_txt_json(self, ruta_txt, ruta_destino):
         """
         Convierte un archivo de texto a un archivo JSON sin importar la cantidad de casos que contenga el txt.
@@ -801,6 +835,7 @@ class TextoJson:
 
         os.makedirs(ruta_destino, exist_ok=True) # Crear la carpeta de destino si no existe
 
+        
         self.__limpiar_texto()
         self.imprimir_info()
 
@@ -811,6 +846,7 @@ class TextoJson:
         self.__extraer_datos_inmunohistoquímica_tumoral()
         self.__extraer_datos_clasificacion()
         self.__extraer_datos_estadia_tumoral()
+        self.__verificar_valores_nulos(ruta_destino, nombreJSON)
 
         self.__crear_json(nombreJSON)
         
