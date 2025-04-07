@@ -117,10 +117,10 @@ class TextoJson:
         for match in matches:
             if match[0] and match[1]:  # Caso: "1 año" o "1.5 años"
                 value = float(match[0]) if '.' in match[0] else int(match[0])  # Parseo de dígitos
-                units.append((value, match[1].lower()))
+                units.append((value, match[1]))
             elif match[2] and match[3]:  # Caso: "año 1" o "años 1.5"
                 value = float(match[3]) if '.' in match[3] else int(match[3])  # Parseo de dígitos
-                units.append((value, match[2].lower()))
+                units.append((value, match[2]))
 
         return units
 
@@ -422,7 +422,7 @@ class TextoJson:
         }
 
         for linea in self.informacion:
-            linea = linea.strip().lower()
+            linea = linea.strip()
 
             # Verificar si está negado
             if "ahf" in linea and "negado" in linea:
@@ -497,33 +497,31 @@ class TextoJson:
         encontrado_en_biologia = False
 
         # Primera pasada: buscar solo en biología tumoral
-        for linea in self.informacion:
-            linea_lower = linea.lower()
-            
+        for linea in self.informacion:            
             # Verificar si estamos en biología tumoral
-            if "biología tumoral" in linea_lower:
+            if "biología tumoral" in linea:
                 encontrado_en_biologia = True
                 
                 # Extraer datos para cada marcador
                 for marcador, patron in patrones.items():
                     match = patron.search(linea)
                     if match:
-                        valor = match.group(1).strip().lower() if marcador in ["her2", "re", "rp"] else match.group(1).strip()
+                        valor = match.group(1).strip() if marcador in ["her2", "re", "rp"] else match.group(1).strip()
                         
                         # Asignar el valor según la mama detectada
                         if self.mama == "bilateral":
                             # Procesamiento especial para casos bilaterales
                             secciones = re.split(r"mama (izquierda|derecha)", linea, flags=re.IGNORECASE)
                             for i, seccion in enumerate(secciones):
-                                if seccion.lower() == "izquierda":
+                                if seccion == "izquierda":
                                     match_izq = patron.search(secciones[i+1])
                                     if match_izq:
-                                        val = match_izq.group(1).strip().lower() if marcador in ["her2", "re", "rp"] else match_izq.group(1).strip()
+                                        val = match_izq.group(1).strip() if marcador in ["her2", "re", "rp"] else match_izq.group(1).strip()
                                         inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = val
-                                elif seccion.lower() == "derecha":
+                                elif seccion == "derecha":
                                     match_der = patron.search(secciones[i+1])
                                     if match_der:
-                                        val = match_der.group(1).strip().lower() if marcador in ["her2", "re", "rp"] else match_der.group(1).strip()
+                                        val = match_der.group(1).strip() if marcador in ["her2", "re", "rp"] else match_der.group(1).strip()
                                         inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = val
                         elif self.mama == "mama_izquierda":
                             inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = valor
@@ -541,15 +539,14 @@ class TextoJson:
             for val in dic.values()
         ):
             for linea in self.informacion:
-                linea_lower = linea.lower()
                 
                 # Verificar si estamos en diagnóstico
-                if "diagnóstico" in linea_lower:
+                if "diagnóstico" in linea:
                     # Extraer datos para cada marcador
                     for marcador, patron in patrones.items():
                         match = patron.search(linea)
                         if match:
-                            valor = match.group(1).strip().lower() if marcador in ["her2", "re", "rp", "ki67", "g"] else match.group(1).strip()
+                            valor = match.group(1).strip() if marcador in ["her2", "re", "rp", "ki67", "g"] else match.group(1).strip()
                             
                             # Solo asignar si no tenemos ya un valor (de biología tumoral)
                             if self.mama == "bilateral":
@@ -658,7 +655,7 @@ class TextoJson:
                         except IndexError:
                             print("Error al procesar datos de mama bilateral. Se identificaron la mencion de mama izquierda y derecha, pero no se encontraron datos específicos.")
                             # Extraer datos en base a "mama izquierda" o "mama derecha" si el try falla
-                            if "mama izquierda" in linea.lower():
+                            if "mama izquierda" in linea:
                                 campos_izquierda = re.findall(patron, linea, re.IGNORECASE)
                                 for campo in campos_izquierda:
                                     if campo.startswith("pt") or campo.startswith("ct"):
@@ -668,7 +665,7 @@ class TextoJson:
                                     elif campo.startswith("m"):
                                         estadia_tumoral_secciones["mama_izquierda"]["metástasis"] = campo
 
-                            if "mama derecha" in linea.lower():
+                            if "mama derecha" in linea:
                                 campos_derecha = re.findall(patron, linea, re.IGNORECASE)
                                 for campo in campos_derecha:
                                     if campo.startswith("pt") or campo.startswith("ct"):
@@ -723,6 +720,11 @@ class TextoJson:
             "mama_derecha": {"clasificación": None, "descripcion": None},
         }
 
+        clasificacion_no_mama = {
+            "clasificación": None,
+            "descripcion": None
+        }
+
         for linea in self.informacion:
             linea = linea.strip()
 
@@ -758,6 +760,8 @@ class TextoJson:
                             clasificacion["mama_izquierda"]["clasificación"] = linea.replace("diagnóstico: ", "").strip()
                         elif self.mama == "mama_derecha":
                             clasificacion["mama_derecha"]["clasificación"] = linea.replace("diagnóstico: ", "").strip()
+                        elif self.mama is None:
+                            clasificacion_no_mama["clasificación"] = linea.replace("diagnóstico: ", "").strip()
 
             if "extensión del tumor" in linea:
                 # Buscar mama izquierda
@@ -769,8 +773,16 @@ class TextoJson:
                     clasificacion["mama_izquierda"]["descripcion"] = f"{match_izq.group(1).strip()}"
                 if match_der:
                     clasificacion["mama_derecha"]["descripcion"] = f"{match_der.group(1).strip()}"
+                if self.mama is None and not match_izq and not match_der:
+                    clasificacion_no_mama["descripcion"] = linea.replace("extensión del tumor: ", "").strip()
 
-        self.data["tipo"] = clasificacion
+        if self.mama is None:
+            if any(value is not None for value in clasificacion_no_mama.values()):
+                self.data["tipo"] = clasificacion_no_mama
+            else:
+                self.data["tipo"] = clasificacion
+        else:
+            self.data["tipo"] = clasificacion
         # self.imprimir_data()
 
     def convertir_txt_json(self, ruta_txt, ruta_destino):
