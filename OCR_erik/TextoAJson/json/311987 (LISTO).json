@@ -80,14 +80,14 @@
         "mama_izquierda": {
             "re": null,
             "rp": null,
-            "her2": null,
+            "her2": "positivo",
             "ki67": null,
             "gh": null
         },
         "mama_derecha": {
             "re": null,
             "rp": null,
-            "her2": null,
+            "her2": "positivo",
             "ki67": null,
             "gh": null
         }

@@ -63,20 +63,11 @@
         "metástasis": "m0"
     },
     "inmunohistoquímica_tumoral": {
-        "mama_izquierda": {
-            "re": null,
-            "rp": null,
-            "her2": null,
-            "ki67": null,
-            "gh": null
-        },
-        "mama_derecha": {
-            "re": null,
-            "rp": null,
-            "her2": null,
-            "ki67": null,
-            "gh": null
-        }
+        "re": null,
+        "rp": null,
+        "her2": "-",
+        "ki67": null,
+        "gh": null
     },
     "tipo": {
         "mama_izquierda": {

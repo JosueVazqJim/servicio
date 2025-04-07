@@ -76,14 +76,14 @@
             "rp": "90%",
             "her2": "negativo",
             "ki67": "30%",
-            "gh": "g3"
+            "gh": "3"
         },
         "mama_derecha": {
             "re": "95%",
             "rp": "95%",
             "her2": "negativo",
             "ki67": "5%",
-            "gh": "g2"
+            "gh": "2"
         }
     },
     "tipo": {
