@@ -1,0 +1,82 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 48
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "ocasional",
+        "drogas": "negado",
+        "comorbilidades": "negadas",
+        "antecedentes_ginecológicos": {
+            "fum": "10.09.22",
+            "menarca": {
+                "años": 11
+            },
+            "embarazos": null,
+            "partos": null,
+            "trh": null,
+            "aco": "negado",
+            "mpf": "otb (2005)",
+            "estado_hormonal": "premenopáusica. paridad satistecha",
+            "métodos_anticonceptivos": null,
+            "g": 4,
+            "p": 3,
+            "c": 1,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "80%",
+            "rp": "0%",
+            "her2": "1+",
+            "ki67": "10%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de ec iiic luminal b her2 +++",
+            "descripcion": "ec i1ic sin respuesta completa al tratamiento ypticnia"
+        }
+    }
+}

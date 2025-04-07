@@ -1,34 +1,43 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 61
+            "años": 50
         },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
         "preferencia": null,
         "índice_tabáquico": {
-            "fuma": null,
+            "fuma": "negado",
             "observaciones": null
         },
-        "alcohol": null,
-        "drogas": null,
-        "comorbilidades": null,
+        "alcohol": "ocasional",
+        "drogas": "negado",
+        "comorbilidades": "negadas",
         "antecedentes_ginecológicos": {
-            "fum": null,
+            "fum": "2016 quirúrgica (histerectomía 2016)",
             "menarca": null,
             "embarazos": null,
             "partos": null,
             "trh": null,
-            "aco": null,
+            "aco": {
+                "años": 29,
+                "contexto": "6 años (23-29 años)."
+            },
             "mpf": null,
-            "estado_hormonal": "postmenopáusica",
-            "métodos_anticonceptivos": null
+            "estado_hormonal": "premenopáusica.",
+            "métodos_anticonceptivos": null,
+            "g": 5,
+            "p": 2,
+            "c": 2,
+            "a": 1
         }
     },
     "antecedentes_familiares": {
         "ascendencia": null,
-        "lateralidad": null,
+        "lateralidad": [
+            "prima hermana de rama materna con cáncer de mama a los 48 años"
+        ],
         "descendencia": null
     },
     "estadía_tumoral": {
@@ -42,9 +51,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct3",
-            "nódulos": "cn1",
-            "metástasis": null
+            "centros_tumorales": "ct1c",
+            "nódulos": "n1",
+            "metástasis": "m0"
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -56,10 +65,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": "0%",
-            "rp": "1%",
-            "her2": "-",
-            "ki67": "60%",
+            "re": "80%",
+            "rp": "0%",
+            "her2": "1+",
+            "ki67": "10%",
             "gh": null
         }
     },
@@ -69,8 +78,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": null,
-            "descripcion": "ec iia ct3 - 5.3 cm cn1"
+            "clasificación": "cdi , multifocal, ec iia (ct1c, c(f)n1, m0) luminal b her 2 negativo",
+            "descripcion": null
         }
     }
 }

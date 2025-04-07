@@ -1,80 +1,70 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 89
+            "años": 50
         },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
         "preferencia": null,
         "índice_tabáquico": {
-            "fuma": "suspendido",
-            "observaciones": [
-                {
-                    "notas": "hace 40 años",
-                    "tiempo": {
-                        "años": 40
-                    }
-                }
-            ]
+            "fuma": "negado",
+            "observaciones": null
         },
         "alcohol": "negado",
         "drogas": "negado",
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "diabetes tipo 2",
+                    "nombre": "artritis reumatoide",
                     "descripción": null
                 },
                 {
-                    "nombre": "hipertensión arterial sistémica",
+                    "nombre": "tumor renal izquierdo de 2 cm",
                     "descripción": null
                 },
                 {
-                    "nombre": "insuficiencia venosa periférica ceap 3",
+                    "nombre": "adenocarcinoma de colon izquierdo localizado, pendiente etapificación",
                     "descripción": null
                 },
                 {
-                    "nombre": "antecedente de trombosis venosa profunda izquierda s 9.0",
+                    "nombre": "tumor uterino dc ccen",
                     "descripción": null
                 }
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": {
-                "años": 50
-            },
+            "fum": "06.2022",
             "menarca": {
-                "años": 13
+                "años": 11
             },
             "embarazos": null,
             "partos": null,
-            "trh": "negados",
-            "aco": "trh negados",
+            "trh": null,
+            "aco": "negado",
             "mpf": null,
-            "estado_hormonal": "postmenopáusica",
+            "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 6,
-            "p": 5,
+            "g": 1,
+            "p": 0,
             "c": 0,
             "a": 1
         }
     },
     "antecedentes_familiares": {
         "ascendencia": [
-            "hija falleció cáncer de mamá a los 29 años",
-            "papá con cáncer de próstata a los 75 años"
+            "abuela materna cáncer de páncreas (86 años)"
         ],
-        "lateralidad": null,
-        "descendencia": [
-            "hija con cáncer de cabeza y cuello diagnosticado a los 60 años"
-        ]
+        "lateralidad": [
+            "2tías maternas cáncer de páncreas (68 y 74 años)"
+        ],
+        "descendencia": null
     },
     "estadía_tumoral": {
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct1c",
+            "centros_tumorales": "pt2n0o",
             "nódulos": "cn0",
             "metástasis": null
         },
@@ -88,27 +78,27 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": "95%",
-            "rp": "1%",
-            "her2": "1+ (-)",
-            "ki67": "10%",
+            "re": null,
+            "rp": null,
+            "her2": "positivo",
+            "ki67": null,
             "gh": null
         },
         "mama_derecha": {
             "re": null,
             "rp": null,
-            "her2": null,
+            "her2": "positivo",
             "ki67": null,
             "gh": null
         }
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "cdi de mama izquierda ec ia (t1cno0) re 95%, rp1%, her2 — (1+)",
-            "descripcion": "ec ia ct1c-—18 mm cn0"
+            "clasificación": null,
+            "descripcion": "ec iib ct3-—7 cm cn0 sin rpc -— ypt2n0o"
         },
         "mama_derecha": {
-            "clasificación": null,
+            "clasificación": "cdi ec iib luminal b her2 positivo",
             "descripcion": null
         }
     }
