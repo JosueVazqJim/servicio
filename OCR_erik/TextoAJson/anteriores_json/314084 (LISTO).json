@@ -15,7 +15,9 @@
         "drogas": "negado",
         "comorbilidades": "negadas",
         "antecedentes_ginecológicos": {
-            "fum": null,
+            "fum": {
+                "años": 50
+            },
             "menarca": {
                 "años": 12,
                 "contexto": "menarca 12 años"

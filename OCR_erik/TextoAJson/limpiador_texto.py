@@ -65,7 +65,10 @@ class LimpiezaTexto:
         claves_palabras = {"menarca", "embarazos", "partos", "fum", "trh", "aco", "mpf", "métodos" }
 
         # Patrones que se consideran claves
-        patron_gn_pn_cn_an = re.compile(r'[-\s]*\bg\d+\s*p\d+\s*a\d+\s*c\d+\b.*|g\d+p\d+c\d+a\d+', re.IGNORECASE)
+        patron_gn_pn_cn_an = re.compile(
+            r'\b(?=.*g\s*\d+)(?=.*p\s*\d+)(?=.*c\s*\d+)(?=.*a\s*\d+)[gpca\d\s]*\b',
+            re.IGNORECASE
+        )
         patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
         patron_linea_tipo = re.compile(r'^[^/]+ / \d+ / \d+ años / .+$')  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
 
@@ -144,7 +147,10 @@ class LimpiezaTexto:
         claves_palabras = ["menarca", "embarazos", "partos", "fum", "trh", "aco", "mpf"]
 
         # Patrones adicionales a conservar
-        patron_gn_pn_cn_an = re.compile(r'[-\s]*\bg\d+\s*p\d+\s*a\d+\s*c\d+\b.*|g\d+p\d+c\d+a\d+', re.IGNORECASE)
+        patron_gn_pn_cn_an = re.compile(
+            r'\b(?=.*g\s*\d+)(?=.*p\s*\d+)(?=.*c\s*\d+)(?=.*a\s*\d+)[gpca\d\s]*\b',
+            re.IGNORECASE
+        )        
         patron_lista_numerada = r'^\d+\.\s'  # Patrón para detectar líneas numeradas (ej: "1. cáncer de mama")
         patron_vineta = r'^-\s'  # Patrón para detectar líneas con viñetas (ej: "- Tia materna con cáncer de páncreas")
         patron_linea_tipo = r'^[^/]+ / \d+ / \d+ años / .+$'  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
@@ -190,7 +196,6 @@ class LimpiezaTexto:
         - Otros casos especiales predefinidos
         """
         nuevo_texto = []
-        self.imprimir_datos()
         for linea in self.texto_procesado:
             # Caso 1: Biología tumoral
             if "biología tumoral" in linea and ('final' in linea or 'post tratamiento' in linea):

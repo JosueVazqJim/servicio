@@ -15,7 +15,7 @@
         "drogas": "negado",
         "comorbilidades": "negadas",
         "antecedentes_ginecológicos": {
-            "fum": null,
+            "fum": "2016 quirúrgica (histerectomía 2016)",
             "menarca": null,
             "embarazos": null,
             "partos": null,
