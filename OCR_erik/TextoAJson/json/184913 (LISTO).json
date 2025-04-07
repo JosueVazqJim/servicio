@@ -56,18 +56,36 @@
         "descendencia": null
     },
     "estadía_tumoral": {
-        "ultrasonido": null,
-        "mastografía": null,
-        "centros_tumorales": "pt1b",
-        "nódulos": null,
-        "metástasis": "m0"
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt1b",
+            "nódulos": "cn1",
+            "metástasis": "m0"
+        }
     },
     "inmunohistoquímica_tumoral": {
-        "re": null,
-        "rp": null,
-        "her2": "-",
-        "ki67": null,
-        "gh": null
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "0%",
+            "rp": "1%",
+            "her2": "-",
+            "ki67": "60%",
+            "gh": null
+        }
     },
     "tipo": {
         "mama_izquierda": {
@@ -75,8 +93,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": null,
-            "descripcion": null
+            "clasificación": "carcinoma ductal invasivo ec ia pt1b, pno, m0, her2-, rh+",
+            "descripcion": "ec iia ct3 - 5.3 cm cn1"
         }
     }
 }

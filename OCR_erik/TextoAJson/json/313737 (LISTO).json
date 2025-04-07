@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 51
+            "años": 61
         },
         "sexo": "femenino",
         "peso": null,
@@ -71,9 +71,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct3",
-            "nódulos": "cn1",
-            "metástasis": "m0"
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -85,10 +85,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": "0%",
-            "rp": "1%",
-            "her2": "-",
-            "ki67": "60%",
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
             "gh": null
         }
     },
@@ -99,7 +99,7 @@
         },
         "mama_derecha": {
             "clasificación": null,
-            "descripcion": "ec iia ct3 - 5.3 cm cn1"
+            "descripcion": null
         }
     }
 }

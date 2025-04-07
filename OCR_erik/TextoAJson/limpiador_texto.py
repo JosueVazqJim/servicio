@@ -124,10 +124,7 @@ class LimpiezaTexto:
             lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
 
     
-        self.texto_procesado = lineas_procesadas
-        self.imprimir_datos()  # Imprime el texto procesado para depuración
-    
-    
+        self.texto_procesado = lineas_procesadas    
     
     def __filtrar_lineas_relevantes(self):
         """
