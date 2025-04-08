@@ -36,15 +36,13 @@
             "menarca": {
                 "años": 14
             },
-            "embarazos": 2,
-            "partos": 2,
             "trh": null,
             "aco": null,
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": "desconoce.",
-            "g": null,
-            "p": null,
+            "g": 2,
+            "p": 2,
             "c": null,
             "a": null
         }
@@ -76,14 +74,14 @@
             "rp": "90%",
             "her2": "negativo",
             "ki67": "30%",
-            "gh": "3"
+            "gh": null
         },
         "mama_derecha": {
             "re": "95%",
             "rp": "95%",
             "her2": "negativo",
             "ki67": "5%",
-            "gh": "2"
+            "gh": null
         }
     },
     "tipo": {

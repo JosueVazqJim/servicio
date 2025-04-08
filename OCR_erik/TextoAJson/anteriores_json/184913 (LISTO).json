@@ -34,8 +34,6 @@
                 "años": 12,
                 "contexto": "menarca 12 años"
             },
-            "embarazos": null,
-            "partos": null,
             "trh": null,
             "aco": "negado",
             "mpf": null,
@@ -56,21 +54,45 @@
         "descendencia": null
     },
     "estadía_tumoral": {
-        "ultrasonido": null,
-        "mastografía": null,
-        "centros_tumorales": "pt1b",
-        "nódulos": "pn0",
-        "metástasis": "m0"
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
     },
     "inmunohistoquímica_tumoral": {
-        "re": null,
-        "rp": null,
-        "her2": "-",
-        "ki67": null,
-        "gh": null
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
     },
     "tipo": {
-        "clasificación": "carcinoma ductal invasivo ec ia pt1b, pn0, m0, her2-, rh+",
-        "descripcion": null
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
     }
 }

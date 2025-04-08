@@ -22,8 +22,6 @@
                 "años": 12,
                 "contexto": "menarca 12 años"
             },
-            "embarazos": null,
-            "partos": null,
             "trh": null,
             "aco": "negado",
             "mpf": null,
@@ -41,11 +39,20 @@
         "descendencia": "negado"
     },
     "estadía_tumoral": {
-        "ultrasonido": null,
-        "mastografía": null,
-        "centros_tumorales": "pt1b",
-        "nódulos": "pn0",
-        "metástasis": "m0"
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
@@ -64,7 +71,13 @@
         }
     },
     "tipo": {
-        "clasificación": "cdi ct4d, cn3c, cm1 triple negativo",
-        "descripcion": "pt1b, pn0, m0 riesgo clínico bajo nn"
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
     }
 }
