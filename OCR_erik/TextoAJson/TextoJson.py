@@ -147,8 +147,6 @@ class TextoJson:
             "antecedentes_ginecológicos": {
                 "fum": None,
                 "menarca": None,
-                "embarazos": None,
-                "partos": None,
                 "trh": None,
                 "aco": None,
                 "mpf": None,
@@ -165,7 +163,7 @@ class TextoJson:
         antecedentes_personales_keywords = [
            "sexo", "peso", "talla", "preferencia",
             "índice tabáquico", "tabaco", "tabaquismo", "alcohol", "drogas",
-            "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", "partos", "fum", 
+            "comorbilidades", "antecedentes ginecológicos", "menarca", "fum", 
             "trh", "mpf", "aco", "estado hormonal", "métodos anticonceptivos"
         ]
 
@@ -255,16 +253,14 @@ class TextoJson:
                                 break
 
 
-                    elif keyword in ["fum", "menarca", "trh", "aco", "mpf", "estado hormonal", "métodos anticonceptivos", "embarazos", "partos"]:
+                    elif keyword in ["fum", "menarca", "trh", "aco", "mpf", "estado hormonal", "métodos anticonceptivos"]:
                         # Patrón para identificar claves ginecológicas en la línea
-                        pattern = re.compile(r'\b(fum|menarca|trh|mpf|aco|estado hormonal|métodos anticonceptivos|embarazos|partos)\b', re.IGNORECASE)
+                        pattern = re.compile(r'\b(fum|menarca|trh|mpf|aco|estado hormonal|métodos anticonceptivos)\b', re.IGNORECASE)
                         pattern_especial = re.match(r"menarca a los (\d+) años\. (\d+) embarazos?, (\d+) partos?", linea, re.IGNORECASE)
 
                         if pattern_especial:
                             edad_menarca, num_embarazos, num_partos = map(int, pattern_especial.groups())
                             antecedentes_personales_secciones["antecedentes_ginecológicos"]["menarca"] = {"años": edad_menarca}
-                            antecedentes_personales_secciones["antecedentes_ginecológicos"]["embarazos"] = num_embarazos
-                            antecedentes_personales_secciones["antecedentes_ginecológicos"]["partos"] = num_partos
                             
                         else:
                             # Eliminar guiones y limpiar la línea
@@ -621,7 +617,7 @@ class TextoJson:
                                 elif campo.startswith("m"):
                                     estadia_tumoral_secciones["mama_derecha"]["metástasis"] = campo
                         except IndexError:
-                            print("Error al procesar datos de mama bilateral. Se identificaron la mención de mama izquierda y derecha, pero no se encontraron datos específicos.")
+                            print("Error al procesar datos de mama bilateral para la estadia tumoral. Se identificaron la mención de mama izquierda y derecha, pero se procede de otra manera.")
                             # Extraer datos en base a "mama izquierda" o "mama derecha" si el try falla
                             if "mama izquierda" in linea:
                                 campos_izquierda = re.findall(patron, linea, re.IGNORECASE)
@@ -731,6 +727,71 @@ class TextoJson:
 
         self.data["tipo"] = clasificacion
 
+    def __aplicar_mapa_semantico(self):
+        """
+        Aplica mapas semánticos para completar datos que no se encontraron con los patrones directos.
+        """
+        # Mapa semántico para los campos GPCA
+        mapa_gpca = {
+            'g': ['gestacion', 'gestaciones', 'embarazos', 'embarazo'],
+            'p': ['partos', 'parto'],
+            'c': ['cesareas', 'cesáreas', 'cesarea', 'cesárea'],
+            'a': ['abortos', 'aborto']
+        }
+
+        # mapa para la inmunohistoquimica tumoral
+        mapa_inmunohistoquimica = {
+            "triple negativo": {
+                "re": "negativo",
+                "rp": "negativo",
+                "her2": "negativo"
+            },
+            "triple positivo": {
+                "re": "positivo",
+                "rp": "positivo",
+                "her2": "positivo"
+            },
+        }
+
+
+        # Verificar si las claves "g", "p", "c", "a" son None en self.data["antecedentes_personales"]["antecedentes_ginecológicos"]
+        gpca_data = self.data.get("antecedentes_personales", {}).get("antecedentes_ginecológicos", {})
+        
+        if not all(gpca_data.get(letra) is not None for letra in ["g", "p", "c", "a"]):  # Verificar si alguna clave es None
+            print("intentando llenar campos del gpca con su mapa")
+            for linea in self.informacion:
+                # Buscar términos relacionados con cada componente de GPCA
+                for letra, terminos in mapa_gpca.items():
+                    if gpca_data.get(letra) is None:  # Solo si no tenemos el dato
+                        for termino in terminos:
+                            if termino in linea:
+                                # Extraer número asociado al término
+                                # match = re.search(rf'{termino}\D*(\d+)', linea)
+                                match = re.search(rf'(?:{termino})\D*(\d+)', linea, re.IGNORECASE)
+                                if match:
+                                    gpca_data[letra] = int(match.group(1))  # Actualizar el valor en gpca_data
+                                    break  # Pasamos a la siguiente letra
+        
+        # Actualizar self.data con los cambios realizados en gpca_data
+        self.data["antecedentes_personales"]["antecedentes_ginecológicos"] = gpca_data
+
+        if self.mama is not None:
+            inmuno_data = self.data.get("inmunohistoquímica_tumoral", {}).get(self.mama, {})
+        
+            # Solo buscamos si alguno es None
+            if any(inmuno_data.get(marcador) is None for marcador in ["re", "rp", "her2"]):
+                print("Intentando llenar inmunohistoquímica tumoral con su mapa")
+                for linea in self.informacion:
+                    for termino, valores in mapa_inmunohistoquimica.items():
+                        if termino in linea.lower():
+                            for marcador, resultado in valores.items():
+                                if inmuno_data.get(marcador) is None:
+                                    inmuno_data[marcador] = resultado
+            
+            self.data["inmunohistoquímica_tumoral"][self.mama] = inmuno_data
+
+
+    
     def __verificar_valores_nulos(self, ruta_log, nombre_caso):
         """
         Verifica los valores nulos en el diccionario self.data y guarda los resultados en un archivo de texto.
@@ -744,7 +805,7 @@ class TextoJson:
         def verificar_subniveles(d, clave_principal=None):
             for clave, valor in d.items():
                 if isinstance(valor, dict):
-                    # Si el valor es un diccionario, llamamos a la función recursiva
+                    # Si el valor es un diccionario, llamamos a la función recurasiva
                     verificar_subniveles(valor, clave)
                 elif clave not in ["ultrasonido", "mastografía"] and (valor is None or (isinstance(valor, (dict, list)) and not valor)):
                     # Si encontramos un valor nulo o vacío (excepto ultrasonido y mastografía), lo registramos
@@ -799,6 +860,7 @@ class TextoJson:
         self.__extraer_datos_inmunohistoquímica_tumoral()
         self.__extraer_datos_clasificacion()
         self.__extraer_datos_estadia_tumoral()
+        self.__aplicar_mapa_semantico()
         self.__verificar_valores_nulos(ruta_destino, nombreJSON)
 
         self.__crear_json(nombreJSON)
