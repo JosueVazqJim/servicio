@@ -545,6 +545,7 @@ class TextoJson:
                             if self.mama == "bilateral":
                                 if inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] is None:
                                     inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = valor
+                                if inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] is None:
                                     inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = valor
                             elif self.mama == "mama_izquierda":
                                 if inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] is None:
@@ -554,7 +555,7 @@ class TextoJson:
                                     inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = valor
 
         self.data["inmunohistoquímica_tumoral"] = inmunohistoquimica_tumoral_secciones
-    
+        
     def __extraer_datos_estadia_tumoral(self):
         """
         Extrae y estructura los datos de estadía tumoral del texto procesado.
@@ -758,7 +759,6 @@ class TextoJson:
         gpca_data = self.data.get("antecedentes_personales", {}).get("antecedentes_ginecológicos", {})
         
         if not all(gpca_data.get(letra) is not None for letra in ["g", "p", "c", "a"]):  # Verificar si alguna clave es None
-            print("intentando llenar campos del gpca con su mapa")
             for linea in self.informacion:
                 # Buscar términos relacionados con cada componente de GPCA
                 for letra, terminos in mapa_gpca.items():
@@ -767,15 +767,19 @@ class TextoJson:
                             if termino in linea:
                                 # Extraer número asociado al término
                                 # match = re.search(rf'{termino}\D*(\d+)', linea)
-                                match = re.search(rf'(?:{termino})\D*(\d+)', linea, re.IGNORECASE)
+                                match = re.search(rf'(\d+)\s*\D*{termino}', linea, re.IGNORECASE)
                                 if match:
                                     gpca_data[letra] = int(match.group(1))  # Actualizar el valor en gpca_data
-                                    break  # Pasamos a la siguiente letra
+                                    break  # Salir del bucle si ya encontramos el dato
+        
+        for letra in ["g", "p", "c", "a"]:
+            if gpca_data.get(letra) is None:
+                gpca_data[letra] = 0
         
         # Actualizar self.data con los cambios realizados en gpca_data
         self.data["antecedentes_personales"]["antecedentes_ginecológicos"] = gpca_data
 
-        if self.mama is not None:
+        if (self.mama is not None) and (self.mama != "bilateral"):
             inmuno_data = self.data.get("inmunohistoquímica_tumoral", {}).get(self.mama, {})
         
             # Solo buscamos si alguno es None
