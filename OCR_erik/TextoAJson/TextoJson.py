@@ -484,20 +484,21 @@ class TextoJson:
         patrones = {
             "re": re.compile(r"re\s*[:]?\s*(\d+%|\+|\-|positivo|negativo)", re.IGNORECASE),
             "rp": re.compile(r"rp\s*[:]?\s*(\d+%|\+|\-|positivo|negativo)", re.IGNORECASE),
-            "her2": re.compile(r"her2\s*[:]?\s*(\d+\+?\s*\(.*?\)|\d+\+?|\-|\+|negativo|positivo)", re.IGNORECASE),
+            "her2": re.compile(r"her\s*2\s*[:]?\s*((?:\+{1,3})|\d+\+?\s*\(.*?\)|\d+\+?|\-|\+|negativo|positivo)", re.IGNORECASE),
             "ki67": re.compile(r"ki67\s*[:]?\s*(\d+%|\w+)", re.IGNORECASE),
             "gh": re.compile(r"gh\s*[:]?\s*(\d+)", re.IGNORECASE)
         }
 
         # Variables para controlar si encontramos datos en biología tumoral
         encontrado_en_biologia = False
+        hallado = False
 
         # Primera pasada: buscar solo en biología tumoral
         for linea in self.informacion:            
             # Verificar si estamos en biología tumoral
-            if "biología tumoral" in linea:
+            if "biología tumoral" in linea and not hallado:
                 encontrado_en_biologia = True
-                
+                hallado = True
                 # Extraer datos para cada marcador
                 for marcador, patron in patrones.items():
                     match = patron.search(linea)
@@ -534,7 +535,7 @@ class TextoJson:
             for linea in self.informacion:
                 
                 # Verificar si estamos en diagnóstico
-                if "diagnóstico" in linea:
+                if "diagnóstico" in linea and not hallado:
                     # Extraer datos para cada marcador
                     for marcador, patron in patrones.items():
                         match = patron.search(linea)

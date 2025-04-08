@@ -89,7 +89,7 @@ Plan: Completar adyuvancia con T-DM1 + RT adyuvante + hormonoterapla
 Extensión del tumor:
 CDI de mama derecha EC IIIC
 Sin respuesta completa al tratamiento
-ypTicNia
+ypT1cN1a
 
 Estado hormonal: premenopáusica
 
