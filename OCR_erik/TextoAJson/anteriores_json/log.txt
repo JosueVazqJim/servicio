@@ -15032,3 +15032,4184 @@ Valores nulos encontrados:
     - metástasis: None
     - gh: None
 
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+    - c: None
+    - a: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+    - p: None
+    - c: None
+    - a: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+    - p: None
+    - c: None
+    - a: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 184913 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 294836 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 311761 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_izquierda:
+    - gh: None
+
+Nombre del caso: 311987 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - descendencia: None
+  - mama_izquierda:
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 312112 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+
+Nombre del caso: 312199 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 313737 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 313810 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 313894 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 84959 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - aco: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - metástasis: None
+    - gh: None
+
