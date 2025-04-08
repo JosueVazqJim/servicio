@@ -58,7 +58,7 @@ class LimpiezaTexto:
             "cirugías", "originaria y residente", 'originar', "seguridad social", "ocupación", 
             "ahf", "resumen del", "extensión del tumor", "biología tumoral",
             "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral", 'plan',
-            "cdi ", 'carcinoma'
+            "cdi ", 'carcinoma', "IHQ final"
         ]
 
         # Claves que deben tratarse como líneas individuales
@@ -140,7 +140,7 @@ class LimpiezaTexto:
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "ahf", "extensión del tumor", "biología tumoral",
-            "aco", "mpf", "cáncer de mama bilateral", 'cdi ', 'carcinoma'
+            "aco", "mpf", "cáncer de mama bilateral", 'cdi ', 'carcinoma', "IHQ final"
         ]
 
         # Claves que pueden aparecer en cualquier parte de la línea como palabras individuales
@@ -200,12 +200,12 @@ class LimpiezaTexto:
         nuevo_texto = []
         for linea in self.texto_procesado:
             # Caso 1: Biología tumoral
-            if "biología tumoral" in linea and ('final' in linea or 'post tratamiento' in linea):
-                nuevo_texto.append(f"biología tumoral{linea.split('final', 1)[1].strip() if 'final' in linea else linea.split('post tratamiento', 1)[1].strip()}")
-                continue
+            # if "biología tumoral" in linea and ('final' in linea or 'post tratamiento' in linea):
+            #     nuevo_texto.append(f"biología tumoral{linea.split('final', 1)[1].strip() if 'final' in linea else linea.split('post tratamiento', 1)[1].strip()}")
+            #     continue
             
             # Caso 2: Líneas que comienzan con "e — cmbm"
-            elif linea.startswith("e — cmbm"):
+            if linea.startswith("e — cmbm"):
                 nuevo_texto.append(linea.split("—", 1)[1].strip())
                 continue
             
