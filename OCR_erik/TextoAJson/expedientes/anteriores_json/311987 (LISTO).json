@@ -90,7 +90,8 @@
             "her2": "positivo",
             "ki67": null,
             "gh": null
-        }
+        },
+        "bilateral": {}
     },
     "tipo": {
         "mama_izquierda": {

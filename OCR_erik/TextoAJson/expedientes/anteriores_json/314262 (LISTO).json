@@ -43,7 +43,7 @@
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": "desconoce.",
-            "g": null,
+            "g": 2,
             "p": null,
             "c": null,
             "a": null
@@ -84,7 +84,8 @@
             "her2": "negativo",
             "ki67": "5%",
             "gh": null
-        }
+        },
+        "bilateral": {}
     },
     "tipo": {
         "mama_izquierda": {

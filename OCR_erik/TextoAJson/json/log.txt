@@ -37,3 +37,40 @@ Valores nulos encontrados:
   - mama_derecha:
     - gh: None
 
+Nombre del caso: 314084 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - embarazos: None
+    - partos: None
+    - trh: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+

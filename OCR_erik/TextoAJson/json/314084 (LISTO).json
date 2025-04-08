@@ -41,11 +41,20 @@
         "descendencia": "negado"
     },
     "estadía_tumoral": {
-        "ultrasonido": null,
-        "mastografía": null,
-        "centros_tumorales": "ct4d",
-        "nódulos": "cn3c",
-        "metástasis": "m1"
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
