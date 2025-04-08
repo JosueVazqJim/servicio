@@ -1,0 +1,98 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 51
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "ocasional",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "carcinoma papilar de tiroides de alto riesgo: 131 | 1999, 2000, 2005 (200, 250, 200)",
+                    "descripción": null
+                },
+                {
+                    "nombre": "has, diabetes tipo 2 y obesidad",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "días": 28,
+                "contexto": "11.04.2023 x 3 cada 28 días"
+            },
+            "menarca": {
+                "años": 12,
+                "contexto": "menarca 12 años"
+            },
+            "trh": null,
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "premenopáusica.",
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuela materna finada por cáncer gástrico a la edad de 50 años",
+            "abuela paterna finada por cáncer de páncreas a la edad de 73 años"
+        ],
+        "lateralidad": null,
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

@@ -535,7 +535,7 @@ class TextoJson:
             for linea in self.informacion:
                 
                 # Verificar si estamos en diagnóstico
-                if "diagnóstico" in linea and not hallado:
+                if "diagnóstico" in linea:
                     # Extraer datos para cada marcador
                     for marcador, patron in patrones.items():
                         match = patron.search(linea)
