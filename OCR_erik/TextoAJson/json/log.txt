@@ -1,0 +1,39 @@
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+    - c: None
+    - a: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+
+Nombre del caso: 314262 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+    - alcohol: None
+    - drogas: None
+  - antecedentes_ginecológicos:
+    - trh: None
+    - aco: None
+    - mpf: None
+    - p: None
+    - c: None
+    - a: None
+  - mama_izquierda:
+    - gh: None
+  - mama_derecha:
+    - gh: None
+

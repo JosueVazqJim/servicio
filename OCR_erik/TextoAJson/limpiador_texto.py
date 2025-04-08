@@ -155,7 +155,8 @@ class LimpiezaTexto:
         patron_vineta = r'^-\s'  # Patrón para detectar líneas con viñetas (ej: "- Tia materna con cáncer de páncreas")
         patron_linea_tipo = r'^[^/]+ / \d+ / \d+ años / .+$'  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
         patron_mama_lesiones = re.compile(r'\bmama\s*(izquierda|derecha|bilateral)\s*con.*lesi.*', re.IGNORECASE)
-
+        patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
+        
         lineas_filtradas = []
 
         for linea in self.texto_procesado:
@@ -176,7 +177,8 @@ class LimpiezaTexto:
                 re.match(patron_lista_numerada, linea) or
                 re.match(patron_vineta, linea) or
                 re.match(patron_mama_lesiones, linea) or
-                re.match(patron_linea_tipo, linea)):
+                re.match(patron_linea_tipo, linea) or
+                re.match(patron_fecha, linea)):
                 lineas_filtradas.append(linea)
                 continue
 

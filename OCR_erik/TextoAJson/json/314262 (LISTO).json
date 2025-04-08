@@ -43,7 +43,7 @@
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": "desconoce.",
-            "g": null,
+            "g": 2,
             "p": null,
             "c": null,
             "a": null
@@ -76,23 +76,23 @@
             "rp": "90%",
             "her2": "negativo",
             "ki67": "30%",
-            "gh": "3"
+            "gh": null
         },
         "mama_derecha": {
             "re": "95%",
             "rp": "95%",
             "her2": "negativo",
             "ki67": "5%",
-            "gh": "2"
+            "gh": null
         }
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": null,
+            "clasificación": "cáncer de mama bilateral. mi cdi pt1c, pn1a, m0",
             "descripcion": "ec ia"
         },
         "mama_derecha": {
-            "clasificación": null,
+            "clasificación": "md cli pt2, cn0 m0 rh+",
             "descripcion": "ec iia"
         }
     }
