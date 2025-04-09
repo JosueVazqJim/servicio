@@ -1,0 +1,103 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 51
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "1992": [
+                {
+                    "nombre": "miomatosis uterina",
+                    "descripción": null
+                }
+            ],
+            "2020": [
+                {
+                    "nombre": "diabetes tipo 2",
+                    "descripción": null
+                }
+            ],
+            "2023": [
+                {
+                    "nombre": "hipertensión arterial",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 29
+            },
+            "menarca": {
+                "años": 13
+            },
+            "trh": "negados",
+            "aco": "negados",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": [
+            "1 hermano con cáncer de próstata (67 años)"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct3",
+            "nódulos": "n1",
+            "metástasis": "m0"
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "90%",
+            "rp": "70%",
+            "her2": "negativo",
+            "ki67": "10%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cáncer de mama t3 n1 m0 eciib triple negativo",
+            "descripcion": "ec iiia ct3 - 5.3 cm cn1"
+        }
+    }
+}

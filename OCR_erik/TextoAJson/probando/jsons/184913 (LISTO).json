@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 65
+            "años": 51
         },
         "sexo": "femenino",
         "peso": null,
@@ -11,66 +11,50 @@
             "fuma": "negado",
             "observaciones": null
         },
-        "alcohol": "negado",
+        "alcohol": "ocasional",
         "drogas": "negado",
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "post",
+                    "nombre": "carcinoma papilar de tiroides de alto riesgo: 131",
                     "descripción": null
                 },
                 {
-                    "nombre": "131(sep 1990) x eta bocio toxico difuso",
+                    "nombre": "1999, 2000, 2005 (200, 250, 200)",
                     "descripción": null
                 },
                 {
-                    "nombre": "diabetes mellitus tipo 2",
-                    "descripción": null
-                },
-                {
-                    "nombre": "obesidad g1",
-                    "descripción": null
-                },
-                {
-                    "nombre": "osteopenia",
-                    "descripción": null
-                },
-                {
-                    "nombre": "hipertensión arterial sistémica",
-                    "descripción": null
-                }
-            ],
-            "1990": [
-                {
-                    "nombre": "hipotiroidismo",
+                    "nombre": "has, diabetes tipo 2 y obesidad",
                     "descripción": null
                 }
             ]
         },
         "antecedentes_ginecológicos": {
             "fum": {
-                "años": 45,
-                "contexto": "45 años (2003)"
+                "días": 28,
+                "contexto": "11.04.2023 x 3 cada 28 días"
             },
-            "menarca": null,
+            "menarca": {
+                "años": 12,
+                "contexto": "menarca 12 años"
+            },
             "trh": null,
-            "aco": null,
+            "aco": "negado",
             "mpf": null,
-            "estado_hormonal": null,
+            "estado_hormonal": "premenopáusica.",
             "métodos_anticonceptivos": null,
-            "g": 1,
+            "g": 0,
             "p": 0,
-            "c": 1,
+            "c": 0,
             "a": 0
         }
     },
     "antecedentes_familiares": {
         "ascendencia": [
-            "padre con cáncer de pulmón (89 años)"
+            "abuela materna finada por cáncer gástrico a la edad de 50 años",
+            "abuela paterna finada por cáncer de páncreas a la edad de 73 años"
         ],
-        "lateralidad": [
-            "prima materna con cáncer de tiroides y cáncer de mama (45"
-        ],
+        "lateralidad": null,
         "descendencia": null
     },
     "estadía_tumoral": {
@@ -84,9 +68,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "pt1cpno",
-            "nódulos": "pn0",
-            "metástasis": "m0"
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -98,10 +82,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": "80%",
-            "rp": "1%",
+            "re": null,
+            "rp": null,
             "her2": null,
-            "ki67": "15%",
+            "ki67": null,
             "gh": null
         }
     },
@@ -111,7 +95,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cdi de mama derecha ec ia, pt1cpno(sn)m0 re+",
+            "clasificación": null,
             "descripcion": null
         }
     }

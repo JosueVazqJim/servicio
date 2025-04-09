@@ -1,0 +1,101 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 65
+        },
+        "sexo": "femenino",
+        "peso": "74 kg, ta 100/60. dia +18 de ribociclib cuello sin adenopatías palpables. ausencia de mama izquierda con múltiples lesiones compatibles con queratosis seborreica. no se palpan adenopatías axilares. revisión de estudios de imagen a ez  a ps",
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": [
+                {
+                    "notas": "debido a cáncer gástrico, madre falleció a los 70 años debido ",
+                    "tiempo": {
+                        "años": 70
+                    }
+                },
+                {
+                    "notas": "; a a cáncer gástrico, 1 hermana con diagnóstico de ca de mama alcohol social, suspendido los 65 años y una hermana con ca de mama a los 59 años",
+                    "tiempo": {
+                        "años": 59
+                    }
+                }
+            ]
+        },
+        "alcohol": "social, suspendido",
+        "drogas": "negado",
+        "comorbilidades": {
+            "2022": [
+                {
+                    "nombre": "carcinoma basocelular en 2 ocasiones piel cabelluda de la parte frontal y la segunda ocasión en clavícula del lado derecho.",
+                    "descripción": "medicamentos: pitavastina, vitamina d 5000 ul"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 4,
+                "contexto": "50 años. uso de diu de cobre durante 4 años"
+            },
+            "menarca": null,
+            "trh": null,
+            "aco": "pastillas por 4 * cirugías",
+            "mpf": null,
+            "estado_hormonal": null,
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

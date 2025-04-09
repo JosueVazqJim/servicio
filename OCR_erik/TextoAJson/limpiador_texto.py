@@ -141,7 +141,7 @@ class LimpiezaTexto:
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "ahf", "extensión del tumor", "biología tumoral", "extensión del tumot",
-            "aco", "mpf", "cáncer de mama bilateral", 'cdi ', 'carcinoma', "IHQ final"
+            "aco", "mpf", "cáncer de mama bilateral", 'cdi ', 'carcinoma', "IHQ final", "medicamentos"
         ]
 
         # Claves que pueden aparecer en cualquier parte de la línea como palabras individuales

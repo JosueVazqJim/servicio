@@ -1,0 +1,111 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 36
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "suspendido",
+            "observaciones": [
+                {
+                    "notas": "hace 7 años",
+                    "tiempo": {
+                        "años": 7
+                    }
+                }
+            ]
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "2018": [
+                {
+                    "nombre": "les",
+                    "descripción": "actividad mucocutánea, articular, hematológica."
+                }
+            ],
+            "2014": [
+                {
+                    "nombre": "saaf secundario",
+                    "descripción": "triple marcador positivo: tep"
+                }
+            ],
+            "2017": [
+                {
+                    "nombre": "hipotiroidismo primario",
+                    "descripción": "ss 3-8"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "15.01.23",
+            "menarca": {
+                "años": 12
+            },
+            "trh": null,
+            "aco": "negados - estado hormonal",
+            "mpf": "otb (2015)",
+            "estado_hormonal": "premenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 3,
+            "p": 0,
+            "c": 1,
+            "a": 2
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuela materna con cáncer gástrico a los 50 años"
+        ],
+        "lateralidad": [
+            "tía paterna con cáncer de mama a los 45 años",
+            "tía paterna con leucemia no especificada a los 25 años"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct2",
+            "nódulos": "cn3b",
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "0%",
+            "rp": "0%",
+            "her2": "1+ (-)",
+            "ki67": "80%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi de mama izquierda ec iiic triple negativo",
+            "descripcion": "ec iiic ct2 - 2.3 cm cn3b — adenopatías axilares y en cadena mamaria"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

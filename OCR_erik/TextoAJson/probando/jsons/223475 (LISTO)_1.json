@@ -1,0 +1,101 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 50
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": [
+                {
+                    "notas": "finada a los 86 años)",
+                    "tiempo": {
+                        "años": 86
+                    }
+                }
+            ]
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "cáncer de ovario ec ia (agosto 2012) rhp: carcinoma endometrioide g2 ilv(+) y necrosis moderada. hipotiroidismo (diagnosticado a los 35 años). macroadenoma hipofisario (a los 20 años por galactorrea y cefalea) recibió bromocriptina x 2.5 años. desprendimiento de retina en el 2016.",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": null,
+            "menarca": {
+                "años": 38,
+                "contexto": "madre con antecedente de meningiomas finada a los 86 años). prima con antecedente de cáncer de endometrio a los 38 años. - g0. - menarca"
+            },
+            "trh": {
+                "años": 38,
+                "contexto": "madre con antecedente de meningiomas finada a los 86 años). prima con antecedente de cáncer de endometrio a los 38 años. - g0. - menarca"
+            },
+            "aco": {
+                "años": 38,
+                "contexto": "madre con antecedente de meningiomas finada a los 86 años). prima con antecedente de cáncer de endometrio a los 38 años. - g0. - menarca"
+            },
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct1c",
+            "nódulos": "n0",
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "90%",
+            "rp": "90%",
+            "her2": "1+",
+            "ki67": "5%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "carcinoma ductal infiltrante mama izquierda multicéntrico (ct1c,n0,mx)",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 71,
+            "meses": 3
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado.",
+        "drogas": "negado. revisión de estudios de imagen revisión de patología",
+        "comorbilidades": null,
+        "antecedentes_ginecológicos": {
+            "fum": null,
+            "menarca": {
+                "años": 14,
+                "contexto": "menarca 14 años"
+            },
+            "trh": null,
+            "aco": "negado inguinal (1993)",
+            "mpf": null,
+            "estado_hormonal": {
+                "meses": 3,
+                "contexto": "p cirrosis hepática criptogénica child b (8 puntos), meld-na 12 puntos (mortalidad 3 meses del 6%) (1990) hipertensión portal no hemorrágica (egd 28.11.22)"
+            },
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": null,
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": "n0",
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "carcinoma ductal in situ mama izquierda (t1s,n0,mo0) de alto grado",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

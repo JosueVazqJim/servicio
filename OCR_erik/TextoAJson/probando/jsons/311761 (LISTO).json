@@ -1,0 +1,84 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 41
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": "negadas",
+        "antecedentes_ginecológicos": {
+            "fum": "08.2022",
+            "menarca": {
+                "años": 15
+            },
+            "trh": null,
+            "aco": "negado. paridad satisfecha",
+            "mpf": null,
+            "estado_hormonal": "premenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 2,
+            "p": 0,
+            "c": 2,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuelo paterno con antecedente de linfoma diagnosticado a los 85 años"
+        ],
+        "lateralidad": [
+            "prima nirterna con cáncer de mama diagnosticado a los 38 años"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct4b",
+            "nódulos": "cn2a",
+            "metástasis": "m1"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "70%",
+            "rp": "0%",
+            "her2": "-",
+            "ki67": "nr",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cli de mama izquierda, ec iv (ct4b cn2a(f) m1) (enfermedad ganglionar cervical), luminal b, her2 negativo o",
+            "descripcion": "ec iv ct4b - infiltración a piel cn2a h m1 — enfermedad ganglionar cervical"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

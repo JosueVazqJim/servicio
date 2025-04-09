@@ -1,56 +1,61 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 65
+            "años": 63
         },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
         "preferencia": null,
         "índice_tabáquico": {
-            "fuma": "negadas",
-            "observaciones": null
+            "fuma": "suspendido",
+            "observaciones": [
+                {
+                    "notas": "hace 23 años",
+                    "tiempo": {
+                        "años": 23
+                    }
+                }
+            ]
         },
-        "alcohol": "negadas",
-        "drogas": "negadas",
+        "alcohol": "ocasional",
+        "drogas": "negado",
         "comorbilidades": {
-            "sin_fecha": [
+            "2020": [
                 {
-                    "nombre": "hipotiroidismo post 1131",
+                    "nombre": "has",
                     "descripción": null
-                },
+                }
+            ],
+            "2022": [
                 {
-                    "nombre": "diabetes tipo 2",
-                    "descripción": null
-                },
-                {
-                    "nombre": "hipertensión arterial sistémica",
+                    "nombre": "esteatosis hepática",
                     "descripción": null
                 }
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": null,
-            "menarca": null,
-            "trh": "negados",
-            "aco": "negados",
+            "fum": {
+                "años": 48
+            },
+            "menarca": {
+                "años": 12
+            },
+            "trh": "gel vaginal con estrógeno",
+            "aco": "negado",
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 1,
+            "g": 2,
             "p": 0,
-            "c": 1,
+            "c": 0,
             "a": 0
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": [
-            "padre con cáncer de pulmón (89 años)"
-        ],
-        "lateralidad": [
-            "prima materna con cáncer de tiroides y cáncer de mama (45 años)"
-        ],
-        "descendencia": null
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
     },
     "estadía_tumoral": {
         "mama_izquierda": {
@@ -63,8 +68,8 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct1c",
-            "nódulos": "cn0",
+            "centros_tumorales": "pt2",
+            "nódulos": "pn1",
             "metástasis": null
         }
     },
@@ -77,10 +82,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": "80%",
-            "rp": "1%",
-            "her2": "1+",
-            "ki67": "15%",
+            "re": "90%",
+            "rp": "10%",
+            "her2": "-",
+            "ki67": "30%",
             "gh": null
         }
     },
@@ -90,8 +95,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cdi de ec ia (t1cno) luminal b",
-            "descripcion": "ec ia ct1c-1.4 cm cn0"
+            "clasificación": "cdl de ec iib (pt2 pn1 mx) luminal b, her2 negativo",
+            "descripcion": "ec iib pt2 - 3.2 cm pn1 — 1/1 +"
         }
     }
 }

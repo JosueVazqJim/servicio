@@ -1,0 +1,103 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 51
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "leucemia promielocítica aguda en rc (dx 2008) en vigilancia",
+                    "descripción": null
+                },
+                {
+                    "nombre": "cdi de mama rp-, her2- - 2006 cc de mar - 2006 adyuvanci - 2007-2011 adyu",
+                    "descripción": null
+                }
+            ],
+            "2009": [
+                {
+                    "nombre": "diabetes tipo 2",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 30
+            },
+            "menarca": {
+                "años": 12
+            },
+            "trh": "negado",
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuela materna finada por hoc 75 años)"
+        ],
+        "lateralidad": [
+            "dos tías paternas y dos primas maternas con cáncer de mama antes de los 50 años"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

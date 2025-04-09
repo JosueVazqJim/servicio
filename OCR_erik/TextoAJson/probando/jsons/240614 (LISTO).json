@@ -1,0 +1,99 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 55
+        },
+        "sexo": "femenino",
+        "peso": "70 kg talla 1.40 sc 1.57 cuello sin adenopatías palpables, mama izquierda con nódulo en csi de 4.5 x 3.5 cm, no se palpan adenopatías u otros nódulos, mama contralateral y axila sin nódulos palpables. n0 hay dgt",
+        "talla": "re 0%, rp 1%, her2 negativo, ki67 30% ión de compartir las pantallas aparece en el video 20",
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": null,
+            "observaciones": null
+        },
+        "alcohol": "positivo, semanal, 900 gr",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "diabetes tipo 2 diagnosticada en el 2018",
+                    "descripción": null
+                },
+                {
+                    "nombre": "asma bronquial diagnosticada hace 9 años en el iner",
+                    "descripción": null
+                },
+                {
+                    "nombre": "obesidad clase 2 medicamentos: pioglitazona 30 mg cada 24 horas. salbutamol inhalador prn.",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 48,
+                "contexto": "2019 (48 años) lo - aco"
+            },
+            "menarca": null,
+            "trh": null,
+            "aco": {
+                "años": 48,
+                "contexto": "2019 (48 años) lo - aco"
+            },
+            "mpf": null,
+            "estado_hormonal": null,
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": null,
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct2",
+            "nódulos": "cn2b",
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "0%",
+            "rp": "1%",
+            "her2": "negativo",
+            "ki67": "30%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi de mama izquierda ec ia (ct2, cn2b, m0) triple negativo cs",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}
