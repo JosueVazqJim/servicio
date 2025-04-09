@@ -71,6 +71,7 @@ class LimpiezaTexto:
         )
         patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
         patron_linea_tipo = re.compile(r'^[^/]+ / \d+ / \d+ años / .+$')  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
+        asterisco_pattern = re.compile(r'^\*+$')
 
         lineas_procesadas = []
         clave_actual = None
@@ -83,7 +84,7 @@ class LimpiezaTexto:
             # Verificar si la línea es una clave de inicio
             es_clave_inicio = any(linea.startswith(clave) for clave in claves_inicio)
             es_clave_palabra = any(palabra in linea.split() for palabra in claves_palabras)
-            es_patron = patron_gn_pn_cn_an.match(linea) or patron_fecha.match(linea) or patron_linea_tipo.match(linea)
+            es_patron = patron_gn_pn_cn_an.match(linea) or patron_fecha.match(linea) or patron_linea_tipo.match(linea) or asterisco_pattern.match(linea)
 
             # Detectar inicio de "Extensión del tumor" o "Biología tumoral"
             if linea.startswith("extensión del tumor") or linea.startswith("biología tumoral") or linea.startswith("extensión del tumot"):
@@ -156,6 +157,7 @@ class LimpiezaTexto:
         patron_linea_tipo = r'^[^/]+ / \d+ / \d+ años / .+$'  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
         patron_mama_lesiones = re.compile(r'\bmama\s*(izquierda|derecha|bilateral)\s*con.*lesi.*', re.IGNORECASE)
         patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
+        asterisco_pattern = re.compile(r'^\*+$')
         
         lineas_filtradas = []
 
@@ -178,7 +180,8 @@ class LimpiezaTexto:
                 re.match(patron_vineta, linea) or
                 re.match(patron_mama_lesiones, linea) or
                 re.match(patron_linea_tipo, linea) or
-                re.match(patron_fecha, linea)):
+                re.match(patron_fecha, linea) or
+                re.match(asterisco_pattern, linea)):
                 lineas_filtradas.append(linea)
                 continue
 

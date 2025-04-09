@@ -1,0 +1,101 @@
+Nombre del caso: 144923 (LISTO)_1.json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - fuma: None
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - fum: None
+    - menarca: None
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - ascendencia: None
+    - lateralidad: None
+    - descendencia: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - gh: None
+    - descripcion: None
+
+Nombre del caso: 144923 (LISTO)_2.json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - edad: None
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - índice_tabáquico:
+    - observaciones: None
+  - antecedentes_ginecológicos:
+    - menarca: None
+    - trh: None
+    - aco: None
+    - mpf: None
+    - estado_hormonal: None
+    - métodos_anticonceptivos: None
+  - mama_izquierda:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
+Nombre del caso: 83432 (LISTO).json
+Valores nulos encontrados:
+  - antecedentes_personales:
+    - peso: None
+    - talla: None
+    - preferencia: None
+  - antecedentes_ginecológicos:
+    - mpf: None
+    - métodos_anticonceptivos: None
+  - antecedentes_familiares:
+    - lateralidad: None
+  - mama_izquierda:
+    - metástasis: None
+    - gh: None
+  - mama_derecha:
+    - centros_tumorales: None
+    - nódulos: None
+    - metástasis: None
+    - re: None
+    - rp: None
+    - her2: None
+    - ki67: None
+    - gh: None
+    - clasificación: None
+    - descripcion: None
+
