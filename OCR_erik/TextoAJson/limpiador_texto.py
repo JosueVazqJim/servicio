@@ -209,9 +209,14 @@ class LimpiezaTexto:
             
             # Caso 3: Separar líneas con múltiples patrones
             patrones = [
+                # Patrón para fum: XXX * cirugías: YYY
+                (r'(fum:\s*[^*]+)\s*\*\s*(cirugías:\s*.+)', 
+                lambda m: [m.group(1).strip(), m.group(2).strip()]),
+                
                 # Patrón para aco: negado. mpf: otb (2005)
                 (r'(aco:\s*negado)\.\s*(mpf:\s*otb\s*\(\d{4}\))', 
                 lambda m: [m.group(1).strip(), m.group(2).strip()]),
+                
                 # Patrón para menarca XX años / fum XX años
                 (r'(menarca\s+\d+\s*años)\s*/\s*(fum\s+\d+\s*años)', 
                 lambda m: [m.group(1), m.group(2)]),
@@ -242,6 +247,7 @@ class LimpiezaTexto:
             
             if dividido:
                 continue
+    
             
             # Caso 4: Patrón GPAC (g, p, c, a) en cualquier orden
             def ordenar_gpac(linea):
