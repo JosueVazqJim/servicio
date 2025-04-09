@@ -1,0 +1,99 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 61
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "suspendido",
+            "observaciones": [
+                {
+                    "notas": "hace 17 años.",
+                    "tiempo": {
+                        "años": 17
+                    }
+                }
+            ]
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "1998": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": ". diabetes mellitus tipo 2 (2019). arritmia en estudio. medicamentos: metformina 850mg 1-1-1, telmisartán/amlodipino 40/5mg 1-0-0, atenolol 25mg 1-0-0"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 51
+            },
+            "menarca": {
+                "años": 11
+            },
+            "trh": "negadas",
+            "aco": {
+                "años": 3,
+                "contexto": "3 años, posteriormente cambio a diu t de cobre y al"
+            },
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 4,
+            "p": 3,
+            "c": 1,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct4b",
+            "nódulos": "n1",
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "90%",
+            "rp": "20%",
+            "her2": "1+",
+            "ki67": "10%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi de mama izquierda eg mi b (t4b n1 mx) re+",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

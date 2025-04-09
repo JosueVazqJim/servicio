@@ -1,0 +1,92 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 54
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "2014": [
+                {
+                    "nombre": "lmc en fase crónica",
+                    "descripción": "—> en fase blástica por sarcoma mieloide (03.2021) — p0 alotrasplante dcr - 10.03.21 inducción 7+3 (citarabina + daunorribicina) + nilotinib — consolidación con daac dosis densas de citarabina + daunorrubicina"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 50
+            },
+            "menarca": {
+                "años": 15
+            },
+            "trh": null,
+            "aco": {
+                "años": 4,
+                "contexto": "durante 4 años"
+            },
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 3,
+            "p": 0,
+            "c": 3,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "80%",
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdis de mama izquierda",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

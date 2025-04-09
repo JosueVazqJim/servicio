@@ -1,0 +1,85 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 43
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": null,
+            "observaciones": null
+        },
+        "alcohol": null,
+        "drogas": null,
+        "comorbilidades": {
+            "2002": [
+                {
+                    "nombre": "lnh asociado a conjuntiva - ec ia",
+                    "descripción": ". 08.05.03 último tx cop x6 = rc chop x6 (sin rtx x ). bx 25/05/05: sin infiltración = 2a rc. vigilancia anual."
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "2022.g 1,p 1.",
+            "menarca": null,
+            "trh": null,
+            "aco": "negados.",
+            "mpf": null,
+            "estado_hormonal": null,
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt2",
+            "nódulos": "cn0",
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "negativo",
+            "rp": "negativo",
+            "her2": "negativo",
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi de mama izquierda ec iia (ct2,cn0,m0) triple negativo",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

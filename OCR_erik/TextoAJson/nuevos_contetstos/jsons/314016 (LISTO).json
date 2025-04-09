@@ -1,0 +1,99 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 66
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": "re 90%, rp 1%, her2 indeterminado sish amplificado, ki67 40%. n de compartir las pantallas n0 hay dgt revisión de estudios de imagen revisión de patología aparece en el video 5",
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": null,
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado - ahf",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "enfermedad de pequeños vasos snc",
+                    "descripción": null
+                }
+            ],
+            "1974": [
+                {
+                    "nombre": "trastorno bipolar",
+                    "descripción": "tratamiento actual: valproato de magnesio, melatonina, topiramato, y sertraline"
+                }
+            ],
+            "2021": [
+                {
+                    "nombre": "hipotiroidismo primario",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "2007",
+            "menarca": {
+                "años": 12
+            },
+            "trh": "negado.",
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 1,
+            "p": 1,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct2",
+            "nódulos": "cn0",
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "90%",
+            "rp": "1%",
+            "her2": "3+",
+            "ki67": "40%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi ec ia (ct2, cn0, cmo)",
+            "descripcion": "ec iia ct2- 3 cm cn0"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

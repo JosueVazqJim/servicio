@@ -1,0 +1,351 @@
+LDLFVH / 181339 / 52 años / Dra. Chavarri
+Diagnóstico: Carcinoma mucinoso de mama derecha EC IA (T1CNOMO) luminal A
+
+
+Originaria y residente: CDMX
+
+Ocupación: Hogar
+Seguridad social: INSABI
+
+AHF oncológicos: mamá con cáncer de colon a los
+
+62 años, tío paterno con cáncer de piel NE a los 25
+años
+
+Tabaco: negado
+
+Alcohol: negado
+Drogas: negado
+
+- Menarca 15 años / FUM 18 años (HSO bilateral)
+- G0 P0 C0 A0
+
+- TRH estrógenos conjugados (3 años) > estradiol
+en gel < parches hasta el 2023.
+- Estado hormonal: postmenopáusica
+
+Cirugías: HSO bilateral (18 años), biopsia insicional
+de mama (2011), apendicetomía abierta (2018),
+
+resección amplia de carcinoma basocelular en cuero
+cabelludo (2022)
+
+Comorbilidades: Retraso en el desarrollo aparentemente secundario a hipoxia perinatal. Dismorfia (talla baja, pies
+
+y manos pequeñas, alteraciones faciales y retraso psicomotor). Osteopenia. Deficiencia de vitamina D (2018).
+Enfermedad celíaca (2005). Sindrome de Apnea-hipopnea (2018)
+
+03.2023: Su cuidador detecta tumoración en mama derecha.
+
+17.04.23 MG Médica Sur BIRADS 4C nódulo en interlínea de cuadrantes externos, Radio de las 9, ovoideo, indistinto,
+isodenso, asociado a microcalcificaciones.
+
+28.04.23 USG7Biopsia de mama bilateral
+
+> Mama derecha: Nódulo 2.3 cm. Biopsia trucut RHP (Q-23-2789): carcinoma mucinoso tipo A, grado 1 (2+2+1 05),
+CDIS ausente, ILV ausente, IPN ausente, microcalcificaciones presentes en conductos no neoplásicos. IHQ RE
+90%, RP 20%, HER2 1+, Ki67 5%.
+
+> Mama izquierda (Q-23-2789): Fibroadenoma. Adenosis esclerosante con calcificaciones en conductos benignos.
+
+19.05.23: UFCM: El tratamiento ideal sería cirugía conservadora de mama con radioterapia adyuvante y
+hormonoterapia, sin embargo por el contexto de la paciente la RT adyuvante no podría ser factible, el equipo de
+Oncocirugía platicará con la paciente las opciones de tratamiento, CCM vs Mastectomía + hormonoterapia
+adyuvante.
+
+25.05.23 P0 Cirugía conservadora de mama derecha + ganglio centinela. RHP (Q23-3432): carcinoma mucinoso tipo
+B, grado 2 (3+2+1) de 20 mm, ILV-, IPN-, CDIS presente, margen superior positivo para carcinoma in situ, pero
+márgenes quirúrgicos negativos para carcinoma invasor. GL 0/1. RE 90%, RP 80%, HER2 1+ (negativo), Ki67 10%.
+
+03.07.23 P0 mastectomía de mama derecha RHP (Q-23-4466): CDIS de 0.3 cm patrón cribiforme, G1, necrosis -,
+microcalcificaciones presente en tejido no neoplásico (conductos benignos). M4 -.
+
+
+Mama derecha con cicatriz de cirugía conservadora en CIE y
+en región axillar con bordes bien afrontados sin datos de
+infección.
+
+No se palpan lesiones en mamas. Sin adenopatías palpables
+
+
+N0 HAY DGT
+Plan: HT adyuvante
+
+
+Extensión del tumor:
+
+CDI de mama derecha EC IA
+pTic-2cm
+cN0
+
+Biología tumoral:
+
+Luminal A
+RE 90%, RP 80%, HER2 1+ (-), Ki67 10%
+
+Estado hormonal: Postmenopáusica
+
+ECOG 3
+
+N0 HAY DGT
+Clinical Risk
+ER status | HER2 status Grade Nodal status Tumor Size In Mind:
+sim Clow
+N
+3.15cm C-high
+well dfferentiated
+1-3 positive nodes $2em Chow.
+H 2.1-5cm C-high
+?
+2
+E
+. TI
+z
+2 s1icm Clow.
+a N
+2 poorly differentiated or
+e undiflerentiated cia
+a 1-3 positive nodes C-high
+Clow
+well differentiated No
+2 OR C-high
+Z moderatety differentiated
+3 13 positive nodes C-high
+2
+E] Clow
+Ne
+y poorty differentiated or
+I 1.
+undifferentiated 215em Lia al
+1-3 positive nodes Any size C-high
+
+N Engl J Med 2016;375:717-29
+
+RT adyuvante
+
+> Cirugía conservadora
+> Ganglios linfático +
+
+> Tumores > 5 cm
+
+NCCN
+
+Terapia endocrina
+
+IA vs tamoxifeno
+
+open RN 11934
+a
+
+Lancet 2015; 386: 1341-52
+
+
+moderately differentiated
+
+C-low |
+
+1.1-5 cm
+
+7 9635
+
+Any size
+
+<2cm
+
+2.1-5 cm
+Any size
+
+<1cm
+
+N0 HAY DGT
+Ñ RT adyuvante
+
+Clinical Risk
+ER status | HER2 status Grade Nodal status
+jo: > Cirugía conservadora
+Clow
+(a [E
+C-hil i i 1
+A sh > Ganglios linfático +
+1-3 positive nodes s2cm Clow
+2 215cm Cohigh > Tumores > 5 cm
+E INCCN
+2
+E z ;
+2 Terapia endocrina
+3 A sicm Clow A
+3 poorly differentiated or e high M4
+£ undifferentiated IA vs tamoxifeno
+1-3 positive nodes C-high
+well differentiated Ne Eon ÓN
+2 OR C-high
+3 moderately differentiated
+3 1-3 positive nodes C-high
+y > Clow
+4 poorly differentiated or .
+I vundifferentiated 115cm C-high
+1-3 positive nodes Any size C-high
+
+N Engl J Med 2016;375:717-29 Lancet 2015; 386: 1341-52
+
+
+Tumor Size
+
+<3 cm
+
+3.1-5 cm
+
+moderately differentiated
+
+C-low |
+
+11-5 cm
+
+07 9035
+
+Any size
+
+<2cm
+
+2.1-5 cm
+Any size
+
+<1cm
+
+
+Aparece en el video 16
+N0 HAY DGT
+Originaria: CDXM.
+
+cial: Nivel 2-E
+ñ Ext Carcinoma mucinoso EC HA (cT2, cN0, M0)
+A Xter
+
+Retraso en el desarrollo aparentemente secundario a hipoxia perinatal.
+Dismortía (talla baja, pies y manos pequeñas, alteraciones faciales y retraso psicomotor)
+
+Se realizó cariotipo sin mostrar alteraciones numéricas ni estructurales el 24/10/2002
+
+- Enfermedad celíaca (2005)
+
+O... de Apnea-hipopnea (2018)
+
+lrmatosis (2020)
+
+
+* AHF: madre cáncer de colón a los 62 años. Tío
+paterno con antecedente de cáncer de piel finado a los
+25 años.
+
+: Histerectomía +lsal O a
+él años por tumor ovárico qeda
+
+Biopsia abierta de mama (2011) God benigno,
+microcalcificaciones)
+
+Apendicectomía abierta en el 2018 curso con
+
+tonitis.
+¡e sección amplia de carcinoma basocelular en
+cuero cabelludo el 25.07.22
+Cirugía de catarata bilateral 03.2022
+
+- G0
+* Menarca 15 años.
+
++ Terapia de reemplazo hormonal con estrógenos conjugados
+por 3 años, después estradiol en gel, parches hasta el 2023.
+
+Diagnóstico: Carcinoma mucinoso EC HA (cT2, cNO0, M0)
+
+
++ AHF: madre cáncer de colón a los 62 años. Tío
+
+paterno con antecedente de cáncer de piel finado a los
+25 años.
+
+Cirugías: Histerectomía + salpingooforectomía a
+los 18 años por tumor ovárico benigno.
+
+Biopsia abierta de mama (2011) (resultado benigno,
+microcalcificaciones)
+
+Apendicectomía abierta en el 2018 curso con
+
+ritonitis,
+Rescición amplia de carcinoma basocelular en
+cuero cabelludo el 25.07.22
+Cirugía de catarata bilateral 03.2022
+
+« G0
+e Menarca 15 años.
+
+e Terapia de reemplazo hormonal con estrógenos conjugados
+por 3 años, después estradiol en gel, parches hasta el 2023.
+
+Retraso en el desarrollo aparentemente secundario a hipoxia perinatal.
+- Dismorfía (talla baja, pies y manos pequeñas, alteraciones faciales y retraso psicomotor)
+Se realizó cariotipo sin mostrar alteraciones numéricas ni estructurales el 24/10/2002
+
+- Enfermedad celíaca (2005)
+“siadrome de Apnea-hipopnea (2018)
+matosis (2020)
+
+N0 HAY DGT
+Revisión de estudios de imagen
+Revisión de patología
+
+
+5,
+
+N0 HAY DGT
+Revisión de estudios dev;
+Revisión de patdlo4tá” Le, Ki67 5%
+
+nal: postmenopáusica
+
+Y
+|
+
+ECOG 1
+
+
+N0 HAY DGT
+
+Extárbió del tumor:
+M0
+
+Estado hormonal: postmenopáusica
+
+ECOG 1
+
+Extensión del tumor: Biología tumoral:
+cT2, cN0, M0 RE 90%, RP 20%, HÉR2 1+, Ki67 5%.
+
+Estado hormonal: postmenopáusica
+
+ECOG1
+
+Plan: CCM / GC + RT vs Mastectomía
+
+Plan: CCM /GC + RT vs Mastectomía
+
+Extensión del tumor:
+
+cT2, cN0, M0
+
+Estado hormonal: postmenopáusica
+
+ECOG 1
+
+Plan: CCM / GC + RT vs Mastectomía
+
+Extensión del tumot:
+cT2, cN0, M0
+
+Estado hormonal: postmenopáusica
+
+ECOG 1
+
+
+Aparece en el video 8

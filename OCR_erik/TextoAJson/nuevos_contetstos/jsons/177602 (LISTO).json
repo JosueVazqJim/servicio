@@ -1,0 +1,87 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 45
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": null,
+            "observaciones": null
+        },
+        "alcohol": "negadas",
+        "drogas": "negadas arf oncológicos",
+        "comorbilidades": {
+            "1979": [
+                {
+                    "nombre": "asma crónica de difícil control",
+                    "descripción": ", hipotiroidismo (1996), gastritis (1993) síndrome de colon irritable (1993), osteoporosis (2018), osteoartritis (2023), hernia discal = 2c, 4l. deficiencia de vitamina d y b sahos (2003) hernia hiatal/erge. fibromialgia (2015) p. e."
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "24.05.23",
+            "menarca": {
+                "años": 11
+            },
+            "trh": null,
+            "aco": null,
+            "mpf": null,
+            "estado_hormonal": "premenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": null,
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct2",
+            "nódulos": "n1",
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "100%",
+            "rp": "80%",
+            "her2": "3+",
+            "ki67": "2%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de ec iib (t2n1mo) luminal b her2 positivo",
+            "descripcion": "ec iib ct2 - 2.5 cm n1"
+        }
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 52
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": "baja, pies y manos pequeñas, alteraciones faciales y retraso psicomotor)",
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "2018": [
+                {
+                    "nombre": "retraso en el desarrollo aparentemente secundario a hipoxia perinatal. dismorfia (talla baja, pies y manos pequeñas, alteraciones faciales y retraso psicomotor). osteopenia. deficiencia de vitamina d",
+                    "descripción": ". enfermedad celíaca (2005). sindrome de apnea-hipopnea"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 18
+            },
+            "menarca": {
+                "años": 15
+            },
+            "trh": {
+                "años": 3,
+                "contexto": "estrógenos conjugados (3 años) > estradiol"
+            },
+            "aco": null,
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "madre cáncer de colón a los 62 años"
+        ],
+        "lateralidad": [
+            "tío paterno con antecedente de cáncer de piel finado a los 25 años"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct2",
+            "nódulos": "cn0",
+            "metástasis": "m0"
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "90%",
+            "rp": "20%",
+            "her2": "1+ (-)",
+            "ki67": "5%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "carcinoma mucinoso ec ha (ct2, cno0, m0)",
+            "descripcion": "ec ia ptic-2cm cn0"
+        }
+    }
+}

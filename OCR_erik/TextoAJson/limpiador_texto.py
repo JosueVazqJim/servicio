@@ -58,7 +58,7 @@ class LimpiezaTexto:
             "cirugías", "originaria y residente", 'originar', "seguridad social", "ocupación", 
             "ahf", "resumen del", "extensión del tumor", "biología tumoral",
             "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral", 'plan',
-            "cdi ", 'carcinoma', "IHQ final"
+            "cdi ", 'carcinoma', "IHQ final", "extensión del tumot"
         ]
 
         # Claves que deben tratarse como líneas individuales
@@ -86,7 +86,7 @@ class LimpiezaTexto:
             es_patron = patron_gn_pn_cn_an.match(linea) or patron_fecha.match(linea) or patron_linea_tipo.match(linea)
 
             # Detectar inicio de "Extensión del tumor" o "Biología tumoral"
-            if linea.startswith("extensión del tumor") or linea.startswith("biología tumoral"):
+            if linea.startswith("extensión del tumor") or linea.startswith("biología tumoral") or linea.startswith("extensión del tumot"):
                 if clave_actual:
                     lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
                 clave_actual = linea
@@ -139,7 +139,7 @@ class LimpiezaTexto:
             "índice tabáquico", "tabaquismo", "tabaco", "alcohol", "drogas", 
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
-            "ahf", "extensión del tumor", "biología tumoral",
+            "ahf", "extensión del tumor", "biología tumoral", "extensión del tumot",
             "aco", "mpf", "cáncer de mama bilateral", 'cdi ', 'carcinoma', "IHQ final"
         ]
 

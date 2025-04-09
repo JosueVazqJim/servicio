@@ -1,0 +1,99 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 54
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "2014": [
+                {
+                    "nombre": "diabetes tipo 2",
+                    "descripción": null
+                }
+            ],
+            "2022": [
+                {
+                    "nombre": "herpes zóster en región lumbar",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 46,
+                "contexto": "2015 (46 años)"
+            },
+            "menarca": {
+                "años": 14
+            },
+            "trh": null,
+            "aco": null,
+            "mpf": {
+                "años": 6,
+                "contexto": "- progestágenos im por 6 años"
+            },
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 2,
+            "p": 2,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct3",
+            "nódulos": "n1",
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "95%",
+            "rp": "0%",
+            "her2": "+",
+            "ki67": "10%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de mama deregha ec iia re+, her2+",
+            "descripcion": "ec iia ct3 - 8 cm c"
+        }
+    }
+}

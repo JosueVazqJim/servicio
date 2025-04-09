@@ -1,0 +1,110 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 65
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "suspendido",
+            "observaciones": [
+                {
+                    "notas": "hace 22 años",
+                    "tiempo": {
+                        "años": 22
+                    }
+                }
+            ]
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "fibromialgia (:",
+                    "descripción": null
+                },
+                {
+                    "nombre": "diabetes tipo",
+                    "descripción": null
+                },
+                {
+                    "nombre": "dislipidemia n",
+                    "descripción": null
+                },
+                {
+                    "nombre": "trastorno deb go 53-8-9-o nte: chiapas y cdmx insabi",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "2005",
+            "menarca": {
+                "años": 13
+            },
+            "trh": "negados",
+            "aco": "negados",
+            "mpf": "diu de cobre e implante de levonogestrel",
+            "estado_hormonal": "postmenopáusico",
+            "métodos_anticonceptivos": null,
+            "g": 2,
+            "p": 1,
+            "c": 1,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuela materna antecedente de cáncer gástrico (desconoce edad)"
+        ],
+        "lateralidad": [
+            "hermana antecedente de cáncer gástrico (45 años)"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt1c",
+            "nódulos": "pn0",
+            "metástasis": "m0"
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "90%",
+            "rp": "80%",
+            "her2": "-",
+            "ki67": "2%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de ec ia (pt1c pn0) luminal a abuela materna antecedente de lesconoce edad), papa con ncer de próstata (80 años), ente de cáncer gástrico (45 años)",
+            "descripcion": "ec ia ptic-1.5 cm pno0"
+        }
+    }
+}

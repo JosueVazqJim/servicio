@@ -1,0 +1,87 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 32
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "trastorno de ansiedad generalizada y depresión",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "08.2022",
+            "menarca": {
+                "años": 11
+            },
+            "trh": "negados",
+            "aco": "negados",
+            "mpf": null,
+            "estado_hormonal": "premenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 2,
+            "p": 0,
+            "c": 1,
+            "a": 1
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "60%",
+            "rp": "5%",
+            "her2": "-",
+            "ki67": "30%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de ec iv luminal b, her2 -",
+            "descripcion": null
+        }
+    }
+}

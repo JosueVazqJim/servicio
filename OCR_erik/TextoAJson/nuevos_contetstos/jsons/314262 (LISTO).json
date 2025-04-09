@@ -1,0 +1,97 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 85
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": "de la paciente y familia = venir al hospital lo menos posible",
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": [
+                {
+                    "notas": "exposición al humo de leña por 40 años por 2 horas.",
+                    "tiempo": {
+                        "años": 40,
+                        "horas": 2
+                    }
+                }
+            ]
+        },
+        "alcohol": "/ drogas negados exposición a humo de leña (+) durante 40 años, 2 h/d",
+        "drogas": "negados exposición a humo de leña (+) durante 40 años, 2 h/d",
+        "comorbilidades": {
+            "1995": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 47
+            },
+            "menarca": {
+                "años": 14
+            },
+            "trh": "negado",
+            "aco": "no recuerda",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": "desconoce.",
+            "g": 2,
+            "p": 2,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt1c",
+            "nódulos": "pn1a",
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt2",
+            "nódulos": "n0",
+            "metástasis": "m0"
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "90%",
+            "rp": "90%",
+            "her2": "negativo",
+            "ki67": "30%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "95%",
+            "rp": "95%",
+            "her2": "negativo",
+            "ki67": "5%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cáncer de mama bilateral. mi cdi pt1c, pn1a, m0",
+            "descripcion": "ec ia"
+        },
+        "mama_derecha": {
+            "clasificación": "md cli pt2, cn0 m0 re+",
+            "descripcion": "ec iiia"
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 53
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "síndrome de lynch. portadora de mutación en msh2 c.475dela (p.arg 159aspfs*15) - e colonoscopía: dos lesiones paris 0-lla de menos de 5 mm en colon ascendente. rhp (q23-2292): colitis crónica leve. - 04.2023 edg: gastropatía erosiva en antro. biopsias de acuerdo con protocolo de sídney. sin evidencia de lesiones esofágicas, gástricas o duodenales sospechosas. rhp (q23-2299): gastritis corporal y antral mínima. sin atrofia, sin displasia. sin presencia de h. pylori. - 02.2023 citologías urinarias (823-0273): negativas q-4--e3-b- >",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "septiembre 2016",
+            "menarca": {
+                "años": 14
+            },
+            "trh": "negado",
+            "aco": {
+                "meses": 2,
+                "contexto": "durante 2 meses"
+            },
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 4,
+            "p": 0,
+            "c": 3,
+            "a": 1
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct1b",
+            "nódulos": "cn0",
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "90%",
+            "rp": "5%",
+            "her2": "+",
+            "ki67": "30%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi de mama izquierda luminal b her2 +",
+            "descripcion": "ec ia ct1b-1 cm cn0"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

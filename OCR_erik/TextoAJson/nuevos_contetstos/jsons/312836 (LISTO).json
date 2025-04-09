@@ -1,0 +1,108 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 73
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": null,
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "2010": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ],
+            "2008": [
+                {
+                    "nombre": "sahos",
+                    "descripción": null
+                }
+            ],
+            "2022": [
+                {
+                    "nombre": "insuficiencia venosa periférica",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 44
+            },
+            "menarca": {
+                "años": 11
+            },
+            "trh": "negado",
+            "aco": {
+                "años": 20,
+                "contexto": "a los 20 años"
+            },
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 8,
+            "p": 5,
+            "c": 1,
+            "a": 2
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "padre con cáncer de próstata desconoce edad)"
+        ],
+        "lateralidad": [
+            "hermana con cáncer gástrico (46 años)"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": "n1",
+            "metástasis": "m1"
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "0%",
+            "rp": "5%",
+            "her2": "3+",
+            "ki67": "40%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de ec iv",
+            "descripcion": "ec iv t2-4 cm n1 — adenopatías axilares m1 — ósea, pulmonar"
+        }
+    }
+}
