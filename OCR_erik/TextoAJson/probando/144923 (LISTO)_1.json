@@ -8,7 +8,7 @@
         "talla": null,
         "preferencia": null,
         "índice_tabáquico": {
-            "fuma": null,
+            "fuma": "negadas",
             "observaciones": null
         },
         "alcohol": "negadas",
@@ -59,8 +59,8 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
+            "centros_tumorales": "ct1c",
+            "nódulos": "cn0",
             "metástasis": null
         }
     },
@@ -87,7 +87,7 @@
         },
         "mama_derecha": {
             "clasificación": "cdi de ec ia (t1cno) luminal b",
-            "descripcion": null
+            "descripcion": "ec ia ct1c-1.4 cm cn0"
         }
     }
 }

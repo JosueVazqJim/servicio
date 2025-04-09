@@ -5,7 +5,6 @@ Valores nulos encontrados:
     - talla: None
     - preferencia: None
   - índice_tabáquico:
-    - fuma: None
     - observaciones: None
   - antecedentes_ginecológicos:
     - fum: None
@@ -28,22 +27,19 @@ Valores nulos encontrados:
     - clasificación: None
     - descripcion: None
   - mama_derecha:
-    - centros_tumorales: None
-    - nódulos: None
     - metástasis: None
     - gh: None
-    - descripcion: None
 
 Nombre del caso: 144923 (LISTO)_2.json
 Valores nulos encontrados:
   - antecedentes_personales:
-    - edad: None
     - peso: None
     - talla: None
     - preferencia: None
   - índice_tabáquico:
     - observaciones: None
   - antecedentes_ginecológicos:
+    - fum: None
     - menarca: None
     - trh: None
     - aco: None
@@ -62,15 +58,8 @@ Valores nulos encontrados:
     - clasificación: None
     - descripcion: None
   - mama_derecha:
-    - centros_tumorales: None
-    - nódulos: None
-    - metástasis: None
-    - re: None
-    - rp: None
     - her2: None
-    - ki67: None
     - gh: None
-    - clasificación: None
     - descripcion: None
 
 Nombre del caso: 83432 (LISTO).json

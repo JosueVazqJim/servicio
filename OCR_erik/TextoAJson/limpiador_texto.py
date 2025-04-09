@@ -58,11 +58,11 @@ class LimpiezaTexto:
             "cirugías", "originaria y residente", 'originar', "seguridad social", "ocupación", 
             "ahf", "resumen del", "extensión del tumor", "biología tumoral",
             "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral", 'plan',
-            "cdi ", 'carcinoma', "IHQ final", "extensión del tumot"
+            "cdi ", 'carcinoma', "IHQ final", "extensión del tumot", "- fum"
         ]
 
         # Claves que deben tratarse como líneas individuales
-        claves_palabras = {"menarca", "embarazos", "partos", "fum", "trh", "aco", "mpf", "métodos" }
+        claves_palabras = {"menarca", "embarazos", "partos", "fum", "trh", "aco", "mpf", "métodos", "- fum" }
 
         # Patrones que se consideran claves
         patron_gn_pn_cn_an = re.compile(
@@ -77,7 +77,7 @@ class LimpiezaTexto:
         clave_actual = None
         valor_actual = []
         en_biologia_o_extension = False  # Bandera para identificar si estamos en "Biología tumoral" o "Extensión del tumor"
-
+        
         for linea in self.informacion:
             linea = linea.strip()
 
@@ -87,7 +87,7 @@ class LimpiezaTexto:
             es_patron = patron_gn_pn_cn_an.match(linea) or patron_fecha.match(linea) or patron_linea_tipo.match(linea) or asterisco_pattern.match(linea)
 
             # Detectar inicio de "Extensión del tumor" o "Biología tumoral"
-            if linea.startswith("extensión del tumor") or linea.startswith("biología tumoral") or linea.startswith("extensión del tumot"):
+            if linea.startswith("extensión del tumo") or linea.startswith("biología tumoral") or linea.startswith("extensión del tumot"):
                 if clave_actual:
                     lineas_procesadas.append(f"{clave_actual} {' '.join(valor_actual).strip()}")
                 clave_actual = linea
@@ -160,7 +160,6 @@ class LimpiezaTexto:
         asterisco_pattern = re.compile(r'^\*+$')
         
         lineas_filtradas = []
-
         for linea in self.texto_procesado:
             linea = linea.strip()
 
@@ -191,6 +190,7 @@ class LimpiezaTexto:
         self.texto_procesado = lineas_filtradas
 
     def __tratar_casos_especiales(self):
+        self.imprimir_datos()
         """
         Trata casos especiales en el texto procesado, incluyendo:
         - Patrón GPAC (g → p → c → a)
@@ -274,6 +274,7 @@ class LimpiezaTexto:
         
         self.texto_procesado = nuevo_texto
         
+        
     def obtener_texto_procesado(self):
         """
         Devuelve el texto procesado como una lista de líneas.
@@ -311,5 +312,4 @@ class LimpiezaTexto:
         self.__unir_lineas_relevantes()
         self.__filtrar_lineas_relevantes()
         self.__tratar_casos_especiales()
-        print('_________________________')
         return self.obtener_texto_procesado()

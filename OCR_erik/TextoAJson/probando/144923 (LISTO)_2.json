@@ -1,6 +1,8 @@
 {
     "antecedentes_personales": {
-        "edad": null,
+        "edad": {
+            "años": 65
+        },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
@@ -9,7 +11,7 @@
             "fuma": "negado",
             "observaciones": null
         },
-        "alcohol": "negado",
+        "alcohol": "padre con cáncer de pulmón (89 años), prima materna con cáncer de tiroides y cáncer de mama (45 alcohol",
         "drogas": "negado",
         "comorbilidades": {
             "1990": [
@@ -20,16 +22,16 @@
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": "cesárea y otb (2000) - fum",
+            "fum": null,
             "menarca": null,
             "trh": null,
             "aco": null,
             "mpf": null,
             "estado_hormonal": null,
             "métodos_anticonceptivos": null,
-            "g": 0,
+            "g": 1,
             "p": 0,
-            "c": 2003,
+            "c": 1,
             "a": 0
         }
     },
@@ -49,9 +51,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
-            "metástasis": null
+            "centros_tumorales": "pt1cpno",
+            "nódulos": "pn0",
+            "metástasis": "m0"
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -63,10 +65,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": null,
-            "rp": null,
+            "re": "80%",
+            "rp": "1%",
             "her2": null,
-            "ki67": null,
+            "ki67": "15%",
             "gh": null
         }
     },
@@ -76,7 +78,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": null,
+            "clasificación": "cdi de mama derecha ec ia, pt1cpno(sn)m0 re+",
             "descripcion": null
         }
     }
