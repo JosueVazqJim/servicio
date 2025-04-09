@@ -66,7 +66,7 @@ class LimpiezaTexto:
 
         # Patrones que se consideran claves
         patron_gn_pn_cn_an = re.compile(
-            r'\b(?=.*g\s*\d+)(?=.*p\s*\d+)(?=.*c\s*\d+)(?=.*a\s*\d+)[gpca\d\s]*\b',
+            r'^\s*-?\s*(?:[gpca]\s*\d+\s*){4}(?:\s*\(.*?\))?\s*$', 
             re.IGNORECASE
         )
         patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
@@ -190,7 +190,6 @@ class LimpiezaTexto:
         self.texto_procesado = lineas_filtradas
 
     def __tratar_casos_especiales(self):
-        self.imprimir_datos()
         """
         Trata casos especiales en el texto procesado, incluyendo:
         - Patrón GPAC (g → p → c → a)
@@ -202,10 +201,6 @@ class LimpiezaTexto:
         """
         nuevo_texto = []
         for linea in self.texto_procesado:
-            # Caso 1: Biología tumoral
-            # if "biología tumoral" in linea and ('final' in linea or 'post tratamiento' in linea):
-            #     nuevo_texto.append(f"biología tumoral{linea.split('final', 1)[1].strip() if 'final' in linea else linea.split('post tratamiento', 1)[1].strip()}")
-            #     continue
             
             # Caso 2: Líneas que comienzan con "e — cmbm"
             if linea.startswith("e — cmbm"):
@@ -250,13 +245,25 @@ class LimpiezaTexto:
             
             # Caso 4: Patrón GPAC (g, p, c, a) en cualquier orden
             def ordenar_gpac(linea):
-                g = re.search(r'g(\d+)', linea)
-                p = re.search(r'p(\d+)', linea)
-                c = re.search(r'c(\d+)', linea)
-                a = re.search(r'a(\d+)', linea)
-                
-                if all([g, p, c, a]):
-                    return f"g{g.group(1)} p{p.group(1)} c{c.group(1)} a{a.group(1)}"
+                # Verificar si la línea contiene un patrón GPAC válido delimitado correctamente
+                patron_gpac = re.compile(
+                    r'\b(?:g\s*\d+\s*p\s*\d+\s*c\s*\d+\s*a\s*\d+|p\s*\d+\s*g\s*\d+\s*a\s*\d+\s*c\s*\d+|c\s*\d+\s*a\s*\d+\s*g\s*\d+\s*p\s*\d+|a\s*\d+\s*c\s*\d+\s*p\s*\d+\s*g\s*\d+)\b',
+                    re.IGNORECASE
+                )
+                match = patron_gpac.search(linea)
+                if match:
+                    # Extraer el patrón GPAC encontrado
+                    gpac = match.group(0)
+                    # Extraer los valores de g, p, c, a y ordenarlos
+                    g = re.search(r'g\s*(\d+)', gpac, re.IGNORECASE)
+                    p = re.search(r'p\s*(\d+)', gpac, re.IGNORECASE)
+                    c = re.search(r'c\s*(\d+)', gpac, re.IGNORECASE)
+                    a = re.search(r'a\s*(\d+)', gpac, re.IGNORECASE)
+            
+                    if all([g, p, c, a]):
+                        # Reemplazar el patrón GPAC en la línea original con el ordenado
+                        gpac_ordenado = f"g{g.group(1)} p{p.group(1)} c{c.group(1)} a{a.group(1)}"
+                        return linea.replace(gpac, gpac_ordenado)
                 return linea
             
             linea_ordenada = ordenar_gpac(linea)
@@ -264,16 +271,9 @@ class LimpiezaTexto:
                 nuevo_texto.append(linea_ordenada)
             else:
                 nuevo_texto.append(linea)
-
-        # Caso 5: asignar la clave "diagnóstico" a todas las líneas que empiezan con "cdi "
-        for linea_posible_diagnostico in [l for l in self.texto_procesado if l.startswith(("cdi ", "carcinoma"))]:
-            if not any("diagnóstico" in l for l in nuevo_texto):
-                nuevo_texto.append("diagnóstico: " + linea_posible_diagnostico)
-            else:
-                nuevo_texto.append(linea_posible_diagnostico)
         
         self.texto_procesado = nuevo_texto
-        
+        # self.imprimir_datos()        
         
     def obtener_texto_procesado(self):
         """

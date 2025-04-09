@@ -11,18 +11,47 @@
             "fuma": "negado",
             "observaciones": null
         },
-        "alcohol": "padre con cáncer de pulmón (89 años), prima materna con cáncer de tiroides y cáncer de mama (45 alcohol",
+        "alcohol": "negado",
         "drogas": "negado",
         "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "post",
+                    "descripción": null
+                },
+                {
+                    "nombre": "131(sep 1990) x eta bocio toxico difuso",
+                    "descripción": null
+                },
+                {
+                    "nombre": "diabetes mellitus tipo 2",
+                    "descripción": null
+                },
+                {
+                    "nombre": "obesidad g1",
+                    "descripción": null
+                },
+                {
+                    "nombre": "osteopenia",
+                    "descripción": null
+                },
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ],
             "1990": [
                 {
                     "nombre": "hipotiroidismo",
-                    "descripción": "/ post | 131(sep 1990) x eta bocio toxico difuso / diabetes mellitus tipo 2 / obesidad g1 / osteopenia / hipertensión arterial sistémica"
+                    "descripción": null
                 }
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": null,
+            "fum": {
+                "años": 45,
+                "contexto": "45 años (2003) * cirugías"
+            },
             "menarca": null,
             "trh": null,
             "aco": null,
@@ -36,9 +65,13 @@
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": "negado",
-        "lateralidad": "negado",
-        "descendencia": "negado"
+        "ascendencia": [
+            "padre con cáncer de pulmón (89 años)"
+        ],
+        "lateralidad": [
+            "prima materna con cáncer de tiroides y cáncer de mama (45"
+        ],
+        "descendencia": null
     },
     "estadía_tumoral": {
         "mama_izquierda": {

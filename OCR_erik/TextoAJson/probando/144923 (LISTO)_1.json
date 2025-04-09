@@ -44,8 +44,12 @@
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": null,
-        "lateralidad": null,
+        "ascendencia": [
+            "padre con cáncer de pulmón (89 años)"
+        ],
+        "lateralidad": [
+            "prima materna con cáncer de tiroides y cáncer de mama (45 años)"
+        ],
         "descendencia": null
     },
     "estadía_tumoral": {
