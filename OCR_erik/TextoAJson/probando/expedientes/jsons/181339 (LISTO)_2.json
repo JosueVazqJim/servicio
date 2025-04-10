@@ -5,24 +5,56 @@
         },
         "sexo": "femenino",
         "peso": null,
-        "talla": "baja, pies y manos pequeñas, alteraciones faciales y retraso psicomotor)",
+        "talla": "baja",
         "preferencia": null,
         "índice_tabáquico": {
-            "fuma": null,
+            "fuma": "negado",
             "observaciones": null
         },
-        "alcohol": null,
-        "drogas": null,
-        "comorbilidades": null,
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "retraso en el desarrollo aparentemente secundario a hipoxia perinatal",
+                    "descripción": null
+                },
+                {
+                    "nombre": "dismorfia (talla baja, pies y manos pequeñas, alteraciones faciales y retraso psicomotor)",
+                    "descripción": null
+                },
+                {
+                    "nombre": "osteopenia",
+                    "descripción": null
+                },
+                {
+                    "nombre": "deficiencia de vitamina d",
+                    "descripción": null
+                },
+                {
+                    "nombre": "enfermedad celíaca",
+                    "descripción": null
+                },
+                {
+                    "nombre": "sindrome de apnea-hipopnea",
+                    "descripción": null
+                }
+            ]
+        },
         "antecedentes_ginecológicos": {
-            "fum": null,
+            "fum": {
+                "años": 18
+            },
             "menarca": {
                 "años": 15
             },
-            "trh": null,
+            "trh": {
+                "años": 3,
+                "contexto": "estrógenos conjugados (3 años) > estradiol"
+            },
             "aco": null,
             "mpf": null,
-            "estado_hormonal": null,
+            "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
             "g": 0,
             "p": 0,
@@ -32,10 +64,10 @@
     },
     "antecedentes_familiares": {
         "ascendencia": [
-            "madre cáncer de colón a los 62 años"
+            "mamá con cáncer de colon a los 62 años"
         ],
         "lateralidad": [
-            "tío paterno con antecedente de cáncer de piel finado a los 25 años"
+            "tío paterno con cáncer de piel ne a los 25 años"
         ],
         "descendencia": null
     },
@@ -77,7 +109,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": null,
+            "clasificación": "carcinoma mucinoso de ec ia (t1cnomo) luminal a",
             "descripcion": null
         }
     }

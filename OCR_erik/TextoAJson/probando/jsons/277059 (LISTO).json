@@ -60,9 +60,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
-            "metástasis": null
+            "centros_tumorales": "ct1c",
+            "nódulos": "cn0",
+            "metástasis": "m0"
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -74,10 +74,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": null,
-            "rp": null,
-            "her2": null,
-            "ki67": null,
+            "re": "90%",
+            "rp": "50%",
+            "her2": "1+",
+            "ki67": "5%",
             "gh": null
         }
     },
@@ -87,7 +87,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": null,
+            "clasificación": "diagnóstico por tamizaje",
             "descripcion": null
         }
     }

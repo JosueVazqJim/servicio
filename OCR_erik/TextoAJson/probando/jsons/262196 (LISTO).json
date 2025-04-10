@@ -13,7 +13,14 @@
         },
         "alcohol": "negado",
         "drogas": "negado",
-        "comorbilidades": {},
+        "comorbilidades": {
+            "2002": [
+                {
+                    "nombre": "adenocarcinoma de colon izquierdo ec iib (pt4a pn0 m0) pmmr 17.05.22 hemicolectomía izquierda abierta. 19.07.22-01.12.22 capecitabina adyuvante. sle 1 año 3 meses erge + hernia hiatal",
+                    "descripción": "; epoc gold 2 (8005) ecott mnorosts (2012) 60%, disfunción diastólica tipo i, baja eo en estudio (2022 inferior del lóbulo tiroideo derecho diámetro anteroposterior de 4 cm con componente mediastinal probabilidad a polo pleno pulmonar, psap 13 mmhg; osteoporosis (2012); soo tropical (2015); nódulo tiroi lo r retroestemal tirads 3"
+                }
+            ]
+        },
         "antecedentes_ginecológicos": {
             "fum": {
                 "años": 45,

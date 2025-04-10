@@ -58,7 +58,7 @@ class LimpiezaTexto:
             "cirugías", "originaria y residente", 'originar', "seguridad social", "ocupación", 
             "ahf", "resumen del", "extensión del tumor", "biología tumoral",
             "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral", 'plan',
-            "cdi ", 'carcinoma', "IHQ final", "extensión del tumot", "- fum"
+            "cdi ", 'carcinoma', "IHQ final", "extensión del tumot", "- fum", "aparece en"
         ]
 
         # Claves que deben tratarse como líneas individuales
