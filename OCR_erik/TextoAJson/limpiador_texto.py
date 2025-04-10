@@ -132,6 +132,7 @@ class LimpiezaTexto:
         self.texto_procesado = lineas_procesadas    
     
     def __filtrar_lineas_relevantes(self):
+        # self.imprimir_datos()
         """
         Filtra las líneas que contienen las claves o patrones relevantes.
         """
@@ -252,9 +253,14 @@ class LimpiezaTexto:
             
             # Caso 4: Patrón GPAC (g, p, c, a) en cualquier orden
             def ordenar_gpac(linea):
-                # Verificar si la línea contiene un patrón GPAC válido delimitado correctamente
+                # Verificar si la línea contiene un patrón GPAC válido con texto adicional entre los componentes
                 patron_gpac = re.compile(
-                    r'\b(?:g\s*\d+\s*p\s*\d+\s*c\s*\d+\s*a\s*\d+|p\s*\d+\s*g\s*\d+\s*a\s*\d+\s*c\s*\d+|c\s*\d+\s*a\s*\d+\s*g\s*\d+\s*p\s*\d+|a\s*\d+\s*c\s*\d+\s*p\s*\d+\s*g\s*\d+)\b',
+                    r'\b(?:g\s*\d+.*?p\s*\d+.*?c\s*\d+.*?a\s*\d+|'
+                    r'g\s*\d+.*?p\s*\d+.*?a\s*\d+.*?c\s*\d+|'
+                    r'g\s*\d+.*?c\s*\d+.*?p\s*\d+.*?a\s*\d+|'
+                    r'g\s*\d+.*?c\s*\d+.*?a\s*\d+.*?p\s*\d+|'
+                    r'g\s*\d+.*?a\s*\d+.*?p\s*\d+.*?c\s*\d+|'
+                    r'g\s*\d+.*?a\s*\d+.*?c\s*\d+.*?p\s*\d+)\b',
                     re.IGNORECASE
                 )
                 match = patron_gpac.search(linea)
@@ -262,14 +268,18 @@ class LimpiezaTexto:
                     # Extraer el patrón GPAC encontrado
                     gpac = match.group(0)
                     # Extraer los valores de g, p, c, a y ordenarlos
-                    g = re.search(r'g\s*(\d+)', gpac, re.IGNORECASE)
-                    p = re.search(r'p\s*(\d+)', gpac, re.IGNORECASE)
-                    c = re.search(r'c\s*(\d+)', gpac, re.IGNORECASE)
-                    a = re.search(r'a\s*(\d+)', gpac, re.IGNORECASE)
-            
-                    if all([g, p, c, a]):
-                        # Reemplazar el patrón GPAC en la línea original con el ordenado
-                        gpac_ordenado = f"g{g.group(1)} p{p.group(1)} c{c.group(1)} a{a.group(1)}"
+                    componentes = {
+                        'g': re.search(r'g\s*(\d+)', gpac, re.IGNORECASE),
+                        'p': re.search(r'p\s*(\d+)', gpac, re.IGNORECASE),
+                        'c': re.search(r'c\s*(\d+)', gpac, re.IGNORECASE),
+                        'a': re.search(r'a\s*(\d+)', gpac, re.IGNORECASE)
+                    }
+
+                    if all(componentes.values()):
+                        # Construir el GPAC ordenado
+                        gpac_ordenado = f"g{componentes['g'].group(1)} p{componentes['p'].group(1)} c{componentes['c'].group(1)} a{componentes['a'].group(1)}"
+                        
+                        # Reemplazar en la línea original manteniendo el resto del texto
                         return linea.replace(gpac, gpac_ordenado)
                 return linea
             

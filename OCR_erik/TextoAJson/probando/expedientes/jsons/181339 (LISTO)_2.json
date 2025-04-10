@@ -57,8 +57,8 @@
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
             "g": 0,
-            "p": 1,
-            "c": 0,
+            "p": 0,
+            "c": 1,
             "a": 0
         }
     },
@@ -82,9 +82,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
-            "metástasis": null
+            "centros_tumorales": "ct1c",
+            "nódulos": "n0",
+            "metástasis": "m0"
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -109,7 +109,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "carcinoma mucinoso de ec ia (t1cnomo) luminal a",
+            "clasificación": "carcinoma mucinoso de ec ia ( ct1c n0 m0) luminal a",
             "descripcion": null
         }
     }
