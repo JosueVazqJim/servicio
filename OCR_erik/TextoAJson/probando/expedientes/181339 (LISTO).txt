@@ -20,7 +20,7 @@ Rescición amplia de carcinoma basocelular en
 cuero cabelludo el 25.07.22
 Cirugía de catarata bilateral 03.2022
 
-« G0
+« G2
 e Menarca 15 años.
 
 e Terapia de reemplazo hormonal con estrógenos conjugados
@@ -59,7 +59,7 @@ Alcohol: negado
 Drogas: negado
 
 - Menarca 15 años / FUM 18 años (HSO bilateral)
-- G0 P0 C0 A0
+- G0 (dijo que tuvo) P0 C1 A0 
 
 - TRH estrógenos conjugados (3 años) > estradiol
 en gel < parches hasta el 2023.

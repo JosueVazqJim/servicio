@@ -66,9 +66,10 @@ class LimpiezaTexto:
 
         # Patrones que se consideran claves
         patron_gn_pn_cn_an = re.compile(
-            r'^\s*-?\s*(?:[gpca]\s*\d+\s*){4}(?:\s*\(.*?\))?\s*$', 
+            r'\b(?=.*g\s*\d+)(?=.*p\s*\d+)(?=.*c\s*\d+)(?=.*a\s*\d+)[gpca\d\s]*\b',
             re.IGNORECASE
         )
+        
         patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
         patron_linea_tipo = re.compile(r'^[^/]+ / \d+ / \d+ años / .+$')  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
         asterisco_pattern = re.compile(r'^\*+$')
