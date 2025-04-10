@@ -96,10 +96,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": null,
-            "rp": null,
-            "her2": null,
-            "ki67": null,
+            "re": "60%",
+            "rp": "5%",
+            "her2": "-",
+            "ki67": "30%",
             "gh": null
         }
     },
