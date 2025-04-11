@@ -17,20 +17,15 @@
             "2020": [
                 {
                     "nombre": "hipertensión arterial sistémica",
-                    "descripción": "en tratamiento actual con amiodipino 5 mg cada 24 horas, enalapril 10 mg ad ¿"
-                }
-            ],
-            "2007": [
-                {
-                    "nombre": "neuropatía sensitiva motora diagnosticada en el issste: carbamazepina 200 mg prn ¿psoriasis",
-                    "descripción": "sin tratamiento actual"
+                    "descripción": "en tratamiento actual con amiodipino 5 mg cada 24 horas, enalapril 10 mg ad ¿/neuropatía sensitiva motora diagnosticada en el issste: carbamazepina 200 mg prn ¿psoriasis (2007) sin tratamiento actual"
                 }
             ]
         },
         "antecedentes_ginecológicos": {
             "fum": null,
             "menarca": {
-                "años": 12
+                "años": 12,
+                "contexto": "12 años g4 p0 c3 a1"
             },
             "trh": null,
             "aco": null,
@@ -40,10 +35,10 @@
             },
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 4,
+            "g": 0,
             "p": 0,
-            "c": 3,
-            "a": 1
+            "c": 0,
+            "a": 0
         }
     },
     "antecedentes_familiares": {

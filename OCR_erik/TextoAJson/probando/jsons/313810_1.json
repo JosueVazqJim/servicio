@@ -1,6 +1,8 @@
 {
     "antecedentes_personales": {
-        "edad": null,
+        "edad": {
+            "años": 77
+        },
         "sexo": "femenino",
         "peso": null,
         "talla": null,

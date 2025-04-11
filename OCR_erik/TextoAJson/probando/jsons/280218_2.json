@@ -31,6 +31,10 @@
                 {
                     "nombre": "cáncer de mama izquierda no especificado a los 22",
                     "descripción": null
+                },
+                {
+                    "nombre": "recibió 1 ciclo qt, seguido de cirugía y",
+                    "descripción": null
                 }
             ],
             "1993": [
@@ -48,7 +52,7 @@
             "2019": [
                 {
                     "nombre": "hx apendicitis aguda complicada",
-                    "descripción": "años (2008), recibió 1 ciclo qt, seguido de cirugía y"
+                    "descripción": "años (2008)"
                 }
             ],
             "2022": [
@@ -66,7 +70,7 @@
             "trh": null,
             "aco": "negado",
             "mpf": null,
-            "estado_hormonal": "premenopáusica | | 42 04 23) liposucción abdominal (02.2023)",
+            "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
             "g": 4,
             "p": 1,

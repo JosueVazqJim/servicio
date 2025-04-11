@@ -16,43 +16,11 @@
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "temblor esencial",
+                    "nombre": "temblor esencial / trastorno depresivo mayor / trastorno de ansiedad generalizada / síndrome de intestino irritable con predominio de diarrea / dislipidemia / osteoartritis / osteoporosis / prediabetes",
                     "descripción": null
                 },
                 {
-                    "nombre": "trastorno depresivo mayor",
-                    "descripción": null
-                },
-                {
-                    "nombre": "trastorno de ansiedad generalizada",
-                    "descripción": null
-                },
-                {
-                    "nombre": "síndrome de intestino irritable con predominio de diarrea",
-                    "descripción": null
-                },
-                {
-                    "nombre": "dislipidemia",
-                    "descripción": null
-                },
-                {
-                    "nombre": "osteoartritis",
-                    "descripción": null
-                },
-                {
-                    "nombre": "osteoporosis",
-                    "descripción": null
-                },
-                {
-                    "nombre": "prediabetes",
-                    "descripción": null
-                },
-                {
-                    "nombre": "medicamentos: rivotril gotas por la noche, duloxetina 60 mg vo cada 24 horas, lorazepam 0.5 mg vo cada 24 horas, mirtazapina 30 mg vo cada 24 horas, propranolol 20 mg vo cada 8 horas, loperamida 2 mg cada 24 horas, atorvastatina 40 mg vo cada 24 horas, clonazepam 4 gotas vo cada 24 horas, olcalciferol",
-                    "descripción": null
-                },
-                {
-                    "nombre": "vitamina d, histofil 4000 ul cada tercer dia",
+                    "nombre": "medicamentos: rivotril gotas por la noche, duloxetina 60 mg vo cada 24 horas, lorazepam 0.5 mg vo cada 24 horas, mirtazapina 30 mg vo cada 24 horas, propranolol 20 mg vo cada 8 horas, loperamida 2 mg cada 24 horas, atorvastatina 40 mg vo cada 24 horas, clonazepam 4 gotas vo cada 24 horas, olcalciferol / vitamina d, histofil 4000 ul cada tercer dia",
                     "descripción": null
                 }
             ],

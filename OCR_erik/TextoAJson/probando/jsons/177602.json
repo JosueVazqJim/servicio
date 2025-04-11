@@ -12,11 +12,11 @@
             "observaciones": null
         },
         "alcohol": "negadas",
-        "drogas": "negadas arf oncológicos",
+        "drogas": "negadas",
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "erge",
+                    "nombre": "hernia discal = 2c, 4l",
                     "descripción": null
                 },
                 {
@@ -27,13 +27,37 @@
             "1979": [
                 {
                     "nombre": "asma crónica de difícil control",
-                    "descripción": ", hipotiroidismo (1996), gastritis (1993) síndrome de colon irritable (1993), osteoporosis (2018), osteoartritis (2023), hernia discal = 2c, 4l"
+                    "descripción": null
+                }
+            ],
+            "1996": [
+                {
+                    "nombre": "hipotiroidismo",
+                    "descripción": null
+                }
+            ],
+            "1993": [
+                {
+                    "nombre": "gastritis",
+                    "descripción": "síndrome de colon irritable"
+                }
+            ],
+            "2018": [
+                {
+                    "nombre": "osteoporosis",
+                    "descripción": null
+                }
+            ],
+            "2023": [
+                {
+                    "nombre": "osteoartritis",
+                    "descripción": null
                 }
             ],
             "2003": [
                 {
                     "nombre": "deficiencia de vitamina d y b sahos",
-                    "descripción": "hernia hiatal"
+                    "descripción": "hernia hiatal/erge"
                 }
             ],
             "2015": [

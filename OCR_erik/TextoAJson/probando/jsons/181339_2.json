@@ -52,10 +52,7 @@
             "menarca": {
                 "años": 15
             },
-            "trh": {
-                "años": 3,
-                "contexto": "estrógenos conjugados (3 años) > estradiol"
-            },
+            "trh": "postmenopáusica",
             "aco": null,
             "mpf": null,
             "estado_hormonal": "postmenopáusica",

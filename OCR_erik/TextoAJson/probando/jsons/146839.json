@@ -1,6 +1,8 @@
 {
     "antecedentes_personales": {
-        "edad": null,
+        "edad": {
+            "años": 71
+        },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
@@ -10,7 +12,7 @@
             "observaciones": null
         },
         "alcohol": "negado.",
-        "drogas": "negado. revisión de estudios de imagen uá revisión de patología",
+        "drogas": "negado.",
         "comorbilidades": null,
         "antecedentes_ginecológicos": {
             "fum": null,
@@ -21,10 +23,7 @@
             "trh": null,
             "aco": "negado inguinal (1993)",
             "mpf": null,
-            "estado_hormonal": {
-                "meses": 3,
-                "contexto": "p cirrosis hepática criptogénica child b (8 puntos), meld-na 12 puntos (mortalidad 3 meses del 6%) (1990) hipertensión portal no hemorrágica (egd 28.11.22)"
-            },
+            "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
             "g": 0,
             "p": 0,

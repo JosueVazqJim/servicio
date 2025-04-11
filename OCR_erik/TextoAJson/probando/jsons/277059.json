@@ -4,7 +4,7 @@
             "años": 71
         },
         "sexo": "femenino",
-        "peso": "cicatriz en cuadrantes externos de mama derecha, sin lesiones palpables, axila negativa, mama izquierda y axila izquierda sin lesiones palpables, cardiopulmonar sin compromiso revisión de patología n0 hay dgt",
+        "peso": "cicatriz en cuadrantes externos de mama derecha, sin lesiones palpables, axila negativa, mama izquierda y axila izquierda sin lesiones palpables, cardiopulmonar sin compromiso",
         "talla": "153",
         "preferencia": null,
         "índice_tabáquico": {
@@ -26,7 +26,10 @@
             "trh": null,
             "aco": "negado",
             "mpf": null,
-            "estado_hormonal": "postmenopáusica.",
+            "estado_hormonal": {
+                "años": 30,
+                "contexto": "postmenopáusica g8 16 puntos schonberg 2p - mortalidad 5 años 3-6%, 10 años 9-12%, 14 años 19-24% lee 3p - mortalidad 5 años 2-4%, 10 años 7-10%, expectativa de vida 23-30 años"
+            },
             "métodos_anticonceptivos": null,
             "g": 0,
             "p": 0,

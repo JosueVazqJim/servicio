@@ -28,7 +28,9 @@ class TextoJson:
         """
         self.rutaTxt = None
         self.rutaDestino = None
+        self.nombre = None
         self.limpiador = LimpiezaTexto()
+        self.fases = []
         self.informacion = []
         self.data = {
             "antecedentes_personales": {},
@@ -37,6 +39,7 @@ class TextoJson:
             "inmunohistoquímica_tumoral": {},
             "tipo": {},
         }
+        self.evoluciones = []
         self.mama = None
 
     def __limpiar_texto(self):
@@ -50,6 +53,96 @@ class TextoJson:
 
     def setrutaDestino(self, rutaDestino):
         self.rutaDestino = rutaDestino
+
+    def __hay_fases(self):
+        """
+        Verifica si el contenido contiene fases separadas por líneas de asteriscos,
+        seguido de texto real en las siguientes líneas.
+        
+        Retorna:
+            bool: True si hay fases detectadas, False en caso contrario.
+        """
+        asterisco_pattern = re.compile(r'^\*+$')
+        
+        for i, linea in enumerate(self.informacion):
+            linea = linea.strip()
+            
+            if asterisco_pattern.match(linea):
+                # Revisar si después de los asteriscos hay texto real
+                if i + 1 < len(self.informacion):
+                    siguiente_linea = self.informacion[i + 1].strip()
+                    if siguiente_linea and not asterisco_pattern.match(siguiente_linea):  # Hay contenido después de los asteriscos y no es otra línea de asteriscos
+                        return True
+        return False  # No se detectaron fases reales
+    
+    def __separar_fases(self):
+        """
+        Divide el contenido en diferentes fases
+        cada vez que encuentra líneas de asteriscos.
+        
+        Almacena cada fase como un elemento en la lista self.fases.
+        """
+        self.fases = []
+        bloque_actual = []
+        aux1 = 0
+        aux2 = 0
+        n = len(self.informacion)
+        bandera = False
+        
+        aux2 = self.__buscar_linea_asteriscos(aux1)
+        bandera = True
+
+        while aux2 < n:
+            if bandera:
+                resultado = self.__buscar_linea_asteriscos_diagnostico(aux2)
+            
+                if resultado is None:  # No hay más patrones
+                    # Agregar desde aux1 hasta aux2 como fase final
+                    bloque_actual = [linea.strip() for linea in self.informacion[aux1:aux2]]
+                    if bloque_actual:
+                        self.fases.append(bloque_actual)
+                    break
+                    
+                pos, tipo = resultado
+                
+                if tipo == 'diagnóstico':
+                    # Guardar bloque desde aux1 hasta aux2
+                    bloque_actual = [linea.strip() for linea in self.informacion[aux1:aux2]]
+                    if bloque_actual:
+                        self.fases.append(bloque_actual)
+                    aux1 = aux2  # Movemos aux1 al inicio del diagnóstico
+                    bandera = False  # Cambiamos la bandera para buscar asteriscos
+                else:  # 'asteriscos'
+                    aux2 = pos  # Actualizamos aux2 al nuevo asterisco
+                    # Continuamos buscando sin cambiar aux1
+            else:
+                # Buscar siguiente asterisco desde aux1+1
+                aux2 = self.__buscar_linea_asteriscos(aux1)
+                if aux2 is None:
+                    # No hay más asteriscos, agregar bloque actual
+                    bloque_actual = [linea.strip() for linea in self.informacion[aux1:]]
+                    if bloque_actual:
+                        self.fases.append(bloque_actual)
+                    break
+                else:
+                    bandera = True  # Cambiamos la bandera para buscar diagnóstico
+            
+    
+    def __buscar_linea_asteriscos_diagnostico(self, inicio):
+        for i in range(inicio + 1, len(self.informacion)):
+            linea = self.informacion[i].strip()
+            if linea.startswith("*"):
+                return i, "asteriscos"
+            elif linea.startswith("diagnóstico"):
+                return i, "diagnóstico"
+        return None
+    
+    def __buscar_linea_asteriscos(self, inicio):
+        for i in range(inicio + 1, len(self.informacion)):
+            linea = self.informacion[i].strip()
+            if linea.startswith("*"):
+                return i
+        return None
 
     def __detector_pezones(self):
         """
@@ -85,8 +178,9 @@ class TextoJson:
             self.mama = "mama_derecha"  
         else:
             self.mama = None  # Si no se detecta ninguna mama afectada
+        
+        print(f"Se detectó mama: {self.mama}")
 
-        print(f"Mama detectada: {self.mama}")
 
 
     def __extraer_nombre_txt(self):
@@ -174,11 +268,15 @@ class TextoJson:
         edad_regex = re.compile(
             r'\b(?:edad:?\s*(\d+)(?:\s*años)?)|'  # Caso 1: "edad: 45" o "edad 45 años"
             r'(?:\b(\d+)\s*años(?:\s*de\s*edad)?)|'  # Caso 2: "45 años" o "45 años de edad"
-            r'^(.*?)\s*/\s*(\d+)\s*/\s*(\d+\s*años?)\s*/\s*(.*)$',  # Caso 3: "institución / ID / edad / médico"
+            r'^(.*?)\s*/\s*(\d+)\s*/\s*(\d+\s*años?)\s*/\s*(.*)$|'  # Caso 3: "institución / ID / edad / médico"
+            r'(?:\b(\w+)\s*\/\s*(\d+)\s*\/\s*(\d+)\s*años\b)',  # Caso 4: "institución / ID / edad años"
             re.IGNORECASE
         )
 
-        g_p_c_a_regex = re.compile(r'\b([g]\d+)\s([p]\d+)\s([c]\d+)\s([a]\d+)\b', re.IGNORECASE)
+        g_p_c_a_regex = re.compile(
+            r'\b[g](\d+)\b[^p]*\b[p](\d+)\b[^c]*\b[c](\d+)\b[^a]*\b[a](\d+)\b',
+            re.IGNORECASE
+        )
 
         for linea in self.informacion:
             # Buscar una edad en el formato específico
@@ -207,10 +305,10 @@ class TextoJson:
 
             matchGPCA = g_p_c_a_regex.match(linea)
             if matchGPCA:
-                antecedentes_personales_secciones["antecedentes_ginecológicos"]['g'] = int(matchGPCA[1][1:])  # Quitar el 'g' y tomar el número
-                antecedentes_personales_secciones["antecedentes_ginecológicos"]['p'] = int(matchGPCA[2][1:])  # Quitar el 'p' y tomar el número
-                antecedentes_personales_secciones["antecedentes_ginecológicos"]['c'] = int(matchGPCA[3][1:])  # Quitar el 'c' y tomar el número
-                antecedentes_personales_secciones["antecedentes_ginecológicos"]['a'] = int(matchGPCA[4][1:])  # Quitar el 'a' y tomar el número
+                antecedentes_personales_secciones["antecedentes_ginecológicos"]['g'] = int(matchGPCA[1])  # Tomar el número directamente
+                antecedentes_personales_secciones["antecedentes_ginecológicos"]['p'] = int(matchGPCA[2])  # Tomar el número directamente
+                antecedentes_personales_secciones["antecedentes_ginecológicos"]['c'] = int(matchGPCA[3])  # Tomar el número directamente
+                antecedentes_personales_secciones["antecedentes_ginecológicos"]['a'] = int(matchGPCA[4])  # Tomar el número directamente
 
             for keyword in antecedentes_personales_keywords:
                 if keyword in linea:
@@ -222,7 +320,7 @@ class TextoJson:
                             linea = linea.replace(":", "")
 
                         # Extraemos el estado del tabaquismo y cualquier unidad de tiempo
-                        estados = ["negado", "suspendido", "fumador"]
+                        estados = ["negado", "suspendido", "fumador", "negadas"]
                         for estado in estados:
                             if estado in linea:
                                 antecedentes_personales_secciones["índice_tabáquico"]["fuma"] = estado
@@ -250,7 +348,16 @@ class TextoJson:
                                         antecedentes_personales_secciones["índice_tabáquico"]["observaciones"] = observaciones_list
                                     else:
                                         antecedentes_personales_secciones["índice_tabáquico"]["observaciones"] = None
-                                break
+                    elif keyword == "talla":
+                        # Extraer solo el fragmento consecuente de "talla"
+                        match = re.search(r"talla\s*[:\-]?\s*(\d+\.?\d*)", linea, re.IGNORECASE)
+                        if match:
+                            antecedentes_personales_secciones["talla"] = match.group(1)
+                        else:
+                            # Buscar "talla" en un contexto como "talla baja"
+                            match_contextual = re.search(r"talla\s*(baja|alta|normal)", linea, re.IGNORECASE)
+                            if match_contextual:
+                                antecedentes_personales_secciones["talla"] = match_contextual.group(1).lower()
 
 
                     elif keyword in ["fum", "menarca", "trh", "aco", "mpf", "estado hormonal", "métodos anticonceptivos"]:
@@ -307,22 +414,20 @@ class TextoJson:
                                 antecedentes_personales_secciones["antecedentes_ginecológicos"].update(valores)
                             
                             elif 'estado hormonal' in matches:
-                                if isEstadoHormonal == False:
-                                    isEstadoHormonal = True
-                                    valor = None
-                                    if ":" in linea_limpia:
-                                        valor = linea_limpia.split(":")[1].strip()
-                                    else:
-                                        valor = linea_limpia.split(matches[0])[1].strip()
-                                    
-                                    unidades = self.__extract_units(valor)
-                                    if unidades:
-                                        valor_dict = {unidad: cantidad for cantidad, unidad in unidades}
-                                        if len(valor.split()) > 2:
-                                            valor_dict["contexto"] = valor
-                                        antecedentes_personales_secciones["antecedentes_ginecológicos"][matches[0].strip().replace(" ", "_")] = valor_dict
-                                    else:
-                                        antecedentes_personales_secciones["antecedentes_ginecológicos"][matches[0].strip().replace(" ", "_")] = valor
+                                valor = None
+                                if ":" in linea_limpia:
+                                    valor = linea_limpia.split(":")[1].strip()
+                                else:
+                                    valor = linea_limpia.split(matches[0])[1].strip()
+                                
+                                unidades = self.__extract_units(valor)
+                                if unidades:
+                                    valor_dict = {unidad: cantidad for cantidad, unidad in unidades}
+                                    if len(valor.split()) > 2:
+                                        valor_dict["contexto"] = valor
+                                    antecedentes_personales_secciones["antecedentes_ginecológicos"][matches[0].strip().replace(" ", "_")] = valor_dict
+                                else:
+                                    antecedentes_personales_secciones["antecedentes_ginecológicos"][matches[0].strip().replace(" ", "_")] = valor
                                 
                             else:
                                 if matches:
@@ -353,7 +458,9 @@ class TextoJson:
                             continue
                         
                         # Dividir la cadena en comorbilidades individuales
-                        comorbilidades_list = re.split(r'\d+\.\s', comorbilidades)
+                        #!!!!!!!!!!!!!!!!!!!!!!
+                        comorbilidades_list = re.split(r'\d+\.\s|\.\s|\||(?<=\(\d{4}\)),', comorbilidades)
+                        comorbilidades_list = [item for item in comorbilidades_list if item and not item.isdigit()]
 
                         # Eliminar posibles cadenas vacías resultantes de la división
                         comorbilidades_list = [comorbilidad for comorbilidad in comorbilidades_list if comorbilidad]
@@ -432,6 +539,14 @@ class TextoJson:
                     "descendencia": "negado"
                 }
                 return
+            
+            if "ahf" in linea and "desconocemos" in linea:
+                self.data["antecedentes_familiares"] = {
+                    "ascendencia": "desconocemos",
+                    "lateralidad": "desconocemos",
+                    "descendencia": "desconocemos"
+                }
+                return
 
             if "ahf" in linea:
                 # Remover la parte inicial "AHF oncológicos:" si está presente
@@ -489,74 +604,129 @@ class TextoJson:
             "gh": re.compile(r"gh\s*[:]?\s*(\d+)", re.IGNORECASE)
         }
 
+        evoluciones = []
+
         # Variables para controlar si encontramos datos en biología tumoral
         encontrado_en_biologia = False
-        hallado = False
 
-        # Primera pasada: buscar solo en biología tumoral
-        for linea in self.informacion:            
-            # Verificar si estamos en biología tumoral
-            if "biología tumoral" in linea and not hallado:
-                encontrado_en_biologia = True
-                hallado = True
-                # Extraer datos para cada marcador
-                for marcador, patron in patrones.items():
-                    match = patron.search(linea)
-                    if match:
-                        valor = match.group(1).strip()
-                        
-                        # Asignar el valor según la mama detectada
-                        if self.mama == "bilateral":
-                            # Procesamiento especial para casos bilaterales
-                            secciones = re.split(r"mama (izquierda|derecha)", linea, flags=re.IGNORECASE)
-                            for i, seccion in enumerate(secciones):
-                                if seccion == "izquierda":
-                                    match_izq = patron.search(secciones[i+1])
-                                    if match_izq:
-                                        val = match_izq.group(1).strip()
-                                        inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = val
-                                elif seccion == "derecha":
-                                    match_der = patron.search(secciones[i+1])
-                                    if match_der:
-                                        val = match_der.group(1).strip()
-                                        inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = val
-                        elif self.mama == "mama_izquierda":
-                            inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = valor
-                        elif self.mama == "mama_derecha":
-                            inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = valor
-
-        # Segunda pasada: buscar en diagnóstico solo si no encontramos en biología tumoral
-        if not encontrado_en_biologia or not any(
-            val is not None 
-            for dic in [inmunohistoquimica_tumoral_secciones["mama_izquierda"], 
-                        inmunohistoquimica_tumoral_secciones["mama_derecha"]] 
-            for val in dic.values()
-        ):
-            for linea in self.informacion:
-                
-                # Verificar si estamos en diagnóstico
-                if "diagnóstico" in linea:
+        if self.mama is not None:
+            # Primera pasada: buscar solo en biología tumoral
+            for linea in self.informacion:            
+                # Verificar si estamos en biología tumoral
+                if "biología tumoral" in linea and encontrado_en_biologia == False:
+                    encontrado_en_biologia = True
                     # Extraer datos para cada marcador
                     for marcador, patron in patrones.items():
                         match = patron.search(linea)
                         if match:
                             valor = match.group(1).strip()
                             
-                            # Solo asignar si no tenemos ya un valor (de biología tumoral)
+                            # Asignar el valor según la mama detectada
                             if self.mama == "bilateral":
-                                if inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] is None:
-                                    inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = valor
-                                if inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] is None:
-                                    inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = valor
+                                # Procesamiento especial para casos bilaterales
+                                secciones = re.split(r"mama (izquierda|derecha)", linea, flags=re.IGNORECASE)
+                                for i, seccion in enumerate(secciones):
+                                    if seccion == "izquierda":
+                                        match_izq = patron.search(secciones[i+1])
+                                        if match_izq:
+                                            val = match_izq.group(1).strip()
+                                            inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = val
+                                    elif seccion == "derecha":
+                                        match_der = patron.search(secciones[i+1])
+                                        if match_der:
+                                            val = match_der.group(1).strip()
+                                            inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = val
                             elif self.mama == "mama_izquierda":
-                                if inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] is None:
-                                    inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = valor
+                                inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = valor
                             elif self.mama == "mama_derecha":
-                                if inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] is None:
-                                    inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = valor
+                                inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = valor
 
-        self.data["inmunohistoquímica_tumoral"] = inmunohistoquimica_tumoral_secciones
-        
+                if "biología tumoral final" in linea or "biología tumoral pos" in linea:
+                    evoluciones.append(linea.strip())
+                
+
+
+            # Segunda pasada: buscar en diagnóstico solo si no encontramos en biología tumoral
+            if not encontrado_en_biologia or not any(
+                val is not None 
+                for dic in [inmunohistoquimica_tumoral_secciones["mama_izquierda"], 
+                            inmunohistoquimica_tumoral_secciones["mama_derecha"]] 
+                for val in dic.values()
+            ):
+                for linea in self.informacion:
+                    
+                    # Verificar si estamos en diagnóstico
+                    if "diagnóstico" in linea:
+                        # Extraer datos para cada marcador
+                        for marcador, patron in patrones.items():
+                            match = patron.search(linea)
+                            if match:
+                                valor = match.group(1).strip()
+                                
+                                # Solo asignar si no tenemos ya un valor (de biología tumoral)
+                                if self.mama == "bilateral":
+                                    if inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] is None:
+                                        inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = valor
+                                    if inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] is None:
+                                        inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = valor
+                                elif self.mama == "mama_izquierda":
+                                    if inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] is None:
+                                        inmunohistoquimica_tumoral_secciones["mama_izquierda"][marcador] = valor
+                                elif self.mama == "mama_derecha":
+                                    if inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] is None:
+                                        inmunohistoquimica_tumoral_secciones["mama_derecha"][marcador] = valor
+
+            self.data["inmunohistoquímica_tumoral"] = inmunohistoquimica_tumoral_secciones
+            if evoluciones:
+                for evolucion in evoluciones:
+                    # Crear NUEVO diccionario en cada iteración
+                    aux = {
+                        "mama_izquierda": {
+                            "re": None, "rp": None, "her2": None, "ki67": None, "gh": None
+                        },
+                        "mama_derecha": {
+                            "re": None, "rp": None, "her2": None, "ki67": None, "gh": None
+                        }
+                    }
+                    
+                    # Crear NUEVO resumen en cada iteración
+                    resumen = self.data.copy()  # Copia profunda de los datos base
+                    
+                    for marcador, patron in patrones.items():
+                        match = patron.search(evolucion)
+                        if match:
+                            valor = match.group(1).strip()
+                            
+                            # Asignar el valor según la mama detectada
+                            if self.mama == "bilateral":
+                                secciones = re.split(r"mama (izquierda|derecha)", evolucion, flags=re.IGNORECASE)
+                                for i, seccion in enumerate(secciones):
+                                    if seccion == "izquierda":
+                                        match_izq = patron.search(secciones[i+1])
+                                        if match_izq:
+                                            val = match_izq.group(1).strip()
+                                            aux["mama_izquierda"][marcador] = val
+                                    elif seccion == "derecha":
+                                        match_der = patron.search(secciones[i+1])
+                                        if match_der:
+                                            val = match_der.group(1).strip()
+                                            aux["mama_derecha"][marcador] = val
+                            elif self.mama == "mama_izquierda":
+                                aux["mama_izquierda"][marcador] = valor
+                            elif self.mama == "mama_derecha":
+                                aux["mama_derecha"][marcador] = valor
+                    
+                    # Asignar la nueva estructura al resumen
+                    resumen["inmunohistoquímica_tumoral"] = {
+                        "mama_izquierda": aux["mama_izquierda"].copy(),
+                        "mama_derecha": aux["mama_derecha"].copy()
+                    }
+                    
+                    self.evoluciones.append(resumen)
+        else:
+            # Si no se detecta mama, asignar los datos de biología tumoral directamente
+            self.data["inmunohistoquímica_tumoral"] = inmunohistoquimica_tumoral_secciones
+            
     def __extraer_datos_estadia_tumoral(self):
         """
         Extrae y estructura los datos de estadía tumoral del texto procesado.
@@ -587,86 +757,89 @@ class TextoJson:
 
         patron = r"(ct\d+\w*|pt\d+\w*|pn\d+\w*|n\d+\w*|cn\d+\w*|m\d+\w*)"
         
-        for linea in self.informacion:
-            linea = linea.strip()
+        if self.mama is not None:
+            for linea in self.informacion:
+                linea = linea.strip()
 
-            try:
-                # Extraer datos de la extensión del tumor o diagnóstico
-                if "extensión del tumor" in linea or "diagnóstico" in linea:
-                    # Buscar si hay información para ambas mamas o solo una
-                    if self.mama == "bilateral":
-                        try:
-                            secciones = re.split(r"mama (izquierda|derecha)", linea, flags=re.IGNORECASE)
-                            seccion_izquierda = secciones[2].strip()
-                            seccion_derecha = secciones[4].strip()
+                try:
+                    # Extraer datos de la extensión del tumor o diagnóstico
+                    if "extensión del tum" in linea or "diagnóstico" in linea:
+                        # Buscar si hay información para ambas mamas o solo una
+                        if self.mama == "bilateral":
+                            try:
+                                secciones = re.split(r"mama (izquierda|derecha)", linea, flags=re.IGNORECASE)
+                                seccion_izquierda = secciones[2].strip()
+                                seccion_derecha = secciones[4].strip()
 
-                            # Expresión regular mejorada para capturar campos con guiones o caracteres especiales
-                            campos_izquierda = re.findall(patron, seccion_izquierda, re.IGNORECASE)
-                            for campo in campos_izquierda:
-                                if campo.startswith("pt") or campo.startswith("ct"):
-                                    estadia_tumoral_secciones["mama_izquierda"]["centros_tumorales"] = campo
-                                elif campo.startswith("pn") or campo.startswith("n") or campo.startswith("cn"):
-                                    estadia_tumoral_secciones["mama_izquierda"]["nódulos"] = campo
-                                elif campo.startswith("m"):
-                                    estadia_tumoral_secciones["mama_izquierda"]["metástasis"] = campo
-
-                            campos_derecha = re.findall(patron, seccion_derecha, re.IGNORECASE)
-                            for campo in campos_derecha:
-                                if campo.startswith("pt") or campo.startswith("ct"):
-                                    estadia_tumoral_secciones["mama_derecha"]["centros_tumorales"] = campo
-                                elif campo.startswith("pn") or campo.startswith("n") or campo.startswith("cn"):
-                                    estadia_tumoral_secciones["mama_derecha"]["nódulos"] = campo
-                                elif campo.startswith("m"):
-                                    estadia_tumoral_secciones["mama_derecha"]["metástasis"] = campo
-                        except IndexError:
-                            print("Error al procesar datos de mama bilateral para la estadia tumoral. Se identificaron la mención de mama izquierda y derecha, pero se procede de otra manera.")
-                            # Extraer datos en base a "mama izquierda" o "mama derecha" si el try falla
-                            if "mama izquierda" in linea:
-                                campos_izquierda = re.findall(patron, linea, re.IGNORECASE)
+                                # Expresión regular mejorada para capturar campos con guiones o caracteres especiales
+                                campos_izquierda = re.findall(patron, seccion_izquierda, re.IGNORECASE)
                                 for campo in campos_izquierda:
-                                    if campo.startswith("pt") or campo.startswith("ct"):
+                                    if campo.startswith(('pt','ct','t')):
                                         estadia_tumoral_secciones["mama_izquierda"]["centros_tumorales"] = campo
-                                    elif campo.startswith("pn") or campo.startswith("n") or campo.startswith("cn"):
+                                    elif campo.startswith(('pn','n','cn')):
                                         estadia_tumoral_secciones["mama_izquierda"]["nódulos"] = campo
                                     elif campo.startswith("m"):
                                         estadia_tumoral_secciones["mama_izquierda"]["metástasis"] = campo
 
-                            if "mama derecha" in linea:
-                                campos_derecha = re.findall(patron, linea, re.IGNORECASE)
+                                campos_derecha = re.findall(patron, seccion_derecha, re.IGNORECASE)
                                 for campo in campos_derecha:
-                                    if campo.startswith("pt") or campo.startswith("ct"):
+                                    if campo.startswith(('pt','ct','t')):
                                         estadia_tumoral_secciones["mama_derecha"]["centros_tumorales"] = campo
-                                    elif campo.startswith("pn") or campo.startswith("n") or campo.startswith("cn"):
+                                    elif campo.startswith(('pn','n','cn')):
                                         estadia_tumoral_secciones["mama_derecha"]["nódulos"] = campo
                                     elif campo.startswith("m"):
                                         estadia_tumoral_secciones["mama_derecha"]["metástasis"] = campo
+                            except IndexError:
+                                print("Error al procesar datos de mama bilateral para la estadia tumoral. Se identificaron la mención de mama izquierda y derecha, pero se procede de otra manera.")
+                                # Extraer datos en base a "mama izquierda" o "mama derecha" si el try falla
+                                if "mama izquierda" in linea:
+                                    campos_izquierda = re.findall(patron, linea, re.IGNORECASE)
+                                    for campo in campos_izquierda:
+                                        if campo.startswith(('pt','ct','t')):
+                                            estadia_tumoral_secciones["mama_izquierda"]["centros_tumorales"] = campo
+                                        elif campo.startswith(('pn','n','cn')):
+                                            estadia_tumoral_secciones["mama_izquierda"]["nódulos"] = campo
+                                        elif campo.startswith("m"):
+                                            estadia_tumoral_secciones["mama_izquierda"]["metástasis"] = campo
 
-                    elif self.mama == "mama_izquierda":
-                        # Expresión regular mejorada para capturar campos con guiones o caracteres especiales
-                        campos = re.findall(patron, linea, re.IGNORECASE)
-                        for campo in campos:
-                            if campo.startswith("pt") or campo.startswith("ct"):
-                                estadia_tumoral_secciones["mama_izquierda"]["centros_tumorales"] = campo
-                            elif campo.startswith("pn") or campo.startswith("n") or campo.startswith("cn"):
-                                estadia_tumoral_secciones["mama_izquierda"]["nódulos"] = campo
-                            elif campo.startswith("m"):
-                                estadia_tumoral_secciones["mama_izquierda"]["metástasis"] = campo
+                                if "mama derecha" in linea:
+                                    campos_derecha = re.findall(patron, linea, re.IGNORECASE)
+                                    for campo in campos_derecha:
+                                        if campo.startswith(('pt','ct','t')):
+                                            estadia_tumoral_secciones["mama_derecha"]["centros_tumorales"] = campo
+                                        elif campo.startswith(('pn','n','cn')):
+                                            estadia_tumoral_secciones["mama_derecha"]["nódulos"] = campo
+                                        elif campo.startswith("m"):
+                                            estadia_tumoral_secciones["mama_derecha"]["metástasis"] = campo
 
-                    elif self.mama == "mama_derecha":
-                        # Expresión regular mejorada para capturar campos con guiones o caracteres especiales
-                        campos = re.findall(patron, linea, re.IGNORECASE)
-                        for campo in campos:
-                            if campo.startswith("pt") or campo.startswith("ct"):
-                                estadia_tumoral_secciones["mama_derecha"]["centros_tumorales"] = campo
-                            elif campo.startswith("pn") or campo.startswith("n") or campo.startswith("cn"):
-                                estadia_tumoral_secciones["mama_derecha"]["nódulos"] = campo
-                            elif campo.startswith("m"):
-                                estadia_tumoral_secciones["mama_derecha"]["metástasis"] = campo
+                        elif self.mama == "mama_izquierda":
+                            # Expresión regular mejorada para capturar campos con guiones o caracteres especiales
+                            campos = re.findall(patron, linea, re.IGNORECASE)
+                            for campo in campos:
+                                if campo.startswith(('pt','ct','t')):
+                                    estadia_tumoral_secciones["mama_izquierda"]["centros_tumorales"] = campo
+                                elif campo.startswith(('pn','n','cn')):
+                                    estadia_tumoral_secciones["mama_izquierda"]["nódulos"] = campo
+                                elif campo.startswith("m"):
+                                    estadia_tumoral_secciones["mama_izquierda"]["metástasis"] = campo
 
-            except:
-                print("Error en algún formato que imposibilita extraer los datos para la estadía tumoral")
+                        elif self.mama == "mama_derecha":
+                            # Expresión regular mejorada para capturar campos con guiones o caracteres especiales
+                            campos = re.findall(patron, linea, re.IGNORECASE)
+                            for campo in campos:
+                                if campo.startswith(('pt', 't', 'ct')): 
+                                    estadia_tumoral_secciones["mama_derecha"]["centros_tumorales"] = campo
+                                elif campo.startswith(('pn', 'n', 'cn')):
+                                    estadia_tumoral_secciones["mama_derecha"]["nódulos"] = campo
+                                elif campo.startswith("m"):
+                                    estadia_tumoral_secciones["mama_derecha"]["metástasis"] = campo
 
-        self.data["estadía_tumoral"] = estadia_tumoral_secciones
+                except:
+                    print("Error en algún formato que imposibilita extraer los datos para la estadía tumoral")
+
+            self.data["estadía_tumoral"] = estadia_tumoral_secciones
+        else:
+            self.data["estadía_tumoral"] = estadia_tumoral_secciones
 
     
     def __extraer_datos_clasificacion(self):
@@ -680,54 +853,57 @@ class TextoJson:
             "mama_derecha": {"clasificación": None, "descripcion": None},
         }
 
-        for linea in self.informacion:
-            linea = linea.strip()
+        if self.mama is not None:
+            for linea in self.informacion:
+                linea = linea.strip()
 
-            # Buscar clasificación del cáncer
-            if linea.startswith("diagnóstico"):
-                # Quitar "Cáncer de mama bilateral." si está al inicio
-                linea = re.sub(r"^cáncer de mama bilateral\.?", "", linea).strip()
+                # Buscar clasificación del cáncer
+                if linea.startswith("diagnóstico"):
+                    # Quitar "Cáncer de mama bilateral." si está al inicio
+                    linea = re.sub(r"^cáncer de mama bilateral\.?", "", linea).strip()
 
-                # Verificar si hay una barra "/" que indica ambas mamas
-                if "/" in linea:
-                    partes = linea.split("/")
-                    for parte in partes:
-                        parte = parte.strip()
+                    # Verificar si hay una barra "/" que indica ambas mamas
+                    if "/" in linea:
+                        partes = linea.split("/")
+                        for parte in partes:
+                            parte = parte.strip()
 
-                        # Extraer correctamente cada mama
-                        if re.search(r"\bmi\b|\bmama izquierda\b", parte, re.IGNORECASE):
-                            clasificacion["mama_izquierda"]["clasificación"] = parte.replace("diagnóstico: ", "").strip()
-                        if re.search(r"\bmd\b|\bmama derecha\b", parte, re.IGNORECASE):
-                            clasificacion["mama_derecha"]["clasificación"] = parte.replace("diagnóstico: ", "").strip()
+                            # Extraer correctamente cada mama
+                            if re.search(r"\bmi\b|\bmama izquierda\b", parte, re.IGNORECASE):
+                                clasificacion["mama_izquierda"]["clasificación"] = parte.replace("diagnóstico: ", "").strip()
+                            if re.search(r"\bmd\b|\bmama derecha\b", parte, re.IGNORECASE):
+                                clasificacion["mama_derecha"]["clasificación"] = parte.replace("diagnóstico: ", "").strip()
 
-                else:
-                    # Buscar clasificación individual con más flexibilidad
-                    match_izq = re.search(r"(?:diagnóstico:\s*)?(.*?)(?:\bmi\b|\bmama izquierda\b)\s*(.+)", linea, re.IGNORECASE)
-                    match_der = re.search(r"(?:diagnóstico:\s*)?(.*?)(?:\bmd\b|\bmama derecha\b)\s*(.+)", linea, re.IGNORECASE)
-
-                    if match_izq:
-                        clasificacion["mama_izquierda"]["clasificación"] = f"{match_izq.group(1).strip()} {match_izq.group(2).strip()}".strip()
-                    if match_der:
-                        clasificacion["mama_derecha"]["clasificación"] = f"{match_der.group(1).strip()} {match_der.group(2).strip()}".strip()
                     else:
-                        # Si no se encuentra ninguna coincidencia, guiarse por el atributo self.mama
-                        if self.mama == "mama_izquierda":
-                            clasificacion["mama_izquierda"]["clasificación"] = linea.replace("diagnóstico: ", "").strip()
-                        elif self.mama == "mama_derecha":
-                            clasificacion["mama_derecha"]["clasificación"] = linea.replace("diagnóstico: ", "").strip()
+                        # Buscar clasificación individual con más flexibilidad
+                        match_izq = re.search(r"(?:diagnóstico:\s*)?(.*?)(?:\bmi\b|\bmama izquierda\b)\s*(.+)", linea, re.IGNORECASE)
+                        match_der = re.search(r"(?:diagnóstico:\s*)?(.*?)(?:\bmd\b|\bmama derecha\b)\s*(.+)", linea, re.IGNORECASE)
 
-            if "extensión del tumor" in linea:
-                # Buscar mama izquierda
-                match_izq = re.search(r"mama izquierda\s+([^\(]+)(?:\s*\(.*\))?", linea, re.IGNORECASE)
-                # Buscar mama derecha
-                match_der = re.search(r"mama derecha\s+([^\(]+)(?:\s*\(.*\))?", linea, re.IGNORECASE)
-                
-                if match_izq:
-                    clasificacion["mama_izquierda"]["descripcion"] = f"{match_izq.group(1).strip()}"
-                if match_der:
-                    clasificacion["mama_derecha"]["descripcion"] = f"{match_der.group(1).strip()}"
+                        if match_izq:
+                            clasificacion["mama_izquierda"]["clasificación"] = f"{match_izq.group(1).strip()} {match_izq.group(2).strip()}".strip()
+                        if match_der:
+                            clasificacion["mama_derecha"]["clasificación"] = f"{match_der.group(1).strip()} {match_der.group(2).strip()}".strip()
+                        else:
+                            # Si no se encuentra ninguna coincidencia, guiarse por el atributo self.mama
+                            if self.mama == "mama_izquierda":
+                                clasificacion["mama_izquierda"]["clasificación"] = linea.replace("diagnóstico: ", "").strip()
+                            elif self.mama == "mama_derecha":
+                                clasificacion["mama_derecha"]["clasificación"] = linea.replace("diagnóstico: ", "").strip()
 
-        self.data["tipo"] = clasificacion
+                if "extensión del tum" in linea:
+                    # Buscar mama izquierda
+                    match_izq = re.search(r"mama izquierda\s+([^\(]+)(?:\s*\(.*\))?", linea, re.IGNORECASE)
+                    # Buscar mama derecha
+                    match_der = re.search(r"mama derecha\s+([^\(]+)(?:\s*\(.*\))?", linea, re.IGNORECASE)
+                    
+                    if match_izq:
+                        clasificacion["mama_izquierda"]["descripcion"] = f"{match_izq.group(1).strip()}"
+                    if match_der:
+                        clasificacion["mama_derecha"]["descripcion"] = f"{match_der.group(1).strip()}"
+
+            self.data["tipo"] = clasificacion
+        else:
+            self.data["tipo"] = clasificacion
 
     def __aplicar_mapa_semantico(self):
         """
@@ -735,7 +911,7 @@ class TextoJson:
         """
         # Mapa semántico para los campos GPCA
         mapa_gpca = {
-            'g': ['gestacion', 'gestaciones', 'embarazos', 'embarazo'],
+            'g': ['gestacion', 'gestaciones', 'embarazos', 'embarazo', "gestas"],
             'p': ['partos', 'parto'],
             'c': ['cesareas', 'cesáreas', 'cesarea', 'cesárea'],
             'a': ['abortos', 'aborto']
@@ -850,44 +1026,85 @@ class TextoJson:
         """
         self.setrutaTxt(ruta_txt)
         self.setrutaDestino(ruta_destino)
-        nombreJSON = self.__extraer_nombre_txt().replace(".txt", ".json")
+        self.nombre = self.__extraer_nombre_txt().replace(".txt", "")
+    
 
-        os.makedirs(ruta_destino, exist_ok=True) # Crear la carpeta de destino si no existe
+        os.makedirs(ruta_destino, exist_ok=True)  # Crear carpeta si no existe
 
-        
         self.__limpiar_texto()
-        self.imprimir_info()
 
-        self.__detector_pezones()
+        if self.__hay_fases():
+            # Si detecta fases, las separa
+            self.__separar_fases()
 
-        self.__extraer_datos_antecedentes_personales()
-        self.__extraer_datos_antecedentes_familiares()
-        self.__extraer_datos_inmunohistoquímica_tumoral()
-        self.__extraer_datos_clasificacion()
-        self.__extraer_datos_estadia_tumoral()
-        self.__aplicar_mapa_semantico()
-        self.__verificar_valores_nulos(ruta_destino, nombreJSON)
+            for idx, fase in enumerate(self.fases, start=1):
+                self.informacion = fase  # Setea la fase actual como la información a procesar
+                
+                self.imprimir_info()
 
-        self.__crear_json(nombreJSON)
-        
+                self.__detector_pezones()
+                self.__extraer_datos_antecedentes_personales()
+                self.__extraer_datos_antecedentes_familiares()
+                self.__extraer_datos_estadia_tumoral()
+                self.__extraer_datos_clasificacion()
+                self.__extraer_datos_inmunohistoquímica_tumoral()
+
+                for i, evolucion in enumerate(self.evoluciones, start=1):
+                    self.__crear_json(f"{self.nombre}_{idx}_{i}.json", evolucion)
+                
+                self.__aplicar_mapa_semantico()
+                print('_________________________')
+                nombre_json_fase = f"{self.nombre}_{idx}.json"  # Ejemplo: 123_1.json, 123_2.json
+                self.__verificar_valores_nulos(ruta_destino, nombre_json_fase)
+                self.__crear_json(nombre_json_fase, self.data)
+
+                self.__limpiar_instancia(parcial=True)  # Limpia solo lo necesario para cada fase
+        else:
+            self.imprimir_info()
+            # Solo un caso completo
+            self.__detector_pezones()
+            self.__extraer_datos_antecedentes_personales()
+            self.__extraer_datos_antecedentes_familiares()
+            self.__extraer_datos_estadia_tumoral()
+            self.__extraer_datos_clasificacion()
+            self.__extraer_datos_inmunohistoquímica_tumoral()
+            self.__aplicar_mapa_semantico()
+            print('_________________________')
+
+            nombre_json = f"{self.nombre}.json"
+            self.__verificar_valores_nulos(ruta_destino, nombre_json)
+            self.__crear_json(nombre_json, self.data)
+
         self.__limpiar_instancia()
 
-
-    def __limpiar_instancia(self):
-        """
-        Limpia el atributo "data" para evitar que se mezclen los datos de diferentes casos.
-        """
-        self.rutaTxt = None
-        self.rutaDestino = None
-        self.mama = None
-        self.informacion = []
-        self.data = {
-            "antecedentes_personales": {},
-            "antecedentes_familiares": {},
-            "estadía_tumoral": {},
-            "inmunohistoquímica_tumoral": {},
-            "tipo": {},
-        }
+    def __limpiar_instancia(self, parcial=False):
+            """
+            Limpia el atributo "data" para evitar que se mezclen los datos de diferentes casos.
+            Si parcial es True, limpia self.data y self.mama.
+            """
+            if parcial:
+                self.data = {
+                    "antecedentes_personales": {},
+                    "antecedentes_familiares": {},
+                    "estadía_tumoral": {},
+                    "inmunohistoquímica_tumoral": {},
+                    "tipo": {},
+                }
+                self.mama = None
+            else:
+                self.rutaTxt = None
+                self.rutaDestino = None
+                self.nombre = None
+                self.mama = None
+                self.informacion = []
+                self.fases = []
+                self.data = {
+                    "antecedentes_personales": {},
+                    "antecedentes_familiares": {},
+                    "estadía_tumoral": {},
+                    "inmunohistoquímica_tumoral": {},
+                    "tipo": {},
+                }
 
     def imprimir_info(self):
         """
@@ -902,7 +1119,7 @@ class TextoJson:
         """
         print(json.dumps(self.informacion, indent=4, ensure_ascii=False))
 
-    def __crear_json(self, nombreJSON):
+    def __crear_json(self, nombreJSON, diccionario):
         """
         Crea un archivo JSON con el atributo "data" que es un diccionario.
 
@@ -911,4 +1128,4 @@ class TextoJson:
         """
 
         with open(os.path.join(self.rutaDestino, nombreJSON), 'w', encoding="utf-8") as file:
-            json.dump(self.data, file, indent=4, ensure_ascii=False)
+            json.dump(diccionario, file, indent=4, ensure_ascii=False)

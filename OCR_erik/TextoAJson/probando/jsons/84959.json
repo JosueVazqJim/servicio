@@ -14,12 +14,6 @@
         "alcohol": "ocasional",
         "drogas": "negado",
         "comorbilidades": {
-            "sin_fecha": [
-                {
-                    "nombre": "t3",
-                    "descripción": null
-                }
-            ],
             "1975": [
                 {
                     "nombre": "linfoma de hodgkin",
@@ -29,7 +23,7 @@
             "1988": [
                 {
                     "nombre": "cáncer papilar de tiroides",
-                    "descripción": "tiroidectomía + iodo 131 t4"
+                    "descripción": "tiroidectomía + iodo 131 t4/t3"
                 }
             ],
             "2016": [
@@ -52,7 +46,7 @@
             },
             "trh": {
                 "años": 30,
-                "contexto": "durante 30 años"
+                "contexto": "durante 30 años - estado hormonal"
             },
             "aco": null,
             "mpf": null,

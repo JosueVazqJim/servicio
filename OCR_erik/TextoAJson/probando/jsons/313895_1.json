@@ -14,6 +14,12 @@
         "alcohol": "ocasional",
         "drogas": "negado",
         "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "fr <10, anti-ccp 0.1 (negativos, 2023)",
+                    "descripción": null
+                }
+            ],
             "2008": [
                 {
                     "nombre": "migraña con aura",
@@ -29,7 +35,7 @@
             "2019": [
                 {
                     "nombre": "probable artritis reumatoide",
-                    "descripción": ", fr <10, anti-ccp 0.1 (negativos, 2023)"
+                    "descripción": null
                 }
             ],
             "2022": [
@@ -45,9 +51,9 @@
                 "años": 12
             },
             "trh": null,
-            "aco": "negado.",
+            "aco": "negado. - estado hormonal",
             "mpf": null,
-            "estado_hormonal": "premenopáusica, paridad satisfecha",
+            "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
             "g": 1,
             "p": 0,

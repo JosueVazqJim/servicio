@@ -16,14 +16,14 @@
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "hiperplasia paratiroidea",
+                    "nombre": "paratiroidectomía superior derecha (20.07.18)",
                     "descripción": null
                 }
             ],
             "2017": [
                 {
-                    "nombre": "adenoma tiroideo izquierdo",
-                    "descripción": ", paratiroidectomía superior derecha (20.07.18)"
+                    "nombre": "hiperplasia paratiroidea / adenoma tiroideo izquierdo",
+                    "descripción": null
                 }
             ]
         },

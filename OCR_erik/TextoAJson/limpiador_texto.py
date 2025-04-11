@@ -58,7 +58,8 @@ class LimpiezaTexto:
             "cirugías", "originaria y residente", 'originar', "seguridad social", "ocupación", 
             "ahf", "resumen del", "extensión del tumor", "biología tumoral",
             "aco", "mpf", "eco", "mama izquierda", "mama derecha", "cáncer de mama bilateral", 'plan',
-            "cdi ", 'carcinoma', "IHQ final", "extensión del tumot", "- fum", "aparece en"
+            'carcinoma', "IHQ final", "extensión del tumot", "- fum", "aparece en", "- trh",
+            "ls extensión", "revisión", "arf"
         ]
 
         # Claves que deben tratarse como líneas individuales
@@ -66,12 +67,12 @@ class LimpiezaTexto:
 
         # Patrones que se consideran claves
         patron_gn_pn_cn_an = re.compile(
-            r'\b(?=.*g\s*\d+)(?=.*p\s*\d+)(?=.*c\s*\d+)(?=.*a\s*\d+)[gpca\d\s]*\b',
+            r'^\s*-\s*(?=.*g\s*\d+)(?=.*p\s*\d+)(?=.*c\s*\d+)(?=.*a\s*\d+).*?\b|^\s*-\s*(?=.*g0)(?=.*p0)(?=.*a0)(?=.*c0).*?\b|^\s*g\d+\s*p\d+\s*c\d+\s*a\d+\s*\(.*?\)',
             re.IGNORECASE
         )
         
         patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
-        patron_linea_tipo = re.compile(r'^[^/]+ / \d+ / \d+ años / .+$')  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
+        patron_linea_tipo = re.compile(r'^[^/]+ ?/ ?\d+ ?/ ?\d+ años(?: ?/ ?.+| [A-Z]+)?$')  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez", "ICL/102687/80 años DO" o "GHMY / 146839 / 71 años / Dr. Soto"
         asterisco_pattern = re.compile(r'^\*+$')
 
         lineas_procesadas = []
@@ -143,8 +144,8 @@ class LimpiezaTexto:
             "comorbilidades", "antecedentes ginecológicos", "menarca", "embarazos", 
             "partos", "fum", "trh", "estado hormonal", "métodos anticonceptivos", 
             "ahf", "extensión del tumor", "biología tumoral", "extensión del tumot",
-            "aco", "mpf", "cáncer de mama bilateral", 'cdi ', 'carcinoma', "IHQ final", "medicamentos",
-            "cirugías"
+            "aco", "mpf", "cáncer de mama bilateral", 'carcinoma', "IHQ final", "medicamentos",
+            "cirugías", "ls extensión"
         ]
 
         # Claves que pueden aparecer en cualquier parte de la línea como palabras individuales
@@ -152,12 +153,12 @@ class LimpiezaTexto:
 
         # Patrones adicionales a conservar
         patron_gn_pn_cn_an = re.compile(
-            r'\b(?=.*g\s*\d+)(?=.*p\s*\d+)(?=.*c\s*\d+)(?=.*a\s*\d+)[gpca\d\s]*\b',
+            r'^\s*-\s*(?=.*g\s*\d+)(?=.*p\s*\d+)(?=.*c\s*\d+)(?=.*a\s*\d+).*?\b|^\s*-\s*(?=.*g0)(?=.*p0)(?=.*a0)(?=.*c0).*?\b|^\s*g\d+\s*p\d+\s*c\d+\s*a\d+\s*\(.*?\)',
             re.IGNORECASE
-        )        
+        )
         patron_lista_numerada = r'^\d+\.\s'  # Patrón para detectar líneas numeradas (ej: "1. cáncer de mama")
         patron_vineta = r'^-\s'  # Patrón para detectar líneas con viñetas (ej: "- Tia materna con cáncer de páncreas")
-        patron_linea_tipo = r'^[^/]+ / \d+ / \d+ años / .+$'  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez"
+        patron_linea_tipo = re.compile(r'^[^/]+ ?/ ?\d+ ?/ ?\d+ años(?: ?/ ?.+| [A-Z]+)?$')  # Patrón para detectar líneas del tipo "GACNC / 84959 / 67 años / Dra. Martínez", "ICL/102687/80 años DO" o "GHMY / 146839 / 71 años / Dr. Soto"
         patron_mama_lesiones = re.compile(r'\bmama\s*(izquierda|derecha|bilateral)\s*con.*lesi.*', re.IGNORECASE)
         patron_fecha = re.compile(r'\b\d{1,2}\.\d{1,2}\.\d{2}|\b\d{1,2}\.\d{4}')
         asterisco_pattern = re.compile(r'^\*+$')
@@ -205,6 +206,10 @@ class LimpiezaTexto:
         nuevo_texto = []
         for linea in self.texto_procesado:
             
+            if linea.startswith("ls extensión"):
+                nuevo_texto.append(linea.split("ls ", 1)[1].strip())
+                continue
+
             # Caso 2: Líneas que comienzan con "e — cmbm"
             if linea.startswith("e — cmbm"):
                 nuevo_texto.append(linea.split("—", 1)[1].strip())

@@ -1,67 +1,57 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 66
+            "años": 65
         },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
         "preferencia": null,
         "índice_tabáquico": {
-            "fuma": "suspendido",
-            "observaciones": [
-                {
-                    "notas": "hace 10 años;",
-                    "tiempo": {
-                        "años": 10
-                    }
-                }
-            ]
+            "fuma": "negado",
+            "observaciones": null
         },
-        "alcohol": "ocasional",
+        "alcohol": "negado",
         "drogas": "negado",
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "dislipidemia mixta en tratamiento con ezetimiba 10 mg qd, atorvastatina 40 mg qd)",
+                    "nombre": "131(sep 1990) x eta bocio toxico difuso / diabetes mellitus tipo 2 / obesidad g1 / osteopenia / hipertensión arterial sistémica",
                     "descripción": null
-                },
+                }
+            ],
+            "1990": [
                 {
-                    "nombre": "trastorno de ansiedad generalizada.",
-                    "descripción": null
-                },
-                {
-                    "nombre": "osteoartritis,",
-                    "descripción": null
+                    "nombre": "hipotiroidismo",
+                    "descripción": "/ post"
                 }
             ]
         },
         "antecedentes_ginecológicos": {
             "fum": {
-                "años": 48
+                "años": 45,
+                "contexto": "45 años (2003)"
             },
-            "menarca": {
-                "años": 11,
-                "contexto": "menarca 11 años"
-            },
+            "menarca": null,
             "trh": null,
-            "aco": {
-                "años": 1,
-                "contexto": "durante 1 años."
-            },
+            "aco": null,
             "mpf": null,
-            "estado_hormonal": null,
+            "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 1,
+            "g": 0,
             "p": 0,
-            "c": 1,
+            "c": 0,
             "a": 0
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": "negado",
-        "lateralidad": "negado",
-        "descendencia": "negado"
+        "ascendencia": [
+            "padre con cáncer de pulmón (89 años)"
+        ],
+        "lateralidad": [
+            "prima materna con cáncer de tiroides y cáncer de mama (45 años)"
+        ],
+        "descendencia": null
     },
     "estadía_tumoral": {
         "mama_izquierda": {
@@ -74,9 +64,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
-            "metástasis": null
+            "centros_tumorales": "pt1cpno0",
+            "nódulos": "pn0",
+            "metástasis": "m0"
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -88,10 +78,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": null,
-            "rp": null,
+            "re": "80%",
+            "rp": "1%",
             "her2": null,
-            "ki67": null,
+            "ki67": "15%",
             "gh": null
         }
     },
@@ -101,7 +91,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": null,
+            "clasificación": "cdi de mama derecha ec ia, pt1cpno0(sn)m0 re+",
             "descripcion": null
         }
     }

@@ -1,6 +1,8 @@
 {
     "antecedentes_personales": {
-        "edad": null,
+        "edad": {
+            "años": 71
+        },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
@@ -35,8 +37,8 @@
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
+            "centros_tumorales": "ct2",
+            "nódulos": "cn0",
             "metástasis": null
         },
         "mama_derecha": {
@@ -49,9 +51,9 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": null,
-            "rp": null,
-            "her2": null,
+            "re": "negativo",
+            "rp": "negativo",
+            "her2": "negativo",
             "ki67": null,
             "gh": null
         },
@@ -65,7 +67,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": null,
+            "clasificación": "diagnóstico cdi mama izquierda con diferenciación apocrina ec iia (ct2, cn0) triple negativo (2022) brca 1 y brca2 synlab) negativo 10.22 autopalpación de tumor en mama izquierda",
             "descripcion": null
         },
         "mama_derecha": {

@@ -1,6 +1,8 @@
 {
     "antecedentes_personales": {
-        "edad": null,
+        "edad": {
+            "años": 44
+        },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
@@ -14,11 +16,7 @@
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "comorbilidades lnh en vigilancia, dosis acumulada doxorrubicina 300mg",
-                    "descripción": null
-                },
-                {
-                    "nombre": "m2",
+                    "nombre": "comorbilidades lnh en vigilancia, dosis acumulada doxorrubicina 300mg/m2",
                     "descripción": null
                 }
             ]
@@ -49,9 +47,9 @@
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
-            "metástasis": null
+            "centros_tumorales": "ct2",
+            "nódulos": "cn0",
+            "metástasis": "m0"
         },
         "mama_derecha": {
             "ultrasonido": null,
@@ -63,9 +61,9 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": null,
-            "rp": null,
-            "her2": null,
+            "re": "negativo",
+            "rp": "negativo",
+            "her2": "negativo",
             "ki67": null,
             "gh": null
         },
@@ -79,7 +77,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": null,
+            "clasificación": "diagnóstico cdi de mama izquierda ec ia (ct2 cn0 m0), triple negativo.",
             "descripcion": null
         },
         "mama_derecha": {

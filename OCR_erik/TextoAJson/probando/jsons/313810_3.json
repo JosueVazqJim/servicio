@@ -1,33 +1,29 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 78
+            "años": 77
         },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
         "preferencia": null,
         "índice_tabáquico": {
-            "fuma": null,
+            "fuma": "negado",
             "observaciones": null
         },
         "alcohol": "negado",
         "drogas": "negado",
-        "comorbilidades": {},
+        "comorbilidades": "negadas",
         "antecedentes_ginecológicos": {
             "fum": {
-                "años": 45,
-                "contexto": "45 años - aco"
+                "años": 60,
+                "contexto": "60 años g0 p0 c0 a0"
             },
-            "menarca": null,
-            "trh": {
-                "años": 45,
-                "contexto": "45 años - aco"
+            "menarca": {
+                "años": 9
             },
-            "aco": {
-                "años": 45,
-                "contexto": "45 años - aco"
-            },
+            "trh": "negados",
+            "aco": "negados",
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
@@ -46,8 +42,8 @@
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
+            "centros_tumorales": "pt1c",
+            "nódulos": "pn0",
             "metástasis": null
         },
         "mama_derecha": {
@@ -60,10 +56,10 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": null,
-            "rp": null,
-            "her2": null,
-            "ki67": null,
+            "re": "95%",
+            "rp": "90%",
+            "her2": "2+",
+            "ki67": "50%",
             "gh": null
         },
         "mama_derecha": {
@@ -76,7 +72,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": null,
+            "clasificación": "carcinoma ductal infiltrante de mama izquierda ec iia re+, her2 +",
             "descripcion": null
         },
         "mama_derecha": {

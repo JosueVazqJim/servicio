@@ -15,7 +15,7 @@
         "drogas": "negado",
         "comorbilidades": "negadas",
         "antecedentes_ginecológicos": {
-            "fum": "2016 quirúrgica (histerectomía 2016)",
+            "fum": "2016 quirúrgica (histerectomía 2016) g5 p2 c2 a1",
             "menarca": null,
             "trh": null,
             "aco": {
@@ -23,12 +23,12 @@
                 "contexto": "6 años (23-29 años)."
             },
             "mpf": null,
-            "estado_hormonal": "premenopáusica.",
+            "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 5,
-            "p": 2,
+            "g": 0,
+            "p": 0,
             "c": 2,
-            "a": 1
+            "a": 0
         }
     },
     "antecedentes_familiares": {

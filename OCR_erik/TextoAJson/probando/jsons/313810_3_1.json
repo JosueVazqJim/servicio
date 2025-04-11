@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 81
+            "años": 48
         },
         "sexo": "femenino",
         "peso": null,
@@ -11,23 +11,18 @@
             "fuma": "negado",
             "observaciones": null
         },
-        "alcohol": "negado",
-        "drogas": "negado - fum",
-        "comorbilidades": {
-            "1997": [
-                {
-                    "nombre": "cáncer de mama derecha",
-                    "descripción": "cuadrantectomía de mama derecha + radioterapia + tamoxifeno durante 5 años. temblor esencial / trastorno depresivo mayor / trastorno de ansiedad generalizada / síndrome de intestino irritable con predominio de diarrea / dislipidemia / osteoartritis / osteoporosis / prediabetes. medicamentos: rivotril gotas por la noche, duloxetina 60 mg vo cada 24 horas, lorazepam 0.5 mg vo cada 24 horas, mirtazapina 30 mg vo cada 24 horas, propranolol 20 mg vo cada 8 horas, loperamida 2 mg cada 24 horas, atorvastatina 40 mg vo cada 24 horas, clonazepam 4 gotas vo cada 24 horas, olcalciferol / vitamina d, histofil 4000 ul cada tercer dia"
-                }
-            ]
-        },
+        "alcohol": "ocasional",
+        "drogas": "negado",
+        "comorbilidades": "negadas",
         "antecedentes_ginecológicos": {
-            "fum": "negado - fum",
-            "menarca": null,
+            "fum": "10.09.22",
+            "menarca": {
+                "años": 11
+            },
             "trh": null,
             "aco": "negado",
-            "mpf": null,
-            "estado_hormonal": "postmenopáusica",
+            "mpf": "otb (2005)",
+            "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
             "g": 0,
             "p": 0,
@@ -36,11 +31,9 @@
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": [
-            "madre cáncer de mama a los dq años"
-        ],
-        "lateralidad": null,
-        "descendencia": null
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
     },
     "estadía_tumoral": {
         "mama_izquierda": {
@@ -53,8 +46,8 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct1c",
-            "nódulos": "cn0",
+            "centros_tumorales": null,
+            "nódulos": null,
             "metástasis": null
         }
     },
@@ -68,7 +61,7 @@
         },
         "mama_derecha": {
             "re": "80%",
-            "rp": "80%",
+            "rp": "0%",
             "her2": "1+",
             "ki67": "10%",
             "gh": null
@@ -80,8 +73,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cáncer de ec ia rh +, her2 negativo.",
-            "descripcion": null
+            "clasificación": "cdi de ec iiic luminal b her2 +++",
+            "descripcion": "ec iiic sin respuesta completa al tratamiento ypticnia"
         }
     }
 }

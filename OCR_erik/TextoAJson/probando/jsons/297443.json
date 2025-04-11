@@ -26,7 +26,7 @@
             ]
         },
         "antecedentes_ginecológicos": {
-            "fum": "febrero del 2018",
+            "fum": "febrero del 2018 g2 p0 c2 a0",
             "menarca": {
                 "años": 11
             },
@@ -39,9 +39,9 @@
                 "años": 3,
                 "contexto": "aco por 3 años"
             },
-            "estado_hormonal": "posmenopáusica",
+            "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 2,
+            "g": 0,
             "p": 0,
             "c": 2,
             "a": 0

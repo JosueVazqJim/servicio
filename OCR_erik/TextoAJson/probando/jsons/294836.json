@@ -1,6 +1,8 @@
 {
     "antecedentes_personales": {
-        "edad": null,
+        "edad": {
+            "años": 52
+        },
         "sexo": "femenino",
         "peso": null,
         "talla": null,
@@ -39,9 +41,9 @@
             "fum": "09.2022",
             "menarca": "12",
             "trh": null,
-            "aco": "negado",
+            "aco": "negado - estado hormonal",
             "mpf": null,
-            "estado_hormonal": "premenopáusica",
+            "estado_hormonal": "negado - estado hormonal",
             "métodos_anticonceptivos": null,
             "g": 4,
             "p": 4,

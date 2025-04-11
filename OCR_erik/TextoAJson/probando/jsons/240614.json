@@ -16,15 +16,7 @@
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "diabetes tipo 2 diagnosticada en el 2018",
-                    "descripción": null
-                },
-                {
-                    "nombre": "asma bronquial diagnosticada hace 9 años en el iner",
-                    "descripción": null
-                },
-                {
-                    "nombre": "obesidad clase 2 medicamentos: pioglitazona 30 mg cada 24 horas",
+                    "nombre": "diabetes tipo 2 diagnosticada en el 2018 / asma bronquial diagnosticada hace 9 años en el iner / obesidad clase 2 medicamentos: pioglitazona 30 mg cada 24 horas",
                     "descripción": null
                 },
                 {
@@ -47,10 +39,10 @@
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 0,
-            "p": 0,
-            "c": 0,
-            "a": 0
+            "g": 4,
+            "p": 1,
+            "c": 1,
+            "a": 2
         }
     },
     "antecedentes_familiares": {

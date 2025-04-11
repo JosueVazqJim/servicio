@@ -1,6 +1,8 @@
 {
     "antecedentes_personales": {
-        "edad": null,
+        "edad": {
+            "años": 76
+        },
         "sexo": "femenino",
         "peso": null,
         "talla": "148",
@@ -56,9 +58,9 @@
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": null,
-        "lateralidad": null,
-        "descendencia": null
+        "ascendencia": "desconocemos",
+        "lateralidad": "desconocemos",
+        "descendencia": "desconocemos"
     },
     "estadía_tumoral": {
         "mama_izquierda": {

@@ -14,10 +14,16 @@
         "alcohol": null,
         "drogas": null,
         "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "amaurosis bilateral; enfermedad renal crónica kdigo 3 b a1; epilepsia medicamentos: insulina glargina 20-0-0, insulina rápida 4-4-4, acido valpróico qd, enalapril 10 mg bid, furosemida 20 mg qd, levotiroxina 100 mcg, empagliflozina qd, atorvastatina 40 mg qd, alopurinol 75 mg qd",
+                    "descripción": null
+                }
+            ],
             "1998": [
                 {
                     "nombre": "diabetes tipo 2",
-                    "descripción": "- retinopatía diabética con desprendimiento de la retina (2013), amaurosis bilateral; enfermedad renal crónica kdigo 3 b a1; epilepsia medicamentos: insulina glargina 20-0-0, insulina rápida 4-4-4, acido valpróico qd, enalapril 10 mg bid, furosemida 20 mg qd, levotiroxina 100 mcg, empagliflozina qd, atorvastatina 40 mg qd, alopurinol 75 mg qd"
+                    "descripción": "- retinopatía diabética con desprendimiento de la retina (2013)"
                 }
             ]
         },

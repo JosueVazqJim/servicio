@@ -25,12 +25,22 @@
                 {
                     "nombre": "les",
                     "descripción": "actividad mucocutánea, articular, hematológica"
+                },
+                {
+                    "nombre": "tep y tvp",
+                    "descripción": "; 2 óbitos (28 sdg)"
                 }
             ],
             "2014": [
                 {
                     "nombre": "saaf secundario",
                     "descripción": "triple marcador positivo: tep"
+                }
+            ],
+            "2015": [
+                {
+                    "nombre": "tvp",
+                    "descripción": null
                 }
             ],
             "2017": [
@@ -47,7 +57,7 @@
             },
             "trh": null,
             "aco": null,
-            "mpf": "otb (2015)",
+            "mpf": "otb (2015) - estado hormonal",
             "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
             "g": 3,
