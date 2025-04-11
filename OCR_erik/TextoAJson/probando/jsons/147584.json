@@ -9,14 +9,7 @@
         "preferencia": null,
         "índice_tabáquico": {
             "fuma": "negado",
-            "observaciones": [
-                {
-                    "notas": "leucemia (70 años), hermana con cáncer renal (57 alcohol ocasional años)",
-                    "tiempo": {
-                        "años": 70
-                    }
-                }
-            ]
+            "observaciones": null
         },
         "alcohol": "ocasional",
         "drogas": "negado",
@@ -39,7 +32,11 @@
                     "descripción": null
                 },
                 {
-                    "nombre": "antecedente de tuberculosis a los 50 años.",
+                    "nombre": "antecedente de tuberculosis a los 50 años",
+                    "descripción": null
+                },
+                {
+                    "nombre": "g-2-h3-5-o-",
                     "descripción": null
                 }
             ],
@@ -69,9 +66,11 @@
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": "negado",
-        "lateralidad": "negado",
-        "descendencia": "negado"
+        "ascendencia": null,
+        "lateralidad": [
+            "hermana con cáncer renal (57 años)"
+        ],
+        "descendencia": null
     },
     "estadía_tumoral": {
         "mama_izquierda": {
@@ -107,7 +106,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "cdi de mama izquierda ec ia luminal b",
+            "clasificación": "cdi de mama izquierda ec iia luminal b",
             "descripcion": "ec iia pt2 - 2.5 cm pn0"
         },
         "mama_derecha": {

@@ -21,16 +21,16 @@
         "alcohol": "ocasional",
         "drogas": "negado",
         "comorbilidades": {
-            "sin_fecha": [
-                {
-                    "nombre": "esteatosis he g-4-+-e3-8-q-",
-                    "descripción": null
-                }
-            ],
             "2020": [
                 {
                     "nombre": "has",
                     "descripción": null
+                }
+            ],
+            "2022": [
+                {
+                    "nombre": "esteatosis hepática",
+                    "descripción": "al -o-o."
                 }
             ]
         },
@@ -44,7 +44,7 @@
             "trh": "gel vaginal con estrógeno",
             "aco": "negado",
             "mpf": null,
-            "estado_hormonal": "a ri md aid luminal b her2 - es re 90%, rp 10%, her2 -, ki67 30% pni - 1/1 + - estado hormonal",
+            "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
             "g": 2,
             "p": 0,
@@ -97,7 +97,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cdi de ec iib luminal b ipática (2022)",
+            "clasificación": "cdi de ec iib luminal b",
             "descripcion": "ec iib pt2 - 3.2 cm pni - 1/1 +"
         }
     }

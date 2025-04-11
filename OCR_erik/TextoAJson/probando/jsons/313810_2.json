@@ -62,9 +62,9 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": "100%",
+            "re": "95%",
             "rp": "90%",
-            "her2": "2+ (amplificado)",
+            "her2": "2+",
             "ki67": "50%",
             "gh": null
         },
@@ -78,8 +78,8 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "carcinoma ductal infiltrante de mama izquierda ec iia luminal b, her2 + q",
-            "descripcion": "ec iia ct2- 3.3 cm cn0"
+            "clasificación": "carcinoma ductal infiltrante de mama izquierda ec iia re+, her2 + o",
+            "descripcion": "ec iia ct2- 3.5 cm cn0"
         },
         "mama_derecha": {
             "clasificación": null,

@@ -81,6 +81,7 @@ leucocitos 5.6, neutrófilos 3.74, plaquetas 745.000
 
 Plan: QT +I0 / Valoración por oncogenética / Endoscopia
 
+
 Extensión del tumor:
 T4d, cN3, M1 (enfermedad ganglionar no
 regional)
@@ -98,6 +99,7 @@ Revisión de patología
 
 
 Plan: RT adyuvante + Tamoxifeno
+
 
 Extensión del tumor:
 pT1b, pN0, M0

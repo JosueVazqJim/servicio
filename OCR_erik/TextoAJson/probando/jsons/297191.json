@@ -56,7 +56,7 @@
                     "descripción": null
                 },
                 {
-                    "nombre": "- 02.2023 citologías urinarias (c23-0273): negativas qieze",
+                    "nombre": "- 02.2023 citologías urinarias (c23-0273): negativas a-4¿42-r3-e",
                     "descripción": null
                 }
             ]
@@ -126,7 +126,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "cdi de mama izquierda luminal b her2 +",
+            "clasificación": null,
             "descripcion": "ec ia ct1b-1 cm cn0"
         },
         "mama_derecha": {

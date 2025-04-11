@@ -1,25 +1,6 @@
 DJG / 303360 / 32 años / Dra. Verduzco
-
-Originaria y residente: Estado de México y Ciudad de México
-Ocupación: Hogar
-
-Seguridad social: negada (INSABI)
-
 Diagnóstico: CDI de mama derecha EC IV Luminal B, HER2 -
 
-Tabaco: negado
-AHF oncológicos: negados Alcohol: negado
-
-Drogas: negado
-
-- Menarca 11 años / FUM 08.2022
-- G2 P0 C1 A1 E
-- ACO y TRH: Negados Cirugías: cesárea (2019)
-
-- Estado hormonal: premenopáusica
-
-Comorbilidades:
-1. Trastorno de ansiedad generalizada y depresión
 
 Originaria y residente: Estado de México y Ciudad de México
 
@@ -60,7 +41,7 @@ Revisión de laminillas (A20-0849): CDI SPE, G3 (3+3+2), ILV+. IHQ: RE 60%, RP 5
 Positivo para células neoplásicas.
 
 14.02.20 TAC TAP: Ganglios cervicales en nivel 5 derecho, con eje corto de 7 mm; sin embargo presentan pérdida de su
-morfología. Adenopalía paratraqueal derecha (4 R) con eje corto de 15 mm. Torácicas intemas derechas y axilares, con eje
+morfología. Adenopalía paratraqueal derecha (4 R) con eje corto de 15 mm. Torácicas internas derechas y axilares, con eje
 corto de hasta mm
 
 26.02.20 PET CT Se confirma actividad metabólica de adenopatías mediastinales. Neoplasia de mama derecha con datos
@@ -73,7 +54,7 @@ metabolismo sugestiva de depósito secundario
 distancia (metástasis) de primario conocido.
 
 05.04.20 USG mama: incremento del 35% de tamaño tumoral
-PACARES paliativa a holocráneo 20Gy en 5 sesiones
+e ROS paliativa a holocráneo 20Gy en 5 sesiones
 
 90.04.20 niM Uraneo: Lesión nemorragica unica en hemisterio Ccerebeioso derecho, considera actividad neopiasia a
 distancia (metástasis) de primario conocido.
@@ -108,90 +89,55 @@ maduración de las 3 lineas celulares. Sin mieloptisis.
 09.08.21 RM Cráneo Persiste lesión cerebelosa derecha de comportamiento secuelar con restos hemosiderina sin
 cambios.
 
-OQ/L0HENMQO
+O/'rL.EAEANGO
 
-limpieza. RHP: Q21-2572 CDI con diferenciación endocrina G3 SBR 3+3+3 de 4.0 x 3.1 cm,
-sonfinado a la mama, sin afección cutánea ni muscular, ILV +, IPN +, efecto de tratamiento G2,
-0.7 cm, 0/15 ganglios (1 con fibrosis extensa). RE- RP- HER2- Ki67 70% GATA3 2+ GCDFP-15 -
-1cal, sinaptofisina + focal, INSM1 40%+
+12.08.21 MRM de limpieza. RHP: Q21-2572 CDI con diferenciación endocrina G3 SBR 3+3+3 de 4.0 x 3.1 cm,
+unifocal, sin CIS, confinado a la mama, sin afección cutánea ni muscular, ILV +, IPN +, efecto de tratamiento G2,
+márgenes lecho a 0.7 cm, 0/15 ganglios (1 con fibrosis extensa). RE- RP- HER2- Ki67 70% GATA3 2+ GCDFP-15 -
+cromogranina + focal, sinaptofisina + focal, INSM1 40%-+
 
-022 C1-C14 capecitabina
+4aL 11.09.21-07.2022 C1-C14 capecitabina
 
-PE Adenopatía paracólica superior derecha y lesión suprarrenal derecha asociadas a incremento
-bólica, no presentes en estudio previo, sugestivos de actividad neoplásica. Lesión cerebelosa
+06.07.22 PET CT: PE Adenopatía paracólica gupertor derecha y lesión suprarrenal derecha asociadas a incremento
+de actividad metabólica, no presentes en estudio previo, sugestivos de actividad neoplásica. Lesión cerebelosa
+derecha sin metabolismo asociado, estable. Hipermetabolismo en cavidad endometrial y anexos, pudiera ser de tipo
+fisiológico, se sugiere correlación con ciclo ovárico y ultrasonido.
 
-solismo asociado, estable. ipSmstabolismo en cavidad endometrial y anexos, pudiera ser de tipo
-jere correlación con ciclo ovárico y ultrasonido.
+08.08.22 al 12.08.22 Radioterapia estereotáctica corporal a adrenal derecha 30 Gy en 3 fracciones.
+19.08.22-30.09.22 C15-C17 Capecitabina
 
-22 Radioterapia estereotáctica corporal a adrenal derecha 30 Gy en 3 fracciones.
-C15-C17 Capecitabina
+14.10.22 PET/CT PE. Resolución de la lesión adrenal derecha al comparar con estudio previo. . .
+Implante pericecal con incremento en dimensiones y metabolismo. Lesión pancreática hiper metabólica compatible
+con depósito secundario, no presente en estudio previo.
 
-"E. Resolución de la lesión adrenal derecha al comparar con estudio previo. . .
-| con incremento en dimensiones y metabolismo. Lesión pancreática hiper metabólica compatible
-Indario, no presente en estudio previo.
+5aL 22.11.22-21.03.23 C1-C6 Eribulina
 
-3.23 C1-C6 Eribulina
+08.02.23 PET/CT; EE. Implante pericecal derecho que ha disminuido en metabolismo, al comparar con previo;
+Lesión en cuerpo pancreático hipermetabólica, sin cambios significativos.
 
-EE. Implante pericecal derecho que ha disminuido en metabolismo, al comparar con previo;
-pancreático hipermetabólica, sin cambios significativos.
+17.04.23 PET/CT PE. Lesión pancreática e implante pericecal, que han incrementado en tamaño y metabolismo al
+comparar con estudio previo. Lesión sólida ovárica izquierda hiper metabólica, en relación con actividad tumoral, no
+presente previamente, requiere correlación histopatológica. Adenopatías retroperitoneales con incremento focal del
+metabolismo, no presentes en estudio previo, compatibles con depósitos secundarios.
 
-»E. Lesión pancreática e implante pericecal, que han incrementado en tamaño y metabolismo al
-Jdio previo. Lesión sólida ovárica agulerda hiper metabólica, en relación con actividad tumoral, no
-ante, requiere correlación histopatológica. Adenopatías retroperitoneales con incremento focal del
-iresentes en estudio previo, compatibles con depósitos secundarios.
+OLE NOG
 
-Ñ
+Ausencia quirúrgica de mama derecha.
+Sin alteraciones a la exploración física.
 
-
-12.08.21 MRM de
-unifocal, sin CIS, «
-márgenes lecho a
-cromogranina + fc
-
-4aL 11.09.21-07.2
-
-06.07.22 PET CT:
-
-de actividad meta
-derecha sin metat
-fisiológico, se sug
-
-08.08.22 al 12.08.
-19,08.22-30.09.22
-
-14.10.22 PET/CT F
-Implante periceca
-con depósito secl
-
-5aL 22.11.22-21.0
-
-08.02.23 PET/CT;
-Lesión en cuerpo
-
-17.04.23 PET/CT F
-comparar con esti
-presente previame
-metabolismo, no
-
-Q/y06mMO €
-
-' Ausencia quirúrgica de mama derecha.
-' NES Sin alteraciones a la exploración física.
-
-ercuwe e
+orauneo
 
 Revisión de estudios de imagen
 
-[EPA CES 0)
-
+O/rLENMQO
 
 Revisión de estudios de imagen
 
-O/L0HENMQO
+OQ. NGO
 
 N0 HAY DGT
 Plan: Toma de biopsia de sitio de progresión
-OQ/LHENQO
+OLEA NGO
 
 Extensión del tumor:
 
@@ -209,9 +155,7 @@ ECOG 2
 
 N0 HAY DGT
 Plan: Toma de biopsia de sitio de progresión
-
-QO/LENGO
-
+OLMO
 
 Extensión del tumor:
 

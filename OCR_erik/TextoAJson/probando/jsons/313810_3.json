@@ -13,11 +13,17 @@
         },
         "alcohol": "negado",
         "drogas": "negado",
-        "comorbilidades": "negadas",
+        "comorbilidades": {
+            "01.2023": [
+                {
+                    "nombre": "dislipidemia mixta",
+                    "descripción": null
+                }
+            ]
+        },
         "antecedentes_ginecológicos": {
             "fum": {
-                "años": 60,
-                "contexto": "60 años g0 p0 c0 a0"
+                "años": 60
             },
             "menarca": {
                 "años": 9
@@ -42,8 +48,8 @@
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "pt1c",
-            "nódulos": "pn0",
+            "centros_tumorales": "ct2",
+            "nódulos": "cn0",
             "metástasis": null
         },
         "mama_derecha": {
@@ -56,9 +62,9 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": "95%",
+            "re": "100%",
             "rp": "90%",
-            "her2": "2+",
+            "her2": "2+ (amplificado)",
             "ki67": "50%",
             "gh": null
         },
@@ -72,8 +78,8 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "carcinoma ductal infiltrante de mama izquierda ec iia re+, her2 +",
-            "descripcion": null
+            "clasificación": "carcinoma ductal infiltrante de mama izquierda ec iia luminal b, her2 + o",
+            "descripcion": "ec iia ct2- 3.3 cm cn0"
         },
         "mama_derecha": {
             "clasificación": null,

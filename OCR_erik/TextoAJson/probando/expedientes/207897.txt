@@ -6,7 +6,7 @@ CDI de mama izquierda EC IA (cT2 cN0 M0), triple negativo.
 
 23.09.22 MMG/ USG Nódulo en interlínea de cuadrantes superiores de la mama izquierda (R11-12LC), con eje
 máximo de 2.4 cm, fibroadenomas en mama derecha (R12LA). BIRADS 48B. Ganglios axilares de características
-ultrasonográficas normales. RHP CDI de mama SPE grado 2, RE -, RP -, HER 2 1+, KI67 50%
+ultrasonográficas normales. RHP CDI de mama SPE grado 2, RE -, RP -, HER 2 1+, Ki67 50%
 
 02.12.22 UFCM CONSULTA: Asintomática. Mujer de 43 años postmenopáusica con CDI de mama izquierda EC
 IIA triple negativo.
@@ -125,7 +125,7 @@ Vigilancia anual.
 RESUMEN DEL PADECIMIENTO ONCOLOÓGICO
 
 23.09.22 MMG/USG: Nódulo en interlínea de cuadrantes superiores de mama izquierda (R11-12LC) de 2.4 cm. Ganglios
-axilares de características normales. RHP: CDI de mama SPE G2, RE -, RP -, HER 2 1+, KI67 50%.
+axilares de características normales. RHP: CDI de mama SPE G2, RE -, RP -, HER 2 1+, Ki67 50%.
 
 13.12.22 PET CT: Lesión con hipermetabolismo en mama izquierda. No se observan otros sitios de metabolismo anormal.
 16.12.22 Se considera candidata a QT+I0 neoadyuvante. Estimamos que ha recibido al menos una dosis acumulada de 300

@@ -6,7 +6,7 @@
         "sexo": "femenino",
         "peso": null,
         "talla": null,
-        "preferencia": "postmenopáusica preferencias sobre tratamiento adyuvante",
+        "preferencia": null,
         "índice_tabáquico": {
             "fuma": "suspendido",
             "observaciones": [
@@ -23,20 +23,14 @@
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "fibromialgia (:",
+                    "nombre": "4.",
                     "descripción": null
-                },
+                }
+            ],
+            "2006": [
                 {
-                    "nombre": "diabetes tipo",
-                    "descripción": null
-                },
-                {
-                    "nombre": "dislipidemia n",
-                    "descripción": null
-                },
-                {
-                    "nombre": "trastorno 288 0-75",
-                    "descripción": null
+                    "nombre": "fibromialgia",
+                    "descripción": "diabetes tipo 2 (2005) dislipidemia mixta (2010) trastorno denresivo mayor (2006 s oder yor"
                 }
             ]
         },
@@ -103,8 +97,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cdi de ec ia (pt1c pn0) luminal a 2006) 2 (2005) tixta (2010) esivo mayor (2006)",
-            "descripcion": "ec ia ptic-1.5 cm pno0"
+            "clasificación": "cdi de ec ia (pt1c pn0) luminal a",
+            "descripcion": "ec ia pt1c-1.5 cm pno0"
         }
     }
 }

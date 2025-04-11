@@ -1,7 +1,7 @@
 {
     "antecedentes_personales": {
         "edad": {
-            "años": 48
+            "años": 37
         },
         "sexo": "femenino",
         "peso": null,
@@ -13,21 +13,46 @@
         },
         "alcohol": "ocasional",
         "drogas": "negado",
-        "comorbilidades": "negadas",
+        "comorbilidades": {
+            "2008": [
+                {
+                    "nombre": "migraña con aura",
+                    "descripción": null
+                }
+            ],
+            "2015": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ],
+            "2019": [
+                {
+                    "nombre": "probable artritis reumatoide",
+                    "descripción": "recibió esteroides, desconoce el resto;"
+                }
+            ],
+            "2022": [
+                {
+                    "nombre": "trastorno obsesivo compulsivo",
+                    "descripción": "oy hra-blo-"
+                }
+            ]
+        },
         "antecedentes_ginecológicos": {
-            "fum": "10.09.22",
+            "fum": "21.03.23",
             "menarca": {
-                "años": 11
+                "años": 12
             },
             "trh": null,
             "aco": "negado",
-            "mpf": "otb (2005)",
+            "mpf": null,
             "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 0,
+            "g": 1,
             "p": 0,
             "c": 0,
-            "a": 0
+            "a": 1
         }
     },
     "antecedentes_familiares": {
@@ -46,9 +71,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
-            "nódulos": null,
-            "metástasis": null
+            "centros_tumorales": "ct3",
+            "nódulos": "cn1",
+            "metástasis": "m0"
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -60,10 +85,10 @@
             "gh": null
         },
         "mama_derecha": {
-            "re": "80%",
+            "re": "90%",
             "rp": "0%",
-            "her2": "1+",
-            "ki67": "10%",
+            "her2": "+",
+            "ki67": "30%",
             "gh": null
         }
     },
@@ -73,8 +98,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cdi de ec iiic luminal b her2 +++",
-            "descripcion": "ec iiic sin respuesta completa al tratamiento ypticnia"
+            "clasificación": "cdi de ec ia (t3 n1(f)m0) luminal b, her2 positivo",
+            "descripcion": "ec iia ct3 - 5.7 cm cn1"
         }
     }
 }

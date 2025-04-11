@@ -86,8 +86,8 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "diagnósticos: 1. cdi de mama izquierda ecl (t1c n(f)0 m0) (re+",
-            "descripcion": "ec ia tic—13mm cn0"
+            "clasificación": "diagnósticos: 1. cdi de mama izquierda eci (t1c n(f)0 m0) (re+",
+            "descripcion": "ec ia t1c—13mm cn0"
         },
         "mama_derecha": {
             "clasificación": null,

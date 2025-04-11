@@ -46,7 +46,7 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
+            "centros_tumorales": "pt1cn1a",
             "nódulos": null,
             "metástasis": null
         }
@@ -74,7 +74,7 @@
         },
         "mama_derecha": {
             "clasificación": "cdi de ec iiic luminal b her2 +++",
-            "descripcion": "ec iiic sin respuesta completa al tratamiento ypticnia"
+            "descripcion": "ec iiic sin respuesta completa al tratamiento ypt1cn1a"
         }
     }
 }

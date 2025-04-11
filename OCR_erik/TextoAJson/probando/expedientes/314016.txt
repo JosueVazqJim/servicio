@@ -57,12 +57,10 @@ plano cutáneo con eje máximo de 2 cm. Región axilar sin hallazgos de sospecha
 
 BIRADS 6.
 
-
 + No se palpan adenopatías cervicales, supraclaviculares ni axilares.
 + Tumoración en CSE de mama izquierda de 3 cm.
 
 + G8: 15 puntos
-
 
 Estado hormonal: postmenopáusica
 
@@ -71,7 +69,6 @@ ECOG 1
 G8: 15 puntos
 
 Plan: Neoadyuvancia con QT + doble bloqueo anti-HER2
-
 
 Extensión del tumor:
 CDI cT2, cN0, M0, EC IA
@@ -95,21 +92,17 @@ Aparece en el video 5
 *************************************
 LEDLCGC / 314016 / 66 años / Dra. Verduzco
 N0 HAY DGT
-50 Spanish Spain) Lo Accesuibiliy. Ivestigale
+5
 
--2-IA-D-M
-4 3 = E > Y Cormvert to. Picture Shaces.
-2 u e =
+son A =|i-> y -1.P a
 
-A -
+Havas A : Da. . E
 
-Auraroa
-
-ACA
+1 pS L£ Ar === H-u- Comertto | Picture Sacos Designer
+Eros £ I ar sy
+on NAAA N4
 
 LEDLCGC /314016/66 años / Dra. Verduzco |
-
-DRA RAJA
 
 Biología tumoral:
 
@@ -121,11 +114,11 @@ Paola Valdez ha empezado la funcil
 
 Plan: MAM+ GC
 
-£notes BUcComnments E “2 MM O -> —() » mm E
+A _ ———— O Y O o > AS e |
 
 N0 HAY DGT
 Plan: MRM + GC
-OLMO
+OZONO
 
 LS Extensión del tumor:
 
@@ -146,7 +139,7 @@ G8 12 puntos
 
 N0 HAY DGT
 Plan: MRM + GC
-OQL£OQOEMNOQO
+ALOQOARENdGO
 
 Biología tumoral:
 
@@ -179,11 +172,10 @@ Diagnóstico: CDI de mama izquierda EC IA (pT1cNO0MO0) RE+ / HER2 positivo
 Comorbilidades: -Aspirina 100 mg VO cada 24 horas
 » Trastorno bipolar (1974) -Bezafibrato 200 mg VO cada 12 horas
 » Hipotiroidismo primario (2021) -Levotiroxina 50 mcg VO cada 24 horas
-+ Enfermedad de pequeños vasos SNC -Sertralina 50 mg Y% cada 24 horas
++ Enfermedad de pequeños vasos SNC -Sertralina 50 mg % cada 24 horas
 + Neumopatía no especificada, requerimiento de oxígeno -Lorazepam 1 gota cada 24 horas
 
 -Linagliptina 5 mg 1-0-1
-
 
 Originaria y residente: Ciudad de México
 
@@ -233,14 +225,12 @@ considera candidata a tratamiento quirúrgico de entrada. Envío a cirugía onco
 disnea de medianos esfuerzos que limita la funcionalidad) y alto riesgo de toxicidad por 2 quimioterapias (CARG 83%,
 alto riesgo de toxicidad 2G3). Se decide que la paciente ira a cirugía de entrada.
 
-
 RESUMEN DEL PADECIMIENTO ONCOLÓGICO
 09.07.23: Cirugía conservadora de mama + ganglio centinela.
 RHP CDI SPE grado 3 (3+3+2) de 1.8 x 2 cm, CDIS + patrón cribiforme solido grado 2. Carcinoma invade
 
 directamente la dermis. ILV negativa, microcalcificaciones +, MQ negativos, 0/4 ganglios evaluados. RE 80%, RP
 10%, HER2 3+, Ki67 40%.
-
 
 14.07.23 ECOG 1.
 
@@ -249,7 +239,6 @@ movilización del brazo.
 
 Mama derecha y axila sin lesiones palpables.
 
-
 N0 HAY DGT
 Revisión de patología
 
@@ -257,9 +246,8 @@ Revisión de patología
 N0 HAY DGT
 Plan: Paclitaxel + Trastuzumab adyuvante
 
-
 Extensión del tumor:
-pTic (1.8 x 2 cm)
+pT1c (1.8 x 2 cm)
 pNo0 (0/4 ganglios evaluados)
 M0
 

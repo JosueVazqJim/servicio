@@ -12,20 +12,23 @@
             "observaciones": null
         },
         "alcohol": "negado.",
-        "drogas": "negado.",
+        "drogas": "negado. colecistectomía (2003) / hernioplastia a (1993) cirrosis hepática criptogénica child b (8 puntos), meld-na 12 puntos (mortalidad 3 meses del 6%) (1990) hipertensión portal no hemorrágica (egd 28.11.22)",
         "comorbilidades": null,
         "antecedentes_ginecológicos": {
-            "fum": null,
+            "fum": {
+                "años": 48,
+                "contexto": "48 años. gestas"
+            },
             "menarca": {
                 "años": 14,
                 "contexto": "menarca 14 años"
             },
             "trh": null,
-            "aco": "negado inguinal (1993)",
+            "aco": "negado",
             "mpf": null,
             "estado_hormonal": "postmenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 0,
+            "g": 48,
             "p": 0,
             "c": 0,
             "a": 0
@@ -41,8 +44,8 @@
             "ultrasonido": null,
             "mastografía": null,
             "centros_tumorales": null,
-            "nódulos": "n0",
-            "metástasis": "m0"
+            "nódulos": null,
+            "metástasis": null
         },
         "mama_derecha": {
             "ultrasonido": null,
@@ -70,7 +73,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "carcinoma ductal in situ mama izquierda (tis,n0,mo0) de alto grado",
+            "clasificación": null,
             "descripcion": null
         },
         "mama_derecha": {

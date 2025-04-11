@@ -2,7 +2,7 @@ MLAA / 314262 / 85 años / Dr. Soto
 Diagnóstico: Diagnóstico 1: CLI de mama derecha luminal A EC IA (cT1CcNOMO)
 Diagnóstico 2: CDI de mama izquierda luminal B ECIIB (cT2N1MO0)
 
-Tratamiento PR losartan 50 mg BID, pentoxifilina 400 mg 1-1-0,
+Tratamiento Sctual: losartan 50 mg BID, pentoxifilina 400 mg 1-1-0,
 
 Originaria y residente: Puebla
 
@@ -51,11 +51,11 @@ un ganglio que sugiere infiltración.
 24.06.23 UFCM: por hallazgo de ganglio positivo se solicitó PET CT para etapificación
 
 28.06.23 PET/CT (preliminar): lesión en mama derecha y en mama izquierda. En región axilar izquierda se identifican
-Elamncorias asilos en nivel 1 y 2.
+Edmcorios calas en nivel 1 y 2.
 
 iS NY
 
-OZONO
+OZXOMAEOA
 
 Mama derecha:
 
@@ -85,12 +85,12 @@ RE
 Plan: USG de cuello con BAAF de ganglio cervical
 CC de mama derecha + CC de mama izquierda con disección axilar izquierda
 
-OQL£OQOOEmNQO
+OZONO
 
 Biología tumoral:
 Derecho: RE 95%, RP 95% HER2 0+, Ki67 5%
 
-Izquierdo: RE 90%, RP 90%, HER2 0+, K167
+Izquierdo: RE 90%, RP 90%, HER2 0+, Ki67
 30%.
 
 CLI de mama derecha EC IA
@@ -100,10 +100,10 @@ CDI de mama izquierda EC IIB
 cT2 - 2.1 cm
 N1
 
-| Blología tumoral:
-| Derecho: RE 95%, RP 95% HER2 0+, Ki67 5%
+Biología tumoral:
+Derecho: RE 95%, RP 95% HER2 0+, Ki67 5%
 
-Izquierdo: RE 90%, RP 90%, HER2 0+, KI67
+Izquierdo: RE 90%, RP 90%, HER2 0+, Ki67
 30%.
 
 Preferencia de la paciente y familia = venir al
@@ -111,7 +111,6 @@ hospital lo menos posible
 
 Plan: USG de cuello con BAAF de ganglio cervical
 CC de mama derecha + CC de mama izquierda con disección axilar izquierda
-
 
 CLJ de mama derecha EC IA
 cT1c- 1.9 cm
@@ -166,7 +165,7 @@ circunscrito espiculado de mayor densidad que mide 2.1 cm y condiciona distorsi�
 axilar izquierda con engrosamiento focal de un ganglio que subjere infiltración.
 
 18.04.23 Biopsia TRUCUT. RHP (Q-23-2516): Mama izquierda CDI SPE grado 3 (3+3+2 = 8), ILV+, microcalcificaciones +, RE 90%,
-RP 90%, HER2 0+, KI67 30%. Mama derecha CLI grado 2, ILV-, RE 95%, RP 95% HER2 0+, Ki67 5%.
+RP 90%, HER2 0+, Ki67 30%. Mama derecha CLI grado 2, ILV-, RE 95%, RP 95% HER2 0+, Ki67 5%.
 
 31.05.23 UFCAMA: En ultrasonido se reporta un ganglio sospechoso por lo que comentaré con el equipo de Radiología para realizar
 BAAF en caso de resultar positivo se solicitarán estudios de extensión. Se presentará en UFCM al contar con resultado de BAAF.
@@ -194,6 +193,7 @@ Ki67 30%
 
 — Mama derecha: Carcinoma lobulillar infilttante, grado 2 (L+2+1), tamaño del tumor 2.5 x 2.2 x 2.5 cm, CDIS presente, patrón
 comedo y cribiforme, grado 3, necrosis presente, ILV (-), IPN (-), carcinoma invade dermis sin ulceración de piel. pT2 IHQ: RE 95%,
+
 RP 95%, HER2 negativo, Ki67 5%
 
 14.08.23 OINCO: ECOG 3.

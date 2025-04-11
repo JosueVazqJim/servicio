@@ -83,7 +83,7 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
+            "centros_tumorales": "pt1c",
             "nódulos": "cn0",
             "metástasis": null
         }
@@ -110,8 +110,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "carcinoma mucinoso de ec iia (t1cnomo) luminal a",
-            "descripcion": "ec ia ptic-2cm cn0"
+            "clasificación": "carcinoma mucinoso de ec ia (t1cnomo) luminal a",
+            "descripcion": "ec ia pt1c-2cm cn0"
         }
     }
 }

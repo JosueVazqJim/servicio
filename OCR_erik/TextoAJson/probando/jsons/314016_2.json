@@ -52,7 +52,7 @@
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "pt1cno0mo0",
+            "centros_tumorales": "pt1c",
             "nódulos": null,
             "metástasis": "m0"
         },

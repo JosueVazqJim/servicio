@@ -1,0 +1,104 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 54
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "obesidad g3",
+                    "descripción": null
+                }
+            ],
+            "2022": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ],
+            "2023": [
+                {
+                    "nombre": "paraganglioma carotídeo",
+                    "descripción": "al -o-o."
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "05.2022",
+            "menarca": {
+                "años": 13
+            },
+            "trh": null,
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 3,
+            "p": 0,
+            "c": 2,
+            "a": 1
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuela materna cáncer gástrico 65 años)"
+        ],
+        "lateralidad": [
+            "tía materna con cáncer de mama (55 años)",
+            "prima paterna con cáncer de mama (70 años)"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct2",
+            "nódulos": "cn2",
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "90%",
+            "rp": null,
+            "her2": "-",
+            "ki67": "5%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "carcinoma mucinoso de mama izquierda ec iiia (cct2n2am0) re+",
+            "descripcion": "ec ima ct2 - 3.2 cm cn2 — conglomerado ganglionar axilar"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

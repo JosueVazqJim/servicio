@@ -1,16 +1,16 @@
 {
     "antecedentes_personales": {
         "edad": {},
-        "sexo": "femenino",
+        "sexo": "",
         "peso": null,
         "talla": null,
         "preferencia": null,
         "índice_tabáquico": {
-            "fuma": "suspendido",
+            "fuma": "",
             "observaciones": []
         },
-        "alcohol": "negado",
-        "drogas": "negado",
+        "alcohol": "",
+        "drogas": "",
         "comorbilidades": {
             "sin_fecha": [],
             "una fecha": ""
@@ -20,21 +20,21 @@
             "menarca": {},
             "embarazos": null,
             "partos": null,
-            "trh": "negados",
-            "aco": "trh negados",
+            "trh": "",
+            "aco": "",
             "mpf": null,
-            "estado_hormonal": "postmenopáusica",
+            "estado_hormonal": "",
             "métodos_anticonceptivos": null,
-            "g": 6,
-            "p": 5,
+            "g": 0,
+            "p": 0,
             "c": 0,
-            "a": 1
+            "a": 0
         }
     24
     },
     "antecedentes_familiares": {
         "ascendencia": [],
-        "lateralidad": null,
+        "lateralidad": [],
         "descendencia": []
     3
     },
@@ -42,8 +42,8 @@
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct1c",
-            "nódulos": "cn0",
+            "centros_tumorales": null,
+            "nódulos": null,
             "metástasis": null
         },
         "mama_derecha": {
@@ -57,10 +57,10 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": "95%",
-            "rp": "1%",
-            "her2": "1+ (-)",
-            "ki67": "10%",
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
             "gh": null
         },
         "mama_derecha": {
@@ -74,8 +74,8 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "cdi de mama izquierda ec ia (t1cno0) re 95%, rp1%, her2 — (1+)",
-            "descripcion": "ec ia ct1c-—18 mm cn0"
+            "clasificación": null,
+            "descripcion": null
         },
         "mama_derecha": {
             "clasificación": null,

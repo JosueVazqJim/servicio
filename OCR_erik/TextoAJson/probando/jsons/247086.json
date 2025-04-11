@@ -63,9 +63,9 @@
         "mama_derecha": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": null,
+            "centros_tumorales": "pt1c",
             "nódulos": "pn0",
-            "metástasis": "m0qo0o"
+            "metástasis": null
         }
     },
     "inmunohistoquímica_tumoral": {
@@ -90,8 +90,8 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "cdi de mama derecha ec ia (t1cn0mo) ihq rp+, blueprint triple negativo q",
-            "descripcion": "ec ia ptic-1.2 cm pn0"
+            "clasificación": "cdi de mama derecha ec ia (t1cn0mo) ihq rp+, blueprint triple negativo o",
+            "descripcion": "ec ia pt1c-1.2 cm pn0"
         }
     }
 }

@@ -1,0 +1,83 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 77
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": "negadas",
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 60,
+                "contexto": "60 años g0 p0 c0 a0"
+            },
+            "menarca": {
+                "años": 9
+            },
+            "trh": "negados",
+            "aco": "negados",
+            "mpf": null,
+            "estado_hormonal": null,
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt1c",
+            "nódulos": "pn0",
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "95%",
+            "rp": "90%",
+            "her2": "2+",
+            "ki67": "50%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "carcinoma ductal infiltrante de mama izquierda ec iia re+, her2 +",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

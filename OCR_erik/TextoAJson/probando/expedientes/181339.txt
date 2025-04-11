@@ -1,17 +1,17 @@
 LVH / 181339 / 52 años / Dra. Chávarri
 N0 HAY DGT
+Originaria: COXM.
+
 Carcinoma mucinoso EC IIA (cT2, cN0, M0)
 
 Retraso en el desarrollo aparentemente secundario a hipoxia perinatal.
+
 Dismortía (talla baja, pies y manos pequeñas, alteraciones faciales y retraso psicomotor)
-
 Se realizó cariotipo sin mostrar alteraciones numéricas ni estructurales el 24/10/2002
-
 - Enfermedad celíaca (2005)
 
-O... de Apnea-hipopnea (2018)
-
-lrmatosis (2020)
+sedrome de Apnea-hipopnea (2018)
+O... (2020)
 
 
 * AHF: madre cáncer de colón a los 62 años. Tío
@@ -37,8 +37,15 @@ Cirugía de catarata bilateral 03.2022
 + Terapia de reemplazo hormonal con estrógenos conjugados
 por 3 años, después estradiol en gel, parches hasta el 2023.
 
-Diagnóstico: Carcinoma mucinoso EC IIA (cT2, cNO0, M0)
+N0 HAY DGT
+Carcinoma mucinoso EC IIA (cT2, cNO0, M0)
 
+Retraso en el desarrollo aparentemente secundario a hipoxia perinatal.
+- Dismorfia (talla baja, pies y manos pequeñas, alteraciones faciales y retraso psicomotor)
+Se realizó cariotipo sin mostrar alteraciones numéricas ni estructurales el 24/10/2002
+- Enfermedad celíaca (2005)
+¿síndrome de Apnea-hipopnea (2018)
+matosis (2020)
 
 + AHF: madre cáncer de colón a los 62 años. Tío
 
@@ -64,14 +71,6 @@ e Menarca 15 años.
 e Terapia de reemplazo hormonal con estrógenos conjugados
 por 3 años, después estradiol en gel, parches hasta el 2023.
 
-Retraso en el desarrollo aparentemente secundario a hipoxia perinatal.
-- Dismorfía (talla baja, pies y manos pequeñas, alteraciones faciales y retraso psicomotor)
-Se realizó cariotipo sin mostrar alteraciones numéricas ni estructurales el 24/10/2002
-
-- Enfermedad celíaca (2005)
-“siadrome de Apnea-hipopnea (2018)
-matosis (2020)
-
 N0 HAY DGT
 Revisión de estudios de imagen
 Revisión de patología
@@ -80,22 +79,14 @@ Revisión de patología
 5,
 
 N0 HAY DGT
-Revisión de estudios dev;
-Revisión de patdlo4tá” Le, Ki67 5%
+Revisión de estudios devimager
+Revisión de 'patdlogta 673%
 
 nal: postmenopáusica
-
-Y
-|
-
-ECOG 1
+ECOG1
 
 
 N0 HAY DGT
-y LUCIOS Biología tumoral:
-
-de patgróvs HER? 1+, Ki67 5%.
-
 
 stado hormonal: postmenopáusica
 
@@ -133,6 +124,7 @@ ECOG 1
 
 Plan: CCM / GC + RT vs Mastectomía
 
+
 Extensión del tumot:
 cT2, cN0, M0
 
@@ -144,7 +136,7 @@ ECOG 1
 Aparece en el video 8
 *************************************
 LDLFVH / 181339 / 52 años / Dra. Chavarri
-Diagnóstico: Carcinoma mucinoso de mama derecha EC IIA (T1CNOMO) luminal A
+Diagnóstico: Carcinoma mucinoso de mama derecha EC IA (T1CNOMO) luminal A
 
 
 Originaria y residente: CDMX
@@ -205,8 +197,7 @@ márgenes quirúrgicos negativos para carcinoma invasor. GL 0/1. RE 90%, RP 80%,
 03.07.23 P0 mastectomía de mama derecha RHP (Q-23-4466): CDIS de 0.3 cm patrón cribiforme, G1, necrosis -,
 microcalcificaciones presente en tejido no neoplásico (conductos benignos). M4 -.
 
-F
-al
+Wal
 
 Mama derecha con cicatriz de cirugía conservadora en CIE y
 en región axillar con bordes bien afrontados sin datos de
@@ -242,7 +233,7 @@ LFVH / 181339 / 52 años / Dra. Chavarri
 Extensión del tumor:
 
 CDI de mama derecha EC IA
-pTic-2cm
+pT1c-2cm
 
 cN0 RESIDENTES ONCC
 
@@ -256,7 +247,7 @@ Plan: HT adyuvante
 Extensión del tumor:
 
 CDI de mama derecha EC IA
-pTic-2cm
+pT1c-2cm
 cN0
 
 Biología tumoral:
@@ -275,9 +266,9 @@ sim Clow
 N
 3.15cm C-high
 well dfferentiated
-1-3 positive nodes $2em Chow.
+1-3 positive nodes $2em
 H 2.1-5cm C-high
-E
+?
 2
 E
 . TI
@@ -289,7 +280,7 @@ e undiflerentiated cia
 a 1-3 positive nodes C-high
 Clow
 well differentiated No
-£ OR C-high 2
+2 OR C-high
 Z moderatety differentiated
 3 13 positive nodes C-high
 2
@@ -338,28 +329,28 @@ Any size
 <1cm
 
 N0 HAY DGT
-y > m 6 ? O 2
-| Título y objetos
-== RT adyuvante
+mn Título y objetos
+AS
+IIA E RT adyuvante
 ERstatos [HER status Grade Modalstatus | Tumorsire | cal o Apariencia
-, ¡Ue tendss 3 Cirugía conservadora 0
-sm Co to
-a 1
-met llerertates q ce 3 Ganglios linfático + Cuerpo
-Ñ sarcoma [1200 [cow Número de dispositiva
-2 2150 a 3 Tumores > 5 cm
-á Fondo
-E Nc0w
-3 roseta Citerenttes Er
-z A ve ca Terapia endocrina Editar Gsposición de dispositiva
-¿ 150] ema
-s Í 5 tamoxileno
-a AS en I
-E 20m cion
-2 or » 215 0m ca
+, 4 ¡Ue tendss 3 Cirugía conservadora
+s1m cio peo
+” :
+A A ófferent aida! bt a 3 Ganglios linfático + O
+Caritas a sos [120 | com Número de dispositiva
+z 2150 a 3 Tumores > 5 cm ED
+— E Nc0w
+3 roseta Citerenttes 25m [a
+> P z A ve ca Terapia endocrina Editar Gsposición de dispositiva
+Di =—| s10m cion Ñ
+E poor Aereas or ze 13s0m | em
+5 mataron 1 t 5 tamoxileno
+—— 1apoitvenodes | Aryuse en I
+Bl == E 20m cion
+z or » 215cm Calgh
 moderna dferentates Í
-á sapownrods | aio | ma ||
-7 A siem cion
+i Er a SO
+2 A siem cion
 El pe Atrio msm | a
 1-3 poutive nodes. Ay ise Chih
 
@@ -385,7 +376,7 @@ Clow
 (a [E
 C-hil i i 1
 A sh > Ganglios linfático +
-1-3 positive nodes s2cm Clow
+1-3 postive nodes Ss2cm
 2 215cm Cohigh > Tumores > 5 cm
 E INCCN
 2

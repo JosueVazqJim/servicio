@@ -4,7 +4,7 @@
             "años": 65
         },
         "sexo": "femenino",
-        "peso": "74 kg, ta 100/60. dia +18 de ribociclib cuello sin adenopatías palpables. ausencia de mama izquierda con múltiples lesiones compatibles con queratosis seborreica. no se palpan adenopatías axilares.",
+        "peso": "74 kg, ta 100/60. dia +18 de ribociclib cuello sin adenopatíias palpables. ausencia de mama izquierda con múltiples lesiones compatibles con queratosis seborreica. no se palpan adenopatías axilares.",
         "talla": null,
         "preferencia": null,
         "índice_tabáquico": {
@@ -34,10 +34,7 @@
             },
             "menarca": null,
             "trh": null,
-            "aco": {
-                "años": 4,
-                "contexto": "pastillas por 4 años g2 p1 c0 a1"
-            },
+            "aco": "pastillas por 4",
             "mpf": null,
             "estado_hormonal": null,
             "métodos_anticonceptivos": null,

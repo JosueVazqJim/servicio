@@ -1,8 +1,6 @@
 {
     "antecedentes_personales": {
-        "edad": {
-            "años": 55
-        },
+        "edad": null,
         "sexo": "femenino",
         "peso": null,
         "talla": null,
@@ -20,7 +18,7 @@
             "trh": null,
             "aco": null,
             "mpf": null,
-            "estado_hormonal": "postmenopáusica",
+            "estado_hormonal": null,
             "métodos_anticonceptivos": null,
             "g": 0,
             "p": 0,
@@ -38,8 +36,8 @@
             "ultrasonido": null,
             "mastografía": null,
             "centros_tumorales": null,
-            "nódulos": "n1",
-            "metástasis": "m0"
+            "nódulos": null,
+            "metástasis": null
         },
         "mama_derecha": {
             "ultrasonido": null,

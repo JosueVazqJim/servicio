@@ -8,30 +8,19 @@
         "talla": null,
         "preferencia": null,
         "índice_tabáquico": {
-            "fuma": "negado",
+            "fuma": null,
             "observaciones": null
         },
-        "alcohol": "negado",
-        "drogas": "negado",
-        "comorbilidades": {
-            "01.2023": [
-                {
-                    "nombre": "dislipidemia mixta",
-                    "descripción": null
-                }
-            ]
-        },
+        "alcohol": null,
+        "drogas": null,
+        "comorbilidades": null,
         "antecedentes_ginecológicos": {
-            "fum": {
-                "años": 60
-            },
-            "menarca": {
-                "años": 9
-            },
-            "trh": "negados",
-            "aco": "negados",
+            "fum": null,
+            "menarca": null,
+            "trh": null,
+            "aco": null,
             "mpf": null,
-            "estado_hormonal": "postmenopáusica",
+            "estado_hormonal": null,
             "métodos_anticonceptivos": null,
             "g": 0,
             "p": 0,
@@ -40,16 +29,16 @@
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": "negado",
-        "lateralidad": "negado",
-        "descendencia": "negado"
+        "ascendencia": null,
+        "lateralidad": null,
+        "descendencia": null
     },
     "estadía_tumoral": {
         "mama_izquierda": {
             "ultrasonido": null,
             "mastografía": null,
-            "centros_tumorales": "ct2",
-            "nódulos": "cn0",
+            "centros_tumorales": null,
+            "nódulos": null,
             "metástasis": null
         },
         "mama_derecha": {
@@ -62,10 +51,10 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": "95%",
-            "rp": "90%",
-            "her2": "2+",
-            "ki67": "50%",
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
             "gh": null
         },
         "mama_derecha": {
@@ -78,8 +67,8 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "carcinoma ductal infiltrante de mama izquierda ec iia re+, her2 + q",
-            "descripcion": "ec iia ct2- 3.5 cm cn0"
+            "clasificación": null,
+            "descripcion": null
         },
         "mama_derecha": {
             "clasificación": null,

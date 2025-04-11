@@ -10,7 +10,7 @@ CDI izquierdo EC IA (cT1CNOMO) triple negativo (2022).
 
 05.12.22 MMG/USG Nódulo sólido irregular en mama izquierda que requiere correlación histopatológica.
 Hallazgos correspondientes a categoría Bl-RADS 4C.. Trucut RHP: CDI SPE grado 3, ILV -, IPN -, RE 0%, RP
-0%, HER2 2+, KI67 70%. SISH no amplificado.
+0%, HER2 2+, Ki67 70%. SISH no amplificado.
 
 03.01.23 UFCM: Se revisaron los estudios de imagen y de patología corroborando una EC IA por T1c triple
 negativo. Se considera candidata a tratamiento neoadyuvante secuencial. No se considera candidata a

@@ -9,14 +9,7 @@
         "preferencia": null,
         "índice_tabáquico": {
             "fuma": "negado",
-            "observaciones": [
-                {
-                    "notas": "75 años)",
-                    "tiempo": {
-                        "años": 75
-                    }
-                }
-            ]
+            "observaciones": null
         },
         "alcohol": "negado",
         "drogas": "negado",
@@ -25,52 +18,18 @@
                 {
                     "nombre": "leucemia promielocítica aguda en rc (dx 2008) en vigilancia",
                     "descripción": null
-                },
-                {
-                    "nombre": "categoría birads 2 (hallazgos benignos)",
-                    "descripción": null
-                },
-                {
-                    "nombre": "omía bilateral preservadora de complejo areola pezón + reconstrucción + ooforectomía izquierda q14-5427): hiperplasia ductal usual, condición fibrosa quística",
-                    "descripción": null
-                },
-                {
-                    "nombre": "ovarios con cuerpos lúteos, tubas ciones n el lado derecho se observa tejido glandular residual",
-                    "descripción": null
-                },
-                {
-                    "nombre": "no se observan lesiones sólidas de aciones ductales",
-                    "descripción": null
-                },
-                {
-                    "nombre": "tejido graso en el lado izquierdo sin imágenes de sospecha",
-                    "descripción": null
-                },
-                {
-                    "nombre": "debido al bajo riesgo de recurrencia locoregional en este grupo (mastectomía profiláctica, brca1) rente vigilancia",
-                    "descripción": null
-                },
-                {
-                    "nombre": "bios en relación a mastectomía bilateral",
-                    "descripción": null
-                },
-                {
-                    "nombre": "a la aplicación de medio de contraste mínimo 3l del tejido mamario el cuales de predominio graso",
-                    "descripción": null
-                },
-                {
-                    "nombre": "categoría birads",
-                    "descripción": null
-                },
-                {
-                    "nombre": "cdi de mama rp-, her2- - 2006 cc de mar - 2006 adyuvanci - 2007-2011 adyu",
-                    "descripción": null
                 }
             ],
             "2009": [
                 {
                     "nombre": "diabetes tipo 2",
-                    "descripción": "izquierda ec ia, re+, her2- (2006) - revisión (q08-7638): cdi spe g3 (3+3+2), re no valorables, mna izquierda + da a con fac x 6 + rt ivancia con tamoxifeno x2 > anastrozol x3 3: cambios postquirúrgicos en mama izquierda"
+                    "descripción": null
+                }
+            ],
+            "2006": [
+                {
+                    "nombre": "cdi de mama izquierda ec ia, re+, her2-",
+                    "descripción": "- revisión (q08-7638): cdi spe g3 (3+3+2), re no valorables, rp-, her2- - 2006 cc de mama izquierda + da - 2006 adyuvancia con fac x 6 + rt - 2007-2011 adyuvancia con tamoxifeno x2 > anastrozol x3"
                 }
             ]
         },
@@ -93,9 +52,13 @@
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": "negado",
-        "lateralidad": "negado",
-        "descendencia": "negado"
+        "ascendencia": [
+            "abuela materna finada por hoc 75 años)"
+        ],
+        "lateralidad": [
+            "dos tías paternas y dos primas maternas con cáncer de mama antes de los 50 años"
+        ],
+        "descendencia": null
     },
     "estadía_tumoral": {
         "mama_izquierda": {

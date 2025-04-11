@@ -57,14 +57,14 @@ cm en CSE en la mama derecha. Ganglios axilares ipsilaterales sugestivos de infi
 13.04.23 PET/CT: Múltiples lesiones en mama derecha correspondientes a actividad neoplásica conocida
 (enfermedad multicéntrica). Adenopatías axilares y retropectoral derechas compatibles con depósitos secundarios.
 
-OQ/r/rL0HENQO
+O'rQAEAEANGO
 
-( En mama derecha, en CSE, se palpa lesion de aproximadamente 6 cm
+En mama derecha, en CSE, se palpa lesion de aproximadamente 6 cm
 No se palpan adenopatías axilares, claviculares ni cervicales
 
 Mama izquierda sin lesiones palpables, sin adenopatías ipsilaterales
 
-Or LuEMNOe->
+O/Q0EANGG
 
 Revisión de estudios de imagen
 
@@ -72,11 +72,11 @@ RE
 
 Revisión de patología
 
-OQ/L.HENMQO
+O/'rQ.EANGO
 
 N0 HAY DGT
 Plan: QT neoadyuvante con doble bloqueo anti-HER2
-OQ/yLHENQO
+O'AEANGO
 
 Extensión del tumor:
 
@@ -97,39 +97,18 @@ ECOG 0
 Aparece en el video 4
 *************************************
 EGM / 313895 / 37 años / Dra. Chavarri
-N0 HAY DGT
-óstico: CDI de mama derecha EC IIA (T3 N1(f)M0) luminal B, HER2 positivo
+Diagnóstico: CDI de mama derecha EC IA (T3 N1(f)M0) luminal B, HER2 positivo
 
-aura (2008)
+Comorbilidades:
 
-arterial sistémica (2015)
+1. Migraña con aura (2008)
 
-'itis reumatoide (2019) recibió esteroides, desconoce el resto;
-sesivo compulsivo (2022)
+2. Hipertensión arterial sistémica (2015)
 
+3. Probable artritis reumatoide (2019) recibió esteroides, desconoce el resto;
+4. Trastorno obsesivo compulsivo (2022)
 
-Originaria y resis
-Ocupación: Com
-Seguridad socia
-
-Diagn
-
-AHF oncológico
-
-- Menarca 12 añ
-- G1 P0 C0 A1 (
-- ACO negado
-
-- Estado hormo
-satisfecha
-
-Comorbilidades
-1. Migraña con
-2. Hipertensión
-3. Probable artr
-
-4. Trastorno Ob
-Oy EBLO
+Oy HRA-BLO-
 
 Originaria y residente: Chiapas
 
@@ -152,7 +131,6 @@ satisfecha
 
 Cirugías: negado
 
-
 03.2022 autopalpación de lesión en mama derecha
 2022 US mamario: reporte verbal de fibrosis
 03.2023 crecimiento del tamaño de la lesión en mama derecha
@@ -162,13 +140,13 @@ distorsión de la arquitectura, en el radio 10 línea A se observa una zona foca
 0.7 cm y en el radio 10 línea C se observa otra de 1.4 x 1.3 cm. Ganglios axilares derechos con datos sugestivos de
 infiltración tumoral. BI-RADS 5
 
-03.2023 Biopsia trucut de de mama derecha + BAAF de un ganolio axilar derecho. RHP: Carcinoma ductal infiltrante
+03.2023 Biopsia trucut de de mama derecha + BAAF de un ganglio axilar derecho. RHP: Carcinoma ductal infiltrante
 sin patrón específico moderadamente diferenciado, grado II, ILV-. Ganglio axilar con células epiteliales atípicas
 sugerentes de metástasis de carcinoma ductal.
 
 INCMNSZ
 
-Revisión de laminillas (Q-23-2254): CDI de tipo no específico, G2 (2+3+2), con CDIS presente, ILV-, IPN-. IHQ RE
+Revisión de laminillas (Q-23-2254): CDI de tipo no específico. G2 (2+3+2), con CDIS presente, ILV-, IPN-. IHQ RE
 90%, RP 0%, HER2 ++ (indeterminado), Ki67 30%. SISH HER2 amplificado
 
 Revisión BAAF de ganglio axilar: (BA-23-075): Carcinoma metastásico
@@ -180,8 +158,7 @@ cm en CSE en la mama derecha. Ganglios axilares ipsilaterales sugestivos de infi
 
 13.04.23 PET/CT: Múltiples lesiones en mama derecha correspondientes a actividad neoplásica conocida
 (enfermedad multicéntrica). Adenopatías axilares y retropectoral derechas compatibles con depósitos secundarios.
-< PAY >)
-
+Oro
 
 03.05.23 C1 TCHP
 
@@ -198,32 +175,19 @@ derecha de menor tamaño. Respuesta parcial. Categoría BIRADS 6.
 Nódulo hipoecoico en mama derecha en topografía de tumor primario que mide 0.7 cm. Respuesta parcial.
 Hallazgos correspondientes a categoría BIRADS-6.
 
-Y
+orQunca:
 
 Mama derecha se palpa nódulo en CSE de <1 cm
 No se palpan adenopatías ipsilaterales
 
 Mama izquierda sin lesiones ni adenoatías palpables
 
-
-
 Revisión de estudios de imagen
 
-O/LEmMOO
+O-Aamoo
 
 N0 HAY DGT
-
-Extensión del tumor: Biología tumoral:
-CDI de mama derecha EC IIA Luminal B HER2 +
-
-cT3-—5.7 cm RE 90%, RP 0%, HER2 ++ (SISH amplificado),
-cN1 (f) Ki67 30%
-
-Estado hormonal: Premenopáusica
-
-ECOG 0
-
-dls y Ñ Ar a 0 ra gut rY ie ó J C4 q” Pr Ñ ga fa ge a! >] era lr T 7 Mei y 1] 7 Y mo pa gu
+Plan: Mastectomía derecha + GC con doble trazado y =3 GC
 
 Extensión del tumor:
 
@@ -241,74 +205,65 @@ Estado hormonal: Premenopáusica
 
 ECOG O
 
-TINA
-N = 14.2%
+SENTINA
+Tasa de FN = 14.2%
 
-cuando se
-n>3GC
-D.008
+TFN <10% cuando se
+examinan >23 GC
+p =0.008
 
-¡cuerdo a ++ GC
-3% (17/70)
-5% (10/54)
-3% (3/41)
-% (0/28)
+[NEEREEEn
+24.3% (17/70)
 
-1% (2/33)
+28.5% (10/54)
 
-Jun;14(7):609-18.
+7.3% (3/41)
+| 0% (0/28) |
 
-ACOZOG Z1071 | MD Anderson PA11-1087
+6.1% (2/33)
 
-Tasa de FN: 12.6% (39/310) | TFN con GC: 10.1% (7/69)
-Pito] e |
-trazador 1
-20.3% | yy [TFN con DAS: 4.2% (5/120)
-(12/59) : '
+S Lancet Oncol. 2013 Jun;14(7):609-18.
+OrL.EmMNGA
 
-1
-¡TFN GC + DAS = 1.4% (1/7)
+=
+
+0|mn
+
+=
+
+an
+
+ACOZOG Z1071
 
 Doble
 trazador
-10.8%
-(27/251)
 
-TFN
+Un
+trazador 1
 
-360 | 260 | p |I
+. MD Anderson PA11-1087
+
+Tasa de FN: 12.6% (39/310) TFN con GC: 10.1% (7/69)
+
+¡TFN con DAS: 4.2% (5/120)
+
+JAMA. 2013;310(14):1455-1461
+
+10.8% | 20.3%
+TEN | (7251) | (12/59) | 0.05
+1
 9.1% | 21.1% j
-
 TEN | (20/20) | (19/90) | 9-007 ||
 1
-
 I
-
 Clipen | Clipen | Sin |y
-
 GC DA | Clip |;
-
-TFN | 68% | 19% |13.4%|I
+TFN | 68% | 19% |13.4%|1
+I
+I
 I
 
-I
-
-I
-
-JAMA. 2013:310(14):1455-1461 y Clin Oncol 34:1072-1078
-
-
-SEN
-Tasa de Fl
-
-TFN <10%
-examina
-
-p=
-
-Lancet Oncol. 2013
-
-<a E T--->
+y Clin Oncol 34:1072-1078
 
 
 Aparece en el video 21

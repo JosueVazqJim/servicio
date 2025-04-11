@@ -42,8 +42,7 @@ máximo de 1.4cm
 06.06.23 Biopsia de mama derecha. RHP (Q-23-3724): CDI G2 (3+2+1=6), ILV-, IPN-, microcalcificaciones ausentes,
 CDIS presente G2 patrón sólido. IHQ RE 80% RP 1% HER2 1+ (negativo) Ki67 15%
 
-OLLAEMODO
-
+¡YAGO M---H>]
 
 ( Mama derecha con lesión pétrea móvil en CIE de 1.5 cm.
 Mama izquierda sin lesiones palpables
@@ -51,7 +50,7 @@ Mama izquierda sin lesiones palpables
 No se palpan adenopatías supra o infraclaviculares, axilares ni
 cervicales
 
-OLA L>
+OZONO >
 
 Revisión de estudios de imagen
 
@@ -109,7 +108,7 @@ tipo 2 / Obesidad G1 / Osteopenia / Hipertensión arterial sistémica
 
 RESUMEN DEL PADECIMIENTO ONCOLÓGICO
 29.01.20 MMG: BIRADS 0. Se programa MMG contrastada para febrero
-—PERDIÓ SEGUIMIENTO—
+—PERDIÓ SEGUIMIENTO
 
 06.06.23 MMG/US (tamizaje): BIRADS 5. Mama derecha en CIE tercio posterior realce nodular, espiculado, con eje
 máximo de 1.4cm
@@ -139,7 +138,7 @@ Estado hormonal: postmenopáusica
 
 
 Extensión del tumor:
-pTic
+pT1c
 pN0 (sn)
 Mx
 
@@ -152,8 +151,9 @@ Estado hormonal: postmenopáusica
 
 Plan: hormonoterapia con inhibidor de aromatasa / omitir RT adyuvante
 
+
 Extensión del tumor:
-pTic
+pT1c
 pN0 (sn)
 Mx
 

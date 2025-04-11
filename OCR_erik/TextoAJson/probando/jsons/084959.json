@@ -43,7 +43,7 @@
             "ultrasonido": null,
             "mastografía": null,
             "centros_tumorales": null,
-            "nódulos": "n0m0",
+            "nódulos": null,
             "metástasis": null
         }
     },
@@ -69,7 +69,7 @@
             "descripcion": null
         },
         "mama_derecha": {
-            "clasificación": "diagnóstico cd! ec ia(t1bn0m0) triple negativo (2023)",
+            "clasificación": "diagnóstico cd! ec ia(t1bnomo) triple negativo (2023)",
             "descripcion": null
         }
     }

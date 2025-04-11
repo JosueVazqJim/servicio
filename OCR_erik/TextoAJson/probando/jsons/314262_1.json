@@ -69,10 +69,10 @@
     },
     "inmunohistoquímica_tumoral": {
         "mama_izquierda": {
-            "re": "95%",
-            "rp": "95%",
-            "her2": "0+",
-            "ki67": "5%",
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
             "gh": null
         },
         "mama_derecha": {
@@ -85,7 +85,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "diagnóstico 2: cdi de luminal b eciib (ct2n1mo0) tratamiento pr losartan 50 mg bid, pentoxifilina 400 mg 1-1-0,",
+            "clasificación": "diagnóstico 2: cdi de luminal b eciib (ct2n1mo0) tratamiento sctual: losartan 50 mg bid, pentoxifilina 400 mg 1-1-0,",
             "descripcion": null
         },
         "mama_derecha": {

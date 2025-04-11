@@ -23,31 +23,11 @@
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "osteoporosis 1, esófago de barrett - última edg 11.",
-                    "descripción": null
-                },
-                {
-                    "nombre": "rhp (q22-",
-                    "descripción": null
-                },
-                {
-                    "nombre": "neuralgia del trigémino 7073): esófago de barrett sin displasia,",
-                    "descripción": null
-                },
-                {
-                    "nombre": "otoesclerosis",
-                    "descripción": null
-                },
-                {
                     "nombre": "hipotiroidismo primario",
                     "descripción": null
                 },
                 {
-                    "nombre": "dislipidemia mixta 3, esteatosis hepática",
-                    "descripción": null
-                },
-                {
-                    "nombre": "ruptura tendinosa del manguito rotador g6--3-38:-9-o",
+                    "nombre": "esteatosis hepática g3-2-6-5-9-0o",
                     "descripción": null
                 }
             ]
@@ -110,7 +90,7 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "cdis de mama izquierda ol . tabaco: it 35, suspendido a los 50 años",
+            "clasificación": "cdis de mama izquierda 4. osteoporosis 1. esófago de barrett - última edg 11.2022. rhp (q22- 5. neuralgia del trigémino 7073): esófago de barrett sin displasia. 6. otoesclerosis 7. dislipidemia mixta 8. ruptura tendinosa del manguito rotador",
             "descripcion": null
         },
         "mama_derecha": {

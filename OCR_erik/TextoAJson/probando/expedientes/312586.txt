@@ -1,7 +1,7 @@
 ELAD / 312586 / 70 años / Dra. Martínez
 Diagnóstico: CDI mama izquierda EC IIB Luminal B, HER2 positivo
 
-Q/rL.HENMQO
+O/L.EANGO
 
 Originaria y residente: Zacateca
 
@@ -63,13 +63,7 @@ adenopatías axilares), por lo que parece el manejo quirúrgico, independienteme
 calcificaciones en el interior de 1. 5 cm y eje de las 5 de 1. 4 cm. No hay alteraciones ductales. Los ganglios en
 axilas conservan morfología habitual.
 
-OQO/L0HENMQO
-
-FI
-
-Wu
-
-añ
+O/Q.EAEANGO
 
 Mama izquierda sin lesiones palpables.
 
@@ -79,14 +73,14 @@ izquierdas
 Mama derecha sin lesiones palpables.
 No se palpan adenopatías axilares, calviculares ni cervicales derechas
 
-k
+»
 
 Revisión de estudios de imagen
 
 N0 HAY DGT
 Plan: Mastectomía radical + GC con doble trazador
 + RT adyuvante + TD-M1 vs trastuzumab + TE adyuvante
-OQ/yALHENQO
+O'QAEAEANGO
 
 Extensión del tumor:
 
@@ -122,7 +116,7 @@ invasión vascular ni perineural con IHQ con RE (3+), RP (2+), Her-2/Neu (3+), K
 INNSZ
 
 Revisión de laminillas (Q 22-6750) CDI SPE grado 2 (3+2+1), CDIS +, ILV -, IPN -, IHQ RE 80%, RP 2%, HER2 3+.
-KI67 25%
+Ki67 25%
 
 25.11.22 MMG/USG: En mama izquierda nódulos irregulares en el eje de la 1 de 3.2 cm, eje de las 2 de 0.76 cm y
 eje de las 5 de 1. 9 cm. En axila izquierda ganglios con engrosamiento cortical.
@@ -134,7 +128,7 @@ depósitos secundarios. Nódulos pulmonares sin metabolismo asociado, inespecíf
 adenopatías axilares), por lo que parece el manejo quirúrgico, independientemente de respuesta, será con MRM.
 20.12.22-03.04.23 C1-C6 TCHP POS
 
-(2)
+(=”)
 
 21.04.23 MMG/US En mama izquierda nódulos hipoecoicos irregulares en el eje de la 1 de 1. 7 cm, eje de las 3 con
 calcificaciones en el interior de 1. 5 cm y eje de las 5 de 1. 4 cm. No hay alteraciones ductales. Los ganglios en

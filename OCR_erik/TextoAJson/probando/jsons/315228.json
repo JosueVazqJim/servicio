@@ -88,8 +88,8 @@
     },
     "tipo": {
         "mama_izquierda": {
-            "clasificación": "cdi de mama izquierda ec iib (cct2n1) re+",
-            "descripcion": "ec iib ct2- 4 cm cn1"
+            "clasificación": "cdi de mama izquierda ec ib (cct2n1) re+",
+            "descripcion": "ec ib ct2- 4 cm cn1"
         },
         "mama_derecha": {
             "clasificación": null,

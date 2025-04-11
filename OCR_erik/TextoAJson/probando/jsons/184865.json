@@ -16,29 +16,15 @@
         "comorbilidades": {
             "sin_fecha": [
                 {
-                    "nombre": "dislipidemia",
+                    "nombre": "cáncer papila",
                     "descripción": null
                 },
                 {
-                    "nombre": "hipoparatiroidismo postquirúrgico",
+                    "nombre": "hipoparatiroid",
                     "descripción": null
-                }
-            ],
-            "2000": [
+                },
                 {
-                    "nombre": "cáncer papilar de tiroides - tiroidectomía total",
-                    "descripción": null
-                }
-            ],
-            "2019": [
-                {
-                    "nombre": "cardiopatía isquémica silente",
-                    "descripción": null
-                }
-            ],
-            "1986": [
-                {
-                    "nombre": "diabetes mellitus tipo 2",
+                    "nombre": "diabetes melli ge blo-<",
                     "descripción": null
                 }
             ]

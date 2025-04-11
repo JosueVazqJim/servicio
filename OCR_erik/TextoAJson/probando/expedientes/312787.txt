@@ -47,13 +47,13 @@ en relación con depósito secundario. No se identifican datos de enfermedad a d
 19.04.23 USG Patrón mamario de tipo B. Datos de respuesta parcial de acuerdo a los criterios de RESIST
 1.1. Hallazgos benignos correspondientes de la categoría. Ganglios axilares de morfología conservada. BIRADS 6.
 
-O/L.ENQO
+O'rL.EANGO
 
 No se palpa lesión en mama derecha, axila ipsilateral sin adenopatías.
-Mama y axila izquierda sin lesiones palpables.
+| Mama y axila izquierda sin lesiones palpables.
 No se palpan adenopatías infra/ supraclaviculares o cervicales.
 
-O/rLEANDO >
+O'rALAEANGO >>
 
 N0 HAY DGT
 |
@@ -62,7 +62,7 @@ N0 HAY DGT
 Plan: Mastectomía radical + GC con doble trazador
 + RT adyuvante + TD-M1 vs trastuzumab + TE adyuvante
 
-O/L0HENMQO
+O/'QEANGO
 
 Extensión del tumor:
 

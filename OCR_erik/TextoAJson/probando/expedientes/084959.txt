@@ -1,5 +1,5 @@
 GACMdC/ 084959 / 67 años 0 Dra.Martínez
-Diagnóstico CD! mama derecha EC IA(T1bN0M0) triple negativo (2023)
+Diagnóstico CD! mama derecha EC IA(T1bNOMO) triple negativo (2023)
 
 09.03.22 MMG: BI-RADS 2
 
@@ -18,7 +18,7 @@ acuerdo al reporte final de patología definiremos el manejo adyuvante.
 cirugía conservadora con GC.
 
 15.05.23 P0 Cirugía conservadora de mama derecha + ganglio centinela. RHP (Q23-3110): CDI triple negativo (RE
-0%, RP 0%, HER2 -; K167: 10%); sin patrón específico Grado 2; 6 mm en su eje mayor; CDIS no identificado; ILV -; IPN
+0%, RP 0%, HER2 -; Ki67: 10%); sin patrón específico Grado 2; 6 mm en su eje mayor; CDIS no identificado; ILV -; IPN
 +; Microcalcificaciones: presentes en carcinoma invasor; márgenes negativos ( el más cercano (superior) a 5mm del
 tumor; Ganglios linfáticos evaluados (0/2): Negativos para malignidad. PT1B PNO
 
@@ -30,7 +30,7 @@ N0 HAY DGT
 Mujer de 56 años
 postmenopáusica
 
-CDI mama derecha EC I|A(T1bN0M0) triple negativo (2023)
+CDI mama derecha EC I|A(T1bNOMO) triple negativo (2023)
 
 ECOG 1
 

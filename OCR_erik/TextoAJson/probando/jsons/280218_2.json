@@ -9,20 +9,7 @@
         "preferencia": null,
         "índice_tabáquico": {
             "fuma": "negado",
-            "observaciones": [
-                {
-                    "notas": "con ca de mama (35 y 44 años)",
-                    "tiempo": {
-                        "años": 44
-                    }
-                },
-                {
-                    "notas": "tía materna finada por cacu a los alcohol aasdo 48 años",
-                    "tiempo": {
-                        "años": 48
-                    }
-                }
-            ]
+            "observaciones": null
         },
         "alcohol": "negado",
         "drogas": "negado",
@@ -58,7 +45,7 @@
             "2022": [
                 {
                     "nombre": "mastopatía fibroquística bilateral",
-                    "descripción": "3 ciclos a sl adyuvante cada 15 días."
+                    "descripción": "3 ciclos de qt adyuvante cada 15 días."
                 }
             ]
         },
@@ -72,16 +59,23 @@
             "mpf": null,
             "estado_hormonal": "premenopáusica",
             "métodos_anticonceptivos": null,
-            "g": 4,
-            "p": 1,
-            "c": 2,
-            "a": 1
+            "g": 0,
+            "p": 0,
+            "c": 1995,
+            "a": 0
         }
     },
     "antecedentes_familiares": {
-        "ascendencia": "negado",
-        "lateralidad": "negado",
-        "descendencia": "negado"
+        "ascendencia": [
+            "madre con ca de mama (42 años)"
+        ],
+        "lateralidad": [
+            "tías maternas (2) con ca de mama (35 y 44 años)",
+            "tía materna finada por cacu a los 48 años",
+            "tío materno con ca renal (desconoce edad)",
+            "tío paterno con ca gástrico (desconoce edad)"
+        ],
+        "descendencia": null
     },
     "estadía_tumoral": {
         "mama_izquierda": {
