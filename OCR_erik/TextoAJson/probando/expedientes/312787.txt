@@ -1,0 +1,83 @@
+TCG / 312787 / 54 años / Dra. Martínez
+Diagnóstico: CDI de mama deregha EC IIA RE+, HER2+
+
+Comorbilidades:
+1. Diabetes tipo 2 (2014)
+
+2. Herpes zóster en región lumbar (2022)
+
+
+Originaria y residente: Estado de México
+Ocupación: Hogar
+| Seguridad social: negada (INSABI)
+
+Tabaco: negado
+
+Alcohol: negado
+Drogas: negado
+
+AHF oncológicos: negados
+
+- Menarca 14 años / FUM 2015 (46 años)
+- G2 P2 C0 A0
+
+- MPF- progestágenos IM por 6 años
+- Estado hormonal: postmenopáusica
+
+Cirugías:
+
+04.2022 Palpación de tumor en mama derecha
+
+08.11.22 Mastografía/USG Nódulo espiculado de 8 cm y asimetría focal con distorsión arquitectura con hallazgos
+que sugieren infiltración a piel y ganglios axilares ipsilaterales multifocales y multicéntrico en mama derecha
+requieren biopsia. Categoría BIRADS 5.
+
+09.11.22 Biopsia mama derecha (Q22-6611) CDI NOS, G1 (2+1y1) con carcinoma ductal in situ presente, ILV-. IHQ
+RE 95% RP 0% HER2 +++, Ki67 10%
+
+09.11.22 BAAF ganglio axilar derecho. B-A22-280. Carcinoma moderadamente diferenciado.
+
+14.12.22 PET-CT (18-FDG): Lesiones en mama derecha hipermetabólicas compatibles con actividad neoplásica
+primaria conocida, a considerar enfermedad multicéntrica. Adenopatías axilares derechas asociadas a metabolismo
+en relación con depósito secundario. No se identifican datos de enfermedad a distancia.
+
+22.12.22 ECOTT: FEVI 64%, Strain -20.8%
+29.12.22-13.04.23 C1-C6 TCHP
+
+19.04.23 USG Patrón mamario de tipo B. Datos de respuesta parcial de acuerdo a los criterios de RESIST
+1.1. Hallazgos benignos correspondientes de la categoría. Ganglios axilares de morfología conservada. BIRADS 6.
+
+O/L.ENQO
+
+No se palpa lesión en mama derecha, axila ipsilateral sin adenopatías.
+Mama y axila izquierda sin lesiones palpables.
+No se palpan adenopatías infra/ supraclaviculares o cervicales.
+
+O/rLEANDO >
+
+N0 HAY DGT
+|
+|
+
+Plan: Mastectomía radical + GC con doble trazador
++ RT adyuvante + TD-M1 vs trastuzumab + TE adyuvante
+
+O/L0HENMQO
+
+Extensión del tumor:
+
+CDI de mama derecha EC IIA
+cT3 - 8 cm
+c(f)N1
+
+Biología tumoral:
+
+Luminal B, Her2+
+RE 95% RP 0% HER2 +++, Ki67 10%
+
+Estado hormonal: Postmenopáusica
+
+ECOG 1
+
+
+Aparece en el video 4
