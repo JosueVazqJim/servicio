@@ -1,0 +1,100 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 54
+        },
+        "sexo": "femenino",
+        "peso": "99 kg, talla 1.53 mt. ta 118/60 huecos supraclavicular y cervical bilateral sin adenopatías palpables, en mama izquierda se palpa nódulo en r1 de 3 cm, en axila izquierda conglomerado ganglionar móvil, indurado de 4.5 cm n0 hay dgt revisión de imágenes revisión de patología",
+        "talla": "1.53",
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": null,
+            "observaciones": null
+        },
+        "alcohol": null,
+        "drogas": null,
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "obesidad grado iii",
+                    "descripción": null
+                }
+            ],
+            "2022": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "mayo 2022, g3 c2 a1",
+            "menarca": {
+                "años": 13,
+                "contexto": "menarca 13 años"
+            },
+            "trh": null,
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica. cesáreas (1993, 1997)",
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuela materna finada a los 65 años por cáncer gástrico"
+        ],
+        "lateralidad": [
+            "1 hermano con tne en ileón",
+            "tía materna con cáncer de mama a los 55 años",
+            "prima paterna con cáncer de mama 70 años"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

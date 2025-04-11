@@ -1,0 +1,97 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 61
+        },
+        "sexo": "femenino",
+        "peso": "68 kg",
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "-",
+        "drogas": "-",
+        "comorbilidades": {
+            "2020": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ],
+            "2021": [
+                {
+                    "nombre": "dislipidemia mixta",
+                    "descripción": null
+                },
+                {
+                    "nombre": "prediabetes",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "2012",
+            "menarca": {
+                "años": 12
+            },
+            "trh": "negado",
+            "aco": "negado",
+            "mpf": "otb (1986)",
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 4,
+            "p": 3,
+            "c": 0,
+            "a": 1
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": "n1",
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "0%",
+            "rp": "0%",
+            "her2": "-",
+            "ki67": "90%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "diagnósticos: 1.  recurrencia local de cdi de mama izquierda, triple negativo (2023). inicialmente ec iib (t2 n1 m0) triple negativo (2021) residente: michoacán y ciudad de méxico",
+            "descripcion": "ec /iic t1b — 0.53 cm n3b - axilares y cadena mamaria"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

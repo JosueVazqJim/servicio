@@ -1,0 +1,101 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 60
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "social, suspendido",
+        "drogas": "negado cesáreas (1992, 1999, 2006), rafi en miembro pélvico derecho por fractura trimaleolar (2004), cuadrantectomía superior externa mama derecha linfadenectomia (2007) biopsia incisional de tumor en hemicuello derecho (31.07.23)",
+        "comorbilidades": {
+            "2020": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": "en tratamiento actual con amiodipino 5 mg cada 24 horas, enalapril 10 mg ad ¿"
+                }
+            ],
+            "2007": [
+                {
+                    "nombre": "neuropatía sensitiva motora diagnosticada en el issste: carbamazepina 200 mg prn ¿psoriasis",
+                    "descripción": "sin tratamiento actual"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": null,
+            "menarca": {
+                "años": 12
+            },
+            "trh": null,
+            "aco": null,
+            "mpf": {
+                "años": 44,
+                "contexto": "hormonales negados menopausia 44 años"
+            },
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 4,
+            "p": 0,
+            "c": 3,
+            "a": 1
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "madre"
+        ],
+        "lateralidad": [
+            "tía paterna antecedente de ca mama a los 75 años",
+            "tío materno"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

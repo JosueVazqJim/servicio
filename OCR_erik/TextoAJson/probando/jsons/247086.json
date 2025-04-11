@@ -1,0 +1,97 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 64
+        },
+        "sexo": "femenino",
+        "peso": "sobrepeso, hipotiroidismo, dlp mixta, osteoartrosis 2017 mmg birads 2",
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "sobrepeso, hipotiroidismo, dlp mixta, osteoartrosis 2017 mmg birads 2",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 55
+            },
+            "menarca": {
+                "años": 16
+            },
+            "trh": null,
+            "aco": null,
+            "mpf": {
+                "años": 1,
+                "contexto": "levonogestrel im 1 años / thr negada"
+            },
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 7,
+            "p": 0,
+            "c": 3,
+            "a": 4
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "abuelo paterno cáncer de próstata desconoce edad)",
+            "papá con cáncer de próstata (71 años)"
+        ],
+        "lateralidad": [
+            "hermana con linfoma ne (57 años)"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": "pn0",
+            "metástasis": "m0qo0o"
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "0%",
+            "rp": "80%",
+            "her2": "-",
+            "ki67": "80%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de mama derecha ec ia (t1cn0mo) ihq rp+, blueprint triple negativo q",
+            "descripcion": "ec ia ptic-1.2 cm pn0"
+        }
+    }
+}

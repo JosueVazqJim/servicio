@@ -1,0 +1,97 @@
+{
+    "antecedentes_personales": {
+        "edad": null,
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": null,
+            "observaciones": null
+        },
+        "alcohol": "-",
+        "drogas": "-",
+        "comorbilidades": {
+            "1982": [
+                {
+                    "nombre": "- fiebre reumática",
+                    "descripción": "- esclerosis sistémica fenotipo clínico limitada pero scl-70 + (raynaud, erge, neumopatía intersticial sin hap patrón restrictivo leve, esclerodactilia, telangiectasias)"
+                }
+            ],
+            "2019": [
+                {
+                    "nombre": "-  incidentaloma suprarrenal",
+                    "descripción": "- prediabetes"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "febrero del 2018",
+            "menarca": {
+                "años": 11
+            },
+            "trh": null,
+            "aco": {
+                "años": 3,
+                "contexto": "aco por 3 años"
+            },
+            "mpf": {
+                "años": 3,
+                "contexto": "aco por 3 años"
+            },
+            "estado_hormonal": "posmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 2,
+            "p": 0,
+            "c": 2,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": "cn0",
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "80%",
+            "rp": "0%",
+            "her2": "negativo",
+            "ki67": "5%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "diagnósticos: 1. cdi de mama izquierda ecl (t1c n(f)0 m0) (re+",
+            "descripcion": "ec ia tic—13mm cn0"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

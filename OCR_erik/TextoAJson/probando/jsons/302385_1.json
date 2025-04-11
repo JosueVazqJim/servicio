@@ -1,0 +1,99 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 36
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado arf oncológicos",
+        "comorbilidades": {
+            "2018": [
+                {
+                    "nombre": "leg",
+                    "descripción": "actividad mucocutánea, articular, hematológica"
+                }
+            ],
+            "2014": [
+                {
+                    "nombre": "saaf secundario — teo",
+                    "descripción": ", tvp (2015), tep y tvp (2018), 2 óbitos (28 sdg)"
+                }
+            ],
+            "2017": [
+                {
+                    "nombre": "hipotiroidismo primario",
+                    "descripción": "a o."
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "15.01.23",
+            "menarca": {
+                "años": 12
+            },
+            "trh": null,
+            "aco": "negados",
+            "mpf": null,
+            "estado_hormonal": "premenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 3,
+            "p": 0,
+            "c": 1,
+            "a": 2
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": null,
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": "n3bmo",
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "negativo",
+            "rp": "negativo",
+            "her2": "negativo",
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi de mama izquierda ec iiic (t2n3bmo) triple negativo",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

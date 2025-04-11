@@ -1,0 +1,104 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 63
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "suspendido",
+            "observaciones": [
+                {
+                    "notas": "hace 23 años",
+                    "tiempo": {
+                        "años": 23
+                    }
+                }
+            ]
+        },
+        "alcohol": "ocasional",
+        "drogas": "negado",
+        "comorbilidades": {
+            "2020": [
+                {
+                    "nombre": "has",
+                    "descripción": null
+                }
+            ],
+            "2022": [
+                {
+                    "nombre": "esteatosis hepática",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 48
+            },
+            "menarca": {
+                "años": 12
+            },
+            "trh": "gel vaginal con estrógeno",
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 2,
+            "p": 0,
+            "c": 2,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": [
+            "primo con diagnóstico probable de cáncer renal (desconoce edad)"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt2",
+            "nódulos": "pn1",
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "90%",
+            "rp": "10%",
+            "her2": "-",
+            "ki67": "30%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de ec iib (pt2 pn1 mx) luminal b, her2 negativo",
+            "descripcion": "ec iib pt2 - 3.2 cm pn1 — 1/1 +"
+        }
+    }
+}

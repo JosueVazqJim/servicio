@@ -1,0 +1,117 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 67
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "ocasional",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "t3",
+                    "descripción": null
+                }
+            ],
+            "1975": [
+                {
+                    "nombre": "linfoma de hodgkin",
+                    "descripción": "3 ciclos qt (ciclofosfamida, vincristina y otro fármaco) + rt por encima del diafragma (imss)"
+                }
+            ],
+            "1988": [
+                {
+                    "nombre": "cáncer papilar de tiroides",
+                    "descripción": "tiroidectomía + iodo 131 t4"
+                }
+            ],
+            "2016": [
+                {
+                    "nombre": "cistoadenoma seroso microquístico de páncreas",
+                    "descripción": null
+                },
+                {
+                    "nombre": "cdi de mama izquierda ec ia (t1c, n0, m0), re+, her2 -: cc + gc + rt + ia x 5 años",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 21
+            },
+            "menarca": {
+                "años": 15
+            },
+            "trh": {
+                "años": 30,
+                "contexto": "durante 30 años"
+            },
+            "aco": null,
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": [
+            "tía materna falleció por cáncer de mama",
+            "prima materna con cáncer de mama desconoce edad al diagnóstico)"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct1a",
+            "nódulos": "cn0",
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "0%",
+            "rp": "0%",
+            "her2": "-",
+            "ki67": "10%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de ec ia triple negativo",
+            "descripcion": "ec ia ct1a-—0.5 cm cn0"
+        }
+    }
+}

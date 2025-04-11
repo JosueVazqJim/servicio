@@ -1,0 +1,142 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 54
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "sin adenopatías",
+                    "descripción": null
+                },
+                {
+                    "nombre": "birads",
+                    "descripción": null
+                },
+                {
+                    "nombre": "le microcalcificaciones de mama izquierda",
+                    "descripción": null
+                },
+                {
+                    "nombre": "rhp (q-23-3946): cdis patrón sólido comedo, g3, es presentes en conducto no neoplásico",
+                    "descripción": null
+                },
+                {
+                    "nombre": "ihq re 2+ (+) revisaron las imágenes documentando calcificaciones multicéntricas por lo que se consideró rctomía radical modificada de mama izquierda con ganglio centinela",
+                    "descripción": null
+                },
+                {
+                    "nombre": "mía izquierda preservadora de piel + gc (renio) + colocación de implante",
+                    "descripción": null
+                },
+                {
+                    "nombre": "rhp (q23-6102): cdis in cribiforme y comedo, g3, mq - (el más cercano a 1 cm), gl 0",
+                    "descripción": null
+                },
+                {
+                    "nombre": "14 (ptisn0)",
+                    "descripción": null
+                },
+                {
+                    "nombre": "re 80% italizada por itb (aislamiento e",
+                    "descripción": null
+                },
+                {
+                    "nombre": "coli sensible > tx con ceftriaxona) x< colección retropectoral izquierda mide 16.8 x 11.1 x 2.2 cm, encapsula implante mamario; se niento cutáneo con escasos focos de gas a este nivel y estriación de la grasa del tejido celular ente y de hemitórax ipsilateral",
+                    "descripción": null
+                },
+                {
+                    "nombre": "je colección periprotésica guiada por ultrasonido",
+                    "descripción": null
+                },
+                {
+                    "nombre": "no se logro drenaje a pesar de múltiples",
+                    "descripción": null
+                }
+            ],
+            "2014": [
+                {
+                    "nombre": "lmc en fase crónica",
+                    "descripción": "—> en fase blástica por sarcoma mieloide (03.2021) — p0 alotrasplante dcr - 10.03.21 inducción 7+3 (citarabina + daunorribicina) + nilotinib — consolidación con daac dosis densas de citarabina + daunorrubicina calificaciones lineales ramificadas y pleomórficas en interlinea de cuadrantes en interlínea res tercio posterior mama izquierda inferiores de distribución segmentaria que muestra nasa heterogéneo"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 50
+            },
+            "menarca": {
+                "años": 15
+            },
+            "trh": null,
+            "aco": {
+                "años": 4,
+                "contexto": "durante 4 años"
+            },
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 3,
+            "p": 0,
+            "c": 3,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "80%",
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdis de mama izquierda",
+            "descripcion": "re 80%"
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

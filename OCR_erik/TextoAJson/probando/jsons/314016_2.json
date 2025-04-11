@@ -1,0 +1,93 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 66
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": null,
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "04.07.23 ufcm: por las comorbilidades del paciente (neumopatía no especificada, con requerimientos de oxígeno y disnea de medianos esfuerzos que limita la funcionalidad) y alto riesgo de toxicidad por 2 quimioterapias (carg 83%, alto riesgo de toxicidad 2g3)",
+                    "descripción": null
+                },
+                {
+                    "nombre": "se decide que la paciente ira a cirugía de entrada.",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "2007",
+            "menarca": {
+                "años": 12
+            },
+            "trh": "negado.",
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 1,
+            "p": 1,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": [
+            "ahf oncológicos: prima materna con cáncer de esófago (50 años)"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "pt1cno0mo0",
+            "nódulos": null,
+            "metástasis": "m0"
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "80%",
+            "rp": "10%",
+            "her2": "3+",
+            "ki67": "40%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "cdi de mama izquierda ec ia (pt1cno0mo0) re+",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

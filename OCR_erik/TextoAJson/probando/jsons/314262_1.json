@@ -1,0 +1,96 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 85
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": "de la paciente y familia = venir al hospital lo menos posible",
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": [
+                {
+                    "notas": "s exposición a humo de leña (+) durante 40 años, 2 h/d",
+                    "tiempo": {
+                        "años": 40
+                    }
+                }
+            ]
+        },
+        "alcohol": "/ drogas negados exposición a humo de leña (+) durante 40 años, 2 h/d",
+        "drogas": "negados exposición a humo de leña (+) durante 40 años, 2 h/d",
+        "comorbilidades": {
+            "1995": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 47
+            },
+            "menarca": {
+                "años": 14
+            },
+            "trh": "negado",
+            "aco": "no recuerda",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 2,
+            "p": 2,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct2n1mo0",
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct1ccnomo",
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": "95%",
+            "rp": "95%",
+            "her2": "0+",
+            "ki67": "5%",
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": "diagnóstico 2: cdi de luminal b eciib (ct2n1mo0) tratamiento pr losartan 50 mg bid, pentoxifilina 400 mg 1-1-0,",
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "diagnóstico 1: cli de luminal a ec ia (ct1ccnomo)",
+            "descripcion": null
+        }
+    }
+}

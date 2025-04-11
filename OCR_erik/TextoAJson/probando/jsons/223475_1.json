@@ -1,0 +1,104 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 50
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": null,
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "hipotiroidismo diagnosticado a los 35 años, en tratamiento actual con levotiroxina 100 mcg cada 24 horas",
+                    "descripción": null
+                },
+                {
+                    "nombre": "macroadenoma hipofisiario diagnosticado a los 20 años por galactorrea y cefalea, bromocriptina durante 2.5 años",
+                    "descripción": null
+                },
+                {
+                    "nombre": "desprendimiento de retina en el 2016, tratada con cerclaje en ojo derecho",
+                    "descripción": null
+                },
+                {
+                    "nombre": "ca de ovario ec ia (agosto 2012) sle 10 años 9 meses",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "2007, gestas",
+            "menarca": {
+                "años": 10,
+                "contexto": "menarca 10 años"
+            },
+            "trh": null,
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica.",
+            "métodos_anticonceptivos": null,
+            "g": 2007,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "madre con meningioma finada a los 86 años"
+        ],
+        "lateralidad": [
+            "prima materna cáncer de endometrio a los 38 años"
+        ],
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

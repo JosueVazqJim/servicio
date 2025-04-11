@@ -1,0 +1,108 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 60
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "suspendido",
+            "observaciones": [
+                {
+                    "notas": "hace 10 años;",
+                    "tiempo": {
+                        "años": 10
+                    }
+                }
+            ]
+        },
+        "alcohol": "ocasional",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "dislipidemia mixta en tratamiento con ezetimiba 10 mg qd, atorvastatina 40 mg qd)",
+                    "descripción": null
+                },
+                {
+                    "nombre": "trastorno de ansiedad generalizada",
+                    "descripción": null
+                },
+                {
+                    "nombre": "osteoartritis,",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 48
+            },
+            "menarca": {
+                "años": 11,
+                "contexto": "menarca 11 años"
+            },
+            "trh": null,
+            "aco": {
+                "años": 1,
+                "contexto": "durante 1 años."
+            },
+            "mpf": null,
+            "estado_hormonal": null,
+            "métodos_anticonceptivos": null,
+            "g": 1,
+            "p": 0,
+            "c": 1,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": null,
+            "descripcion": null
+        }
+    }
+}

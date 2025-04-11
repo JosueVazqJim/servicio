@@ -1,0 +1,87 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 65
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "suspendido",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "2006": [
+                {
+                    "nombre": "fibromialgia",
+                    "descripción": "; diabetes tipo 2 (2005); dislipidemia mixta (2010); trastorno depresivo mayor 2006) tratamiento: metformina 1 g bid, sitagliptina 100 mg qd, dapaglifozina 10 mg qd, fenofibrato 200 mg qd, sertralina 25 mg qd, vitamina d 4000 ul qd"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "2005",
+            "menarca": {
+                "años": 13
+            },
+            "trh": "negados",
+            "aco": "negados",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusico",
+            "métodos_anticonceptivos": null,
+            "g": 2,
+            "p": 1,
+            "c": 1,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": null,
+        "lateralidad": null,
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct1b",
+            "nódulos": "cn0",
+            "metástasis": "m0"
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "90%",
+            "rp": "15%",
+            "her2": "2+ (sish pendiente)",
+            "ki67": "15%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "carcinoma ductal infiltrante de ec ia (ct1b cn0 m0) luminal b, her2 2+",
+            "descripcion": "ec ia ct1b -— 0.59 cm cn0"
+        }
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 81
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "negado",
+        "drogas": "negado",
+        "comorbilidades": {
+            "sin_fecha": [
+                {
+                    "nombre": "temblor esencial",
+                    "descripción": null
+                },
+                {
+                    "nombre": "trastorno depresivo mayor",
+                    "descripción": null
+                },
+                {
+                    "nombre": "trastorno de ansiedad generalizada",
+                    "descripción": null
+                },
+                {
+                    "nombre": "síndrome de intestino irritable con predominio de diarrea",
+                    "descripción": null
+                },
+                {
+                    "nombre": "dislipidemia",
+                    "descripción": null
+                },
+                {
+                    "nombre": "osteoartritis",
+                    "descripción": null
+                },
+                {
+                    "nombre": "osteoporosis",
+                    "descripción": null
+                },
+                {
+                    "nombre": "prediabetes",
+                    "descripción": null
+                },
+                {
+                    "nombre": "medicamentos: rivotril gotas por la noche, duloxetina 60 mg vo cada 24 horas, lorazepam 0.5 mg vo cada 24 horas, mirtazapina 30 mg vo cada 24 horas, propranolol 20 mg vo cada 8 horas, loperamida 2 mg cada 24 horas, atorvastatina 40 mg vo cada 24 horas, clonazepam 4 gotas vo cada 24 horas, olcalciferol",
+                    "descripción": null
+                },
+                {
+                    "nombre": "vitamina d, histofil 4000 ul cada tercer dia",
+                    "descripción": null
+                }
+            ],
+            "1997": [
+                {
+                    "nombre": "cáncer de mama derecha",
+                    "descripción": "cuadrantectomía de mama derecha + radioterapia + tamoxifeno durante 5 años"
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": {
+                "años": 50,
+                "contexto": "a los 50 años"
+            },
+            "menarca": null,
+            "trh": null,
+            "aco": "negado",
+            "mpf": null,
+            "estado_hormonal": "postmenopáusica",
+            "métodos_anticonceptivos": null,
+            "g": 0,
+            "p": 0,
+            "c": 0,
+            "a": 0
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": [
+            "madre cáncer de mama a los dq años"
+        ],
+        "lateralidad": null,
+        "descendencia": null
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct1c",
+            "nódulos": "cn0",
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "80%",
+            "rp": "80%",
+            "her2": "1+",
+            "ki67": "10%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cáncer de ec ia re +, her2 negativo.",
+            "descripcion": null
+        }
+    }
+}

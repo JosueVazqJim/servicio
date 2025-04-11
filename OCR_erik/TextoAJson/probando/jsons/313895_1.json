@@ -1,0 +1,105 @@
+{
+    "antecedentes_personales": {
+        "edad": {
+            "años": 37
+        },
+        "sexo": "femenino",
+        "peso": null,
+        "talla": null,
+        "preferencia": null,
+        "índice_tabáquico": {
+            "fuma": "negado",
+            "observaciones": null
+        },
+        "alcohol": "ocasional",
+        "drogas": "negado",
+        "comorbilidades": {
+            "2008": [
+                {
+                    "nombre": "migraña con aura",
+                    "descripción": null
+                }
+            ],
+            "2015": [
+                {
+                    "nombre": "hipertensión arterial sistémica",
+                    "descripción": null
+                }
+            ],
+            "2019": [
+                {
+                    "nombre": "probable artritis reumatoide",
+                    "descripción": ", fr <10, anti-ccp 0.1 (negativos, 2023)"
+                }
+            ],
+            "2022": [
+                {
+                    "nombre": "trastorno obsesivo compulsivo",
+                    "descripción": null
+                }
+            ]
+        },
+        "antecedentes_ginecológicos": {
+            "fum": "21.03.23",
+            "menarca": {
+                "años": 12
+            },
+            "trh": null,
+            "aco": "negado.",
+            "mpf": null,
+            "estado_hormonal": "premenopáusica, paridad satisfecha",
+            "métodos_anticonceptivos": null,
+            "g": 1,
+            "p": 0,
+            "c": 0,
+            "a": 1
+        }
+    },
+    "antecedentes_familiares": {
+        "ascendencia": "negado",
+        "lateralidad": "negado",
+        "descendencia": "negado"
+    },
+    "estadía_tumoral": {
+        "mama_izquierda": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": null,
+            "nódulos": null,
+            "metástasis": null
+        },
+        "mama_derecha": {
+            "ultrasonido": null,
+            "mastografía": null,
+            "centros_tumorales": "ct3",
+            "nódulos": "n1",
+            "metástasis": null
+        }
+    },
+    "inmunohistoquímica_tumoral": {
+        "mama_izquierda": {
+            "re": null,
+            "rp": null,
+            "her2": null,
+            "ki67": null,
+            "gh": null
+        },
+        "mama_derecha": {
+            "re": "90%",
+            "rp": "0%",
+            "her2": "+",
+            "ki67": "30%",
+            "gh": null
+        }
+    },
+    "tipo": {
+        "mama_izquierda": {
+            "clasificación": null,
+            "descripcion": null
+        },
+        "mama_derecha": {
+            "clasificación": "cdi de ec iia luminal b, her2 positivo",
+            "descripcion": "ec iia ct3-6cm c"
+        }
+    }
+}
